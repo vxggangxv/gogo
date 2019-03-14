@@ -64,8 +64,6 @@
 
 </head>
 
-<!-- 페이지 전용 -->
-
 <body class="page-front">
 
     <!-- 패키지 팝업-->
@@ -2026,7 +2024,7 @@
                                 </li>
                                 <li><a href="../front/roomStatusList.html">객실 현황 목록</a>
                                 </li>
-                                <li><a href="../front/logBook.html">통장</a>
+                                <li><a href="../front/logBook.html">Log Book</a>
                                 </li>
                                 <li><a href="../front/guestProfile.html">투숙객 정보</a>
                                 </li>
@@ -2339,19 +2337,195 @@
 
 
 
-        <div class="cf contents name-contents">
+
+        <div class="cf contents complain-contents">
+
             <div class="cf row-h2">
-                <h2 class="page-title">예약 조건</h2>
+                <h2 class="page-title">컴플레인</h2>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
             </div>
+            <div class="cf cont-container-f">
+                <div class="cont-property">
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width: 120px">
+                                        <col style="width: 250px">
+                                            <col style="width: 120px">
+                                                <col style="width: 240px">
+                                                    <col style="width: 120px">
+                                                        <col style="width: *">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">요청 유형</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <select name="" id="" class="form-select w-1" disabled>
+                                                    <option value="">4. Complain</option>
+                                                </select>
+                                                <button type="button" class="btn-green">ADD</button>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">상태</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <select name="" id="" class="form-select w-1">
+                                                    <option value=""></option>
+                                                    <option value="">접수</option>
+                                                    <option value="">처리</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">요청 날짜</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <span class="cal-box">
+
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+                                                <span class="mg">~</span>
+                                                <span class="cal-box">
+
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+                                                <button type="button" class="btn-brown">SEARCH</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont-list">
+                    <div class="grid-toolbar">
+                        <button type="button" class="btn-gray btn-changes"><span class="icon ic-pdf"></span> Export to Excel</button>
+                    </div>
+                    <div class="grid-wrap scr-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width: 80px">
+                                                <col style="width: *">
+                                                    <col style="width: 80px">
+                                                        <col style="width: 80px">
+                                                            <col style="width: 150px">
+                                                                <col style="width: 80px">
+                                                                    <col style="width: 150px">
+                                                                        <col style="width: 645px">
+                                        </colgroup>
+                                        <thead class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">유형</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">내용</div>
+                                                </th>
+                                                <th class="ta-center">
+                                                    <div class="cell">Display</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">생성자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">생성일자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">변경자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">변경된</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell"></div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 80px">
+                                            <col style="width: *">
+                                                <col style="width: 80px">
+                                                    <col style="width: 80px">
+                                                        <col style="width: 150px">
+                                                            <col style="width: 80px">
+                                                                <col style="width: 150px">
+                                                                    <col style="width: 645px">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td class="ta-center">
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                        </tr>
+                                        <!--tr>(th+td)-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.grid-wrap -->
+                    <div class="cf grid-bottom">
+                        <a href="#" class="prev st">&lt;&lt;</a>
+                        <a href="#" class="prev">&lt;</a>
+                        <span class="num">0</span>
+                        <a href="#" class="next">&gt;</a>
+                        <a href="#" class="next st">&gt;&gt;</a>
+                        <span class="count">1 - 100 of 158 items</span>
+                    </div>
+                    <!-- //.grid-bottom-->
+                </div>
+                <!--//.cont-rmBlock-->
+            </div>
         </div>
         <!-- //.contents -->
 
-    </div>
 
+    </div>
 </body>
 
 </html>
