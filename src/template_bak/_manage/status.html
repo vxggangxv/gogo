@@ -1,0 +1,1004 @@
+@@include('../include/_head.html', {
+	"page": "manage"
+})
+
+<body class="page-manage">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+	
+	<div class="cf contents">
+		<h2 class="page-title">객실관리 - 현황</h2>
+		<section class="cont-status">
+			<h2 class="hidden">객실현황</h2>
+			<div class="cf row-subtit">
+				<div class="center">
+					<a href="" class="btn-mon prev">◀</a>
+					<span class="subtit">2019년 1월</span>
+					<a href="" class="btn-mon next">▶</a>
+				</div>
+				<div class="right">
+					<button type="button" class="btn-style-2 fn-evtRoomManage">이벤트 객실관리</button>
+					<button type="button" class="btn-style-2 fn-evtRoomDead">이벤트 객실마감</button>
+					<button type="button" class="btn-style-2 fn-sms">설악워터피아</button>
+					<button type="button" class="btn-style-2 fn-booking">현장 예약하기</button>
+				</div>
+			</div>
+			<div class="table-wrapper clr">
+				<!--설명박스-->
+				<ul class="explain">
+					<li class="clr">
+						<div class="nth-1">※ 판매불가</div>
+						<div class="nth-2">공사,직원숙소,경매 등의 사유로 판매가 불가능한 객실입니다.</div>
+					</li>
+					<li class="clr">
+						<div class="nth-1">※ 제외</div>
+						<div class="nth-2">판매는 가능한 객실이나, 운영상의 사유로 잠시 제외해두는 객실입니다.</div>
+					</li>
+					<li class="clr">
+						<div class="nth-1">※ 가용객실수</div>
+						<div class="nth-2"> 불가/제외 를 뺀 판매가능한 총 객실수 입니다. </div>
+					</li>
+					<li class="clr">
+						<div class="nth-1">※ 입실예정</div>
+						<div class="nth-2">판매가 완료된 객실입니다. (해당날짜 이전에 입실한 연박고객도 포함)</div>
+					</li>
+					<li class="clr">
+						<div class="nth-1">※ 판매가능</div>
+						<div class="nth-2">판매불가, 제외, 입실예정 등 판매불가능한 수를 제외한 판매가능한 객실수입니다.</div>
+					</li>
+					<li class="clr">
+						<div class="nth-1">※ 총객실수</div>
+						<div class="nth-2">타입별 불가/제외/가능 을 모두 포함한 총 객실수 입니다.</div>
+					</li>
+				</ul>
+
+				<div class="th-day">
+					<span class="day">요일</span>
+					<span class="sun">일(Sun)</span>
+					<span>월(Mon)</span>
+					<span>화(Tue)</span>
+					<span>수(Wed)</span>
+					<span>목(Thu)</span>
+					<span>금(Fri)</span>
+					<span class="sat">토(Sat)</span>
+				</div>
+				<!--좌측테이블-->
+				<div class="table-box left-box clr" id="left-box">
+					<table class="l-table">
+						<tr>
+							<th class="th-d" colspan="4">날짜</th>
+						</tr>
+						<tr>
+							<th>객실명</th>
+							<th>총객실</th>
+							<th>불가</th>
+							<th>공사</th>
+						</tr>
+						<tr>
+							<td>스탠다드 마운틴뷰 콘도</td>
+							<td>156</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 마인틴뷰 콘도</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>디럭스 오션뷰 콘도</td>
+							<td>26</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 콘도</td>
+							<td>49</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 콘도 테라스</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 호텔</td>
+							<td>11</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>삼포해변카라반</td>
+							<td>13</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>오션뷰 콘도 VIP</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td>250</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+					</table>
+					<table class="l-table">
+						<tr>
+							<th class="th-d" colspan="4">날짜</th>
+						</tr>
+						<tr>
+							<th>객실명</th>
+							<th>총객실</th>
+							<th>불가</th>
+							<th>공사</th>
+						</tr>
+						<tr>
+							<td>스탠다드 마운틴뷰 콘도</td>
+							<td>156</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 마인틴뷰 콘도</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>디럭스 오션뷰 콘도</td>
+							<td>26</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 콘도</td>
+							<td>49</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 콘도 테라스</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>리노베이션 오션뷰 호텔</td>
+							<td>11</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>삼포해변카라반</td>
+							<td>13</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>오션뷰 콘도 VIP</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>합계</td>
+							<td>250</td>
+							<td>4</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+				<!--우측테이블-->
+				<div class="table-box clr" id="table-box">
+					<div class="row-box clr">
+						<!--마감 표시 table.off-->
+						<table class="d-table non-table">
+							<tr><td></td></tr>
+						</table>
+						<table class="d-table non-table">
+							<tr><td></td></tr>
+						</table>
+						<!--171204 높이 조정 클래스 d-ht 추가-->
+						<table class="d-table d-ht">
+							<tr>
+								<th class="th-d" colspan="3">1일</th>
+							</tr>
+							<tr>
+
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">2일</th>
+							</tr>
+							<tr>
+
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">3일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">4일</th>
+							</tr>
+							<tr>
+
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>6</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>10</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d sat" colspan="3">5일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+					</div>
+
+					<div class="row-box clr">
+						<!--on 클래스: 주황테두리-->
+						<table class="d-table">
+							<tr>
+								<th class="th-d sun" colspan="3">6일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">7일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">8일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">9일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">10일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d" colspan="3">11일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<table class="d-table">
+							<tr>
+								<th class="th-d sat" colspan="3">12일</th>
+							</tr>
+							<tr>
+								<th class="bg nth-2">가용객실</th>
+								<th class="bg nth-3">입실예정</th>
+								<th class="bg nth-4">판매가능</th>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>1</td>
+								<td>125</td>
+
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>1</td>
+								<td>26</td>
+
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>1</td>
+								<td>5</td>
+
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>1</td>
+								<td>9</td>
+
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>1</td>
+								<td>11</td>
+
+							</tr>
+							<tr>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>50</td>
+								<td>50</td>
+							</tr>
+						</table>
+						<div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
+					</div>
+				</div>
+				<script>
+					$("#table-box .row-box .btn-area .btn-a").on("click", function () {
+						var idx = $(this).closest(".row-box").index();
+						console.log(idx);
+						$(this).toggleClass("on");
+						$(this).closest(".row-box").next(".row-box.pkg").toggleClass("on");
+						$("#left-box .l-table").eq(idx + 1).toggleClass("on");
+						return false;
+
+					});
+
+					$("#table-box .row-box").each(function () {
+						$(this).find(".d-table").eq(0).css("background", "#ffebeb");
+						$(this).find(".d-table").eq(6).css("background", "#ddeffb");
+						$(this).find(".non-table").css("background", "#fff");
+					});
+
+					$(".d-table, .l-table").find("tr:eq(1) th").css("background", "#efefef");
+					$(".d-table, .l-table").find("tr:eq(10) td").css("background", "#efefef");
+					$(".row-box .btn-area").hide();
+
+
+					// 높이 조절
+					//var ht = $("#table-box .d-table").height();
+					var ht = $("#table-box .d-ht").height();
+					console.log(ht);
+					$("#table-box .non-table").height(ht);
+					/*var $_trHeight = $("#table-box tr");
+					console.log($_trHeight);
+					$_trHeight.each(function() {
+						var thHeight = $(this).height();
+						$(this).find('td').height(thHeight);
+					});
+					var $_trHeight = $(".table-bordered tr");
+					console.log($_trHeight);
+					$_trHeight.each(function() {
+						var thHeight = $(this).height();
+						$(this).find('td .dim').height(thHeight);
+					});*/
+				</script>
+
+			</div>
+		</section>
+	</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@@include('../include/_head.html', {
+	"page": "front"
+})
+
+<!-- 페이지 전용 -->
+
+<body class="page-front">
+
+@@include('../include/pop/pop_rsv.html')
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents rmStaList-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "객실 현황 목록"
+		})
+
+		<div class="cont-container-f">
+			<section class="cont-roomStatus">
+				<div class="area classify-area">
+					<div class="cont-center">
+						<h3 class="hidden">분류 리스트</h3>
+						<ul class="cf list-type">
+							<li class="item-type type-1">
+								<a href="javascript:;" class="item chkOut">Check out</a>
+								<a href="javascript:;" class="item assign">Assign</a>
+								<a href="javascript:;" class="item chkOut-assign">Check out + Assign</a>
+							</li>
+							<li class="item-type type-2">
+								<a href="javascript:;" class="item wd-1 vip">VIP</a>
+								<a href="javascript:;" class="item wd-2 chkIn">Check-in</a>
+								<a href="javascript:;" class="item wd-3 inHouse">In House</a>
+								<a href="javascript:;" class="item wd-4 ooo">Out Of Order</a>
+								<a href="javascript:;" class="item wd-1 empty">Empty</a>
+								<a href="javascript:;" class="item wd-2 dayUse">Day Use</a>
+								<a href="javascript:;" class="item wd-3 goOut">Go Out</a>
+								<a href="javascript:;" class="item wd-4 oos">Out Of Service</a>
+							</li>
+							<li class="item-type type-3">
+								<a href="javascript:;" class="item wd-1 vi">VI</a>
+								<a href="javascript:;" class="item wd-2 vw">VW</a>
+								<a href="javascript:;" class="item wd-3 oi">OI</a>
+								<a href="javascript:;" class="item wd-4 ow">OW</a>
+								<a href="javascript:;" class="item wd-1 vc">VC</a>
+								<a href="javascript:;" class="item wd-2 vd">VD</a>
+								<a href="javascript:;" class="item wd-3 oc">OC</a>
+								<a href="javascript:;" class="item wd-4 od">OD</a>
+							</li>
+							<li class="item-type type-4">
+								<a href="javascript:;" class="item wd-1 in-r">IN/R</a>
+								<a href="javascript:;" class="item wd-2 in">IN</a>
+								<a href="javascript:;" class="item wd-1 out-r">OUT/R</a>
+								<a href="javascript:;" class="item wd-2 out">OUT</a>
+							</li>
+							<li class="item-type type-5">
+								<a href="javascript:;" class="item wd-1 message">Message</a>
+								<a href="javascript:;" class="item wd-2 guests">Guests</a>
+								<a href="javascript:;" class="item wd-1 temperature">Temperature</a>
+							</li>
+						</ul>
+						<div class="row-chk">
+							<button type="button" class="btn-clear">Clear<span class="hidden">체크해제</span></button>
+							<span class="mg-l"></span>
+							<span class="chk-box"><label><input type="checkbox" id="">RST</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">DDB</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">TTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">DTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">TRP</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FDB</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FKD</label></span>
+						</div>
+						<span class="slt-box floor">
+							<span class="t">Floor :</span>
+							<select name="" id="" class="form-select floor">
+								<option value="">17</option>
+								<option value="">16</option>
+								<option value="">15</option>
+								<option value="">14</option>
+								<option value="">13</option>
+								<option value="">12</option>
+								<option value="">11</option>
+								<option value="">10</option>
+								<option value="">9</option>
+								<option value="">8</option>
+								<option value="">7</option>
+								<option value="">6</option>
+								<option value="">5</option>
+								<option value="">4</option>
+								<option value="">3</option>
+								<option value="">2</option>
+								<option value="">1</option>
+							</select>
+						</span>
+					</div>
+				</div>
+				<!--//.classify-area-->
+			</section>
+
+			<div class="cont-list">
+				<div class="grid-toolbar">
+					<button type="button" class="btn-gray btn-changes"><span class="icon ic-pdf"></span> Export to PDF</button>
+				</div>
+				<!-- /.grid-toolbar -->
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:95px">
+										<col style="width:95px">
+										<col style="width:95px">
+										<col style="width:95px">
+										<col style="width:95px">
+										<col style="width:380px">
+										<col style="width:*">
+										<col style="width:125px">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th><div class="cell">객실 번호</div></th>
+											<th><div class="cell">객실 유형</div></th>
+											<th><div class="cell">In/Out</div></th>
+											<th><div class="cell">CI.Status</div></th>
+											<th><div class="cell">Extra Bad</div></th>
+											<th><div class="cell">이름</div></th>
+											<th><div class="cell">비고</div></th>
+											<th><div class="cell"></div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width:95px">
+									<col style="width:95px">
+									<col style="width:95px">
+									<col style="width:95px">
+									<col style="width:95px">
+									<col style="width:380px">
+									<col style="width:*">
+									<col style="width:125px">
+								</colgroup>
+								<tbody class="rowgroup">
+									<!-- In/Out 상태 아이콘 : empty, ooo, goOut -->
+									<!-- Cl.Status 상태 아이콘 : vi, vw, vc, vd, oi, ow, oc, od -->
+									<!-- Extra Bad 상태 아이콘 : in, in-r, out, out-r -->
+									<tr>
+										<td><div class="cell">1701</div></td>
+										<td><div class="cell">RST</div></td>
+										<td><div class="cell"><span class="icon-status empty"></span></div></td>
+										<td><div class="cell"><span class="icon-status vi"></span></div></td>
+										<td><div class="cell"><span class="icon-status in"></span></div></td>
+										<td class="ta-left"><div class="cell">안성범</div></td>
+										<td class="ta-left"><div class="cell">러기지렉</div></td>
+										<td><div class="cell"><button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button></div></td>
+									</tr>
+									<tr>
+										<td><div class="cell">1701</div></td>
+										<td><div class="cell">RST</div></td>
+										<td><div class="cell"><span class="icon-status ooo"></span></div></td>
+										<td><div class="cell"><span class="icon-status vw"></span></div></td>
+										<td><div class="cell"><span class="icon-status out"></span></div></td>
+										<td class="ta-left"><div class="cell">안성범</div></td>
+										<td class="ta-left"><div class="cell">러기지렉</div></td>
+										<td><div class="cell"><button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button></div></td>
+									</tr>
+									<tr>
+										<td><div class="cell">1701</div></td>
+										<td><div class="cell">RST</div></td>
+										<td><div class="cell"><span class="icon-status goOut"></span></div></td>
+										<td><div class="cell"><span class="icon-status vc"></span></div></td>
+										<td><div class="cell"><span class="icon-status in-r"></span></div></td>
+										<td class="ta-left"><div class="cell">안성범</div></td>
+										<td class="ta-left"><div class="cell">러기지렉</div></td>
+										<td><div class="cell"><button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->
+			</div>
+			<!-- //.cont-list -->
+		</div>
+		<!--//.cont-roomStatus-->
+	</div>
+	<!--//.contents-->
+
+</div>
+<div class="cf"></div>
+
+</body>
+</html>

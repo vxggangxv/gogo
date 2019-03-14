@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="author">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>사이트이름</title>
+
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<!--<link rel="canonical" href="도메인">-->
+<!-- /roomLayout/ -->
+<!--폰트-->
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+<!--공통 Css-->
+<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
+<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">
+
+<!--개별 Css-->
+<!--<link rel="stylesheet" href="../../static/css/common.css">-->
+<link rel="stylesheet" href="../../static/css/roomLayout/init.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	Modernizr.Detectizr.detect();
+</script>
+
+<!--개별 Js-->
+<!--<script src="../../static/js/common.js"></script>-->
+<script src="/static/js/roomLayout/init.js"></script>
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+
+
+</head>
+<body>
+<div id="headerW">
+	<div class="header">
+		<h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+		<div class="snb">
+			<span class="user">테스트용</span>
+			<a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+		</div>
+	</div>
+</div>
+
+<!--변경내용-->
+<div id="nav-bar" style="z-index: 2; position: relative; top: 0px;">
+	<ul class="nav" style="height: 50px; top: 0px;">
+
+		<li><a href="/reserve.php">판매기록</a></li>
+		<li class="on">
+			<a href="/sale.php">객실관리</a>
+			<ul class="dep2-menu">
+				<li><a href="">요금</a></li>
+				<li><a href="">현황</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/room_day.php">판매현황</a>
+			<ul class="dep2-menu">
+				<li><a href="">일별</a></li>
+				<li><a href="">월별</a></li>
+			</ul>
+		</li>
+		<li><a href="/info.php">호텔정보</a></li>
+	</ul>
+</div>
+
+
+<!--
+<div id="wrapper">
+	<div id="container">
+		<div id="alert_info" style="position: static; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>1건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span><span class="alert_tel">제휴점문의 : <strong>김민철 대리 &nbsp; | &nbsp; 070-4694-5803</strong> (09:00 ~ 18:00)</span></div>
+	</div>
+</div>-->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1433 @@
+@charset "utf-8";
+
+// 공통
+@import "parts/_common.scss";
+
+
+/* 팝업 공통 */
+.pop-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	.bg-back {
+		position: fixed; z-index: 99; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/black_rgba58.png) repeat;
+	}
+	.pop-wrap {
+		position: relative;
+		z-index: 99;
+		width: 900px;
+//		min-height: 500px;
+		background: #fff;
+		margin: 0 auto;
+	}
+	.type-2-show {
+		display: none;
+	}
+	&.type-2 {
+		.type-2-show {
+			display: none;
+		}
+	}
+	.btn-default {
+		@include btn-default;
+	}
+	.btn-style-2 {
+		@include btn-default;
+		background: $bg-blue-2;
+		color: #fff;
+		font-size: 13px;
+		padding: 2px 10px;
+	}
+	h3 .btn-box {
+		position: relative;
+		top: -5px;
+	}
+}
+%pop-header-base {
+	background: $bg-brown-1;
+	padding: 15px;
+	color: $fg-brown-popHd;
+	h2 {
+		font-weight: 700;
+		letter-spacing: 0;
+	}
+	.i-x {
+		width: 30px;
+		height: 30px;
+		&:before, &:after {
+			top: 14px;
+			background: #fff;
+			width: 30px;
+			height: 3px;
+		}
+	}
+}
+%pop-footer-base {
+	padding: 15px;
+	padding-top: 10px;
+	.row-btn {
+		background: #f0f0f0;
+		padding: 15px 0;
+		text-align: center;
+		.btn-cls {
+			@include btn-base;
+			color: #6e7a86;
+			border: 1px solid #b9babc;
+			padding: 4px 8px 3px;
+			box-shadow: rgb(200, 202, 205) 0px 1px 3px;
+			border: 1px solid #949fa8;
+		}
+		.btn-cls.type-2, .btn-save, .btn-send {
+			padding: 5px 30px 4px;
+		}
+		.btn-cls.type-2 {
+			background: #444;
+			color: #fff;
+			margin: 0 5px;
+		}
+		.btn-save, .btn-send {
+			@include btn-base;
+			background: $bg-brown-3;
+			color: #fff;
+			border: 1px solid #b9babc;
+			box-shadow: rgb(200, 202, 205) 0px 1px 3px;
+			border: 1px solid #949fa8;
+		}
+	}
+}
+
+/* 정보수정 */
+.pop-container.pop-profile {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			padding: 15px;
+			padding-bottom: 0;
+			.cont-profile {
+				$grid-cor-1: #c5c5c5;
+				$grid-bor-1: 1px solid $grid-cor-1;
+				.grid-wrap {
+					font-size: 12px;
+					.grid-area {
+						border-bottom: 0;
+						.grid-tbl {
+							table-layout: fixed;
+							border-collapse: collapse;
+							width: 100%;
+							tr {
+								th, td {
+									border: $grid-bor-1;
+									box-sizing: border-box;
+									padding: 6px 7px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									height: 39px;
+								}
+								th {
+									background: #f1f1f1;
+								}
+								td {
+									font-size: 0;
+									* {
+										font-size: 12px;
+										vertical-align: middle;
+									}
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(200px, null, 4px);
+								letter-spacing: -0.5px;
+								&.name, &.id {
+									width: 120px;
+								}
+								&.pwd-chk {
+									margin-left: 20px;
+								}
+								&.email-addr {
+									margin-right: 5px;
+								}
+								&.phone-number {
+									width: 80px;
+								}
+							}
+							button {
+								@include btn-base;
+								margin-left: 5px;
+								background: $bg-brown-2;
+								border-color: $bg-brown-2;
+								color: #fff;
+							}
+							.slt {
+								@include form-base;
+								padding-bottom: 2px;
+								min-width: 120px;
+								font-size: 12px;
+								&.phone-number {
+									padding-bottom: 0;
+									min-width: 60px;	
+								}
+							}
+							.at {
+								height: auto;
+								margin: 0 5px;
+							}
+							.dot {
+								margin: 0 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+
+/* 직원관리 - 리스트 */
+.pop-container.pop-list.member {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			padding: 15px;
+			padding-bottom: 0;
+			.cont-memberList {
+				$grid-cor-1: #c5c5c5;
+				$grid-bor-1: 1px solid $grid-cor-1;
+				.grid-wrap {
+					height: 400px;
+					font-size: 12px;
+					.grid-area {
+						border: $grid-bor-1;
+						.grid-tbl {
+							table-layout: fixed;
+							width: 100%;
+							tr {
+								th, td {
+									border-left: $grid-bor-1;
+//									border-bottom: $grid-bor-1;
+									height: 26px;
+									box-sizing: border-box;
+									padding: 6px 7px 5px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									&:first-child {
+										border-left: 0;
+									}
+								}
+								&:nth-child(2n) {
+									background: #f1f1f1;
+								}
+							}
+						}
+						&.grid-head {
+							padding-right: 16px;
+							margin-bottom: -1px;
+							background-image: none,-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.6)),to(rgba(255,255,255,0)));
+							background-image: none,-webkit-linear-gradient(top,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-image: none,linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-position: 50% 50%;
+							background-color: #eae8e8;
+							.grid-scrollable {
+								border-right: $grid-bor-1;
+							}
+							tr {
+								th, td {
+//									border-bottom: 0;
+								}
+							}
+						}
+						&.grid-contents {
+							height: 370px;
+							overflow: auto;
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 직원관리 - 등록 */
+.pop-container.pop-join.member {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			padding: 15px;
+			padding-bottom: 0;
+			.cont-memberRegist {
+				$grid-cor-1: #c5c5c5;
+				$grid-bor-1: 1px solid $grid-cor-1;
+				.grid-wrap {
+					font-size: 12px;
+					.grid-area {
+						border-bottom: 0;
+						.grid-tbl {
+							table-layout: fixed;
+							border-collapse: collapse;
+							width: 100%;
+							tr {
+								th, td {
+									border: $grid-bor-1;
+									box-sizing: border-box;
+									padding: 6px 7px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+								}
+								th {
+									background: #f1f1f1;
+								}
+								td {
+									font-size: 0;
+									* {
+										font-size: 12px;
+										vertical-align: middle;
+									}
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 200px;
+								letter-spacing: -0.5px;
+								&.name, &.id {
+									width: 120px;
+								}
+								&.pwd-chk {
+									margin-left: 20px;
+								}
+								&.email-addr {
+									margin-right: 5px;
+								}
+								&.phone-number {
+									width: 80px;
+								}
+							}
+							button {
+								@include btn-base;
+								margin-left: 5px;
+								background: $bg-brown-2;
+								border-color: $bg-brown-2;
+								color: #fff;
+							}
+							.slt {
+								@include form-base;
+								padding-bottom: 2px;
+								min-width: 120px;
+								font-size: 12px;
+								&.phone-number {
+									padding-bottom: 0;
+									min-width: 60px;	
+								}
+							}
+							.at {
+								height: auto;
+								margin: 0 5px;
+							}
+							.dot {
+								margin: 0 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 현장 예약하기 */
+.pop-container.pop-booking {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			padding: 15px;
+			padding-bottom: 0;
+			.cont-booking {
+				.grid-wrap {
+					font-size: 12px;
+					.grid-area {
+						border-bottom: 0;
+						.grid-tbl {
+							table-layout: fixed;
+							border-collapse: collapse;
+							width: 100%;
+							tr {
+								th, td {
+									border: $grid-bor-1;
+									box-sizing: border-box;
+									padding: 6px 7px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+								}
+								&.division {
+									th, td {
+										border: $grid-bor-1;
+										border-color: $grid-bor-division;
+										padding: 0;
+										line-height: 0;
+									}
+								}
+								th {
+									background: #f1f1f1;
+								}
+								td {
+									font-size: 0;
+									* {
+										font-size: 12px;
+										vertical-align: middle;
+									}
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 200px;
+								letter-spacing: -0.5px;
+								&.date {
+									width: 80px;
+									text-align: center;
+								}
+								&.price {
+									width: 80px;
+								}
+								&.memo {
+									width: 100%;
+								}
+								&.phone-number {
+									width: 80px;
+								}
+							}
+							button {
+								@include btn-base;
+								margin-left: 5px;
+								background: $bg-brown-2;
+								border-color: $bg-brown-2;
+								color: #fff;
+							}
+							.slt {
+								@include form-base;
+								padding-bottom: 2px;
+								min-width: 120px;
+								font-size: 12px;
+								& + .slt {
+									margin-left: 10px;
+								}
+								&.slt-quan {
+									padding-bottom: 0;
+									text-indent: 5px;
+									min-width: 50px;
+								}
+								&.slt-person {
+									text-indent: 5px;
+									min-width: 80px;
+								}
+								&.phone-number {
+									padding-bottom: 0;
+									min-width: 60px;	
+								}
+								&.slt-agency {
+									min-width: 200px;
+									margin-left: 10px;
+								}
+							}
+							.slt-box {
+								& + .slt-box {
+									margin-left: 12px;
+								}
+								.addTxt {
+									
+								}
+							}
+							.at {
+								height: auto;
+								margin: 0 5px;
+							}
+							.chk-box, .rdo-box {
+								input {
+									margin-right: 3px;
+								}
+								& + .chk-box, & + .rdo-box {
+									margin-left: 12px;
+								}
+							}
+							.inp-box {
+								&.type-1 {
+									label + input {
+										margin-left: 5px;
+									}
+								}
+								& + .inp-box {
+									margin-left: 10px;
+								}
+							}
+							.dot {
+								margin: 0 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 문자발송 */
+.pop-container.pop-sms {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			padding: 15px;
+			padding-bottom: 0;
+			.cont-sms {
+				.grid-wrap {
+					font-size: 12px;
+					.grid-area {
+						border-bottom: 0;
+						.grid-tbl {
+							table-layout: fixed;
+							border-collapse: collapse;
+							width: 100%;
+							tr {
+								th, td {
+									border: $grid-bor-1;
+									box-sizing: border-box;
+									padding: 6px 7px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+								}
+								&.division {
+									th, td {
+										border: $grid-bor-1;
+										border-color: $grid-bor-division;
+										padding: 0;
+										line-height: 0;
+									}
+								}
+								th {
+									background: #f1f1f1;
+								}
+								td {
+									font-size: 0;
+									* {
+										font-size: 12px;
+										vertical-align: middle;
+									}
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 200px;
+								letter-spacing: -0.5px;
+								&.phone-number {
+									width: 80px;
+								}
+							}
+							button {
+								@include btn-base;
+								margin-left: 5px;
+								background: $bg-brown-2;
+								border-color: $bg-brown-2;
+								color: #fff;
+							}
+							.slt {
+								@include form-base;
+								padding-bottom: 2px;
+								min-width: 120px;
+								font-size: 12px;
+								& + .slt {
+									margin-left: 12px;
+								}
+								&.phone-number {
+									padding-bottom: 0;
+									min-width: 60px;	
+								}
+							}
+							.slt-box {
+								& + .slt-box {
+									margin-left: 12px;
+								}
+								.addTxt {
+									
+								}
+							}
+							.chk-box, .rdo-box {
+								input {
+									margin-right: 3px;
+								}
+								& + .chk-box, & + .rdo-box {
+									margin-left: 12px;
+								}
+							}
+							.inp-box {
+								&.type-1 {
+									label + input {
+										margin-left: 5px;
+									}
+								}
+								& + .inp-box {
+									margin-left: 10px;
+								}
+							}
+							.texta {
+								@include texta-base;
+								width: 100%;
+							}
+							.dot {
+								margin: 0 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 상세정보 */
+.pop-container.pop-detail {
+	%common-h3 {
+		font-size: 14px;
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			.cont-detail {
+				padding: 0 15px;
+				.grid-wrap {
+					@include grid-wrap-style1;
+					h3 {
+						@extend %common-h3;
+						.txt-box {
+							& + .txt-box {
+								margin-left: 10px;
+							}
+						}
+						.addColor {
+							color: $fg-red-1;
+							font-size: 16px;
+						}
+					}
+					.grid-area {
+						.grid-tbl {
+							tr {
+								th, td {
+									text-align: center;
+								}
+							}
+						}
+					}
+					&.grid-order {
+						.grid-tbl {
+							tr {
+								th, td {
+									
+								}
+							}
+						}
+					}
+				}
+				.memo-wrap {
+					h3 {
+						@extend %common-h3;
+					}
+					.memo-area {
+						.memo-texta {
+							@include texta-base;
+							width: 788px;
+							height: 52px;
+							box-shadow: none;
+							border-radius: 0;
+						}
+						.btn-regist {
+							@include btn-default;
+							padding: 15px 25px;
+							border-radius: 0;
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 예약마감 */
+.pop-container.pop-deadline {
+	%common-h3 {
+		font-size: 14px;
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			.cont-detail {
+				padding: 0 15px;
+				.grid-wrap {
+					@include grid-wrap-style1;
+					h3 {
+						@extend %common-h3;
+						.txt-box {
+							& + .txt-box {
+								margin-left: 10px;
+							}
+						}
+						.addColor {
+							color: $fg-red-1;
+							font-size: 16px;
+						}
+					}
+					.grid-area {
+						.grid-tbl {
+							tr {
+								th, td {
+									text-align: center;
+								}
+							}
+						}
+					}
+					&.grid-deadline {
+						margin-top: 20px;
+						.grid-area {
+							.grid-tbl {
+								tr {
+									th, td {
+										text-align: left;
+									}
+								}
+								.inp, button, .slt, .at {
+									height: 26px;
+								}
+								.inp {
+									@include form-base(4px);
+									width: 200px;
+									letter-spacing: -0.5px;
+									&.price {
+										width: 100px;
+									}
+									&.memo {
+										width: 100%;
+									}
+								}
+								.chk-box, .rdo-box {
+									input {
+										margin-right: 1px;
+									}
+									label {
+										font-size: 12px;
+									}
+									& + .chk-box, & + .rdo-box {
+										margin-left: 4px;
+									}
+								}
+								button {
+									@include btn-base;
+									margin-left: 5px;
+									background: $bg-brown-2;
+									border-color: $bg-brown-2;
+									color: #fff;
+								}
+								.slt {
+									@include form-base;
+									padding-bottom: 2px;
+									min-width: 120px;
+									font-size: 12px;
+									& + .slt {
+										margin-left: 12px;
+									}
+									&.phone-number {
+										padding-bottom: 0;
+										min-width: 60px;	
+									}
+								}
+								.slt-box {
+									& + .slt-box {
+										margin-left: 12px;
+									}
+									.addTxt {
+
+									}
+								}
+								.inp-box {
+									&.type-1 {
+										label + input {
+											margin-left: 5px;
+										}
+									}
+									& + .inp-box {
+										margin-left: 10px;
+									}
+								}
+								.texta {
+									@include texta-base;
+									width: 100%;
+								}
+								.dot {
+									margin: 0 5px;
+								}
+							}
+						}	
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 이벤트 객실관리 */
+.pop-evtRoomManage {
+	%common-h3 {
+		font-size: 14px;
+		font-weight: 700;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			.cont-evtRoom {
+				margin-top: 20px;
+				padding: 0 15px;
+				.grid-wrap {
+					@include grid-wrap-style1;
+					h3 {
+						@extend %common-h3;
+						.txt-box {
+							& + .txt-box {
+								margin-left: 10px;
+							}
+						}
+						.addColor {
+							color: $fg-red-1;
+							font-size: 16px;
+						}
+					}
+					.grid-area {
+						.grid-tbl {
+							tr {
+								th, td {
+								}
+								th {
+									text-align: center;
+									font-weight: 700;
+								}
+								td {
+									text-align: left;
+								}
+							}
+							.inp {
+								@include form-base(4px);
+								width: 90px;
+								letter-spacing: -0.5px;
+								&.inp-remark {
+									margin: 0 5px;
+								}
+							}
+							.slt {
+								@include form-base;
+								min-width: 70%;
+								height: 25px;
+								padding: 2px;
+								margin: 0px auto;
+								padding-bottom: 3px;
+							}
+							.btn-quan {
+								@include btn-default;
+								font-size: 12px;
+								padding-top: 3px;
+								padding-bottom: 3px;
+							}
+						}
+					}
+				}
+			}
+			.cont-roomList {
+				width: 870px;
+				margin: 0 auto;
+				margin-top: 20px;
+				$grid-cor-1: #c5c5c5;
+				$grid-bor-1: 1px solid $grid-cor-1;
+				.grid-wrap {
+					height: 400px;
+					font-size: 12px;
+					.grid-area {
+						border: $grid-bor-1;
+						.grid-tbl {
+							table-layout: fixed;
+							width: 100%;
+							tr {
+								th, td {
+									border-left: $grid-bor-1;
+//									border-bottom: $grid-bor-1;
+									height: 32px;
+									box-sizing: border-box;
+									padding: 6px 7px 5px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									text-align: center;
+									&:first-child {
+										border-left: 0;
+									}
+								}
+								th {
+									font-weight: 700;
+								}
+								td {
+									border-bottom: $grid-bor-1;
+								}
+								&.rc-sat {
+									background: $bg-sat-td;
+								}
+								&.rc-sun {
+									background: $bg-sun-td;
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 200px;
+								letter-spacing: -0.5px;
+								&.quantity {
+									width: 80px;
+								}
+							}
+							.btn-default {
+								@include btn-default;								
+								line-height: 0;
+								span {
+									position: relative;
+								}
+								&.btn-plus span {
+								}
+								&.btn-minus span {
+									top: -2px;
+								}
+							}
+						}
+						&.grid-head {
+							padding-right: 16px;
+							margin-bottom: -1px;
+							background-image: none,-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.6)),to(rgba(255,255,255,0)));
+							background-image: none,-webkit-linear-gradient(top,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-image: none,linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-position: 50% 50%;
+							background-color: #eae8e8;
+							.grid-scrollable {
+								border-right: $grid-bor-1;
+							}
+							tr {
+								th, td {
+//									border-bottom: 0;
+								}
+							}
+						}
+						&.grid-contents {
+							height: 365px;
+							overflow: auto;
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 이벤트 객실 마감*/
+.pop-evtRoomDead {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			$common-pd: 0 15px;
+			%common-h3 {
+				font-size: 14px;
+				font-weight: 700;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			.cont-evtRoom {
+				margin-top: 20px;
+				padding: $common-pd;
+				.grid-wrap {
+					@include grid-wrap-style1;
+					h3 {
+						@extend %common-h3;
+						.txt-box {
+							& + .txt-box {
+								margin-left: 10px;
+							}
+						}
+						.addColor {
+							color: $fg-red-1;
+							font-size: 16px;
+						}
+					}
+					.grid-area {
+						.grid-tbl {
+							tr {
+								th, td {
+								}
+								th {
+									text-align: center;
+								}
+								td {
+									text-align: left;
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 90px;
+								letter-spacing: -0.5px;
+								&.inp-remark {
+									margin: 0 5px;
+								}
+								&.date {
+									width: 80px;
+									text-align: center;
+								}
+							}
+							.slt {
+								@include form-base;
+								min-width: 70%;
+								padding: 2px;
+								margin: 0px auto;
+								padding-bottom: 3px;
+							}
+							.btn-quan {
+								@include btn-default;
+								font-size: 12px;
+								padding-top: 3px;
+								padding-bottom: 3px;
+							}
+						}
+					}
+				}
+			}
+			.cont-date {
+				padding: $common-pd;
+				h3 {
+					@extend %common-h3;
+				}
+				.date-area {
+					.date-list {
+						.item {
+							background: $fg-sat;
+							display: inline-block;
+							padding: 2px 7px;
+							font-size: 12px;
+							color: #fff;
+							&.sat {
+								background: $fg-sun;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 객실 가격 수량 관리 */
+.pop-priceManage {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -366px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			$grid-cor-1: #c5c5c5;
+			$grid-bor-1: 1px solid $grid-cor-1;
+			$grid-width: 870px;
+			$grid-center: 0 auto;
+			.cont-guide {
+				width: $grid-width;
+				margin: $grid-center;
+				box-sizing: border-box;
+				margin-top: 20px;
+				padding: 10px 2px;
+				border-top: $grid-bor-1;
+				border-bottom: $grid-bor-1;
+				.row {
+					font-size: 13px;
+					line-height: 1.6;
+					.ic-bArrow {
+						&:after {
+							top: -3px;
+							border-color: $fg-red-1;
+							border-width: 2px;
+							height: 3px;
+						}
+					}
+				}
+			}
+			.cont-itemList {
+				width: $grid-width;
+				margin: $grid-center;
+				margin-top: 20px;
+				.grid-wrap {
+					height: 400px;
+					font-size: 12px;
+					.grid-area {
+						border: $grid-bor-1;
+						.grid-tbl {
+							table-layout: fixed;
+							width: 100%;
+							tr {
+								th, td {
+									border-left: $grid-bor-1;
+//									border-bottom: $grid-bor-1;
+									height: 32px;
+									box-sizing: border-box;
+									padding: 6px 7px 5px;
+									vertical-align: middle;
+									line-height: normal;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+									text-align: center;
+									&:first-child {
+										border-left: 0;
+									}
+								}
+								th {
+									font-weight: 700;
+								}
+								td {
+									border-bottom: $grid-bor-1;
+								}
+								&.off {
+									background: #efefef;
+								}
+								&.on {
+									background: #fff;
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 200px;
+								letter-spacing: -0.5px;
+								&[disabled] {
+									cursor: not-allowed;
+								}
+								&.price, &.num {
+									padding-bottom: 3px;
+								}
+								&.price {
+									width: 80px;
+									text-align: right;
+								}
+								&.num {
+									width: 60px;
+									text-align: center;
+								}
+							}
+							input[name=item-chkall], input[name=item-chk] {
+								$wd: 20px;
+								width: $wd;
+								height: $wd;
+								cursor: pointer;
+							}
+							.btn-default {
+								@include btn-default;								
+								line-height: 0;
+								span {
+									position: relative;
+								}
+								&.btn-plus span {
+								}
+								&.btn-minus span {
+									top: -2px;
+								}
+							}
+						}
+						&.grid-head {
+							border-bottom: none;
+							padding-right: 16px;
+							margin-bottom: -1px;
+							background-image: none,-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.6)),to(rgba(255,255,255,0)));
+							background-image: none,-webkit-linear-gradient(top,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-image: none,linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+							background-position: 50% 50%;
+							background-color: #eae8e8;
+							.grid-scrollable {
+								border-right: $grid-bor-1;
+							}
+							tr {
+								th, td {
+									border-bottom: $grid-bor-1;
+								}
+							}
+						}
+						&.grid-contents {
+							height: 340px;
+							overflow: auto;
+						}
+					}
+				}
+			}
+			.row-option {
+				margin-top: 20px;
+				padding-bottom: 5px;
+				> * {
+					vertical-align: middle;
+				}
+				strong {
+					font-size: 14px;
+					font-weight: 700;
+				}
+				.chk-area {
+					.chk-box {
+						font-size: 13px;
+						margin-left: 10px;
+						input[type=checkbox] {
+							position: relative;
+							margin-right: 2px;
+							vertical-align: middle;
+						}
+						label {
+							font-weight: 700;
+							&.sat {
+								color: $fg-sat;
+							}
+							&.sun {
+								color: $fg-sun;
+							}
+						}
+					} 
+				}
+				.inp, button, .slt, .at {
+					height: 26px;
+				}
+				.inp {
+					@include form-base(4px);
+					width: 200px;
+					letter-spacing: -0.5px;
+					&.date {
+						width: 80px;
+						text-align: center;
+					}
+				}
+				.slt {
+					@include form-base;
+				}
+				.btn-default {
+					@include btn-default;								
+					line-height: 0;
+					span {
+						position: relative;
+					}
+					&.btn-plus span {
+					}
+					&.btn-minus span {
+						top: -2px;
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+/* 객실 등록 수정 */
+.pop-roomRegist {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			$common-pd: 0 15px;
+			%common-h3 {
+				font-size: 14px;
+				font-weight: 700;
+				margin-top: 15px;
+				margin-bottom: 5px;
+			}
+			.cont-roomRegist {
+				margin-top: 20px;
+				padding: $common-pd;
+				.grid-wrap {
+					@include grid-wrap-style1;
+					.d-txt-1 {
+						font-size: 13px;
+						margin-bottom: 5px;
+						.addColor {
+							color: $fg-red-1;
+							font-size: 16px;
+						}
+					}
+					.grid-area {
+						.grid-tbl {
+							tr {
+								th, td {
+									position: relative;
+								}
+								th {
+									font-weight: 700;
+									padding-left: 23px;
+								}
+								td {
+									text-align: left;
+								}
+							}
+							.inp, button, .slt, .at {
+								height: 26px;
+							}
+							.inp {
+								@include form-base(4px);
+								width: 90px;
+								letter-spacing: -0.5px;
+								&.inp-remark {
+									margin: 0 5px;
+								}
+								&.date {
+									width: 80px;
+									text-align: center;
+								}
+							}
+							.slt {
+								@include form-base;
+								min-width: 70%;
+								padding: 2px;
+								margin: 0px auto;
+								padding-bottom: 3px;
+							}
+							.btn-default {
+								@include btn-default;
+								font-size: 12px;
+								padding-top: 3px;
+								padding-bottom: 3px;
+							}
+							.necess {
+								position: absolute;
+								left: 5px;
+								margin-right: 3px;
+								color: $fg-red-1;
+								font-weight: 700;
+							}
+						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+
+/*
+.pop-join.member {
+	.pop-wrap {
+		top: 50%;
+		margin-top: -275px;
+		.pop-header {
+			@extend %pop-header-base;
+		}
+		.pop-contents {
+			
+		}
+		.pop-footer {
+			@extend %pop-footer-base;
+		}
+	}
+}
+*/
+

@@ -1,0 +1,635 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+<body class="page-reservation">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents account-contents">
+		@@include('../include/_row_h2.html', {
+			"page-title": "계정"
+		})
+		<div class="cf cont-container-f">
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width: 90px">
+								<col style="width: 320px">
+								<col style="width: 90px">
+								<col style="width: 500px">
+								<col style="width: 90px">
+								<col style="width: *">
+							</colgroup>	
+							<tbody>
+								<tr>
+									<th><div class="cell">시장</div></th>
+									<td colspan="5">
+										<div class="cell">
+											<select name="" id="" class="form-select white market-1">
+												<option value="">마켓</option>
+												<option value="">OTA</option>
+												<option value="">INBOUND OFFLINE</option>
+												<option value="">CORP-FIT</option>
+												<option value="">DIRECT-FIT</option>
+												<option value="">DIRECT-GROUP</option>
+												<option value="">OTHER MARKET</option>
+											</select>
+											<select name="" id="" class="form-select white market-2">
+												<option value=""></option>
+											</select>
+											<button type="button" class="btn-brown">SEARCH</button>
+											<button type="button" class="btn-gray">CLEAR</button>
+											<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>	
+											<button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><div class="cell">검색</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select search">
+												<option value="">거래처명</option>
+												<option value="">대표자</option>
+											</select>
+											<input type="text" class="form-input search">
+										</div>
+									</td>
+									<th><div class="cell">등급</div></th>
+									<td>
+										<div class="cell">
+											<span class="chk-box">
+												<label><input type="checkbox">A 등급</label>
+												<label><input type="checkbox">B 등급</label>
+												<label><input type="checkbox">C 등급</label>
+												<label><input type="checkbox">D 등급</label>
+												<label><input type="checkbox">E 등급</label>
+												<label><input type="checkbox">F 등급</label>
+												<label><input type="checkbox">G 등급</label>
+											</span>
+										</div>
+									</td>
+									<th><div class="cell">판매자</div></th>
+									<td>
+										<div class="cell"><input type="text" class="form-input sp"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="cont-list">
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl list-tbl">
+									<colgroup>
+										<col style="width: 80px">
+										<col style="width: 180px">
+										<col style="width: 100px">
+										<col style="width: 100px">
+										<col style="width: 180px">
+										<col style="width: 120px">
+										<col style="width: 70px">
+										<col style="width: 170px">
+										<col style="width: 100px">
+										<col style="width: 100px">
+										<col style="width: 250px">
+										<col style="width: 250px">
+										<col style="width: 250px">
+										<col style="width: 110px">
+										<col style="width: 110px">
+										<col style="width: 110px">
+										<col style="width: 400px">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th><div class="cell">거래처코드</div></th>
+											<th><div class="cell">거래처명</div></th>
+											<th><div class="cell">약칭</div></th>
+											<th><div class="cell">마켓분류</div></th>
+											<th><div class="cell">마켓</div></th>
+											<th><div class="cell">Source</div></th>
+											<th><div class="cell">등급</div></th>
+											<th><div class="cell">판매자</div></th>
+											<th><div class="cell">대표자</div></th>
+											<th><div class="cell">사업번호</div></th>
+											<th><div class="cell">전화번호</div></th>
+											<th><div class="cell">팩스번호</div></th>
+											<th><div class="cell">이메일</div></th>
+											<th><div class="cell">키보이스 인보이스</div></th>
+											<th><div class="cell">키보이스 체크인</div></th>
+											<th><div class="cell">Agent선결재</div></th>
+											<th><div class="cell">주소</div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl list-tbl">
+								<colgroup>
+									<col style="width: 80px">
+									<col style="width: 180px">
+									<col style="width: 100px">
+									<col style="width: 100px">
+									<col style="width: 180px">
+									<col style="width: 120px">
+									<col style="width: 70px">
+									<col style="width: 170px">
+									<col style="width: 100px">
+									<col style="width: 100px">
+									<col style="width: 250px">
+									<col style="width: 250px">
+									<col style="width: 250px">
+									<col style="width: 110px">
+									<col style="width: 110px">
+									<col style="width: 110px">
+									<col style="width: 400px">
+								</colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell">000182</div></td>
+										<td><div class="cell">SFW</div></td>
+										<td><div class="cell">CORP-FIT</div></td>
+										<td><div class="cell">Non-Contract</div></td>
+										<td><div class="cell">Homepage</div></td>
+										<td><div class="cell">G 등급</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">N</div></td>
+										<td><div class="cell">Y</div></td>
+										<td><div class="cell">N</div></td>
+										<td><div class="cell"></div></td>
+									</tr>
+									<tr>
+										<td><div class="cell">000182</div></td>
+										<td><div class="cell">한국일리스엔지니어링</div></td>
+										<td><div class="cell">CORP-FIT</div></td>
+										<td><div class="cell">Annual Contract</div></td>
+										<td><div class="cell">Homepage</div></td>
+										<td><div class="cell">B 등급</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td>
+											<div class="cell">
+												SPATZ<br>
+												MICHAEL<br>
+												HARRY EMIL
+											</div>
+										</td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">02-2276-0501~8</div></td>
+										<td><div class="cell">02-2271-1265</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">N</div></td>
+										<td><div class="cell">Y</div></td>
+										<td><div class="cell">N</div></td>
+										<td><div class="cell"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->				
+				<div class="cf grid-bottom">
+					<a href="#" class="prev st">&lt;&lt;</a>
+					<a href="#" class="prev">&lt;</a>
+					<span class="num">0</span>
+					<a href="#" class="next">&gt;</a>
+  					<a href="#" class="next st">&gt;&gt;</a>
+					<span class="count">1 - 100 of 158 items</span>
+				</div>
+				<!-- //.grid-bottom-->
+			</div>
+			<!--//.cont-list-->
+			<div class="cont-addInfo fn-tabShow">
+				<div class="cf tab-list">
+					<a href="javascript:;" class="tab on">정보</a>
+					<a href="javascript:;" class="tab">명</a>
+					<a href="javascript:;" class="tab">카드</a>
+				</div>
+				<div class="item-list">
+					<div class="common info-container on">
+						<div class="grid-wrap">
+							<div class="grid-contents">
+								<table class="grid-tbl tbl-info">
+									<colgroup>
+										<col style="width: 90px">
+										<col style="width: 260px">
+										<col style="width: 90px">
+										<col style="width: 260px">
+										<col style="width: 90px">
+										<col style="width: *">
+									</colgroup>	
+									<tbody>
+										<tr>
+											<th><div class="cell necess">시장</div></th>
+											<td colspan="3">
+												<div class="cell">
+													<select name="" id="" class="form-select white market-1">
+														<option value="">마켓</option>
+														<option value="">OTA</option>
+														<option value="">INBOUND OFFLINE</option>
+														<option value="">CORP-FIT</option>
+														<option value="">DIRECT-FIT</option>
+														<option value="">DIRECT-GROUP</option>
+														<option value="">OTHER MARKET</option>
+													</select>
+													<select name="" id="" class="form-select white market-1">
+														<option value=""></option>
+													</select>
+													<select name="" id="" class="form-select white market-1">
+														<option value="">1. Homepage</option>
+														<option value="">2. E-mail</option>
+														<option value="">3. Phone</option>
+														<option value="">4. Fax</option>
+														<option value="">5. Visit</option>
+														<option value="">6. CMS</option>
+														<option value="">7. Others</option>
+													</select>
+												</div>
+											</td>
+											<th><div class="cell necess">등급</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select grade">
+														<option value="">A 등급</option>
+														<option value="">B 등급</option>
+														<option value="">C 등급</option>
+														<option value="">D 등급</option>
+														<option value="">E 등급</option>
+														<option value="">F 등급</option>
+														<option value="">G 등급</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell necess">거래처명</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">약칭</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">코드</div></th>
+											<td>
+												<div class="cell">
+													<input type="text" class="form-input code" readonly>
+													<input type="text" class="form-input code" placeholder="통합코드" readonly>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell">대표자</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">사업번호</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">업태</div></th>
+											<td><div class="cell"><input type="text" class="form-input job"></div></td>
+										</tr>
+										<tr>
+											<th><div class="cell">전화번호</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">팩스번호</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">업종</div></th>
+											<td><div class="cell"><input type="text" class="form-input job"></div></td>
+										</tr>
+										<tr>
+											<th><div class="cell">사이트</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell">이메일</div></th>
+											<td><div class="cell"><input type="text" class="form-input"></div></td>
+											<th><div class="cell"></div></th>
+											<td><div class="cell"></div></td>
+										</tr>
+										<tr>
+											<th><div class="cell">국가코드</div></th>
+											<td><div class="cell"><input type="text" class="form-input" placeholder="Nationality"></div></td>
+											<th><div class="cell">언어코드</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select langCode white">
+														<option value="">Korean</option>
+														<option value="">English</option>
+														<option value="">Chinese</option>
+														<option value="">Japanese</option>
+													</select>
+													<button type="button" class="btn-gray">CLEAR</button>
+												</div>
+											</td>
+											<th><div class="cell">판매자</div></th>
+											<td>
+												<div class="cell">
+													<input type="text" class="form-input sp" placeholder="판매자">
+													<button type="button" class="btn-gray">CLEAR</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell">기타</div></th>
+											<td colspan="5">
+												<div class="cell">
+													<span class="slt-box">
+														계약여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														후불여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														메일여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														사용여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														키오스크 인보이스 전송여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														키오스크 체크인 가능여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+													<span class="slt-box">
+														Account 선결재 여부
+														<select name="" id="" class="form-select white etc">
+															<option value="">Yes</option>
+															<option value="">No</option>
+														</select>
+													</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell">주소</div></th>
+											<td colspan="5">
+												<div class="cell">
+													<input type="text" class="form-input addr-1" readonly>
+													<button type="button" class="btn-gray">주소검색</button>
+													<input type="text" class="form-input addr-2" readonly>
+													<input type="text" class="form-input addr-3">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell">비고</div></th>
+											<td colspan="5">
+												<div class="cell">
+													<textarea name="" id="" cols="30" rows="10" class="textarea-etc"></textarea>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row-btn">
+							<button type="button" class="btn-blue" disabled>SAVE</button>
+							<button type="button" class="btn-red" disabled>DEL</button>
+							<button type="button" class="btn-gray">CLEAR</button>
+						</div>
+					</div>
+					<div class="common grid-container">
+						<div class="grid-toolbar">
+							<button type="button" class="btn-gray"><span class="a-i-p plus"></span> 새 레코드 추가</button>
+						</div>
+						<div class="grid-wrap scr-wrap">
+							<div class="grid-scrollable-x">
+								<div class="grid-area grid-head">
+									<div class="grid-scrollable">
+										<table class="grid-tbl">
+											<colgroup>
+												<col style="width: 150px">
+												<col style="width: 280px">
+												<col style="width: 375px">
+												<col style="width: 225px">
+												<col style="width: 280px">
+												<col style="width: *">
+											</colgroup>
+											<thead class="rowgroup">
+												<tr>
+													<th><div class="cell order-ui">구분</div></th>
+													<th><div class="cell order-ui">담당자(직함)</div></th>
+													<th><div class="cell order-ui">이메일</div></th>
+													<th><div class="cell order-ui">전화번호</div></th>
+													<th><div class="cell order-ui">휴대전화</div></th>
+													<th><div class="cell order-ui">비고</div></th>
+													<th><div class="cell order-ui"></div></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+								<div class="grid-area grid-contents">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width: 150px">
+											<col style="width: 280px">
+											<col style="width: 375px">
+											<col style="width: 225px">
+											<col style="width: 280px">
+											<col style="width: *">
+										</colgroup>
+										<tbody class="rowgroup">
+											<tr>
+												<td><div class="cell">DM staff</div></td>
+												<td><div class="cell">이주란</div></td>
+												<td><div class="cell">account@dailyhotel.co.kr</div></td>
+												<td><div class="cell">07074674901</div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td>
+													<div class="cell">
+														<button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button>
+														<button type="button" class="btn-gray"><span class="icon ic-del"></span> Delete</button>
+													</div>
+												</td>
+											</tr>
+											<!-- 새 레코드 추가 시 -->
+											<tr>
+												<td>
+													<div class="cell">
+														<select name="" id="" class="form-select">
+															<option value="">일반</option>
+															<option value="">DM 직원</option>
+														</select>
+													</div>
+												</td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td>
+													<div class="cell">
+														<button type="button" class="btn-orange"><span class="icon ic-check"></span> <span>Update</span></button>
+														<button type="button" class="btn-gray"><span class="icon ic-cancel"></span> <span>Cancel</span></button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="common grid-container">
+						<div class="grid-toolbar">
+							<button type="button" class="btn-gray"><span class="a-i-p plus"></span> 새 레코드 추가</button>
+						</div>
+						<div class="grid-wrap scr-wrap">
+							<div class="grid-scrollable-x">
+								<div class="grid-area grid-head">
+									<div class="grid-scrollable">
+										<table class="grid-tbl">
+											<colgroup>
+												<col style="width: 175px">
+												<col style="width: 260px">
+												<col style="width: 105px">
+												<col style="width: 105px">
+												<col style="width: 140px">
+												<col style="width: 210px">
+												<col style="width: 140px">
+												<col style="width: 210px">
+												<col style="width: 140px">
+												<col style="width: *">
+											</colgroup>
+											<thead class="rowgroup">
+												<tr>
+													<th><div class="cell order-ui">카드</div></th>
+													<th><div class="cell order-ui">번호</div></th>
+													<th><div class="cell order-ui">MM</div></th>
+													<th><div class="cell order-ui">YY</div></th>
+													<th><div class="cell order-ui">메인 카드</div></th>
+													<th><div class="cell order-ui">생성일자</div></th>
+													<th><div class="cell order-ui">생성자</div></th>
+													<th><div class="cell order-ui">변경된</div></th>
+													<th><div class="cell order-ui">변경자</div></th>
+													<th><div class="cell order-ui"></div></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+								<div class="grid-area grid-contents">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width: 175px">
+											<col style="width: 260px">
+											<col style="width: 105px">
+											<col style="width: 105px">
+											<col style="width: 140px">
+											<col style="width: 210px">
+											<col style="width: 140px">
+											<col style="width: 210px">
+											<col style="width: 140px">
+											<col style="width: *">
+										</colgroup>
+										<tbody class="rowgroup">
+											<tr>
+												<td><div class="cell">BC</div></td>
+												<td><div class="cell">9430069539368882</div></td>
+												<td><div class="cell">10</div></td>
+												<td><div class="cell">20</div></td>
+												<td><div class="cell">false</div></td>
+												<td><div class="cell">2016-08-09</div></td>
+												<td><div class="cell">lumia01</div></td>
+												<td><div class="cell">2016-08-09</div></td>
+												<td><div class="cell">lumia01</div></td>
+												<td>
+													<div class="cell">
+														<button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button>
+														<button type="button" class="btn-gray"><span class="icon ic-del"></span> Delete</button>
+													</div>
+												</td>
+											</tr>
+											<!-- 새 레코드 추가 시 -->
+											<tr>
+												<td>
+													<div class="cell">
+														<select name="" id="" class="form-select division">
+															<option value="">CARD</option>
+															<option value="">BC</option>
+															<option value="">VISA Overseas</option>
+															<option value="">LG</option>
+															<option value="">국민카드</option>
+															<option value="">삼성카드</option>
+															<option value="">제주카드</option>
+															<option value="">AMEX</option>
+															<option value="">MASTER</option>
+															<option value="">롯데카드</option>
+															<option value="">신한카드</option>
+															<option value="">하나SK</option>
+															<option value="">현대카드</option>
+															<option value="">UNION PAY</option>
+															<option value="">농협NH카드</option>
+															<option value="">하나카드</option>
+															<option value="">기타카드</option>
+														</select>
+													</div>
+												</td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><input type="text" class="form-input"></div></td>
+												<td><div class="cell"><span class="chk-box"><label><input type="checkbox"></label></span></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td>
+													<div class="cell">
+														<button type="button" class="btn-orange"><span class="icon ic-check"></span> <span>Update</span></button>
+														<button type="button" class="btn-gray"><span class="icon ic-cancel"></span> <span>Cancel</span></button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-addInfo -->
+		</div>
+	</div>
+	<!-- //.contents -->
+
+
+</div>
+</body>
+</html>

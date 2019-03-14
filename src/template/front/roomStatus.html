@@ -1,0 +1,964 @@
+@@include('../include/_head.html', {
+	"page": "front"
+})
+
+<!-- 페이지 전용 -->
+
+<body class="page-front">
+
+@@include('../include/pop/pop_rsv.html')
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents rmStatus-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "객실 현황"
+		})
+
+		<div class="cont-container-f">
+			<section class="cont-roomStatus">
+				<div class="area classify-area">
+					<div class="cont-center">
+						<h3 class="hidden">분류 리스트</h3>
+						<ul class="cf list-type">
+							<li class="item-type type-1">
+								<a href="javascript:;" class="item chkOut">Check out</a>
+								<a href="javascript:;" class="item assign">Assign</a>
+								<a href="javascript:;" class="item chkOut-assign">Check out + Assign</a>
+							</li>
+							<li class="item-type type-2">
+								<a href="javascript:;" class="item wd-1 vip">VIP</a>
+								<a href="javascript:;" class="item wd-2 chkIn">Check-in</a>
+								<a href="javascript:;" class="item wd-3 inHouse">In House</a>
+								<a href="javascript:;" class="item wd-4 ooo">Out Of Order</a>
+								<a href="javascript:;" class="item wd-1 empty">Empty</a>
+								<a href="javascript:;" class="item wd-2 dayUse">Day Use</a>
+								<a href="javascript:;" class="item wd-3 goOut">Go Out</a>
+								<a href="javascript:;" class="item wd-4 oos">Out Of Service</a>
+							</li>
+							<li class="item-type type-3">
+								<a href="javascript:;" class="item wd-1 vi">VI</a>
+								<a href="javascript:;" class="item wd-2 vw">VW</a>
+								<a href="javascript:;" class="item wd-3 oi">OI</a>
+								<a href="javascript:;" class="item wd-4 ow">OW</a>
+								<a href="javascript:;" class="item wd-1 vc">VC</a>
+								<a href="javascript:;" class="item wd-2 vd">VD</a>
+								<a href="javascript:;" class="item wd-3 oc">OC</a>
+								<a href="javascript:;" class="item wd-4 od">OD</a>
+							</li>
+							<li class="item-type type-4">
+								<a href="javascript:;" class="item wd-1 in-r">IN/R</a>
+								<a href="javascript:;" class="item wd-2 in">IN</a>
+								<a href="javascript:;" class="item wd-1 out-r">OUT/R</a>
+								<a href="javascript:;" class="item wd-2 out">OUT</a>
+							</li>
+							<li class="item-type type-5">
+								<a href="javascript:;" class="item wd-1 message">Message</a>
+								<a href="javascript:;" class="item wd-2 guests">Guests</a>
+								<a href="javascript:;" class="item wd-1 temperature">Temperature</a>
+							</li>
+						</ul>
+						<div class="row-chk">
+							<button type="button" class="btn-clear">Clear<span class="hidden">체크해제</span></button>
+							<span class="mg-l"></span>
+							<span class="chk-box"><label><input type="checkbox" id="">RST</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">DDB</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">TTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">DTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FTW</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">TRP</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FDB</label></span>
+							<span class="chk-box"><label><input type="checkbox" id="">FKD</label></span>
+						</div>
+					</div>
+					<div class="cont-side right">
+						<div class="roominfo-area">
+							<h3 class="hidden">방 정보</h3>
+							<fieldset>
+								<legend class="show-reset">Room Info</legend>
+								<div class="cont-box">
+									<ul class="list-tab">
+										<li class="tab Info on">Info</li>
+										<li class="tab Status">Status</li>
+										<li class="tab-btn service"><button type="buton" class="btn-serv">Status Service</button></li>
+									</ul>
+									<div class="cont-tab">
+										<div class="tab-type tab-info on">
+											<h4 class="hidden">Info</h4>
+											<table class="tbl-type info-tbl">
+												<colgroup>
+													<col class="nth-1">
+													<col class="nth-2">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th><div class="cell">Floor</div></th>
+														<td>
+															<div class="cell">
+																<select name="" id="" class="form-select floor">
+																	<option value=""></option>
+																	<option value="">17</option>
+																	<option value="">16</option>
+																</select>
+																<button type="button" class="btn-history">O.O.O History</button>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Room #</div>
+														</th>
+														<td>
+															<div class="cell">
+																<input type="text" class="appe-reset form-input">
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																Room Type
+															</div>
+														</th>
+														<td>
+															<div class="cell">
+																<select name="" id="" class="form-select w-100p">
+																	<option value=""></option>
+																	<option value="">17</option>
+																	<option value="">16</option>
+																</select>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																Assign Type
+															</div>
+														</th>
+														<td>
+															<div class="cell">
+																<select name="" id="" class="form-select w-100p">
+																	<option value=""></option>
+																	<option value="">17</option>
+																	<option value="">16</option>
+																</select>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																CheckIn Type
+															</div>
+														</th>
+														<td>
+															<div class="cell">
+																<select name="" id="" class="form-select w-100p">
+																	<option value=""></option>
+																	<option value="">17</option>
+																	<option value="">16</option>
+																</select>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Room Form</div>
+														</th>
+														<td>
+															<div class="cell pd-0">
+																<p class="row">
+																	<span class="chk-box">
+																		<label><input type="checkbox">Connecting</label>
+																	</span>
+																</p>
+																<p class="row">
+																	<span class="chk-box">
+																		<label><input type="checkbox">For Disabled</label>
+																	</span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Room Etc</div>
+														</th>
+														<td>
+															<div class="cell pd-0">
+																<p class="row">
+																	<span class="chk-box">
+																		<label><input type="checkbox">Smoking</label>
+																	</span>
+																</p>
+																<p class="row">
+																	<span class="chk-box">
+																		<label><input type="checkbox">High Floor</label>
+																	</span>
+																</p>
+																<p class="row">
+																	<span class="chk-box">
+																		<label><input type="checkbox">Extra Bed</label>
+																	</span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Last Sell</div>
+														</th>
+														<td>
+															<div class="cell">
+																<p class="row">
+																	<span class="rdo-box"><label><input type="radio">Y</label></span>
+																	<span class="rdo-box"><label><input type="radio">N</label></span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Do Not<br> Disturb</div>
+														</th>
+														<td>
+															<div class="cell">
+																<p class="row">
+																	<span class="rdo-box"><label><input type="radio">Y</label></span>
+																	<span class="rdo-box"><label><input type="radio">N</label></span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Fixed</div>
+														</th>
+														<td>
+															<div class="cell">
+																<p class="row">
+																	<span class="rdo-box"><label><input type="radio">Y</label></span>
+																	<span class="rdo-box"><label><input type="radio">N</label></span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">Service<br> Status</div>
+														</th>
+														<td>
+															<div class="cell">
+																<p class="row">
+																	<select name="" id="" class="form-select w-100p">
+																		<option value=""></option>
+																		<option value="">O.O.O</option>
+																		<option value="">O.O.S</option>
+																	</select>
+																</p>
+																<p class="hSpace-5"></p>
+																<p class="row">
+																	<span class="cal-box">
+																		<input type="text" class="appe-reset inp-cal date-ui">
+																		<span class="i-cal"><img src="//img.go.co.kr/i_calGray.png" alt="달력" width="20px"></span>
+																	</span>
+																	~
+																	<p class="hSpace-5"></p>
+																	<span class="cal-box">
+																		<input type="text" class="appe-reset inp-cal date-ui">
+																		<span class="i-cal" id="cal-2"><img src="//img.go.co.kr/i_calGray.png" alt="달력" width="20px"></span>
+																	</span>
+																</p>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">ETC</div>
+														</th>
+														<td>
+															<div class="cell">
+																<textarea name="" id="" cols="30" rows="10" class="appe-reset textarea-etc"></textarea>
+															</div>
+														</td>
+													</tr>
+													<!--{tr(th>div.cell^+td>div.cell)}-->
+												</tbody>
+											</table>
+											<div class="row row-btn">
+												<button type="button" class="btn-red">assign<br> room</button>
+												<button type="button" class="btn-red">make<br> empty</button>
+												<button type="button" class="btn-blue">save</button>
+											</div>
+										</div>
+										<div class="tab-type tab-status">
+											<h4 class="tit">Summary</h4>
+											<table class="tbl-type status-tbl">
+												<colgroup>
+													<col class="nth-1">
+													<col class="nth-2">
+												</colgroup>
+												<tbody>
+													<tr>
+														<th>
+															<div class="cell">
+																<img src="../../public/img/icon/checkIn.png" alt="체크인" class="i-classify">
+																<img src="../../public/img/icon/inHouse.png" alt="인하우스" class="i-classify">
+																<img src="../../public/img/icon/goOut.png" alt="고아웃" class="i-classify">
+															</div>
+														</th>
+														<td>
+															<div class="cell">54 / 0 / 52</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																<img src="../../public/img/icon/empty.png" alt="빈방" class="i-classify">
+																<img src="../../public/img/icon/ooo.png" alt="outOfOrder" class="i-classify">
+																<img src="../../public/img/icon/oos.png" alt="outOfService" class="i-classify">
+															</div>
+														</th>
+														<td>
+															<div class="cell">248 / 47 / 0</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																<img src="../../public/img/icon/oi.png" alt="" class="i-classify">
+																<img src="../../public/img/icon/oc.png" alt="oc" class="i-classify">
+																<img src="../../public/img/icon/ow.png" alt="ow" class="i-classify">
+																<img src="../../public/img/icon/od.png" alt="od" class="i-classify">
+															</div>
+														</th>
+														<td>
+															<div class="cell">0 / 0 / 0 / 54</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																<img src="../../public/img/icon/vi.png" alt="vi" class="i-classify">
+																<img src="../../public/img/icon/vc.png" alt="vc" class="i-classify">
+																<img src="../../public/img/icon/vw.png" alt="vw" class="i-classify">
+																<img src="../../public/img/icon/vd.png" alt="vd" class="i-classify">
+															</div>
+														</th>
+														<td>
+															<div class="cell">163 / 9 / 7 / 69</div>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															<div class="cell">
+																<img src="../../public/img/icon/mur.png" alt="mur" class="i-classify">
+																<img src="../../public/img/icon/dnd.png" alt="dnd" class="i-classify">
+															</div>
+														</th>
+														<td>
+															<div class="cell">0 / 0</div>
+														</td>
+													</tr>
+													<!--tr(th>div.cell>img[src=../../public/img/icon/.png].i-classify^^+td>div.cell)-->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<script>
+										$(function() {
+											var contBox = $(".cont-box");
+											contBox.find(".cont-tab .tab-type.on").show().siblings().hide();
+											contBox.on("click", ".list-tab .tab", function() {
+												var tabIdx = $(this).index();
+												$(this).addClass("on").siblings().removeClass("on");
+												contBox.find(".cont-tab .tab-type").eq(tabIdx).show().siblings().hide();
+											});
+										});
+									</script>
+								</div>
+								<!--//.cont-box-->
+							</fieldset>
+						</div>
+						<!--//.roominfo-area-->
+					</div>
+					<!--//.cont-side.right-->
+				</div>
+				<!--//.classify-area-->
+				<div class="area room-area">
+					<div class="cont-center">
+						<ul class="cf list-room">
+							<!--기본 스타일 .base , 체크 인 스타일 .chkIn , 클릭 스타일 .clk 추가-->
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1701</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1702</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1703</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1704</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1705</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1706</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1707</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1708</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1709</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1710</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room base">
+									<div class="cf roomNo">
+										<span class="left num">1711</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Empty
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1601</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1602</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1603</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1604</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1605</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1606</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1607</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1608</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1609</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1610</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+								<li class="item-room chkIn">
+									<div class="cf roomNo">
+										<span class="left num">1611</span>
+										<span class="center name">RST</span>
+										<span class="right status">
+											<img src="../../public/img/icon/od.png" alt="od">
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+										</span>
+									</div>
+									<div class="cf guestName">
+										Divid
+									</div>
+									<div class="cf info info-1">
+										<img src="../../public/img/icon/guests.png" alt="" class="guests">
+										2(2/0)
+									</div>
+									<div class="cf info info-2">
+										<img src="../../public/img/icon/ebOut.png" alt="아웃">
+									</div>
+								</li>
+
+						</ul>
+						<!--//.list-room-->
+						<script>
+							$(function() {
+								$(".room-area .list-room > li").on("click", function() {
+									$(this).toggleClass("clk");
+								});
+							});
+						</script>
+						<ul class="list-floor">
+							<li class="item-floor">
+								<div class="tit">Floor</div>
+							</li>
+
+							<!-- 클래스 - 판매가능 y , 판매 불가 n -->
+
+								<li class="item-floor">
+									<div class="floor total">Total</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">17</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">16</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">15</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">14</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">13</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">12</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">11</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">10</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">9</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">8</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">7</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">6</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">5</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">4</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">3</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">2</div>
+								</li>
+
+								<li class="item-floor">
+									<div class="floor">1</div>
+								</li>
+
+
+						</ul>
+						<!--//.list-floor-->
+					</div>
+					<!--//.cont-center-->
+				</div>
+				<!--//.room-area-->
+			</section>
+			<!--//.cont-roomStatus-->
+		</div>
+	</div>
+	<!--//.contents-->
+
+</div>
+<div class="cf"></div>
+
+</body>
+</html>

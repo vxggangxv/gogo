@@ -1,0 +1,161 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+<body class="page-reservation">
+
+<div class="wrapper">
+
+	<div class="wpop-header">
+		<h2>기록</h2>
+	</div>
+	<div class="cf wpop-contents trace-contents">
+		<div class="cont-property">
+			<div class="grid-wrap">
+				<div class="grid-contents">
+					<table class="grid-tbl tbl-property">
+						<colgroup>
+							<col style="width: 100px">
+							<col style="width: 260px">
+							<col style="width: 100px">
+							<col style="width: 260px">
+							<col style="width: 85px">
+							<col style="width: 170px">
+							<col style="width: 85px">
+							<col style="width: *">
+						</colgroup>	
+						<tbody>
+							<tr>
+								<th>
+									<div class="cell necess">도착 날짜</div>
+								</th>
+								<td>
+									<div class="cell">
+										<span class="cal-box">
+											<input type="text" class="appe-reset inp-cal date-ui">
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+										</span>
+										<span class="mgSpace">~</span>
+										<span class="cal-box">
+											<input type="text" class="appe-reset inp-cal date-ui">
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+										</span>
+									</div>
+								</td>
+								<th>
+									<div class="cell necess">출발 날짜</div>
+								</th>
+								<td>
+									<div class="cell">
+										<span class="cal-box">
+											<input type="text" class="appe-reset inp-cal date-ui">
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+										</span>
+										<span class="mgSpace">~</span>
+										<span class="cal-box">
+											<input type="text" class="appe-reset inp-cal date-ui">
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+										</span>
+									</div>
+								</td>
+								<th>
+									<div class="cell necess">결의</div>
+								</th>
+								<td>
+									<div class="cell">
+										<select name="" id="" class="form-select rmType">
+											<option value=""></option>
+											<option value="">resolve</option>
+											<option value="">unresolve</option>
+										</select>
+									</div>
+								</td>
+								<th>
+									<div class="cell necess">학과</div>
+								</th>
+								<td>
+									<div class="cell">
+										<input type="text" class="form-input departments">
+										<button type="button" class="btn-brown search">SEARCH</button>
+										<button type="button" class="btn-gray btn-i excel pull-right"><span class="icon ic-excel"></span>Excel</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--//.cont-property-->
+		<div class="cont-trace">
+			<div class="grid-wrap scr-wrap">
+				<div class="grid-scrollable-x">
+					<div class="grid-area grid-head">
+						<div class="grid-scrollable">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width: 100px">
+									<col style="width: 100px">
+									<col style="width: 110px">
+									<col style="width: 85px">
+									<col style="width: 100px">
+									<col style="width: 100px">
+									<col style="width: *">
+									<col style="width: 300px">
+									<col style="width: 110px">
+								</colgroup>
+								<thead class="rowgroup">
+									<tr>
+										<th><div class="cell">도착 날짜</div></th>
+										<th><div class="cell">출발 날짜</div></th>
+										<th><div class="cell">REV#</div></th>
+										<th><div class="cell">객실#</div></th>
+										<th><div class="cell">Act.arrDt</div></th>
+										<th><div class="cell">Act.depDt</div></th>
+										<th><div class="cell">메시지</div></th>
+										<th><div class="cell">학과</div></th>
+										<th><div class="cell">확인</div></th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+					<div class="grid-area grid-contents">
+						<table class="grid-tbl">
+							<colgroup>
+								<col style="width: 100px">
+								<col style="width: 100px">
+								<col style="width: 110px">
+								<col style="width: 85px">
+								<col style="width: 100px">
+								<col style="width: 100px">
+								<col style="width: *">
+								<col style="width: 300px">
+								<col style="width: 110px">
+							</colgroup>
+							<tbody class="rowgroup">
+								<tr>
+									<td><div class="cell">text</div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+									<td><div class="cell"></div></td>
+								</tr>
+								<!--tr>(th+td)-->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //.cont-trace -->
+	</div>
+	<!-- //.wpop-contents.trace-contents -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1410 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+.contents {
+	min-width: 1695px;
+}
+$common-pd: 0 20px;
+%btn-style-1 {
+	@extend %btn-default;
+	background: $bg-gray-1;
+//	background: $bg-blue-2;
+    color: #fff;
+//	border-color: $bg-brown-primary;
+}
+%btn-style-2 {
+	@extend %btn-default;
+	background: $bg-blue-2;
+    color: #fff;
+//	background: $bg-brown-primary;
+//	border-color: $bg-brown-primary;
+}
+%btn-style-3 {
+	@extend %btn-default;
+	background: $bg-brown-4;
+    color: #fff;
+}
+%btn-style-4 {
+	@extend %btn-default;
+	background: $bg-orange-1;
+    color: #fff;
+}
+%inp-default, %slt-default {
+	@extend %inp-txt-base;
+	height: 30px;
+	font-size: 13px;
+}
+%inp-default {
+	width: 80px;
+}
+%slt-default {
+	padding-bottom: 5px;
+}
+
+/* 분류 버튼 */
+%classify-itmBefore {
+	position: relative;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
+	top: -1px;
+	margin-right: 3px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #000;
+}
+%btn-green {
+	@extend %btn-base;
+	color: #deffbb;
+	background: #84c35c;
+	border: 1px solid #69994d;
+	text-shadow: 0px -1px #729a59;
+	&:hover {
+		color: #fff;
+		background: #66ba2c;
+	}
+}
+%btn-red {
+	@extend %btn-base;
+	border: 1px solid #882f29;
+	background: #BB4749;
+	color: #ffccc8;
+	text-shadow: 0px -1px #aa4949;
+	&:hover {
+		color: #fff;
+		background: #ba383a;
+	}
+}
+%btn-blue {
+	@extend %btn-base;
+	border: 1px solid #1a70ba;
+    color: #dfeffc;
+    text-shadow: 0px -1px #5692c2;
+    background: #4F8BBF;
+	&:hover {
+	    color: #fff;
+		background: #2274ba;
+	}
+}
+
+.page-title {
+	@extend %page-title;
+}
+
+/* 객실요금 */
+.cont-sale {
+	padding: $common-pd;
+	.row-subtit {
+		position: relative;
+		text-align: center;
+		margin-top: 50px;
+		.center {
+			display: inline-block;
+			> * {
+				@extend %va-middle;
+			}
+			.btn-mon {
+				@extend %btn-default;
+				font-size: 12px;
+			}
+			.subtit {
+				top: -1px;
+				font-size: 35px;
+				margin: 0 20px;
+				font-family: $font-ntss;
+//				font-family: $font-nnSquareR;
+			}
+		}
+		.right {
+			position: absolute;
+			top: 11px;
+			right: 0;
+			.btn-water, .btn-booking {
+				@extend %btn-style-2;
+			}
+		}
+	}
+	.row-option {
+		margin-top: 50px;
+		div[class*="-box"] {
+			position: relative;
+		}
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+		.chk-area, .slt-box, .lbl {
+			@extend %va-middle;
+		}
+		.chk-area {
+			top: -1px;
+			padding: 0 16px;
+			.chk-box, .rdo-box {
+				font-size: 13px;
+				margin-left: 8px;
+				input[type=checkbox], input[type=radio] {
+					position: relative;
+					margin-right: 2px;
+					vertical-align: middle;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			} 
+		}
+		.slt-box {
+			font-size: 13px;
+			.lbl {
+				margin-right: 8px;
+				font-weight: 700;
+			}
+			select {
+				color: #555;
+				letter-spacing: -1px;
+				> option {
+					font-size: 12px;
+				}
+			}
+		} 
+		.date {
+			text-align: center;
+		}
+		.nameNumber {
+			width: 160px;
+		}
+		.partner {
+			min-width: 150px;
+		}
+	}
+	.btn-default {
+		@extend %btn-default;
+	}
+	.btn-style-1 {
+		@extend %btn-style-1;
+	}
+	.btn-style-2 {
+		@extend %btn-style-2;
+	}
+	.btn-style-3 {
+		@extend %btn-style-3;
+	}
+	.btn-style-4 {
+		@extend %btn-style-4;
+	}
+	.inp-default {
+		@extend %inp-default;
+		&.type-2 {
+			width: 62px;
+			text-align: center;
+		}
+	}
+	.slt-default {
+		@extend %slt-default;
+	}
+	
+	.grid-wrap {
+		margin-top: 15px;
+		font-size: 12px;
+		$grid-bor-1: 1px solid $bor-gray-table;
+		.grid-area {
+			.grid-tbl {
+				table-layout: fixed;
+				border-collapse: collapse;
+				width: 100%;
+//				border-top: $grid-bor-1;
+				tr {
+					th, td {
+//						border-left: $grid-bor-1;
+//						border-bottom: $grid-bor-1;
+						position: relative;
+						border: $grid-bor-1;
+						box-sizing: border-box;
+						vertical-align: middle;
+						line-height: normal;
+						&:first-child {
+							border-left: 0;
+						}
+						.inCell {
+							padding: 10px;
+							padding-top: 8px;
+							padding-bottom: 7px;
+							box-sizing: border-box;
+						}
+					}
+					&.division {
+						th, td {
+							border: $grid-bor-1;
+							border-color: $grid-bor-division;
+							padding: 0;
+							line-height: 0;
+						}
+					}
+					th {
+						background: #f4f5f7;
+						font-weight: 700;
+						&.sun {
+							color: $fg-sun;
+							background: $bg-sun-th;
+						}
+						&.sat {
+							color: $fg-sat;
+							background: $bg-sat-th;
+						}
+					}
+					&:nth-child(2n) {
+	//					background: #f1f1f1;
+					}
+					td {
+						vertical-align: top;
+						.inCell {
+							padding-top: 6px;
+							padding-bottom: 6px;
+						}
+						.deadline-txt {
+							position: absolute;
+							z-index: 1;
+							color: #fff;
+							width: 100%;
+							height: 100%;
+							text-align: center;
+							font-size: 35px;
+							font-family: $font-ntss;
+							&:after {
+								content: "";
+								height: 105%;
+								background: #fff;
+								display: inline-block;
+								vertical-align: middle;
+							}
+						}
+						&.nothing {
+							padding: 15px 8px;
+						}
+						&.sun {
+							background: $bg-sun-td;
+						}
+						&.sat {
+							background: $bg-sat-td;
+						}
+						&.off {
+							background: #fff;
+						}
+						&.today .inCell {
+							border: 3px solid $bg-orange-1;
+						}
+						&.deadline .inCell:after {
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background: #000;
+							opacity: 0.6;
+							filter: alpha(opacity=60);
+							color: #fff;
+						}
+					}
+					.chk-box {
+						position: relative;
+						font-size: 13px;
+						margin-left: 8px;
+						input[type=checkbox], input[type=radio] {
+							position: relative;
+							margin-right: 2px;
+							vertical-align: middle;
+						}
+						&:first-child {
+							margin-left: 0;
+						}
+						label {
+							font-weight: 700;
+						}
+					} 
+					.btn-style-1, .btn-style-2 {
+						font-size: 13px;
+						padding: 2px 10px;
+					}
+					.row {
+						@extend %clearfix;
+						.right {
+							float: right;
+						}
+						&:first-child {
+							.chk-box {
+								top: 4px;
+							}
+						}
+					}
+					.item {
+						box-sizing: border-box;
+						margin-top: 5px;
+						background: #FFECB3;
+						padding: 5px 6px;
+						font-size: 12.5px;
+//						border-top: $grid-bor-1;
+//						border-top: 1px solid $bor-gray-tableTop;
+//						border: 1px solid #ddd;
+//						border: 1px solid #ddd;
+						border: $grid-bor-1;
+						> p {
+							line-height: 1.5;
+						}
+						&.base {
+							
+						}
+						&.gray {
+							background: #f2f2f2;
+							* {
+								color: #6d6d6d !important;
+								text-decoration: line-through;
+							}
+						}
+						.item-name {
+							> span {
+								display: inline-block;
+								box-sizing: border-box;
+								float: left;
+							}
+							.name {
+								width: 80%;
+								padding-right: 3px;
+								@extend %to-ellips;
+							}
+							.quan {
+								width: 20%;
+							}
+						}
+						.item-price {
+							.price {
+								color: $fg-red-1;
+								font-weight: 700;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 객실현황 */
+.cont-status {
+	padding: $common-pd;
+	padding-bottom: 100px;
+	$table-left: 80px;
+	.row-subtit {
+		position: relative;
+		text-align: center;
+		margin-top: 50px;
+		width: 1580px + $table-left;
+		.center {
+			display: inline-block;
+			> * {
+				@extend %va-middle;
+			}
+			.btn-mon {
+				@extend %btn-default;
+				font-size: 12px;
+			}
+			.subtit {
+				top: -1px;
+				font-size: 35px;
+				margin: 0 20px;
+				font-family: $font-ntss;
+//				font-family: $font-nnSquareR;
+			}
+		}
+		.right {
+			position: absolute;
+			top: 11px;
+			right: 0;
+			.btn-water, .btn-booking {
+				@extend %btn-style-2;
+			}
+		}
+	}
+	/*.table-wrapper .left-box th.th-d {height: 41px;}*/
+	.table-wrapper {
+		position: relative;
+		width: 1400px;
+		margin: 0 auto;
+		margin-top: 80px;
+		left: $table-left;
+		* {
+			box-sizing: border-box;
+			letter-spacing: -0.7px;
+		}
+		.explain {
+			position: absolute;
+			top: -150px;
+			left: -260px;
+			li {
+				display: table-row;
+				div {
+					display: table-cell;
+					line-height: 1.8em;
+					border: 1px solid #ddd;
+					height: 22px;
+					border-top: 0;
+					border-left: 0;
+					color: #333;
+					font-size: 12px;
+					&:first-child {
+						border-left: 1px solid #ddd;
+						background: #efefef;
+					}
+				}
+				&:first-child {
+					div {
+						border-top: 1px solid #ddd;
+					}
+				}
+				div.nth-1 {
+					width: 85px;
+					padding-left: 3px;
+				}
+				div.nth-2 {
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
+		.th-day {
+			>.day {
+				width: 200px;
+				position: absolute;
+				border-left: 1px solid #ddd;
+				left: -260px;
+				width: 250px;
+				+ {
+					.sun {
+						border-left: 1px solid #ddd;
+					}
+				}
+			}
+			position: relative;
+			text-align: center;
+			font-size: 0;
+			>span {
+				display: inline-block;
+				border: 1px solid #ddd;
+				border-left: 0;
+				width: 200px;
+				padding: 6px 0;
+				margin-right: 0;
+				font-size: 13px;
+				text-align: center;
+				font-weight: 600;
+			}
+		}
+		.table-box {
+			table {
+				width: 200px;
+				position: relative;
+				width: 200px;
+				float: left;
+				&:first-child {
+					th {
+						border-left: 1px solid #ddd;
+					}
+					td {
+						border-left: 1px solid #ddd;
+					}
+				}
+			}
+			position: relative;
+			width: 1400px;
+			margin-top: -1px;
+			.row-box {
+				position: relative;
+				margin-top: 0px;
+				&:first-child {
+					margin-top: 0px;
+				}
+				.btn-area {
+					position: relative;
+					clear: both;
+					height: 26px;
+					border: 1px solid #ddd;
+					border-top: 0;
+					.btn-a {
+						display: block;
+						text-align: center;
+						font-size: 12px;
+						line-height: 2.1em;
+						background: #f6f8f9;
+						background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%);
+						background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%);
+						background: linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 50%,#d7dee3 99%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#d7dee3',GradientType=0 );
+						&:hover {
+							background: #f6f8f9;
+							background: -moz-linear-gradient(top, #e5ebee 0%, #d7dee3 99%);
+							background: -webkit-linear-gradient(top, #e5ebee 0%, #d7dee3 99%);
+							background: linear-gradient(to bottom, #e5ebee 0%, #d7dee3 99%);
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebee', endColorstr='#d7dee3',GradientType=0 );
+						}
+						&:after {
+							content: "펼치기 ▼";
+						}
+					}
+					.btn-a.on {
+						&:after {
+							content: "닫기 ▲";
+						}
+					}
+				}
+			}
+			.row-box.pkg {
+				margin-top: -1px;
+				display: none;
+				margin-bottom: 20px;
+				border: 1px solid #2d71f9;
+			}
+			.row-box.pkg.on {
+				display: block;
+			}
+			.d-table.on {
+				border: 2px solid #fb6e0f;
+				th.th-d {
+					height: 38px;
+				}
+			}
+			.d-table {
+				.blur {
+					display: none;
+				}
+				th {
+					border-left: 0;
+					padding-right: 5px;
+					text-align: center;
+					padding-right: 0;
+				}
+				td {
+					border-left: 0;
+					padding-right: 5px;
+				}
+				th.nth-1 {
+					width: 18%;
+				}
+				th.nth-2 {
+					width: 30%;
+				}
+				th.nth-3 {
+					width: 26%;
+				}
+				th.nth-4 {
+					width: 26%;
+				}
+				th.th-d {
+					width: 100%;
+					line-height: 2em;
+					padding-left: 10px;
+					input[type="checkbox"] {
+						cursor: pointer;
+					}
+				}
+			}
+			.d-table.off {
+				.blur {
+					position: absolute;
+					color: #fff;
+					text-align: center;
+					font-size: 24px;
+					font-weight: 600;
+					display: block;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					line-height: 7.6em;
+					background: #000;
+					letter-spacing: 1px;
+					opacity: 0.8;
+					filter: alpha(opacity=80);
+				}
+			}
+			th {
+				border-collapse: collapse;
+				border: 1px solid #ddd;
+				height: 30px;
+				font-size: 12px;
+				.btn-a {
+					display: inline-block;
+					width: 60px;
+					padding: 3px 0;
+					text-align: center;
+					border: 1px solid #ddd;
+					border-radius: 4px;
+					line-height: 1.6em;
+					float: right;
+					font-size: 12px;
+					color: #fff;
+					margin-left: 5px;
+					margin-right: 5px;
+					background: #7d8286;
+					background: -moz-linear-gradient(top, #888d91 0%, #5b5f68 100%);
+					background: -webkit-linear-gradient(top, #888d91 0%,#5b5f68 100%);
+					background: linear-gradient(to bottom, #888d91 0%,#5b5f68 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888d91', endColorstr='#5b5f68',GradientType=0 );
+				}
+			}
+			td {
+				border-collapse: collapse;
+				border: 1px solid #ddd;
+				height: 30px;
+				font-size: 12px;
+				font-size: 11px;
+				text-align: right;
+			}
+			.pkg {
+				table {
+					&:first-child {
+						width: 179px;
+						+ {
+							table {
+								width: 179px;
+							}
+						}
+						th {
+							border-left: 0;
+						}
+						td {
+							border-left: 0;
+						}
+					}
+					&:last-child {
+						th {
+							&:last-child {
+								border-right: 0;
+							}
+						}
+						td {
+							&:last-child {
+								border-right: 0;
+							}
+						}
+					}
+					th {
+						border-bottom: 0;
+					}
+					td {
+						border-bottom: 0;
+					}
+					tr {
+						&:first-child {
+							th {
+								border-top: 0;
+							}
+						}
+					}
+				}
+			}
+			th.th-d {
+				text-align: left;
+				height: 40px;
+			}
+			.l-table {
+				th.th-d {
+					border: 0;
+				}
+			}
+			.non-table {
+				background: #fff;
+				height: 281px;
+			}
+		}
+		.sun {
+			color: red;
+		}
+		.sat {
+			color: blue;
+		}
+		.left-box {
+			left: -260px;
+			width: 250px;
+			position: absolute;
+			top: 0;
+			clear: both;
+			th {
+				.btn-a {
+					&:hover {
+						background: #7d8286;
+					}
+				}
+			}
+			.l-table {
+				width: 100%;
+				margin-top: 0px;
+				&:first-child {
+					margin-top: 33px;
+				}
+				th {
+					text-align: right;
+					font-size: 12px;
+					padding-right: 5px;
+				}
+				td {
+					text-align: right;
+					font-size: 12px;
+					padding-right: 5px;
+					font-size: 11px;
+				}
+				tr {
+					&:first-child {
+						th {
+							border: 1px solid #ddd;
+							text-align: center;
+						}
+					}
+				}
+			}
+			.l-table.l-pkg {
+				position: relative;
+				display: none;
+				margin-top: 26px;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 40px;
+					width: 179px;
+					height: 138px;
+					border: 1px solid #2d71f9;
+				}
+			}
+			.l-table.l-pkg.on {
+				display: table;
+				+ {
+					.l-table {
+						margin-top: 21px;
+					}
+				}
+			}
+		}
+	}
+
+	.btn-default {
+		@extend %btn-default;
+	}
+	.btn-style-1 {
+		@extend %btn-style-1;
+	}
+	.btn-style-2 {
+		@extend %btn-style-2;
+	}
+	.btn-style-3 {
+		@extend %btn-style-3;
+	}
+	.btn-style-4 {
+		@extend %btn-style-4;
+	}
+	.inp-default {
+		@extend %inp-default;
+		&.type-2 {
+			width: 62px;
+			text-align: center;
+		}
+	}
+	.slt-default {
+		@extend %slt-default;
+	}
+}
+
+/* 객실관리 */
+.cont-roomStatus {
+	width: 100%;
+	min-width: 1650px;
+	.area {
+		padding: 10px 50px 10px 20px;
+		padding-right: 350px;
+	}
+	/* 객실관리 - 분류 */
+	.classify-area {
+		.list-type {
+			border-bottom: 1px dashed #d5d5d5; 
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			font-size: 0;
+			.item-type {
+				@extend %float;
+				border-left: 1px solid #d5d5d5;
+				padding-left: 15px;
+				&:first-child {
+					border-left: 0;
+					padding-left: 0;
+				}
+				.item {
+					display: inline-block;
+					font-size: 12px;
+					letter-spacing: -0.5px;
+					color: #9c9c9c;
+					padding-left: 30px;
+					&.chkOut {
+						&:before {
+							@extend %classify-itmBefore;
+							background: #F00;
+						}
+					}
+					&.assign {
+						margin-left: 15px;
+						&:before {
+							@extend %classify-itmBefore;
+							background: #00FF00;
+						}
+					}
+					&.chkOut-assign {
+						&:before {
+							@extend %classify-itmBefore;
+							background: #FFFF00;
+						}
+					}
+					&.vip {
+						background:  url("../../img/icon/vip.png") 3px top no-repeat;
+					}
+					&.chkIn {
+						background:  url("../../img/icon/checkIn.png") 3px top no-repeat;
+					}
+					&.inHouse {
+						background:  url("../../img/icon/inHouse.png") 3px top no-repeat;
+					}
+					&.ooo {
+						background:  url("../../img/icon/ooo.png") 3px top no-repeat;
+					}
+					&.empty {
+						background:  url("../../img/icon/empty.png") 3px top no-repeat;
+					}
+					&.dayUse {
+						background:  url("../../img/icon/dayUse.png") 3px top no-repeat;
+					}
+					&.goOut {
+						background:  url("../../img/icon/goOut.png") 3px top no-repeat;
+					}
+					&.oos {
+						background:  url("../../img/icon/oos.png") 3px top no-repeat;
+					}
+					&.vi {
+						background:  url("../../img/icon/vi.png") 3px top no-repeat;
+					}
+					&.vw {
+						background:  url("../../img/icon/vw.png") 3px top no-repeat;
+					}
+					&.oi {
+						background:  url("../../img/icon/oi.png") 3px top no-repeat;
+					}
+					&.ow {
+						background:  url("../../img/icon/ow.png") 3px top no-repeat;
+					}
+					&.vc {
+						background:  url("../../img/icon/vc.png") 3px top no-repeat;
+					}
+					&.vd {
+						background:  url("../../img/icon/vd.png") 3px top no-repeat;
+					}
+					&.oc {
+						background:  url("../../img/icon/oc.png") 3px top no-repeat;
+					}
+					&.od {
+						background:  url("../../img/icon/od.png") 3px top no-repeat;
+					}
+					&.in-r {
+						background:  url("../../img/icon/ebInReq.png") 3px top no-repeat;
+					}
+					&.out-r {
+						background:  url("../../img/icon/ebOutReq.png") 3px top no-repeat;
+					}
+					&.in {
+						background:  url("../../img/icon/ebIn.png") 3px top no-repeat;
+					}
+					&.out {
+						background:  url("../../img/icon/ebOut.png") 3px top no-repeat;
+					}
+					&.message {
+						background:  url("../../img/icon/messageIn.png") 3px top no-repeat;	
+					}
+					&.temperature {
+						background:  url("../../img/icon/temperature.png") 3px top no-repeat;
+					}
+					&.guests {
+						background:  url("../../img/icon/guests.png") 3px top no-repeat;
+					}
+				
+				}
+				&.type-1 {
+					width: 153px;
+					.item {
+						padding-left: 0;
+					}
+				}
+				&.type-2 {
+					width: 400px;
+					.wd-1 {
+						width: 50px;
+					}
+					.wd-2, .wd-3 {
+						width: 65px;
+					}
+					.wd-4 {
+						width: 90px;
+					}
+				}
+				&.type-3 {
+					width: 260px;
+					[class*="wd-"] {
+						width: 30px;
+					}
+				}
+				&.type-4 {
+					width: 145px;
+					.wd-1 {
+						width: 45px;
+					}
+					.wd-2 {
+						width: 30px;
+					}
+				}
+				&.type-5 {
+					width: 235px;
+					& [class*="wd-"] {
+						width: 85px;
+					}
+				}
+			}
+		}
+		.row-chk {
+			font-family: $font-nnSquareR;
+			font-size: 13px;
+			> * {
+				vertical-align: middle;
+			}
+			.btn-clear {
+				@extend %btn-green;
+			}
+			.mg-l {
+				display: inline-block;
+				margin: 0 10px;
+				width: 1px;
+				height: 15px;
+				background: #d5d5d5;
+			}
+			.chk-box {
+				margin-left: 8px;
+				input[type=checkbox] {
+					position: relative;
+					margin-right: 2px;
+					vertical-align: middle;
+				}
+			} 
+		}
+		.cont-side.right {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			z-index: 1;
+			.roominfo-area {
+				position: relative;
+				font-size: 13px;
+				fieldset {
+					legend {
+						display: block;
+						background: #f0f0f0;
+						color: #968571;
+						font-weight: 700;
+						font-size: 13px;
+						padding: 8px 10px 0;
+						margin-left: 15px;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+					.cont-box {
+						width: 300px;
+						min-height: 500px;
+						background: #f0f0f0;
+						border-radius: 2px;
+						padding: 20px 15px 15px;
+						@extend %bor-box;
+						.list-tab {
+							@extend %in-block;
+							width: 50%;
+							padding-right: 30px;
+							border-bottom: 1px solid #b9babc;
+							.tab, .tabBtn {
+								position: relative;
+								display: inline-block;
+								background: #fff;
+								border: 1px solid #b9babc;
+								color: #6e6e6e;
+								padding: 2px 10px 0px;
+								line-height: 22px;
+								border-top-left-radius: 5px;
+								border-top-right-radius: 5px;
+								margin-bottom: -1px;
+								cursor: pointer;
+								&.on {
+									border-bottom-color: #f0f0f0;
+									background: #f0f0f0;
+								}
+							}
+							.tab-btn {
+								&.service {
+									padding: 0;
+									border: none;
+									background: 0;
+									position: absolute;
+									right: -106px;
+									bottom: 0;
+									.btn-serv {
+										@extend %btn-red;
+										padding: 1px 10px;
+										line-height: 22px;
+										font-size: 13px;
+									}
+								}
+								
+							}
+						}
+						.cont-tab {
+							.tab-type {
+								h4.tit {
+									color: #968571;
+									font-size: 14px;
+									font-weight: bold;
+									line-height: 1.2;
+									margin-top: 10px;
+								}
+							}
+							/*테이블 스타일  tbl-type*/
+							.tbl-type {
+								margin-top: 5px;
+								font-family: 'Nanum Gothic';
+								border-spacing: 0px;
+								border: 1px solid #c0b5a6;
+								border-bottom: 0px none;
+								width: 100%;
+								table-layout: fixed;
+								font-size: 12px;
+								box-shadow: 1px 1px 3px #eee;
+								border-spacing: 0px;
+								background-color: #fff;
+								.w-100p {
+									width: 100%;
+								}
+								/*테이블 스타일  status-tbl*/
+								&.status-tbl {
+									col.nth-1 {
+										width: 52%;
+									}
+									col.nth-2 {
+										width: 48%;
+									}
+									th, td {
+										min-height: 39px;
+										height: 30px;
+										border-bottom: 1px solid #c0b5a6;
+										color: #666;
+										.cell {
+											@extend %clearfix;
+											padding: 5px 7px;
+											&.pd-0 {
+												padding-top: 0;
+												padding-bottom: 0;
+											}
+										}
+									}
+									th {
+										background: #E7E4E2;
+										overflow: visible;
+										color: #444;
+										.cell {
+											font-weight: 700;
+											.i-classify + .i-classify {
+												margin-left: 8px;
+											}
+										}
+									}
+									td {
+										border-left: 1px dashed #c0b5a6;
+										.cell {
+											text-align: right;
+										}
+									}
+								}
+								/*테이블 스타일  info-tbl*/
+								&.info-tbl {
+									col.nth-1 {
+										width: 90px;
+									}
+									col.nth-2 {
+										width: 172px;
+									}
+									.chk-box, .rdo-box {
+										input {
+											margin-right: 3px;
+										}
+										& + .chk-box, & + .rdo-box {
+											margin-left: 5px;
+										}
+									}
+									.form-select {
+										@extend %slt-base;
+										border: 1px solid #b6b6b6;
+										background: #fff;
+										box-shadow: 0px 1px 1px #e9eced;
+										border-radius: 4px;
+										font-size: 12px;
+										line-height: 19px;
+										min-width: 50px;
+										height: 25px;
+										padding: 2px;
+										margin: 0px auto;
+									}
+									th, td {
+										min-height: 39px;
+										height: 39px;
+										border-bottom: 1px solid #c0b5a6;
+										color: #666;
+										.cell {
+											@extend %clearfix;
+											padding: 5px 7px;
+											&.pd-0 {
+												padding-top: 0;
+												padding-bottom: 0;
+											}
+										}
+									}
+									th {
+										background: #E7E4E2;
+										overflow: visible;
+										color: #444;
+										text-align: center;
+										.cell {
+											font-weight: 700;
+										}
+									}
+									td {
+										border-left: 1px dashed #c0b5a6;
+										.cell {
+											.hSpace-5 {
+												font-size: 1px;
+												line-height: 1px;
+												height: 5px;
+											}
+											.btn-history {
+												float: right;
+												@extend %btn-green;
+												line-height: 22px;
+												height: 25px;
+											}
+											.form-input {
+												@extend %inp-txt-base2;
+												width: 60px;
+											}
+											.cal-box {
+												@extend %va-middle;
+												width: 120px;
+												height: 25px;
+												border: 1px solid $bor-gray-table;
+												border-radius: 4px;
+												> * {
+													outline: none;
+												}
+												.inp-cal {
+													@extend %inp-txt-base;
+													box-shadow: none;
+													border: none;
+													background: none;
+													text-align: left;
+													width: 100%;
+													position: relative;
+													line-height: 1;
+													top: 1px;
+													z-index: 1;
+												}
+												.i-cal {
+													@extend %in-block;
+													position: absolute;
+													top: 0;
+													right: 0;
+													width: 30px;
+													height: 100%;
+													border-radius: 4px;
+													border-top-left-radius: 0;
+													border-bottom-left-radius: 0;
+													text-align: center;
+													cursor: pointer;
+													border-left: 1px solid $bor-gray-table;
+													background-image: none,-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.6)),to(rgba(255,255,255,0)));
+													background-image: none,-webkit-linear-gradient(top,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+													background-image: none,linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
+													background-position: 50% 50%;
+													background-color: #eae8e8;
+													img {
+														position: relative;
+														top: 2px;
+														width: 20px;
+													}
+												}
+											}
+											.textarea-etc {
+												@extend %inp-txt-base;
+												width: 150px;
+												height: 80px;
+												border: 1px solid #ccc;
+												resize: none;
+												text-align: left;
+											}
+										}
+									}
+								}
+							}
+							.row-btn {
+								margin-top: 5px;
+								text-align: right;
+								> button {
+									text-transform: uppercase;
+								}
+								.btn-red {
+									@extend %btn-red;
+									line-height: 1.3;
+									padding: 3px 18px 1px;
+								}
+								.btn-blue {
+									@extend %btn-blue;
+									height: 36px;
+									line-height: 1.3;
+									padding: 3px 18px 1px;
+								}
+							}	
+								
+						}
+					}
+				}
+				
+			}
+		}
+	}
+	/* 객실관리 - 룸현황 */
+	.room-area {
+		margin-top: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		width: 100%;
+		padding-right: 400px;
+		box-sizing: border-box;
+		.list-room {
+			font-family: $font-nnSquareR;
+			.item-room {
+				margin: 0px 10px 10px 0px;
+				border: 2px solid #d5d5d5;
+				border-radius: 2px;
+				background: #fff;
+				width: 126px;
+				float: left;
+				min-height: 126px; 
+				font-size: 13px;
+				font-weight: bold;
+				letter-spacing: -1px;
+				box-shadow: 3px 3px 3px rgba(0,0,0, 0.25);
+				> div {
+					@extend %bor-box;
+					padding: 0 3px;
+					&:first-child, &.guestName {
+						border: 0 !important;
+					}
+				}
+				.roomNo {
+					line-height: 26px;
+					font-weight: 800;
+					padding: 0 5px;
+					text-align: center;
+					font-size: 14px;
+					.num {
+						float: left;
+					}
+					.status {
+						position: relative;
+						top: -1px;
+						float: right;
+					}
+				}
+				.guestName {
+					height: 52px;
+					line-height: 1.2;
+					text-align: center;
+				}
+				.info {
+					line-height: 24px;
+					font-size: 12px;
+				}
+				/*방 리스트 기본 스타일 .base*/
+				&.base {
+					> div {
+						border-top: 1px dashed #f0f0f0;
+					}
+					.roomNo {
+						background: #f0f0f0;
+						text-shadow: 1px 1px #fff;
+					}
+					.guestName {
+						line-height: 52px;
+					}
+					.info {
+
+					}
+				}
+				/*방 리스트 체크인 스타일 .chkIn*/
+				&.chkIn {
+					> div {
+						border-top: 1px dashed #C0B5A6;
+					}
+					border: 2px solid #C0B5A6;
+					background: #E8E4E1;
+					.roomNo {
+						background: #C0B5A6;
+						color: #fff;
+						text-shadow: 1px 1px #000;
+					}
+					.guestName {
+						padding-top: 5px;
+					}
+				}
+				/*클릭시 테두리 변경 .clk*/
+				&.clk {
+					border-color: #666 !important;
+				}
+			}
+		}
+		.list-floor {
+			position: absolute;
+			top: 0px;
+			right: 350px;
+			font-size: 13px;
+			text-align: center;
+			font-weight: bold;
+			.tit {
+				color: #c0b5a6;
+			}
+			.floor.total {
+				background-color: #c0b5a6;
+				color:#fff;
+			}
+			.floor {
+				width:43px;
+				height:28px;
+				border:2px solid #c0b5a6;
+				background: #fff;
+				color: #c0b5a6;
+				padding-top: 10px;
+				margin-bottom:2px;
+				cursor:pointer;
+			}
+		}
+	}
+}

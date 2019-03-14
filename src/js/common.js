@@ -1,0 +1,42 @@
+$(function() {
+	
+	popClsFn();
+	datePick();
+	ascending();
+	
+});
+
+// 팝업 기능 등록
+var popFn = {
+	show: function(obj_name) {
+		$(obj_name).show();
+	}
+}
+
+// 팝업 닫기 기능
+function popClsFn() {
+	var containerName = ".pop-container",
+		popContainer = $(containerName),
+		btn_cls = popContainer.find(".fn-cls");
+	
+	btn_cls.on("click", function() {
+		$(this).closest(containerName).hide();
+	});
+	popContainer.find(".bg-back").on("click", function() {
+		$(this).closest(containerName).hide();
+	});
+}
+
+// 달력 ui
+function datePick() {
+	$( "input.date-ui" ).datepicker({
+		dateFormat: 'yy-mm-dd'
+	});
+}
+
+// 결과 오름차순 토글
+function ascending() {
+	$(".order-ui").on("click", function() {
+		$(this).toggleClass("ascending");
+	});
+}

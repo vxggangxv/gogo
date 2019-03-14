@@ -1,0 +1,562 @@
+@charset "UTF-8";
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .row, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td .cell, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th .cell, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell { *zoom: 1; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .row:after, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell:after, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td .cell:after, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th .cell:after, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell:after { content: ""; display: block; clear: both; }
+
+.cont-roomStatus .classify-area .list-type .item-type { position: relative; float: left; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box, .cont-roomStatus .room-area .list-room .item-room > div { position: relative; box-sizing: border-box; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .i-cal { position: relative; display: inline-block; }
+
+.cont-sale .row-subtit .center > *, .cont-sale .row-option .chk-area, .cont-sale .row-option .slt-box, .cont-sale .row-option .lbl, .cont-status .row-subtit .center > *, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box { position: relative; display: inline-block; vertical-align: middle; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item .item-name .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select, .cont-sale .inp-default, .cont-status .inp-default, .cont-sale .slt-default, .cont-status .slt-default, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .inp-cal, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .textarea-etc, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .form-input, .cont-roomStatus .classify-area .row-chk .btn-clear, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .btn-history, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service .btn-serv, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { position: relative; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px #dddddd; border-radius: 4px; font-size: 12px; line-height: 1.6; }
+
+.cont-sale .inp-default, .cont-status .inp-default, .cont-sale .slt-default, .cont-status .slt-default, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .inp-cal, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .textarea-etc { padding: 4px; margin: 0 auto; }
+
+.cont-sale .inp-default[disabled], .cont-status .inp-default[disabled], .cont-sale .slt-default[disabled], .cont-status .slt-default[disabled], .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .inp-cal[disabled], .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .textarea-etc[disabled], .cont-sale .inp-default[readonly], .cont-status .inp-default[readonly], .cont-sale .slt-default[readonly], .cont-status .slt-default[readonly], .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .inp-cal[readonly], .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .textarea-etc[readonly] { background: #eee; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .form-input { padding: 2px; margin: 0 auto; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .form-input[disabled], .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .form-input[readonly] { background: #eee; }
+
+.cont-roomStatus .classify-area .row-chk .btn-clear, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .btn-history, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service .btn-serv, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { padding: 1px 5px 0px; box-shadow: none; cursor: pointer; color: #444; border-radius: 3px; border: 1px solid #cdcdcd; }
+
+.cont-sale .btn-style-1, .cont-status .btn-style-1, .cont-sale .row-subtit .right .btn-water, .cont-sale .row-subtit .right .btn-booking, .cont-sale .btn-style-2, .cont-status .row-subtit .right .btn-water, .cont-status .row-subtit .right .btn-booking, .cont-status .btn-style-2, .cont-sale .btn-style-3, .cont-status .btn-style-3, .cont-sale .btn-style-4, .cont-status .btn-style-4, .cont-sale .row-subtit .center .btn-mon, .cont-sale .btn-default, .cont-status .row-subtit .center .btn-mon, .cont-status .btn-default { display: inline-block; box-sizing: border-box; padding: 4px 12px; margin-bottom: 0; font-family: "Noto Sans KR", Dotum, Sans-serif; font-size: 14px; line-height: 20px; color: #333333; text-align: center; vertical-align: middle; cursor: pointer; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; border: 1px solid #cccccc; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+.page-title { padding: 0 20px; font-size: 25px; font-family: "Noto Sans KR", Dotum, Sans-serif; font-weight: 500; padding-top: 10px; }
+
+.contents { min-width: 1695px; }
+
+.cont-sale .btn-style-1, .cont-status .btn-style-1 { background: #70757B; color: #fff; }
+
+.cont-sale .row-subtit .right .btn-water, .cont-sale .row-subtit .right .btn-booking, .cont-sale .btn-style-2, .cont-status .row-subtit .right .btn-water, .cont-status .row-subtit .right .btn-booking, .cont-status .btn-style-2 { background: #1976d2; color: #fff; }
+
+.cont-sale .btn-style-3, .cont-status .btn-style-3 { background: #954A10; color: #fff; }
+
+.cont-sale .btn-style-4, .cont-status .btn-style-4 { background: #F17721; color: #fff; }
+
+.cont-sale .inp-default, .cont-status .inp-default, .cont-sale .slt-default, .cont-status .slt-default { height: 30px; font-size: 13px; }
+
+.cont-sale .inp-default, .cont-status .inp-default { width: 80px; }
+
+.cont-sale .slt-default, .cont-status .slt-default { padding-bottom: 5px; }
+
+/* 분류 버튼 */
+.cont-roomStatus .classify-area .list-type .item-type .item.chkOut:before, .cont-roomStatus .classify-area .list-type .item-type .item.assign:before, .cont-roomStatus .classify-area .list-type .item-type .item.chkOut-assign:before { position: relative; content: ""; display: inline-block; vertical-align: middle; width: 13px; height: 13px; top: -1px; margin-right: 3px; border-radius: 50%; box-sizing: border-box; border: 1px solid #000; }
+
+.cont-roomStatus .classify-area .row-chk .btn-clear, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .btn-history { color: #deffbb; background: #84c35c; border: 1px solid #69994d; text-shadow: 0px -1px #729a59; }
+
+.cont-roomStatus .classify-area .row-chk .btn-clear:hover, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .btn-history:hover { color: #fff; background: #66ba2c; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service .btn-serv, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red { border: 1px solid #882f29; background: #BB4749; color: #ffccc8; text-shadow: 0px -1px #aa4949; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service .btn-serv:hover, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red:hover { color: #fff; background: #ba383a; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { border: 1px solid #1a70ba; color: #dfeffc; text-shadow: 0px -1px #5692c2; background: #4F8BBF; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue:hover { color: #fff; background: #2274ba; }
+
+/* 객실요금 */
+.cont-sale { padding: 0 20px; }
+
+.cont-sale .row-subtit { position: relative; text-align: center; margin-top: 50px; }
+
+.cont-sale .row-subtit .center { display: inline-block; }
+
+.cont-sale .row-subtit .center .btn-mon { font-size: 12px; }
+
+.cont-sale .row-subtit .center .subtit { top: -1px; font-size: 35px; margin: 0 20px; font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-sale .row-subtit .right { position: absolute; top: 11px; right: 0; }
+
+.cont-sale .row-option { margin-top: 50px; }
+
+.cont-sale .row-option div[class*="-box"] { position: relative; }
+
+.cont-sale .row-option .left { float: left; }
+
+.cont-sale .row-option .right { float: right; }
+
+.cont-sale .row-option .chk-area { top: -1px; padding: 0 16px; }
+
+.cont-sale .row-option .chk-area .chk-box, .cont-sale .row-option .chk-area .rdo-box { font-size: 13px; margin-left: 8px; }
+
+.cont-sale .row-option .chk-area .chk-box input[type=checkbox], .cont-sale .row-option .chk-area .chk-box input[type=radio], .cont-sale .row-option .chk-area .rdo-box input[type=checkbox], .cont-sale .row-option .chk-area .rdo-box input[type=radio] { position: relative; margin-right: 2px; vertical-align: middle; }
+
+.cont-sale .row-option .chk-area .chk-box:first-child, .cont-sale .row-option .chk-area .rdo-box:first-child { margin-left: 0; }
+
+.cont-sale .row-option .slt-box { font-size: 13px; }
+
+.cont-sale .row-option .slt-box .lbl { margin-right: 8px; font-weight: 700; }
+
+.cont-sale .row-option .slt-box select { color: #555; letter-spacing: -1px; }
+
+.cont-sale .row-option .slt-box select > option { font-size: 12px; }
+
+.cont-sale .row-option .date { text-align: center; }
+
+.cont-sale .row-option .nameNumber { width: 160px; }
+
+.cont-sale .row-option .partner { min-width: 150px; }
+
+.cont-sale .inp-default.type-2 { width: 62px; text-align: center; }
+
+.cont-sale .grid-wrap { margin-top: 15px; font-size: 12px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl { table-layout: fixed; border-collapse: collapse; width: 100%; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th, .cont-sale .grid-wrap .grid-area .grid-tbl tr td { position: relative; border: 1px solid #c5c5c5; box-sizing: border-box; vertical-align: middle; line-height: normal; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th:first-child, .cont-sale .grid-wrap .grid-area .grid-tbl tr td:first-child { border-left: 0; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th .inCell, .cont-sale .grid-wrap .grid-area .grid-tbl tr td .inCell { padding: 10px; padding-top: 8px; padding-bottom: 7px; box-sizing: border-box; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr.division th, .cont-sale .grid-wrap .grid-area .grid-tbl tr.division td { border: 1px solid #c5c5c5; border-color: #a6a6a6; padding: 0; line-height: 0; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th { background: #f4f5f7; font-weight: 700; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th.sun { color: #F50057; background: #F8BBD0; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr th.sat { color: #2979FF; background: #BBDEFB; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td { vertical-align: top; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td .inCell { padding-top: 6px; padding-bottom: 6px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td .deadline-txt { position: absolute; z-index: 1; color: #fff; width: 100%; height: 100%; text-align: center; font-size: 35px; font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td .deadline-txt:after { content: ""; height: 105%; background: #fff; display: inline-block; vertical-align: middle; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.nothing { padding: 15px 8px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.sun { background: #FCE4EC; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.sat { background: #E3F2FD; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.off { background: #fff; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.today .inCell { border: 3px solid #F17721; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr td.deadline .inCell:after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.6; filter: alpha(opacity=60); color: #fff; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .chk-box { position: relative; font-size: 13px; margin-left: 8px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .chk-box input[type=checkbox], .cont-sale .grid-wrap .grid-area .grid-tbl tr .chk-box input[type=radio] { position: relative; margin-right: 2px; vertical-align: middle; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .chk-box:first-child { margin-left: 0; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .chk-box label { font-weight: 700; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .btn-style-1, .cont-sale .grid-wrap .grid-area .grid-tbl tr .btn-style-2 { font-size: 13px; padding: 2px 10px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .row .right { float: right; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .row:first-child .chk-box { top: 4px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item { box-sizing: border-box; margin-top: 5px; background: #FFECB3; padding: 5px 6px; font-size: 12.5px; border: 1px solid #c5c5c5; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item > p { line-height: 1.5; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item.gray { background: #f2f2f2; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item.gray * { color: #6d6d6d !important; text-decoration: line-through; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item .item-name > span { display: inline-block; box-sizing: border-box; float: left; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item .item-name .name { width: 80%; padding-right: 3px; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item .item-name .quan { width: 20%; }
+
+.cont-sale .grid-wrap .grid-area .grid-tbl tr .item .item-price .price { color: #E33335; font-weight: 700; }
+
+/* 객실현황 */
+.cont-status { padding: 0 20px; padding-bottom: 100px; /*.table-wrapper .left-box th.th-d {height: 41px;}*/ }
+
+.cont-status .row-subtit { position: relative; text-align: center; margin-top: 50px; width: 1660px; }
+
+.cont-status .row-subtit .center { display: inline-block; }
+
+.cont-status .row-subtit .center .btn-mon { font-size: 12px; }
+
+.cont-status .row-subtit .center .subtit { top: -1px; font-size: 35px; margin: 0 20px; font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-status .row-subtit .right { position: absolute; top: 11px; right: 0; }
+
+.cont-status .table-wrapper { position: relative; width: 1400px; margin: 0 auto; margin-top: 80px; left: 80px; }
+
+.cont-status .table-wrapper * { box-sizing: border-box; letter-spacing: -0.7px; }
+
+.cont-status .table-wrapper .explain { position: absolute; top: -150px; left: -260px; }
+
+.cont-status .table-wrapper .explain li { display: table-row; }
+
+.cont-status .table-wrapper .explain li div { display: table-cell; line-height: 1.8em; border: 1px solid #ddd; height: 22px; border-top: 0; border-left: 0; color: #333; font-size: 12px; }
+
+.cont-status .table-wrapper .explain li div:first-child { border-left: 1px solid #ddd; background: #efefef; }
+
+.cont-status .table-wrapper .explain li:first-child div { border-top: 1px solid #ddd; }
+
+.cont-status .table-wrapper .explain li div.nth-1 { width: 85px; padding-left: 3px; }
+
+.cont-status .table-wrapper .explain li div.nth-2 { padding-left: 5px; padding-right: 5px; }
+
+.cont-status .table-wrapper .th-day { position: relative; text-align: center; font-size: 0; }
+
+.cont-status .table-wrapper .th-day > .day { width: 200px; position: absolute; border-left: 1px solid #ddd; left: -260px; width: 250px; }
+
+.cont-status .table-wrapper .th-day > .day + .sun { border-left: 1px solid #ddd; }
+
+.cont-status .table-wrapper .th-day > span { display: inline-block; border: 1px solid #ddd; border-left: 0; width: 200px; padding: 6px 0; margin-right: 0; font-size: 13px; text-align: center; font-weight: 600; }
+
+.cont-status .table-wrapper .table-box { position: relative; width: 1400px; margin-top: -1px; }
+
+.cont-status .table-wrapper .table-box table { width: 200px; position: relative; width: 200px; float: left; }
+
+.cont-status .table-wrapper .table-box table:first-child th { border-left: 1px solid #ddd; }
+
+.cont-status .table-wrapper .table-box table:first-child td { border-left: 1px solid #ddd; }
+
+.cont-status .table-wrapper .table-box .row-box { position: relative; margin-top: 0px; }
+
+.cont-status .table-wrapper .table-box .row-box:first-child { margin-top: 0px; }
+
+.cont-status .table-wrapper .table-box .row-box .btn-area { position: relative; clear: both; height: 26px; border: 1px solid #ddd; border-top: 0; }
+
+.cont-status .table-wrapper .table-box .row-box .btn-area .btn-a { display: block; text-align: center; font-size: 12px; line-height: 2.1em; background: #f6f8f9; background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%); background: -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%); background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 99%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#d7dee3',GradientType=0 ); }
+
+.cont-status .table-wrapper .table-box .row-box .btn-area .btn-a:hover { background: #f6f8f9; background: -moz-linear-gradient(top, #e5ebee 0%, #d7dee3 99%); background: -webkit-linear-gradient(top, #e5ebee 0%, #d7dee3 99%); background: linear-gradient(to bottom, #e5ebee 0%, #d7dee3 99%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5ebee', endColorstr='#d7dee3',GradientType=0 ); }
+
+.cont-status .table-wrapper .table-box .row-box .btn-area .btn-a:after { content: "펼치기 ▼"; }
+
+.cont-status .table-wrapper .table-box .row-box .btn-area .btn-a.on:after { content: "닫기 ▲"; }
+
+.cont-status .table-wrapper .table-box .row-box.pkg { margin-top: -1px; display: none; margin-bottom: 20px; border: 1px solid #2d71f9; }
+
+.cont-status .table-wrapper .table-box .row-box.pkg.on { display: block; }
+
+.cont-status .table-wrapper .table-box .d-table.on { border: 2px solid #fb6e0f; }
+
+.cont-status .table-wrapper .table-box .d-table.on th.th-d { height: 38px; }
+
+.cont-status .table-wrapper .table-box .d-table .blur { display: none; }
+
+.cont-status .table-wrapper .table-box .d-table th { border-left: 0; padding-right: 5px; text-align: center; padding-right: 0; }
+
+.cont-status .table-wrapper .table-box .d-table td { border-left: 0; padding-right: 5px; }
+
+.cont-status .table-wrapper .table-box .d-table th.nth-1 { width: 18%; }
+
+.cont-status .table-wrapper .table-box .d-table th.nth-2 { width: 30%; }
+
+.cont-status .table-wrapper .table-box .d-table th.nth-3 { width: 26%; }
+
+.cont-status .table-wrapper .table-box .d-table th.nth-4 { width: 26%; }
+
+.cont-status .table-wrapper .table-box .d-table th.th-d { width: 100%; line-height: 2em; padding-left: 10px; }
+
+.cont-status .table-wrapper .table-box .d-table th.th-d input[type="checkbox"] { cursor: pointer; }
+
+.cont-status .table-wrapper .table-box .d-table.off .blur { position: absolute; color: #fff; text-align: center; font-size: 24px; font-weight: 600; display: block; top: 0; left: 0; width: 100%; height: 100%; line-height: 7.6em; background: #000; letter-spacing: 1px; opacity: 0.8; filter: alpha(opacity=80); }
+
+.cont-status .table-wrapper .table-box th { border-collapse: collapse; border: 1px solid #ddd; height: 30px; font-size: 12px; }
+
+.cont-status .table-wrapper .table-box th .btn-a { display: inline-block; width: 60px; padding: 3px 0; text-align: center; border: 1px solid #ddd; border-radius: 4px; line-height: 1.6em; float: right; font-size: 12px; color: #fff; margin-left: 5px; margin-right: 5px; background: #7d8286; background: -moz-linear-gradient(top, #888d91 0%, #5b5f68 100%); background: -webkit-linear-gradient(top, #888d91 0%, #5b5f68 100%); background: linear-gradient(to bottom, #888d91 0%, #5b5f68 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888d91', endColorstr='#5b5f68',GradientType=0 ); }
+
+.cont-status .table-wrapper .table-box td { border-collapse: collapse; border: 1px solid #ddd; height: 30px; font-size: 12px; font-size: 11px; text-align: right; }
+
+.cont-status .table-wrapper .table-box .pkg table:first-child { width: 179px; }
+
+.cont-status .table-wrapper .table-box .pkg table:first-child + table { width: 179px; }
+
+.cont-status .table-wrapper .table-box .pkg table:first-child th { border-left: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table:first-child td { border-left: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table:last-child th:last-child { border-right: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table:last-child td:last-child { border-right: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table th { border-bottom: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table td { border-bottom: 0; }
+
+.cont-status .table-wrapper .table-box .pkg table tr:first-child th { border-top: 0; }
+
+.cont-status .table-wrapper .table-box th.th-d { text-align: left; height: 40px; }
+
+.cont-status .table-wrapper .table-box .l-table th.th-d { border: 0; }
+
+.cont-status .table-wrapper .table-box .non-table { background: #fff; height: 281px; }
+
+.cont-status .table-wrapper .sun { color: red; }
+
+.cont-status .table-wrapper .sat { color: blue; }
+
+.cont-status .table-wrapper .left-box { left: -260px; width: 250px; position: absolute; top: 0; clear: both; }
+
+.cont-status .table-wrapper .left-box th .btn-a:hover { background: #7d8286; }
+
+.cont-status .table-wrapper .left-box .l-table { width: 100%; margin-top: 0px; }
+
+.cont-status .table-wrapper .left-box .l-table:first-child { margin-top: 33px; }
+
+.cont-status .table-wrapper .left-box .l-table th { text-align: right; font-size: 12px; padding-right: 5px; }
+
+.cont-status .table-wrapper .left-box .l-table td { text-align: right; font-size: 12px; padding-right: 5px; font-size: 11px; }
+
+.cont-status .table-wrapper .left-box .l-table tr:first-child th { border: 1px solid #ddd; text-align: center; }
+
+.cont-status .table-wrapper .left-box .l-table.l-pkg { position: relative; display: none; margin-top: 26px; }
+
+.cont-status .table-wrapper .left-box .l-table.l-pkg:after { content: ""; position: absolute; left: 0; top: 40px; width: 179px; height: 138px; border: 1px solid #2d71f9; }
+
+.cont-status .table-wrapper .left-box .l-table.l-pkg.on { display: table; }
+
+.cont-status .table-wrapper .left-box .l-table.l-pkg.on + .l-table { margin-top: 21px; }
+
+.cont-status .inp-default.type-2 { width: 62px; text-align: center; }
+
+/* 객실관리 */
+.cont-roomStatus { width: 100%; min-width: 1650px; /* 객실관리 - 분류 */ /* 객실관리 - 룸현황 */ }
+
+.cont-roomStatus .area { padding: 10px 50px 10px 20px; padding-right: 350px; }
+
+.cont-roomStatus .classify-area .list-type { border-bottom: 1px dashed #d5d5d5; padding-bottom: 5px; margin-bottom: 5px; font-size: 0; }
+
+.cont-roomStatus .classify-area .list-type .item-type { border-left: 1px solid #d5d5d5; padding-left: 15px; }
+
+.cont-roomStatus .classify-area .list-type .item-type:first-child { border-left: 0; padding-left: 0; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item { display: inline-block; font-size: 12px; letter-spacing: -0.5px; color: #9c9c9c; padding-left: 30px; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.chkOut:before { background: #F00; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.assign { margin-left: 15px; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.assign:before { background: #00FF00; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.chkOut-assign:before { background: #FFFF00; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.vip { background: url("../../img/icon/vip.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.chkIn { background: url("../../img/icon/checkIn.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.inHouse { background: url("../../img/icon/inHouse.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.ooo { background: url("../../img/icon/ooo.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.empty { background: url("../../img/icon/empty.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.dayUse { background: url("../../img/icon/dayUse.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.goOut { background: url("../../img/icon/goOut.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.oos { background: url("../../img/icon/oos.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.vi { background: url("../../img/icon/vi.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.vw { background: url("../../img/icon/vw.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.oi { background: url("../../img/icon/oi.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.ow { background: url("../../img/icon/ow.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.vc { background: url("../../img/icon/vc.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.vd { background: url("../../img/icon/vd.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.oc { background: url("../../img/icon/oc.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.od { background: url("../../img/icon/od.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.in-r { background: url("../../img/icon/ebInReq.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.out-r { background: url("../../img/icon/ebOutReq.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.in { background: url("../../img/icon/ebIn.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.out { background: url("../../img/icon/ebOut.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.message { background: url("../../img/icon/messageIn.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.temperature { background: url("../../img/icon/temperature.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type .item.guests { background: url("../../img/icon/guests.png") 3px top no-repeat; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-1 { width: 153px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-1 .item { padding-left: 0; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-2 { width: 400px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-2 .wd-1 { width: 50px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-2 .wd-2, .cont-roomStatus .classify-area .list-type .item-type.type-2 .wd-3 { width: 65px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-2 .wd-4 { width: 90px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-3 { width: 260px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-3 [class*="wd-"] { width: 30px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-4 { width: 145px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-4 .wd-1 { width: 45px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-4 .wd-2 { width: 30px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-5 { width: 235px; }
+
+.cont-roomStatus .classify-area .list-type .item-type.type-5 [class*="wd-"] { width: 85px; }
+
+.cont-roomStatus .classify-area .row-chk { font-family: "NanumSquareRound", Dotum, Sans-serif; font-size: 13px; }
+
+.cont-roomStatus .classify-area .row-chk > * { vertical-align: middle; }
+
+.cont-roomStatus .classify-area .row-chk .mg-l { display: inline-block; margin: 0 10px; width: 1px; height: 15px; background: #d5d5d5; }
+
+.cont-roomStatus .classify-area .row-chk .chk-box { margin-left: 8px; }
+
+.cont-roomStatus .classify-area .row-chk .chk-box input[type=checkbox] { position: relative; margin-right: 2px; vertical-align: middle; }
+
+.cont-roomStatus .classify-area .cont-side.right { position: absolute; top: 10px; right: 20px; z-index: 1; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area { position: relative; font-size: 13px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset legend { display: block; background: #f0f0f0; color: #968571; font-weight: 700; font-size: 13px; padding: 8px 10px 0; margin-left: 15px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box { width: 300px; min-height: 500px; background: #f0f0f0; border-radius: 2px; padding: 20px 15px 15px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab { width: 50%; padding-right: 30px; border-bottom: 1px solid #b9babc; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tabBtn { position: relative; display: inline-block; background: #fff; border: 1px solid #b9babc; color: #6e6e6e; padding: 2px 10px 0px; line-height: 22px; border-top-left-radius: 5px; border-top-right-radius: 5px; margin-bottom: -1px; cursor: pointer; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab.on, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tabBtn.on { border-bottom-color: #f0f0f0; background: #f0f0f0; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service { padding: 0; border: none; background: 0; position: absolute; right: -106px; bottom: 0; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .list-tab .tab-btn.service .btn-serv { padding: 1px 10px; line-height: 22px; font-size: 13px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab { /*테이블 스타일  tbl-type*/ }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tab-type h4.tit { color: #968571; font-size: 14px; font-weight: bold; line-height: 1.2; margin-top: 10px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type { margin-top: 5px; font-family: 'Nanum Gothic'; border-spacing: 0px; border: 1px solid #c0b5a6; border-bottom: 0px none; width: 100%; table-layout: fixed; font-size: 12px; box-shadow: 1px 1px 3px #eee; border-spacing: 0px; background-color: #fff; /*테이블 스타일  status-tbl*/ /*테이블 스타일  info-tbl*/ }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type .w-100p { width: 100%; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl col.nth-1 { width: 52%; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl col.nth-2 { width: 48%; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td { min-height: 39px; height: 30px; border-bottom: 1px solid #c0b5a6; color: #666; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td .cell { padding: 5px 7px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell.pd-0, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td .cell.pd-0 { padding-top: 0; padding-bottom: 0; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th { background: #E7E4E2; overflow: visible; color: #444; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell { font-weight: 700; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl th .cell .i-classify + .i-classify { margin-left: 8px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td { border-left: 1px dashed #c0b5a6; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.status-tbl td .cell { text-align: right; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl col.nth-1 { width: 90px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl col.nth-2 { width: 172px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .chk-box input, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .rdo-box input { margin-right: 3px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .chk-box + .chk-box, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .chk-box + .rdo-box, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .rdo-box + .chk-box, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .rdo-box + .rdo-box { margin-left: 5px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select { border: 1px solid #b6b6b6; background: #fff; box-shadow: 0px 1px 1px #e9eced; border-radius: 4px; font-size: 12px; line-height: 19px; min-width: 50px; height: 25px; padding: 2px; margin: 0px auto; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td { min-height: 39px; height: 39px; border-bottom: 1px solid #c0b5a6; color: #666; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th .cell, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell { padding: 5px 7px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th .cell.pd-0, .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell.pd-0 { padding-top: 0; padding-bottom: 0; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th { background: #E7E4E2; overflow: visible; color: #444; text-align: center; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl th .cell { font-weight: 700; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td { border-left: 1px dashed #c0b5a6; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .hSpace-5 { font-size: 1px; line-height: 1px; height: 5px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .btn-history { float: right; line-height: 22px; height: 25px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .form-input { width: 60px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box { width: 120px; height: 25px; border: 1px solid #c5c5c5; border-radius: 4px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box > * { outline: none; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .inp-cal { box-shadow: none; border: none; background: none; text-align: left; width: 100%; position: relative; line-height: 1; top: 1px; z-index: 1; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .i-cal { position: absolute; top: 0; right: 0; width: 30px; height: 100%; border-radius: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0; text-align: center; cursor: pointer; border-left: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .cal-box .i-cal img { position: relative; top: 2px; width: 20px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl td .cell .textarea-etc { width: 150px; height: 80px; border: 1px solid #ccc; resize: none; text-align: left; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn { margin-top: 5px; text-align: right; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn > button { text-transform: uppercase; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red { line-height: 1.3; padding: 3px 18px 1px; }
+
+.cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { height: 36px; line-height: 1.3; padding: 3px 18px 1px; }
+
+.cont-roomStatus .room-area { margin-top: 5px; padding-top: 0px; padding-bottom: 0px; width: 100%; padding-right: 400px; box-sizing: border-box; }
+
+.cont-roomStatus .room-area .list-room { font-family: "NanumSquareRound", Dotum, Sans-serif; }
+
+.cont-roomStatus .room-area .list-room .item-room { margin: 0px 10px 10px 0px; border: 2px solid #d5d5d5; border-radius: 2px; background: #fff; width: 126px; float: left; min-height: 126px; font-size: 13px; font-weight: bold; letter-spacing: -1px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); /*방 리스트 기본 스타일 .base*/ /*방 리스트 체크인 스타일 .chkIn*/ /*클릭시 테두리 변경 .clk*/ }
+
+.cont-roomStatus .room-area .list-room .item-room > div { padding: 0 3px; }
+
+.cont-roomStatus .room-area .list-room .item-room > div:first-child, .cont-roomStatus .room-area .list-room .item-room > div.guestName { border: 0 !important; }
+
+.cont-roomStatus .room-area .list-room .item-room .roomNo { line-height: 26px; font-weight: 800; padding: 0 5px; text-align: center; font-size: 14px; }
+
+.cont-roomStatus .room-area .list-room .item-room .roomNo .num { float: left; }
+
+.cont-roomStatus .room-area .list-room .item-room .roomNo .status { position: relative; top: -1px; float: right; }
+
+.cont-roomStatus .room-area .list-room .item-room .guestName { height: 52px; line-height: 1.2; text-align: center; }
+
+.cont-roomStatus .room-area .list-room .item-room .info { line-height: 24px; font-size: 12px; }
+
+.cont-roomStatus .room-area .list-room .item-room.base > div { border-top: 1px dashed #f0f0f0; }
+
+.cont-roomStatus .room-area .list-room .item-room.base .roomNo { background: #f0f0f0; text-shadow: 1px 1px #fff; }
+
+.cont-roomStatus .room-area .list-room .item-room.base .guestName { line-height: 52px; }
+
+.cont-roomStatus .room-area .list-room .item-room.chkIn { border: 2px solid #C0B5A6; background: #E8E4E1; }
+
+.cont-roomStatus .room-area .list-room .item-room.chkIn > div { border-top: 1px dashed #C0B5A6; }
+
+.cont-roomStatus .room-area .list-room .item-room.chkIn .roomNo { background: #C0B5A6; color: #fff; text-shadow: 1px 1px #000; }
+
+.cont-roomStatus .room-area .list-room .item-room.chkIn .guestName { padding-top: 5px; }
+
+.cont-roomStatus .room-area .list-room .item-room.clk { border-color: #666 !important; }
+
+.cont-roomStatus .room-area .list-floor { position: absolute; top: 0px; right: 350px; font-size: 13px; text-align: center; font-weight: bold; }
+
+.cont-roomStatus .room-area .list-floor .tit { color: #c0b5a6; }
+
+.cont-roomStatus .room-area .list-floor .floor.total { background-color: #c0b5a6; color: #fff; }
+
+.cont-roomStatus .room-area .list-floor .floor { width: 43px; height: 28px; border: 2px solid #c0b5a6; background: #fff; color: #c0b5a6; padding-top: 10px; margin-bottom: 2px; cursor: pointer; }

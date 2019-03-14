@@ -1,0 +1,207 @@
+@@include('../include/_head.html', {
+	"page": "reserve"
+})
+
+<body class="page-reserve">
+
+<div class="wrapper">
+	
+<div class="wrapper">
+	@@include('../include/_header.html')
+	
+	<div class="cf contents">
+		<h2 class="page-title">투숙자리스트</h2>
+		<section class="cont-bkHistory cont-chkIn">
+			<h2 class="cf">
+				<span>투숙자 리스트</span>
+				<span class="right">
+					<button type="button" class="btn-water fn-sms">설악워터피아</button>
+					<button type="button" class="btn-booking fn-booking">현장 예약하기</button>
+				</span>
+			</h2>
+			<div class="grid-wrap grid-total">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="">
+							<col class="nth-2" style="">
+							<col class="nth-3" style="">
+							<col class="nth-4" style="">
+							<col class="nth-5" style="">
+							<col class="nth-6" style="">
+							<col class="nth-7" style="width: 185px">
+							<col class="nth-8" style="">
+							<col class="nth-9" style="">
+							<!--col[class=nth-$ style=]*9-->
+						</colgroup>
+						<thead class="rowgroup">
+							<tr>
+								<th>마운틴뷰 콘도</th>
+								<th>오션뷰 콘도</th>
+								<th>오션뷰 호텔 리노베이션</th>
+								<th>오션뷰 콘도 리노베이션</th>
+								<th>리노베이션 마운틴뷰 콘도</th>
+								<th>오션뷰 콘도 VIP</th>
+								<th>리노베이션 오션뷰 콘도테라스</th>
+								<th>삼포해변카라반</th>
+								<th>합계</th>
+							</tr>
+						</thead>
+						<tbody class="rowgroup">
+							<tr>
+								<td>28건</td>
+								<td>10건</td>
+								<td>3건</td>
+								<td>12건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>53건</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//.grid-total-->
+			<div class="row-color">
+				<span class="rc-box"><span class="rc-impossi"></span><span class="naming">: 판매불가</span></span>
+				<span class="rc-box"><span class="rc-chkIn"></span><span class="naming">: 입실</span></span>
+				<span class="rc-box"><span class="rc-clean"></span><span class="naming">: 청소중</span></span>
+				<span class="rc-box"><span class="rc-chkOut"></span><span class="naming">: 퇴실예정</span></span>
+				<span class="rc-box"><span class="rc-re"></span><span class="naming">: 재실(연박)</span></span>
+			</div>
+			<!--//.row-color-->
+			<div class="row-option">
+				<input type="text" class="inp-default date">
+				<span class="chk-area">
+					<span class="chk-box"><input type="checkbox" id=""><label for="">전체</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">입실예정</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">입실</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">재실(연박)</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">퇴실예정</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">퇴실</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">청소완료</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">No-Show</label></span>
+				</span>
+				<input type="text" class="inp-default nameNumber" placeholder="고객명/전화번호">
+				<input type="text" class="inp-default roomNumber" placeholder="호수">
+				<select name="" id="" class="slt-default partner">
+					<option value="">전체</option>
+				</select>
+				<button type="button" class="btn-style-2">조회</button>
+				<button type="button" class="btn-style-2">엑셀</button>
+			</div>
+			<!--//.row-option-->
+			<div class="grid-wrap grid-detail">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="width: 70px">
+							<col class="nth-2" style="width: 80px">
+							<col class="nth-3" style="width: 110px">
+							<col class="nth-4" style="width: 110px">
+							<col class="nth-5" style="width: 90px">
+							<col class="nth-6" style="width: 65px">
+							<col class="nth-7" style="width: 250px">
+							<col class="nth-8" style="width: 60px">
+							<col class="nth-9" style="width: 75px">
+							<col class="nth-10">
+							<col class="nth-11">
+							<col class="nth-12">
+							<col class="nth-13" style="width: 65px">
+							<col class="nth-14" style="width: 65px">
+							<col class="nth-15">
+							<col class="nth-16" style="width: 65px">
+							<col class="nth-17" style="width: 220px">
+							<col class="nth-17">
+						</colgroup>
+						<thead class="rowgroup">
+							<tr>
+								<th rowspan="2">번호</th>
+								<th rowspan="2">고객명 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">전화번호</th>
+								<th rowspan="2">결제일 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">체크인 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">박수 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">객실명 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">수량 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">결제금 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th rowspan="2">판매처 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+								<th colspan="6">패키지</th>
+								<th rowspan="2">메모</th>
+								<th rowspan="2">관리 <span class="arr-box"><span class="ascending">▲</span><span class="descending">▼</span></span></th>
+							</tr>
+							<tr>
+								<th>조식</th>
+								<th>바베큐</th>
+								<th>불꽃놀이</th>
+								<th>룸서비스</th>
+								<th>바이크</th>
+								<th>체크아웃</th>
+							</tr>
+						</thead>
+						<tbody class="rowgroup">
+							<!-- rc- : impossi, chkIn, clean, chkOut, re -->
+							<tr class="rc-re">
+								<td class="ta-center">87</td>
+								<td class="ta-center">차경환</td>
+								<td class="ta-center">010-7163-3354</td>
+								<td class="ta-center">19/01/02 11:36</td>
+								<td class="ta-center">2019-01-02</td>
+								<td class="ta-center">1박</td>
+								<td>오션뷰 콘도</td>
+								<td class="ta-center">1</td>
+								<td class="ta-right">78,000</td>
+								<td class="ta-center">브랜드</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="to-ellips"></td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">보기</button></td>
+							</tr>
+							<tr>
+								<td class="ta-center">86</td>
+								<td class="ta-center">이순교</td>
+								<td class="ta-center">010-5796-5758</td>
+								<td class="ta-center">19/01/02 10:19</td>
+								<td class="ta-center">2019-01-02</td>
+								<td class="ta-center">1박</td>
+								<td>마운틴뷰 콘도</td>
+								<td class="ta-center">1</td>
+								<td class="ta-right">0</td>
+								<td class="ta-center">고코투어</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="ta-right">0</td>
+								<td class="to-ellips"></td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">보기</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="pagenation" id="pagenation">
+					<a class="pprev" href="javascript:;">&lt;&lt;</a>
+					<a class="prev" href="javascript:;">&lt;</a>
+					<a class="on" href="javascript:;">1</a>
+					<a class="next" href="javascript:;" onclick="">&gt;</a>
+					<a class="nnext" href="javascript:;" onclick="">&gt;&gt;</a>
+				</div>
+			</div>
+			<!--//.grid-detail-->
+		</section>
+		<!--//.cont-bookingHistory.cont-chkIn-->
+	</div>
+	<!--//.contents-->
+
+
+</div>
+</body>
+</html>

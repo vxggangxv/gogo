@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.cont-bkHistory.cont-chkIn .row-color .rc-box [class*="rc-"] { position: relative; box-sizing: border-box; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box > * { position: relative; display: inline-block; vertical-align: middle; }
+
+.cont-bkHistory .inp-default, .cont-bkHistory .slt-default { position: relative; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px #dddddd; border-radius: 4px; font-size: 12px; line-height: 1.6; }
+
+.cont-bkHistory .inp-default, .cont-bkHistory .slt-default { padding: 4px; margin: 0 auto; }
+
+.cont-bkHistory .inp-default[disabled], .cont-bkHistory .slt-default[disabled], .cont-bkHistory .inp-default[readonly], .cont-bkHistory .slt-default[readonly] { background: #eee; }
+
+.cont-bkHistory h2 .right .btn-water, .cont-bkHistory h2 .right .btn-booking, .cont-bkHistory .btn-style-2, .cont-bkHistory .btn-default { display: inline-block; box-sizing: border-box; padding: 4px 12px; margin-bottom: 0; font-family: "Noto Sans KR", Dotum, Sans-serif; font-size: 14px; line-height: 20px; color: #333333; text-align: center; vertical-align: middle; cursor: pointer; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; border: 1px solid #cccccc; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+.page-title { padding: 0 20px; font-size: 25px; font-family: "Noto Sans KR", Dotum, Sans-serif; font-weight: 500; padding-top: 10px; }
+
+.cont-bkHistory .grid-wrap { margin-top: 5px; font-size: 12px; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl { border-collapse: collapse; width: 100%; border-top: 2px solid #a6a6a6; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr th, .cont-bkHistory .grid-wrap .grid-area .grid-tbl tr td { border-left: 1px solid #c5c5c5; border-bottom: 1px solid #c5c5c5; box-sizing: border-box; padding: 8px; padding-top: 8px; padding-bottom: 7px; vertical-align: middle; line-height: normal; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr th:first-child, .cont-bkHistory .grid-wrap .grid-area .grid-tbl tr td:first-child { border-left: 0; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr.division th, .cont-bkHistory .grid-wrap .grid-area .grid-tbl tr.division td { border: 1px solid #c5c5c5; border-color: #a6a6a6; padding: 0; line-height: 0; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr th { background: #f4f5f7; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr td { padding-top: 6px; padding-bottom: 6px; }
+
+.cont-bkHistory .grid-wrap .grid-area .grid-tbl tr td.nothing { padding: 15px 8px; }
+
+.cont-bkHistory .pagenation { margin-top: 20px; font-family: "Noto Sans KR", Dotum, Sans-serif; text-align: center; font-size: 0; }
+
+.cont-bkHistory .pagenation a { display: inline-block; font-size: 13px; width: 32px; height: 32px; vertical-align: middle; line-height: 33px; border: 1px solid #ccc; color: #919191; font-family: "Nanum Gothic"; font-weight: 600; margin-left: 2px; margin-right: 2px; }
+
+.cont-bkHistory .pagenation a:hover { border: 1px solid #000; color: #000; }
+
+.cont-bkHistory .pagenation a[class*="prev"], .cont-bkHistory .pagenation a[class*="next"] { font-size: 12px; line-height: 32px; letter-spacing: -2px; }
+
+.cont-bkHistory .pagenation a.on { border: 1px solid #000; color: #000; }
+
+.cont-bkHistory .pagenation a.prev { text-indent: -4px; }
+
+.cont-bkHistory .pagenation a.pprev { text-indent: -3px; }
+
+.cont-bkHistory .pagenation a.next { text-indent: 1px; }
+
+.contents { min-width: 1695px; }
+
+.cont-bkHistory .grid-wrap { font-size: 13px; }
+
+.cont-bkHistory h2 .right .btn-water, .cont-bkHistory h2 .right .btn-booking, .cont-bkHistory .btn-style-2 { background: #1976d2; color: #fff; }
+
+.cont-bkHistory .inp-default, .cont-bkHistory .slt-default { height: 30px; font-size: 13px; }
+
+.cont-bkHistory .inp-default { width: 80px; }
+
+.cont-bkHistory .slt-default { padding-bottom: 5px; }
+
+/* 분류 버튼 */
+/* 판매목록 페이지 */
+.cont-bkHistory { padding: 0 20px; padding-top: 20px; }
+
+.cont-bkHistory h2 { font-size: 18px; font-weight: 500; letter-spacing: -0.5px; }
+
+.cont-bkHistory h2 > span { font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-bkHistory h2 .right { float: right; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr[class*="row-"] { color: #cd3532; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr th, .cont-bkHistory .grid-wrap .grid-tbl tr td { font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert { font-size: 12px; display: inline-block; line-height: 20px; padding: 1px 6px; border-radius: 4px; color: #fff; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-ok { background: #3885F1; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-cancle { background: #E33335; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-unident { background: #F17721; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-wait { background: #AB65C8; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-unused { background: #FE69AB; }
+
+.cont-bkHistory .grid-wrap .grid-tbl tr .alert.alert-ing { background: #56dd00; }
+
+.cont-bkHistory .grid-wrap.grid-total .grid-tbl { table-layout: fixed; }
+
+.cont-bkHistory .grid-wrap.grid-total .grid-tbl tr th, .cont-bkHistory .grid-wrap.grid-total .grid-tbl tr td { text-align: center; }
+
+.cont-bkHistory .grid-wrap.grid-total .grid-tbl tr td { font-size: 20px; font-weight: 700; }
+
+.cont-bkHistory .grid-wrap.grid-detail .grid-tbl tr th { text-align: center; }
+
+.cont-bkHistory .row-option { margin-top: 30px; }
+
+.cont-bkHistory .row-option .chk-area { padding: 0 3px; }
+
+.cont-bkHistory .row-option .chk-area .chk-box { font-size: 13px; margin-left: 8px; }
+
+.cont-bkHistory .row-option .chk-area .chk-box input[type=checkbox] { position: relative; margin-right: 2px; vertical-align: middle; }
+
+.cont-bkHistory .row-option .chk-area .chk-box:first-child { margin-left: 0; }
+
+.cont-bkHistory .row-option .date { text-align: center; }
+
+.cont-bkHistory .row-option .nameNumber { width: 160px; }
+
+.cont-bkHistory .row-option .partner { min-width: 150px; }
+
+.cont-bkHistory .inp-default.type-2 { width: 62px; text-align: center; }
+
+/* 이벤트 판매목록 페이지 기본*/
+.cont-bkHistory.cont-virtual h2 { padding-bottom: 5px; border-bottom: 2px solid #a6a6a6; }
+
+/* 입금대기 페이지 */
+/* 투숙자 리스트 페이지 */
+.cont-bkHistory.cont-chkIn .row-color { margin-top: 30px; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box [class*="rc-"] { width: 20px; height: 20px; border: 1px solid #f0f0f0; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .rc-impossi { background: #ccc; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .rc-chkIn { background: #f3cc95; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .rc-clean { background: #cefbc9; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .rc-chkOut { background: #e6b8b7; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .rc-re { background: #dbdbf2; }
+
+.cont-bkHistory.cont-chkIn .row-color .rc-box .naming { font-size: 13px; top: -1px; }
+
+.cont-bkHistory.cont-chkIn .row-option { margin-top: 15px; }
+
+.cont-bkHistory.cont-chkIn .row-option .date { width: 100px; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr[class*="row-"] { color: #cd3532; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr.rc-impossi { background: #ccc; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr.rc-chkIn { background: #f3cc95; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr.rc-clean { background: #cefbc9; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr.rc-chkOut { background: #e6b8b7; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr.rc-re { background: #dbdbf2; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr th, .cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr td { font-family: "Noto Sans KR", Dotum, Sans-serif; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr th .arr-box { font-family: "Nanum Gothic", Dotum, Sans-serif; position: relative; display: inline-block; vertical-align: middle; margin-left: 8px; margin-right: -2px; margin-top: -2px; *zoom: 1; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr th .arr-box:after { content: ""; display: block; clear: both; }
+
+.cont-bkHistory.cont-chkIn .grid-wrap .grid-tbl tr th .arr-box span { display: block; font-size: 11px; }
+
+/* 부대시설 현황 페이지 */
+.cont-bkHistory.cont-etc .grid-wrap.grid-total .grid-tbl tr th, .cont-bkHistory.cont-etc .grid-wrap.grid-total .grid-tbl tr td { word-break: keep-all; }
+
+.cont-bkHistory.cont-etc .grid-wrap.grid-total .grid-tbl tr td { font-size: 14px; font-weight: 400; }
+
+.cont-bkHistory.cont-etc .grid-wrap.grid-detail .grid-tbl tr td { text-align: center; }
+
+.cont-bkHistory.cont-etc .row-option .chk-area { margin: 0 10px; }
+
+.cont-bkHistory.cont-etc .row-option .date { width: 100px; }

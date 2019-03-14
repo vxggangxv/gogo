@@ -1,0 +1,3364 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Management-Go-Pub</title>
+
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="">
+    <!--<link rel="canonical" href="도메인">-->
+
+    <!--폰트-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+    <!--공통 Css-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/reset.css" type="text/css">-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/layout.css" type="text/css">-->
+    <link rel="stylesheet" href="../../public/css/reset.css">
+
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--개별 Css-->
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/include/winpop.css">
+    <link rel="stylesheet" href="../../public/css/include/pop.css">
+    <link rel="stylesheet" href="../../public/css/front/init.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        Modernizr.Detectizr.detect();
+    </script>
+
+    <!--개별 Js-->
+    <script src="../../public/js/common.js"></script>
+    <script src="../../public/js/front/init.js"></script>
+
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<!-- 페이지 전용 -->
+
+<body class="page-front">
+
+    <!-- 패키지 팝업-->
+    <div class="pop-container pkg-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>패키지</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="popcont-container">
+                    <h2 class="cont-tit">
+
+					<strong>패키지</strong>
+
+				</h2>
+                    <div class="cont-property">
+                        <div class="grid-wrap">
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl tbl-property">
+                                    <colgroup>
+                                        <col style="width: 150px">
+                                            <col style="width: *">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">패키지명</div>
+                                            </th>
+                                            <td colspan="5">
+                                                <div class="cell">
+                                                    <input type="text" class="form-input name">
+                                                    <button type="button" class="btn-brown">SEARCH</button>
+                                                    <button type="button" class="btn-brown">CLEAR</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.cont-property-->
+                    <div class="cont-list">
+                        <div class="grid-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl list-tbl">
+                                            <colgroup>
+                                                <col style="width: 140px">
+                                                    <col style="width: 190px">
+                                                        <col style="width: *">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">패키지코드</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">패키지명</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">설명</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl list-tbl">
+                                        <colgroup>
+                                            <col style="width: 140px">
+                                                <col style="width: 190px">
+                                                    <col style="width: *">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">조식 1+1 패키지</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">조식 1+1 패키지</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="cell">0000</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">마케팅홍보</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">한미친선담청자_마케팅홍보</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                        <div class="cf grid-bottom">
+                            <a href="#" class="prev st">&lt;&lt;</a>
+                            <a href="#" class="prev">&lt;</a>
+                            <select name="" id="" class="num">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                            <a href="#" class="next">&gt;</a>
+                            <a href="#" class="next st">&gt;&gt;</a>
+                            <span class="count">1 - 100 of 158 items</span>
+                        </div>
+                        <!-- //.grid-bottom-->
+                    </div>
+                    <!-- //.cont-list -->
+                </div>
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-gray fn-cls">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.pkg-container -->
+
+    <!-- rate 팝업 -->
+    <div class="pop-container rate-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>Rate</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="popcont-container split-1">
+                    <h2 class="cont-tit">
+
+					<strong>객실 유형 : DTW</strong>
+
+				</h2>
+                    <div class="cont-property">
+                        <select name="" id="" class="form-select type">
+                            <option value="">Change</option>
+                            <option value="">DC%</option>
+                            <option value="">Discount All</option>
+                            <option value="">Amount Plus</option>
+                        </select>
+                        <input type="text" class="form-input type">
+                        <button type="button" class="btn-blue">APPLY</button>
+                        <button type="button" class="btn-gray">RELOAD</button>
+                    </div>
+                    <!--//.cont-property-->
+                    <div class="cont-list">
+                        <div class="grid-wrap">
+                            <div class="grid-area grid-head">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 30px">
+                                            <col style="width: 110px">
+                                                <col style="width: 50px">
+                                                    <col style="width: *">
+                                    </colgroup>
+                                    <thead class="rowgroup">
+                                        <tr>
+                                            <th>
+                                                <div class="cell">
+                                                    <input type="checkbox">
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">날짜</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">비교</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">객실</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 30px">
+                                            <col style="width: 110px">
+                                                <col style="width: 50px">
+                                                    <col style="width: *">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td class="ta-right">
+                                                <div class="cell">0</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                    </div>
+                    <!-- //.cont-list -->
+                </div>
+                <div class="popcont-container split-2">
+                    <h2 class="cont-tit">
+
+					<strong>서비스 항목</strong>
+
+				</h2>
+                    <div class="cont-property">
+                        <select name="" id="" class="form-select item">
+                            <option value="">Late Check Out</option>
+                            <option value="">Room-Upgrade</option>
+                            <option value="">Early Check In</option>
+                            <option value="">Extra Bed</option>
+                            <option value="">Extra Person</option>
+                            <option value="">Room Manual</option>
+                            <option value="">Mini bar</option>
+                        </select>
+                        <label class="lbl"><span class="t">서비스</span> 
+                            <input type="text" class="form-input service">
+                        </label>
+                        <label class="lbl"><span class="t">가격</span> 
+                            <input type="text" class="form-input price">
+                        </label>
+                        <label class="lbl"><span class="t">양</span> 
+                            <input type="text" class="form-input qty">
+                        </label>
+                        <button type="button" class="btn-blue">APPLY</button>
+                        <button type="button" class="btn-blue">EVERYDAY</button>
+                        <button type="button" class="btn-red">DEL</button>
+                        <button type="button" class="btn-gray">RELOAD</button>
+                    </div>
+                    <!--//.cont-property-->
+                    <div class="cont-list">
+                        <div class="grid-wrap">
+                            <div class="grid-area grid-head">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 30px">
+                                            <col style="width: 110px">
+                                                <col style="width: 160px">
+                                                    <col style="width: 190px">
+                                                        <col style="width: 50px">
+                                                            <col style="width: 80px">
+                                                                <col style="width: 40px">
+                                                                    <col style="width: *">
+                                    </colgroup>
+                                    <thead class="rowgroup">
+                                        <tr>
+                                            <th>
+                                                <div class="cell">
+                                                    <input type="checkbox">
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">날짜</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">포스팅</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">서비스</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">비교</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">가격</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">수량</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">합계</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 30px">
+                                            <col style="width: 110px">
+                                                <col style="width: 160px">
+                                                    <col style="width: 190px">
+                                                        <col style="width: 50px">
+                                                            <col style="width: 80px">
+                                                                <col style="width: 40px">
+                                                                    <col style="width: *">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td class="ta-right">
+                                                <div class="cell">0</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                    </div>
+                    <!-- //.cont-list -->
+                </div>
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-blue fn-cls">DONE</button>
+                    <button type="button" class="btn-red fn-cls">CALCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.rate-container -->
+
+    <!-- 게스트 정보수정 팝업-->
+    <div class="pop-container gm-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>게스트 정보수정</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="grid-wrap">
+                    <div class="grid-contents">
+                        <table class="grid-tbl tbl-name">
+                            <colgroup>
+                                <col class="nth-1" style="width: 92px">
+                                    <col class="nth-2" style="width: *">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="cell">이름</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">성</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">이메일</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">연락처</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">국적</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input nation">
+                                            <button type="button" class="btn-gray w-1">CLEAR</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">언어</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <select name="" id="" class="form-select gray lang">
+                                                <option value="">Chinese</option>
+                                                <option value="">English</option>
+                                                <option value="">Japanese</option>
+                                                <option value="">German</option>
+                                                <option value="">Korean</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">국가</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input country">
+                                            <button type="button" class="btn-gray w-1">CLEAR</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">성별</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <span class="rdo-box"><label><input type="radio" name="gender"> Male</label></span>
+                                            <span class="rdo-box"><label><input type="radio" name="gender"> Femail</label></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">생일</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <span class="cal-box">
+
+											<input type="text" class="appe-reset inp-cal date-ui">
+
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">여권 번호</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">회원 번호</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">레벨 / 평가</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <select name="" id="" class="form-select gray level">
+                                                <option value=""></option>
+                                                <option value="">fresh</option>
+                                                <option value="">Bronze</option>
+                                                <option value="">Silver</option>
+                                                <option value="">Gold</option>
+                                                <option value="">Sapphire</option>
+                                                <option value="">Diamond</option>
+                                                <option value="">VIP</option>
+                                            </select>
+                                            <input type="text" class="form-input eval">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">게스트 유형</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <select name="" id="" class="form-select gray gstType">
+                                                <option value=""></option>
+                                                <option value="">기업</option>
+                                                <option value="">개인</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">자동차 번호</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="cell">주의</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <textarea name="" id="" cols="30" rows="10" class="textarea-etc"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- //.grid-wrap -->
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-brown fn-cls">SAVE</button>
+                    <button type="button" class="btn-gray fn-cls">CALCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.gm-container-->
+
+    <!-- accompany 팝업 -->
+    <div class="pop-container accomp-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>Accompany</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="row-add">
+                    <button type="button" class="btn-green">ADD</button>
+                    <button type="button" class="btn-blue">UPDATE</button>
+                    <button type="button" class="btn-gray">CLEAR</button>
+                </div>
+                <div class="cont-property">
+                    <h2 class="cont-tit">
+
+					<strong>Accompany</strong>
+
+				</h2>
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width: 150px">
+                                        <col style="width: 190px">
+                                            <col style="width: 150px">
+                                                <col style="width: 190px">
+                                                    <col style="width: 150px">
+                                                        <col style="width: *">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">이름</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">성</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">여권 번호</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">국적</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">생일</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <span class="cal-box">
+
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">연락처</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">비고</div>
+                                        </th>
+                                        <td colspan="5">
+                                            <div class="cell">
+                                                <textarea name="" id="" cols="30" rows="10" class="textarea-etc"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//.cont-property-->
+                <div class="cont-list">
+                    <div class="grid-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
+                                    <table class="grid-tbl list-tbl">
+                                        <colgroup>
+                                            <col style="width: 150px">
+                                                <col style="width: 125px">
+                                                    <col style="width: 125px">
+                                                        <col style="width: 125px">
+                                                            <col style="width: 125px">
+                                                                <col style="width: 310px">
+                                                                    <col style="width: *">
+                                        </colgroup>
+                                        <thead class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">이름</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">여권 번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">국적</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">연락처</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">생일</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">비고</div>
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl list-tbl">
+                                    <colgroup>
+                                        <col style="width: 150px">
+                                            <col style="width: 125px">
+                                                <col style="width: 125px">
+                                                    <col style="width: 125px">
+                                                        <col style="width: 125px">
+                                                            <col style="width: 310px">
+                                                                <col style="width: *">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">test</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td class="ta-center">
+                                                <div class="cell">
+                                                    <button type="button" class="btn-gray">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.grid-wrap -->
+                </div>
+                <!-- //.cont-list -->
+
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-brown fn-cls">DONE</button>
+                    <button type="button" class="btn-gray fn-cls">CALCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.accomp-container -->
+
+    <!-- 계정 세부사항 팝업 -->
+    <div class="pop-container account-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>계정 세부사항</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="cont-property">
+                    <h2 class="cont-tit">
+
+					<strong>계정 세부사항</strong>
+
+				</h2>
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width: 90px">
+                                        <col style="width: 250px">
+                                            <col style="width: 90px">
+                                                <col style="width: 250px">
+                                                    <col style="width: 90px">
+                                                        <col style="width: *">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div class="cell necess">마켓</div>
+                                        </th>
+                                        <td colspan="3">
+                                            <div class="cell">
+                                                <input type="text" class="form-input market" readonly value="DIRECTF">
+                                                <input type="text" class="form-input market" readonly value="WALKIN">
+                                                <input type="text" class="form-input market" readonly value="Others">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell necess">등급</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1" readonly value="A Grade">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell necess">거래처명</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="Individual">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">약칭</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="개인">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">코드</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-2" readonly value="F00002">
+                                                <input type="text" class="form-input w-2" readonly value="DIRECTF">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">대표자</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">사업번호</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">업태</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1" readonly value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">전화번호</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">팩스번호</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">업종</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1" readonly value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">사이트</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">이메일</div>
+                                        </th>
+                                        <td colspan="3">
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">국가코드</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">언어코드</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input langCode" readonly value="">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">판매자</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1" readonly value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">주소</div>
+                                        </th>
+                                        <td colspan="5">
+                                            <div class="cell">
+                                                <input type="text" class="form-input addr-1" readonly value="">
+                                                <button type="button" class="btn-gray">주소검색</button>
+                                                <input type="text" class="form-input addr-2" readonly value="">
+                                                <input type="text" class="form-input addr-3" readonly value="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">비고</div>
+                                        </th>
+                                        <td colspan="5">
+                                            <div class="cell">
+                                                <textarea name="" id="" cols="30" rows="10" class="textarea-etc"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--//.cont-property-->
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-gray fn-cls">CALCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.account-container -->
+
+    <!-- 게스트 프로필 팝업 -->
+    <div class="pop-container gp-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>게스트 프로필</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="cont-list">
+                    <div class="grid-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
+                                    <table class="grid-tbl list-tbl">
+                                        <colgroup>
+                                            <col style="width: 95px">
+                                                <col style="width: 95px">
+                                                    <col style="width: 85px">
+                                                        <col style="width: 95px">
+                                                            <col style="width: 125px">
+                                                                <col style="width: 125px">
+                                                                    <col style="width: 95px">
+                                                                        <col style="width: *">
+                                        </colgroup>
+                                        <thead class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">이름</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">성</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">객실#</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">객실 유형</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">여권번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">국적</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">언어</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">국가</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl list-tbl">
+                                    <colgroup>
+                                        <col style="width: 95px">
+                                            <col style="width: 95px">
+                                                <col style="width: 85px">
+                                                    <col style="width: 95px">
+                                                        <col style="width: 125px">
+                                                            <col style="width: 125px">
+                                                                <col style="width: 95px">
+                                                                    <col style="width: *">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">test</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.grid-wrap -->
+                </div>
+                <!-- //.cont-list -->
+
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-brown fn-cls">SAVE</button>
+                    <button type="button" class="btn-gray fn-cls">CALCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.gp-container -->
+
+    <!-- 블럭 룸 세이브 팝업 -->
+    <div class="pop-container rmBlock-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>블럭 룸 저장</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="popcont-container">
+                    <div class="cont-property">
+                        <div class="grid-wrap">
+                            <div class="grid-contents">
+                                <table class="grid-tbl tbl-property">
+                                    <colgroup>
+                                        <col style="width: 120px">
+                                            <col style="width: *">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">속성</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray w-1">
+                                                        <option value="">Ramada pt</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell necess">에이전트</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="text" class="form-input w-1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell necess">계약 날짜</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <span class="cal-box">
+
+													<input type="text" class="appe-reset inp-cal date-ui">
+
+													<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                    </span>
+                                                    <span class="mg-">~</span>
+                                                    <span class="cal-box">
+
+													<input type="text" class="appe-reset inp-cal date-ui">
+
+													<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell necess">계약 이름</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="text" class="form-input w-1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">마감일</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="number" class="form-input w-1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">UseYn</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray w-2">
+                                                        <option value="">Y</option>
+                                                        <option value="">N</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.cont-property-->
+                </div>
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-blue fn-cls">SAVE</button>
+                    <button type="button" class="btn-gray fn-cls">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.rmBlock-container -->
+
+    <!-- 파티 선택 팝업 -->
+    <div class="pop-container sltParty-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>파티 선택</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="popcont-container">
+                    <div class="cont-property">
+                        <div class="grid-wrap">
+                            <div class="grid-contents">
+                                <table class="grid-tbl tbl-property">
+                                    <colgroup>
+                                        <col style="width: 95px">
+                                            <col style="width: 145px">
+                                                <col style="width: 95px">
+                                                    <col style="width: 275px">
+                                                        <col style="width: *">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">다중 검색</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="text" class="form-input">
+                                                </div>
+                                            </td>
+                                            <th>
+                                                <div class="cell">도착 날짜</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <span class="cal-box">
+
+													<input type="text" class="appe-reset inp-cal date-ui">
+
+													<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                    </span>
+                                                    <span class="mg-">~</span>
+                                                    <span class="cal-box">
+
+													<input type="text" class="appe-reset inp-cal date-ui">
+
+													<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td class="ta-right">
+                                                <div class="cell">
+                                                    <button type="button" class="btn-brown">SEARCH</button>
+                                                    <button type="button" class="btn-brown">CLEAR</button>
+                                                    <button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.cont-property -->
+
+                    <div class="cont-list">
+                        <div class="grid-wrap scr-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width: 55px">
+                                                    <col style="width: 120px">
+                                                        <col style="width: 180px">
+                                                            <col style="width: 60px">
+                                                                <col style="width: 70px">
+                                                                    <col style="width: 60px">
+                                                                        <col style="width: 85px">
+                                                                            <col style="width: 40px">
+                                                                                <col style="width: 85px">
+                                                                                    <col style="width: 40px">
+                                                                                        <col style="width: 40px">
+                                                                                            <col style="width: 45px">
+                                                                                                <col style="width: *">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">파티</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">예약 번호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">이름</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실#</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실 유형</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">GRP / FIT</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">도착 날짜</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Nts</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">출발 날짜</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">어른</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">아이</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">상태</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width: 55px">
+                                                <col style="width: 120px">
+                                                    <col style="width: 180px">
+                                                        <col style="width: 60px">
+                                                            <col style="width: 70px">
+                                                                <col style="width: 60px">
+                                                                    <col style="width: 85px">
+                                                                        <col style="width: 40px">
+                                                                            <col style="width: 85px">
+                                                                                <col style="width: 40px">
+                                                                                    <col style="width: 40px">
+                                                                                        <col style="width: 45px">
+                                                                                            <col style="width: *">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="grid-area grid-total">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width: 55px">
+                                                <col style="width: 120px">
+                                                    <col style="width: 180px">
+                                                        <col style="width: 60px">
+                                                            <col style="width: 70px">
+                                                                <col style="width: 60px">
+                                                                    <col style="width: 85px">
+                                                                        <col style="width: 40px">
+                                                                            <col style="width: 85px">
+                                                                                <col style="width: 40px">
+                                                                                    <col style="width: 40px">
+                                                                                        <col style="width: 45px">
+                                                                                            <col style="width: *">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">합계</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="last">
+                                                    <div class="cell inBl"></div><span class="square"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                        <div class="row-upDown">
+                            <button type="button" class="btn-gray">▼</button>
+                            <button type="button" class="btn-gray">▲</button>
+                        </div>
+                        <div class="grid-wrap scr-wrap-2">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width:80px">
+                                                    <col style="width:100px">
+                                                        <col style="width:60px">
+                                                            <col style="width:70px">
+                                                                <col style="width:60px">
+                                                                    <col style="width:100px">
+                                                                        <col style="width:55px">
+                                                                            <col style="width:110px">
+                                                                                <col style="width:55px">
+                                                                                    <col style="width:50px">
+                                                                                        <col style="width:50px">
+                                                                                            <col style="width:55px">
+                                                                                                <col style="width:*">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">예약 번호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">이름</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실#</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실 유형</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">GRP / FIT</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">도착 날짜</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Nts</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">출발 날짜</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">어른</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">아이</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">상태</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">계정</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:80px">
+                                                <col style="width:100px">
+                                                    <col style="width:60px">
+                                                        <col style="width:70px">
+                                                            <col style="width:60px">
+                                                                <col style="width:100px">
+                                                                    <col style="width:55px">
+                                                                        <col style="width:110px">
+                                                                            <col style="width:55px">
+                                                                                <col style="width:50px">
+                                                                                    <col style="width:50px">
+                                                                                        <col style="width:55px">
+                                                                                            <col style="width:*">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-green fn-cls">PARTY</button>
+                    <button type="button" class="btn-green fn-cls">APART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.sltParty-container -->
+
+    <!-- 등급 변경 팝업-->
+    <div class="pop-container chGrade-container">
+        <div class="bg-back"></div>
+
+        <div class="pop-wrap">
+            <div class="pop-header">
+                <h2>패키지</h2>
+                <span class="a-i-x i-x fn-cls"></span>
+            </div>
+            <div class="cf pop-contents">
+                <div class="popcont-container">
+                    <div class="cont-property">
+                        <div class="grid-wrap">
+                            <div class="grid-contents">
+                                <table class="grid-tbl tbl-property">
+                                    <colgroup>
+                                        <col style="width: 70px">
+                                            <col style="width: 400px">
+                                                <col style="width: 70px">
+                                                    <col style="width: *">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">시장</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray market-1">
+                                                        <option value="">마켓</option>
+                                                        <option value="">OTA</option>
+                                                        <option value="">INBOUND OFFLINE</option>
+                                                        <option value="">CORP-FIT</option>
+                                                        <option value="">DIRECT-FIT</option>
+                                                        <option value="">DIRECT-GROUP</option>
+                                                        <option value="">OTHER MARKET</option>
+                                                    </select>
+                                                    <select name="" id="" class="form-select gray market-2">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>
+                                                <div class="cell">등급</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray grade">
+                                                        <option value=""></option>
+                                                        <option value="">A 등급</option>
+                                                        <option value="">B 등급</option>
+                                                        <option value="">C 등급</option>
+                                                        <option value="">D 등급</option>
+                                                        <option value="">E 등급</option>
+                                                        <option value="">F 등급</option>
+                                                        <option value="">G 등급</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">검색</div>
+                                            </th>
+                                            <td colspan="3">
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select search">
+                                                        <option value="">거래처명</option>
+                                                        <option value="">대표자</option>
+                                                    </select>
+                                                    <input type="text" class="form-input search">
+                                                    <button type="button" class="btn-brown">SEARCH</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.cont-property-->
+                    <div class="cont-list">
+                        <div class="grid-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl list-tbl">
+                                            <colgroup>
+                                                <col style="width: 30px">
+                                                    <col style="width: 50px">
+                                                        <col style="width: 200px">
+                                                            <col style="width: 100px">
+                                                                <col style="width: 150px">
+                                                                    <col style="width: 70px">
+                                                                        <col style="width: 100px">
+                                                                            <col style="width: 100px">
+                                                                                <col style="width: *">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">번호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">이름</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">암호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">시장</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">등급</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">CEO</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">연락처</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">이메일</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl list-tbl">
+                                        <colgroup>
+                                            <col style="width: 30px">
+                                                <col style="width: 50px">
+                                                    <col style="width: 200px">
+                                                        <col style="width: 100px">
+                                                            <col style="width: 150px">
+                                                                <col style="width: 70px">
+                                                                    <col style="width: 100px">
+                                                                        <col style="width: 100px">
+                                                                            <col style="width: *">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                        <div class="cf grid-bottom">
+                            <a href="#" class="prev st">&lt;&lt;</a>
+                            <a href="#" class="prev">&lt;</a>
+                            <select name="" id="" class="num">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                            <a href="#" class="next">&gt;</a>
+                            <a href="#" class="next st">&gt;&gt;</a>
+                            <span class="count">1 - 100 of 158 items</span>
+                        </div>
+                        <!-- //.grid-bottom-->
+                    </div>
+                    <!-- //.cont-list -->
+                    <div class="cont-property mkGrade">
+                        <div class="grid-wrap">
+                            <div class="grid-contents">
+                                <table class="grid-tbl tbl-property">
+                                    <colgroup>
+                                        <col style="width: 70px">
+                                            <col style="width: 500px">
+                                                <col style="width: 70px">
+                                                    <col style="width: *">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell necess">시장</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray market-1">
+                                                        <option value="">마켓</option>
+                                                        <option value="">OTA</option>
+                                                        <option value="">INBOUND OFFLINE</option>
+                                                        <option value="">CORP-FIT</option>
+                                                        <option value="">DIRECT-FIT</option>
+                                                        <option value="">DIRECT-GROUP</option>
+                                                        <option value="">OTHER MARKET</option>
+                                                    </select>
+                                                    <select name="" id="" class="form-select gray market-2">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <th>
+                                                <div class="cell necess">등급</div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray grade">
+                                                        <option value=""></option>
+                                                        <option value="">A 등급</option>
+                                                        <option value="">B 등급</option>
+                                                        <option value="">C 등급</option>
+                                                        <option value="">D 등급</option>
+                                                        <option value="">E 등급</option>
+                                                        <option value="">F 등급</option>
+                                                        <option value="">G 등급</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.pop-contents-->
+            <div class="pop-footer">
+                <div class="row-btn">
+                    <button type="button" class="btn-blue fn-cls">SAVE</button>
+                    <button type="button" class="btn-gray fn-cls">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //.chGrade-container -->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="group cont-header">
+                <h1 class="logo">
+
+				<a href="/" class="logo-a">
+
+					<!-- 사이트 별 로고 -->
+
+					<img src="../../public/img/common/logo.png" alt="고코투어 CMS" class="logo-img">
+
+					<!-- <img src="../../public/img/common/logo_ocean.jpg" alt="고코투어 CMS" class="logo-img"> -->
+
+					<!-- <img src="../../public/img/common/logo_bsdogo.jpg" alt="고코투어 CMS" class="logo-img"> -->
+
+					<!-- <img src="../../public/img/common/logo_ramada.png" alt="고코투어 CMS" class="logo-img"> -->
+
+				</a>
+
+			</h1>
+                <nav class="cf gnb">
+                    <ul class="menu dep-1">
+                        <li>
+                            <a href="" class="ic-reservation">예약</a>
+                            <ul class="dep-2">
+                                <li><a href="../reservation/reservationFit.html">예약 조건</a>
+                                </li>
+                                <li><a href="../reservation/reservationGroup.html">예약 그룹</a>
+                                </li>
+                                <li><a href="../reservation/assignStatus.html">할당 현황</a>
+                                </li>
+                                <li><a href="../reservation/roomBlock.html">블럭 룸</a>
+                                </li>
+                                <li><a href="../reservation/reservationList.html">예약 목록</a>
+                                </li>
+                                <li><a href="../reservation/roomInventory.html">객실 목록</a>
+                                </li>
+                                <li><a href="../reservation/rateSchedule.html">요금 일정</a>
+                                </li>
+                                <li><a href="../reservation/account.html">계정</a>
+                                </li>
+                                <li><a href="../reservation/mailList.html">메일 목록</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-front">프론트</a>
+                            <ul class="dep-2">
+                                <li><a href="../front/chkIn.html">체크인</a>
+                                </li>
+                                <li><a href="../front/inHouse.html">사내</a>
+                                </li>
+                                <li><a href="../front/departures.html">출발</a>
+                                </li>
+                                <li><a href="../front/roomStay.html">숙박</a>
+                                </li>
+                                <li><a href="../front/roomStatus.html">객실 현황</a>
+                                </li>
+                                <li><a href="../front/roomStatusList.html">객실 현황 목록</a>
+                                </li>
+                                <li><a href="../front/logBook.html">통장</a>
+                                </li>
+                                <li><a href="../front/guestProfile.html">투숙객 정보</a>
+                                </li>
+                                <li><a href="../front/complain.html">컴플레인</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-cash">캐셔링</a>
+                            <ul class="dep-2">
+                                <li><a href="">C/L 캐셔링</a>
+                                </li>
+                                <li><a href="">교환</a>
+                                </li>
+                                <li><a href="">현금 서랍</a>
+                                </li>
+                                <li><a href="">예치금</a>
+                                </li>
+                                <li><a href="">현금출납계</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-cash">미수금</a>
+                            <ul class="dep-2">
+                                <li><a href="">미수금</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-housekeep">시설 관리</a>
+                            <ul class="dep-2">
+                                <li><a href="">청소 일정</a>
+                                </li>
+                                <li><a href="">청소 배정</a>
+                                </li>
+                                <li><a href="">객실 청소</a>
+                                </li>
+                                <li><a href="">객실 현황</a>
+                                </li>
+                                <li><a href="">도착 목록</a>
+                                </li>
+                                <li><a href="">사내 목록</a>
+                                </li>
+                                <li><a href="">출발 목록</a>
+                                </li>
+                                <li><a href="">분실물</a>
+                                </li>
+                                <li><a href="">EX-B 현황</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-fnb">음식료품</a>
+                            <ul class="dep-2">
+                                <li><a href="">업장</a>
+                                </li>
+                                <li><a href="">메뉴</a>
+                                </li>
+                                <li><a href="">목록</a>
+                                </li>
+                                <li><a href="">연회 목록</a>
+                                </li>
+                                <li><a href="">아침식사</a>
+                                </li>
+                                <li><a href="">연회 일정</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-report">보고서</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="">프론트</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">도착 목록</a>
+                                        </li>
+                                        <li><a href="">사내 목록</a>
+                                        </li>
+                                        <li><a href="">출발 목록</a>
+                                        </li>
+                                        <li><a href="">객실 변경 목록</a>
+                                        </li>
+                                        <li><a href="">이판 내역</a>
+                                        </li>
+                                        <li><a href="">투숙객 메시지</a>
+                                        </li>
+                                        <li><a href="">표시 금지 목록</a>
+                                        </li>
+                                        <li><a href="">고장 내역</a>
+                                        </li>
+                                        <li><a href="">품목 재고 예측</a>
+                                        </li>
+                                        <li><a href="">특별 요청 예측</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">영업 및 예약</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">일별 예약</a>
+                                        </li>
+                                        <li><a href="">매월 계정별 생산</a>
+                                        </li>
+                                        <li><a href="">계정 세부사항별 생산</a>
+                                        </li>
+                                        <li><a href="">국적별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">시장/구획 별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">소스별 판매량</a>
+                                        </li>
+                                        <li><a href="">객실 유형별 예보</a>
+                                        </li>
+                                        <li><a href="">시장/구획별 예측</a>
+                                        </li>
+                                        <li><a href="">출처별 예측</a>
+                                        </li>
+                                        <li><a href="">Mrk/Seg 의 판매 생산</a>
+                                        </li>
+                                        <li><a href="">소스 날짜별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">예약 최소</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">야간 감사</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">관리자 보고</a>
+                                        </li>
+                                        <li><a href="">세부 청구 목록</a>
+                                        </li>
+                                        <li><a href="">세부 지불 목록</a>
+                                        </li>
+                                        <li><a href="">투숙객 원장</a>
+                                        </li>
+                                        <li><a href="">A/R 레저</a>
+                                        </li>
+                                        <li><a href="">예금 원장</a>
+                                        </li>
+                                        <li><a href="">시산표</a>
+                                        </li>
+                                        <li><a href="">일일 수익</a>
+                                        </li>
+                                        <li><a href="">일일 수입 수량</a>
+                                        </li>
+                                        <li><a href="">판매일보</a>
+                                        </li>
+                                        <li><a href="">객실료 체크(거래처별)</a>
+                                        </li>
+                                        <li><a href="">객실료 체크(객실별)</a>
+                                        </li>
+                                        <li><a href="">재실후불잔액(거래처별)</a>
+                                        </li>
+                                        <li><a href="">재실후불잔액(객실별)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">캐셔링</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">에이징 요약</a>
+                                        </li>
+                                        <li><a href="">계산원 요약</a>
+                                        </li>
+                                        <li><a href="">일일 청구서 목록</a>
+                                        </li>
+                                        <li><a href="">일일 지불 목록</a>
+                                        </li>
+                                        <li><a href="">예수금 리스트</a>
+                                        </li>
+                                        <li><a href="">내외국인 이용실적</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">수익 현황</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">기간별 수입 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-report">분석</a>
+                            <ul class="dep-2">
+                                <li><a href="">대시보드</a>
+                                </li>
+                                <li><a href="">전년대비 매출액 현황(월별)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-basic">기본</a>
+                            <ul class="dep-2">
+                                <li><a href="">내 정보</a>
+                                </li>
+                                <li><a href="">공통 코드</a>
+                                </li>
+                                <li><a href="">부동산 코드</a>
+                                </li>
+                                <li><a href="">특별 코드</a>
+                                </li>
+                                <li><a href="">패키지 설정</a>
+                                </li>
+                                <li><a href="">달력</a>
+                                </li>
+                                <li><a href="">메일 템플릿</a>
+                                </li>
+                                <li><a href="">ClickOnce 설치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-config">관리자</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="">시스템 관리</a>
+                                    <ul class="dep-3">
+                                        <li>
+                                            <a href="">권한관리</a>
+                                            <ul class="dep-4">
+                                                <li><a href="">권한 코드</a>
+                                                </li>
+                                                <li><a href="">메뉴 권한</a>
+                                                </li>
+                                                <li><a href="">사용자 권한</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">사용자 관리</a>
+                                            <ul class="dep-4">
+                                                <li><a href="">사용자 등록</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-bar">
+                    <span class="user">2018-12-13 관리자님 <i class="fa fa-user-circle"></i></span>
+                    <ul class="menu cf">
+                        <li class="item item-1"><a href="/"><i class="fa fa-home"></i> <span class="hidden">홈</span></a>
+                        </li>
+                        <li class="item item-2"><a href=""><i class="fa fa-internet-explorer"></i> <span class="hidden">바로가기</span></a>
+                        </li>
+                        <li class="item item-2"><a href=""><i class="fa fa-sign-out"></i> <span class="hidden">로그아웃</span></a>
+                        </li>
+                        <li class="item item-1"><a href="javascript:;" onclick="popFn.show('.pop-profile')"><i class="fa fa-gears"></i> <span class="hidden">정보수정</span></a>
+                        </li>
+                    </ul>
+                    <div class="site-info">
+                        <!-- <span class="siteName">오션투유리조트속초설악비치호텔앤콘도</span> -->
+
+                        <select name="" id="" class="slt-site">
+                            <option value="">오션투유리조트속초설악비치호텔앤콘도</option>
+                            <option value="">연호리조트</option>
+                            <option value="">BS콘도도고온천호텔앤리조트</option>
+                            <option value="">라마다앙코르평택</option>
+                            <option value="">지리산남원중앙하이츠콘도</option>
+                        </select>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--//.header-->
+
+        <aside class="sidebar left">
+            <h2 class="hidden">사이드 네비게이션</h2>
+            <div class="lnb">
+                <a href="javascrtip:;" class="btna quick-plus">
+                    <img src="../../public/img/icon/quick/quickMenuPlus.png" alt="즐겨찾기 메뉴 추가">
+                </a>
+                <!-- 메뉴 없을 시 노출 -->
+                <a href="javascript:;" class="btna quick-none">
+                    <img src="../../public/img/icon/quick/split.png" alt="즐겨찾기 메뉴 없음">
+                </a>
+                <ul class="menu cf">
+                    <!-- 메뉴 dep-1 카테고리별 이미지(캐셔링, 미수금 - front 이미지사용)-->
+                    <!-- <img src="../../public/img/icon/quick/reservation.png" alt="예약">
+				<img src="../../public/img/icon/quick/front.png" alt="프론트">
+				<img src="../../public/img/icon/quick/housekeep.png" alt="시설관리">
+				<img src="../../public/img/icon/quick/fnb.png" alt="음식료품">
+				<img src="../../public/img/icon/quick/report.png" alt="보고서">
+				<img src="../../public/img/icon/quick/basic.png" alt="기본">
+				<img src="../../public/img/icon/quick/admin.png" alt="관리자"> -->
+                    <li class="item on">
+                        <a href="javascript:;">
+                            <img src="../../public/img/icon/quick/front.png" alt="프론트">
+                            <span class="lbl">프론트</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;">
+                            <img src="../../public/img/icon/quick/report.png" alt="보고서">
+                            <span class="lbl">전년대비 매출액 현황</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--//.sidebar.left-->
+
+
+
+        <div class="cf contents rmStatus-contents">
+
+            <div class="cf row-h2">
+                <h2 class="page-title">객실 현황</h2>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
+            </div>
+
+            <div class="cont-container-f">
+                <section class="cont-roomStatus">
+                    <div class="area classify-area">
+                        <div class="cont-center">
+                            <h3 class="hidden">분류 리스트</h3>
+                            <ul class="cf list-type">
+                                <li class="item-type type-1">
+                                    <a href="javascript:;" class="item chkOut">Check out</a>
+                                    <a href="javascript:;" class="item assign">Assign</a>
+                                    <a href="javascript:;" class="item chkOut-assign">Check out + Assign</a>
+                                </li>
+                                <li class="item-type type-2">
+                                    <a href="javascript:;" class="item wd-1 vip">VIP</a>
+                                    <a href="javascript:;" class="item wd-2 chkIn">Check-in</a>
+                                    <a href="javascript:;" class="item wd-3 inHouse">In House</a>
+                                    <a href="javascript:;" class="item wd-4 ooo">Out Of Order</a>
+                                    <a href="javascript:;" class="item wd-1 empty">Empty</a>
+                                    <a href="javascript:;" class="item wd-2 dayUse">Day Use</a>
+                                    <a href="javascript:;" class="item wd-3 goOut">Go Out</a>
+                                    <a href="javascript:;" class="item wd-4 oos">Out Of Service</a>
+                                </li>
+                                <li class="item-type type-3">
+                                    <a href="javascript:;" class="item wd-1 vi">VI</a>
+                                    <a href="javascript:;" class="item wd-2 vw">VW</a>
+                                    <a href="javascript:;" class="item wd-3 oi">OI</a>
+                                    <a href="javascript:;" class="item wd-4 ow">OW</a>
+                                    <a href="javascript:;" class="item wd-1 vc">VC</a>
+                                    <a href="javascript:;" class="item wd-2 vd">VD</a>
+                                    <a href="javascript:;" class="item wd-3 oc">OC</a>
+                                    <a href="javascript:;" class="item wd-4 od">OD</a>
+                                </li>
+                                <li class="item-type type-4">
+                                    <a href="javascript:;" class="item wd-1 in-r">IN/R</a>
+                                    <a href="javascript:;" class="item wd-2 in">IN</a>
+                                    <a href="javascript:;" class="item wd-1 out-r">OUT/R</a>
+                                    <a href="javascript:;" class="item wd-2 out">OUT</a>
+                                </li>
+                                <li class="item-type type-5">
+                                    <a href="javascript:;" class="item wd-1 message">Message</a>
+                                    <a href="javascript:;" class="item wd-2 guests">Guests</a>
+                                    <a href="javascript:;" class="item wd-1 temperature">Temperature</a>
+                                </li>
+                            </ul>
+                            <div class="row-chk">
+                                <button type="button" class="btn-clear">Clear<span class="hidden">체크해제</span>
+                                </button>
+                                <span class="mg-l"></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">RST</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">DDB</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">TTW</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">DTW</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">FTW</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">TRP</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">FDB</label></span>
+                                <span class="chk-box"><label><input type="checkbox" id="">FKD</label></span>
+                            </div>
+                        </div>
+                        <div class="cont-side right">
+                            <div class="roominfo-area">
+                                <h3 class="hidden">방 정보</h3>
+                                <fieldset>
+                                    <legend class="show-reset">Room Info</legend>
+                                    <div class="cont-box">
+                                        <ul class="list-tab">
+                                            <li class="tab Info on">Info</li>
+                                            <li class="tab Status">Status</li>
+                                            <li class="tab-btn service">
+                                                <button type="buton" class="btn-serv">Status Service</button>
+                                            </li>
+                                        </ul>
+                                        <div class="cont-tab">
+                                            <div class="tab-type tab-info on">
+                                                <h4 class="hidden">Info</h4>
+                                                <table class="tbl-type info-tbl">
+                                                    <colgroup>
+                                                        <col class="nth-1">
+                                                            <col class="nth-2">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Floor</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <select name="" id="" class="form-select floor">
+                                                                        <option value=""></option>
+                                                                        <option value="">17</option>
+                                                                        <option value="">16</option>
+                                                                    </select>
+                                                                    <button type="button" class="btn-history">O.O.O History</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Room #</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <input type="text" class="appe-reset form-input">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    Room Type
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <select name="" id="" class="form-select w-100p">
+                                                                        <option value=""></option>
+                                                                        <option value="">17</option>
+                                                                        <option value="">16</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    Assign Type
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <select name="" id="" class="form-select w-100p">
+                                                                        <option value=""></option>
+                                                                        <option value="">17</option>
+                                                                        <option value="">16</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    CheckIn Type
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <select name="" id="" class="form-select w-100p">
+                                                                        <option value=""></option>
+                                                                        <option value="">17</option>
+                                                                        <option value="">16</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Room Form</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell pd-0">
+                                                                    <p class="row">
+                                                                        <span class="chk-box">
+
+																		<label><input type="checkbox">Connecting</label>
+
+																	</span>
+                                                                    </p>
+                                                                    <p class="row">
+                                                                        <span class="chk-box">
+
+																		<label><input type="checkbox">For Disabled</label>
+
+																	</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Room Etc</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell pd-0">
+                                                                    <p class="row">
+                                                                        <span class="chk-box">
+
+																		<label><input type="checkbox">Smoking</label>
+
+																	</span>
+                                                                    </p>
+                                                                    <p class="row">
+                                                                        <span class="chk-box">
+
+																		<label><input type="checkbox">High Floor</label>
+
+																	</span>
+                                                                    </p>
+                                                                    <p class="row">
+                                                                        <span class="chk-box">
+
+																		<label><input type="checkbox">Extra Bed</label>
+
+																	</span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Last Sell</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <p class="row">
+                                                                        <span class="rdo-box"><label><input type="radio">Y</label></span>
+                                                                        <span class="rdo-box"><label><input type="radio">N</label></span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Do Not
+                                                                    <br>Disturb</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <p class="row">
+                                                                        <span class="rdo-box"><label><input type="radio">Y</label></span>
+                                                                        <span class="rdo-box"><label><input type="radio">N</label></span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Fixed</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <p class="row">
+                                                                        <span class="rdo-box"><label><input type="radio">Y</label></span>
+                                                                        <span class="rdo-box"><label><input type="radio">N</label></span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">Service
+                                                                    <br>Status</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <p class="row">
+                                                                        <select name="" id="" class="form-select w-100p">
+                                                                            <option value=""></option>
+                                                                            <option value="">O.O.O</option>
+                                                                            <option value="">O.O.S</option>
+                                                                        </select>
+                                                                    </p>
+                                                                    <p class="hSpace-5"></p>
+                                                                    <p class="row">
+                                                                        <span class="cal-box">
+
+																		<input type="text" class="appe-reset inp-cal date-ui">
+
+																		<span class="i-cal"><img src="//img.go.co.kr/i_calGray.png" alt="달력" width="20px"></span>
+                                                                        </span>
+                                                                        ~
+                                                                        <p class="hSpace-5"></p>
+                                                                        <span class="cal-box">
+
+																		<input type="text" class="appe-reset inp-cal date-ui">
+
+																		<span class="i-cal" id="cal-2"><img src="//img.go.co.kr/i_calGray.png" alt="달력" width="20px"></span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">ETC</div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">
+                                                                    <textarea name="" id="" cols="30" rows="10" class="appe-reset textarea-etc"></textarea>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!--{tr(th>div.cell^+td>div.cell)}-->
+                                                    </tbody>
+                                                </table>
+                                                <div class="row row-btn">
+                                                    <button type="button" class="btn-red">assign
+                                                        <br>room</button>
+                                                    <button type="button" class="btn-red">make
+                                                        <br>empty</button>
+                                                    <button type="button" class="btn-blue">save</button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-type tab-status">
+                                                <h4 class="tit">Summary</h4>
+                                                <table class="tbl-type status-tbl">
+                                                    <colgroup>
+                                                        <col class="nth-1">
+                                                            <col class="nth-2">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    <img src="../../public/img/icon/checkIn.png" alt="체크인" class="i-classify">
+                                                                    <img src="../../public/img/icon/inHouse.png" alt="인하우스" class="i-classify">
+                                                                    <img src="../../public/img/icon/goOut.png" alt="고아웃" class="i-classify">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">54 / 0 / 52</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    <img src="../../public/img/icon/empty.png" alt="빈방" class="i-classify">
+                                                                    <img src="../../public/img/icon/ooo.png" alt="outOfOrder" class="i-classify">
+                                                                    <img src="../../public/img/icon/oos.png" alt="outOfService" class="i-classify">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">248 / 47 / 0</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    <img src="../../public/img/icon/oi.png" alt="" class="i-classify">
+                                                                    <img src="../../public/img/icon/oc.png" alt="oc" class="i-classify">
+                                                                    <img src="../../public/img/icon/ow.png" alt="ow" class="i-classify">
+                                                                    <img src="../../public/img/icon/od.png" alt="od" class="i-classify">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">0 / 0 / 0 / 54</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    <img src="../../public/img/icon/vi.png" alt="vi" class="i-classify">
+                                                                    <img src="../../public/img/icon/vc.png" alt="vc" class="i-classify">
+                                                                    <img src="../../public/img/icon/vw.png" alt="vw" class="i-classify">
+                                                                    <img src="../../public/img/icon/vd.png" alt="vd" class="i-classify">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">163 / 9 / 7 / 69</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <div class="cell">
+                                                                    <img src="../../public/img/icon/mur.png" alt="mur" class="i-classify">
+                                                                    <img src="../../public/img/icon/dnd.png" alt="dnd" class="i-classify">
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <div class="cell">0 / 0</div>
+                                                            </td>
+                                                        </tr>
+                                                        <!--tr(th>div.cell>img[src=../../public/img/icon/.png].i-classify^^+td>div.cell)-->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            $(function() {
+                                            											var contBox = $(".cont-box");
+                                            											contBox.find(".cont-tab .tab-type.on").show().siblings().hide();
+                                            											contBox.on("click", ".list-tab .tab", function() {
+                                            												var tabIdx = $(this).index();
+                                            												$(this).addClass("on").siblings().removeClass("on");
+                                            												contBox.find(".cont-tab .tab-type").eq(tabIdx).show().siblings().hide();
+                                            											});
+                                            										});
+                                        </script>
+                                    </div>
+                                    <!--//.cont-box-->
+                                </fieldset>
+                            </div>
+                            <!--//.roominfo-area-->
+                        </div>
+                        <!--//.cont-side.right-->
+                    </div>
+                    <!--//.classify-area-->
+                    <div class="area room-area">
+                        <div class="cont-center">
+                            <ul class="cf list-room">
+                                <!--기본 스타일 .base , 체크 인 스타일 .chkIn , 클릭 스타일 .clk 추가-->
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1701</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1702</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1703</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1704</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1705</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1706</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1707</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1708</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1709</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1710</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room base">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1711</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Empty
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1601</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1602</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1603</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1604</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1605</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1606</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1607</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1608</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1609</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1610</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                                <li class="item-room chkIn">
+                                    <div class="cf roomNo">
+                                        <span class="left num">1611</span>
+                                        <span class="center name">RST</span>
+                                        <span class="right status">
+
+											<img src="../../public/img/icon/od.png" alt="od">
+
+											<img src="../../public/img/icon/goOut.png" alt="고아웃">
+
+										</span>
+                                    </div>
+                                    <div class="cf guestName">
+                                        Divid
+                                    </div>
+                                    <div class="cf info info-1">
+                                        <img src="../../public/img/icon/guests.png" alt="" class="guests">2(2/0)
+                                    </div>
+                                    <div class="cf info info-2">
+                                        <img src="../../public/img/icon/ebOut.png" alt="아웃">
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!--//.list-room-->
+                            <script>
+                                $(function() {
+                                								$(".room-area .list-room > li").on("click", function() {
+                                									$(this).toggleClass("clk");
+                                								});
+                                							});
+                            </script>
+                            <ul class="list-floor">
+                                <li class="item-floor">
+                                    <div class="tit">Floor</div>
+                                </li>
+
+                                <!-- 클래스 - 판매가능 y , 판매 불가 n -->
+
+                                <li class="item-floor">
+                                    <div class="floor total">Total</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">17</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">16</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">15</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">14</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">13</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">12</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">11</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">10</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">9</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">8</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">7</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">6</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">5</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">4</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">3</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">2</div>
+                                </li>
+
+                                <li class="item-floor">
+                                    <div class="floor">1</div>
+                                </li>
+
+
+                            </ul>
+                            <!--//.list-floor-->
+                        </div>
+                        <!--//.cont-center-->
+                    </div>
+                    <!--//.room-area-->
+                </section>
+                <!--//.cont-roomStatus-->
+            </div>
+        </div>
+        <!--//.contents-->
+
+    </div>
+    <div class="cf"></div>
+
+</body>
+
+</html>

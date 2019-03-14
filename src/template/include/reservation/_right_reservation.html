@@ -1,0 +1,44 @@
+	<aside class="sidebar right-reservation">
+		<div class="folder">
+			<a href="javascript:;" class="btn-a-folder"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
+		</div>
+		<ul class="cf tab-list">
+<!--
+			<li class="tab"><a href="javascript:;">Mail</a></li>
+			<li class="tab"><a href="javascript:;">CMS</a></li>
+			<li class="tab"><a href="javascript:;">iCODY</a></li>
+-->
+			<li class="tab on"><a href="javascript:;">Log Book</a></li>
+		</ul>
+		<div class="side-contents cont-logbook">
+			<h2><strong>Log Book</strong></h2>
+			<div class="box-contents price-box">
+				<h3><strong>Price</strong></h3>
+				<div class="cont-body">
+					<p class="row">티몬 입력 시 : 판매가 곱하기 0.89</p>
+					<p class="row">쿠팡 입력 시 : 퍼센트 계산기로 87.9% 입력 후 가격</p>
+				</div>
+			</div>
+			<div class="box-contents info-box">
+				<h3><strong>Info</strong></h3>
+				<div class="cont-body">
+					<p class="row">※당 호텔 환불 기준※</p>
+					<p class="row dot"><span class="dot">-</span> 6일 전 취소 100% 환불</p>
+					<p class="row dot"><span class="dot">-</span> 5일 전~4일 전 70% 환불</p>
+					<p class="row dot"><span class="dot">-</span> 3일전~2일전 50% 환불</p>
+					<p class="row dot"><span class="dot">-</span> 1일전 20%환불</p>
+					<p class="row dot"><span class="dot">-</span> 당일 취소 &amp; 노쇼 환불불가</p>
+				</div>
+			</div>
+			<div class="box-contents personal-box">
+				<h3><strong>Personal</strong></h3>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$(".sidebar.right-reservation .btn-a-folder").on("click", function() {
+					$(this).closest(".sidebar.right-reservation").toggleClass("unfold");
+				});
+			});
+		</script>
+	</aside>

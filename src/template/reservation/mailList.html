@@ -1,0 +1,309 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+<body class="page-reservation">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents maList-contents">
+		@@include('../include/_row_h2.html', {
+			"page-title": "메일 목록"
+		})
+		<div class="cf cont-container-f fn-tabShow">
+			<div class="cf tab-list">
+				<a href="javascript:;" class="tab on">수신</a>
+				<a href="javascript:;" class="tab">보내기</a>
+			</div>
+			<div class="item-list">
+				<div class="item-container on">
+					<div class="cont-property">
+						<div class="grid-wrap">
+							<div class="grid-contents">
+								<table class="grid-tbl tbl-property">
+									<colgroup>
+										<col style="width: 100px">
+										<col style="width: 220px">
+										<col style="width: 100px">
+										<col style="width: 250px">
+										<col style="width: 80px">
+										<col style="width: 150px">
+										<col style="width: 80px">
+										<col style="width: *">
+									</colgroup>	
+									<tbody>
+										<tr>
+											<th><div class="cell">속성</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select gray">
+														<option value="">Ramada pt</option>
+													</select>
+												</div>
+											</td>
+											<th><div class="cell">보낸 날짜</div></th>
+											<td>
+												<div class="cell">
+													<span class="cal-box">
+														<input type="text" class="appe-reset inp-cal date-ui">
+														<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+													</span>
+													<span class="mg">~</span>
+													<span class="cal-box">
+														<input type="text" class="appe-reset inp-cal date-ui">
+														<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+													</span>
+												</div>
+											</td>
+											<th><div class="cell">유형</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select gray">
+														<option value="">All Types</option>
+														<option value="">Undefined</option>
+														<option value="">Reservation</option>
+														<option value="">Inquiry</option>
+													</select>
+												</div>
+											</td>
+											<th><div class="cell">상태</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select gray status">
+														<option value="">All Status</option>
+														<option value="">Not Confirm</option>
+														<option value="">Confirm</option>
+														<option value="">Reserve</option>
+														<option value="">Reject</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th><div class="cell">받는사람</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select gray">
+														<option value=""></option>
+														<option value="">Accenture Japan 어샌처재팬</option>
+														<option value="">THORCO(토르코)</option>
+														<option value="">공간제작소주식회사</option>
+														<option value="">네취코리아</option>
+														<option value="">데일리호텔</option>
+														<option value="">바덱스인더스트리</option>
+														<option value="">부킹닷컴</option>
+													</select>
+												</div>
+											</td>
+											<th><div class="cell">검색</div></th>
+											<td colspan="5">
+												<div class="cell">
+													<select name="" id="" class="form-select gray search">
+														<option value=""></option>
+														<option value="">제목</option>
+														<option value="">내용</option>
+														<option value="">이메일</option>
+													</select>
+													<input type="text" class="form-input search">
+													<button type="button" class="btn-brown">SEARCH</button>
+													<button type="button" class="btn-gray">CLEAR</button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--//.cont-property-->
+					<div class="cont-list">
+						<div class="grid-wrap scr-wrap">
+							<div class="grid-scrollable-x">
+								<div class="grid-area grid-head">
+									<div class="grid-scrollable">
+										<table class="grid-tbl">
+											<colgroup>
+												<col style="width: 175px">
+												<col style="width: 310">
+												<col style="width: 865px">
+												<col style="width: 190px">
+												<col style="width: *">
+											</colgroup>
+											<thead class="rowgroup">
+												<tr>
+													<th><div class="cell">보낸 날짜</div></th>
+													<th><div class="cell">발신자</div></th>
+													<th><div class="cell">제목</div></th>
+													<th><div class="cell">유형</div></th>
+													<th><div class="cell">상태</div></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+								<div class="grid-area grid-contents">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width: 175px">
+												<col style="width: 310">
+												<col style="width: 865px">
+												<col style="width: 190px">
+												<col style="width: *">
+										</colgroup>
+										<tbody class="rowgroup">
+											<tr>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+											</tr>
+											<!--tr>(th+td)-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!--//.grid-wrap-->
+						<div class="cf grid-bottom">
+							<a href="#" class="prev st">&lt;&lt;</a>
+							<a href="#" class="prev">&lt;</a>
+							<span class="num">0</span>
+							<a href="#" class="next">&gt;</a>
+							<a href="#" class="next st">&gt;&gt;</a>
+							<span class="count">1 - 100 of 158 items</span>
+						</div>
+						<!-- //.grid-bottom-->
+					</div>
+					<!--//.cont-list-->
+				</div>	
+				<div class="item-container">
+					<div class="cont-property">
+						<div class="grid-wrap">
+							<div class="grid-contents">
+								<table class="grid-tbl tbl-property">
+									<colgroup>
+										<col style="width: 100px">
+										<col style="width: 220px">
+										<col style="width: 100px">
+										<col style="width: 250px">
+										<col style="width: 80px">
+										<col style="width: *">
+									</colgroup>	
+									<tbody>
+										<tr>
+											<th><div class="cell">속성</div></th>
+											<td>
+												<div class="cell">
+													<select name="" id="" class="form-select gray">
+														<option value="">Ramada pt</option>
+													</select>
+												</div>
+											</td>
+											<th><div class="cell">보낸 날짜</div></th>
+											<td>
+												<div class="cell">
+													<span class="cal-box">
+														<input type="text" class="appe-reset inp-cal date-ui">
+														<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+													</span>
+													<span class="mg">~</span>
+													<span class="cal-box">
+														<input type="text" class="appe-reset inp-cal date-ui">
+														<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+													</span>
+												</div>
+											</td>
+											<th><div class="cell">검색</div></th>
+											<td colspan="5">
+												<div class="cell">
+													<select name="" id="" class="form-select gray search">
+														<option value=""></option>
+														<option value="">제목</option>
+														<option value="">내용</option>
+														<option value="">이메일</option>
+													</select>
+													<input type="text" class="form-input search">
+													<button type="button" class="btn-brown">SEARCH</button>
+													<button type="button" class="btn-gray">CLEAR</button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!--//.cont-property-->
+					<div class="cont-list">
+						<div class="grid-wrap scr-wrap">
+							<div class="grid-scrollable-x">
+								<div class="grid-area grid-head">
+									<div class="grid-scrollable">
+										<table class="grid-tbl">
+											<colgroup>
+												<col style="width: 175px">
+												<col style="width: 310">
+												<col style="width: 875px">
+												<col style="width: 310px">
+												<col style="width: *">
+											</colgroup>
+											<thead class="rowgroup">
+												<tr>
+													<th><div class="cell">보낸 날짜</div></th>
+													<th><div class="cell">발신자</div></th>
+													<th><div class="cell">제목</div></th>
+													<th><div class="cell">받은 사람</div></th>
+													<th><div class="cell">조회수</div></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+								<div class="grid-area grid-contents">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width: 175px">
+											<col style="width: 310">
+											<col style="width: 875px">
+											<col style="width: 310px">
+											<col style="width: *">
+										</colgroup>
+										<tbody class="rowgroup">
+											<tr>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+												<td><div class="cell"></div></td>
+											</tr>
+											<!--tr>(th+td)-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!--//.grid-wrap-->
+						<div class="cf grid-bottom">
+							<a href="#" class="prev st">&lt;&lt;</a>
+							<a href="#" class="prev">&lt;</a>
+							<span class="num">0</span>
+							<a href="#" class="next">&gt;</a>
+							<a href="#" class="next st">&gt;&gt;</a>
+							<span class="count">1 - 100 of 158 items</span>
+						</div>
+						<!-- //.grid-bottom-->
+					</div>
+					<!--//.cont-list-->
+				</div>	
+			</div>
+			
+		</div>
+	</div>
+	<!-- //.contents -->
+
+
+</div>
+</body>
+</html>

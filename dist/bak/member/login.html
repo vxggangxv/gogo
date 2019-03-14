@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="author">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>사이트이름</title>
+
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:description" content="">
+	<!--<link rel="canonical" href="도메인">-->
+	
+	<!-- member -->
+	<!--폰트-->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+	<!--공통 Css-->
+<!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/reset.css" type="text/css">-->
+<!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/layout.css" type="text/css">-->
+	<link rel="stylesheet" href="../../static/css/reset.css">
+
+	<!--개별 Css-->
+	<link rel="stylesheet" href="../../static/css/common.css">
+	<link rel="stylesheet" href="../../static/css/member/init.css">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		Modernizr.Detectizr.detect();
+	</script>
+
+	<!--개별 Js-->
+	<script src="../../static/js/common.js"></script>
+	<script src="../../static/js/member/init.js"></script>
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body class="page-member">
+
+<div class="wrapper">
+
+
+	<div id="loginW" class="base">
+		<div class="login">
+			<h1><img src="//img.go.co.kr/go/login_logo.jpg" alt="고코투어"></h1>
+			<div class="cf box">
+				<div class="left">
+					<img src="//img.go.co.kr/go/cmsLogin.jpg" alt="CMS로그인" class="log_img">
+					<p class="log_txt">
+						본 시스템은 바로네트웍스에서 제공해 드리는<br>
+						관리자 전용 시스템이며 사용 허가 후 무료 이용이 가능합니다.<br>
+						계정에 관련한 사항은 관리팀에 문의하여 주십시오
+					</p>
+					<p class="sub_txt">partner@go.co.kr</p>
+				</div>
+				<div class="line"></div>
+				<div class="right">
+					<form id="lform">
+						<input type="hidden" name="mode" value="login">
+						<input type="text" name="id" class="form-controlh" placeholder="아이디" title="아이디">
+						<input type="password" name="pw" class="form-controlh" placeholder="비밀번호" title="비밀번호" onkeypress="if(event.keyCode == 13) { login(); event.returnValue=false; }">
+						<div class="login_btn" onclick="login();">로그인</div>
+						<div class="login_btn" onclick="javascript:location.href='join.php'">실시간 입점제휴</div>
+						<label for="auto"><input type="checkbox" id="auto" name="auto" value="Y"> ID저장</label>
+					</form>
+				</div>
+			</div>
+			<div class="txt">
+				고객센터 : 070-4694-1079 (09:00 ~ 18:00) &nbsp; / &nbsp; 
+				E-mail : <a href="mainto:partner@go.co.kr">partner@go.co.kr</a> &nbsp; / &nbsp; 
+				<a href="//www.go.co.kr/home/brd/?dd=QxsoVg==" target="_blank">광고ㆍ입점ㆍ제휴문의</a><br><br>
+				<a href="//www.go.co.kr" target="_blank"><img src="//img.go.co.kr/go/goco_bt2.gif" alt="고코투어바로가기"></a>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!-- // #loginW -->
+
+	<div class="cf"></div>
+	<div id="Footer">
+		<div class="f-area" style="width:1450px;">
+			<div class="f-top">
+				<div class="policy">
+					<a href="javascript:window.open('//go.go.co.kr/policy.php', 'policy', 'width=700, height=800');" title="이용약관">이용약관</a>
+					&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+					<b>
+						<font color="white">개인정보처리방침</font>
+					</b>
+					&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+					<a href="//www.go.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의" target="_blank">광고/입점/제휴문의</a>
+
+				</div>
+			</div>
+			<div class="f-bottom">
+				<div class="f_logo"><img src="../../img/common/f_logo.gif" alt=""></div>
+				<div class="address">
+					<p>
+						<strong>(주)바로네트웍스</strong><br>
+						<span>
+							대표이사 : 전병권<br>
+							주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+							사업자등록번호 : 215-87-85373<br>
+							통신판매업 : 제2017-서울강남-00561호<br>
+							여행업등록번호 : 제2017-07호<br>
+							여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>
+							국외여행업 등록번호 : 제2017호-26호
+						</span>
+						<a href="//www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2158785373" target="_blank"><img src="../../img/common/btn_copyinfo_gray.gif"></a>
+					</p>
+					<p class="copy">copyright 2015 by GO.CO.KR co., all rights reserved.</p>
+				</div>
+				<ul class="customer">
+					<li class="f_call" style="width:250px">
+						<p>고객상담 및 빠른객실문의</p>
+						<strong>070-4694-1079</strong>
+					</li>
+					<li class="f_mail" style="width:250px">
+						<p>E-mail 문의</p>
+						<a href="mailto:partner@ebiznetworks.co.kr"><strong style="font-size:21px">partner@ebiznetworks.co.kr</strong></a>
+					</li>
+				</ul>
+				<div class="four-list">
+					<img src="../../img/common/f_icon01.gif" border="0" alt="랭키닷컴1위">
+					<a href="javascript:window.open('//www.go.co.kr/home/common/regist_pop.php?imgname=registration02', 'regist', 'toolbar=no,scrollbars=yes,directories=no,status=no,menubar=no,width=400,height=568,resizable=yes')"><img src="../../img/common/f_icon02.gif" border="0" alt="관광업등록증"></a>
+					<a href="javascript:window.open('//www.go.co.kr/home/common/regist_pop.php?imgname=registration01', 'regist', 'toolbar=no,scrollbars=yes,directories=no,status=no,menubar=no,width=600,height=849,resizable=yes')"><img src="../../img/common/f_icon03.gif" border="0" alt="서울보증보험"></a>
+					<img src="../../img/common/f_icon04.gif" border="0" alt="신용카드결제">
+					<img src="../../img/common/f_icon05.gif" border="0" alt="휴대폰결제">
+					<script language="JavaScript">
+						function onopen() {
+							var site_com = "";
+							var url = "//www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=" + site_com;
+							window.open(url, "communicationViewPopup", "width=750, height=700;");
+						}
+					</script>
+					<img src="../../img/common/f_icon06.gif" alt="공정거래위원회" onclick="onopen();" style="cursor:pointer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

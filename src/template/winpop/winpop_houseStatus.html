@@ -1,0 +1,588 @@
+@@include('../include/_head.html', {
+	"page": "reservation"
+})
+
+<body class="page-reservation">
+
+<div class="wrapper wpop">
+
+	<div class="wpop-header">
+		<h2>객실 상태</h2>
+	</div>
+	<div class="cf wpop-contents houseSt-contents">
+		<fieldset class="cont-common-1 cont-search">
+			<legend class="cont-tit">
+				<strong>검색</strong>
+			</legend>
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width: 100px">
+								<col style="width: 260px">
+								<col style="width: 100px">
+								<col style="width: *">
+							</colgroup>	
+							<tbody>
+								<tr>
+									<th>
+										<div class="cell">속성</div>
+									</th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select rmType">
+												<option value="">라마다평택</option>
+											</select>
+										</div>
+									</td>
+									<th>
+										<div class="cell">날짜</div>
+									</th>
+									<td>
+										<div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<button type="button" class="btn-brown search">SEARCH</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--//.cont-property-->
+		</fieldset>
+		<div class="cf contents-container">
+			<div class="cf row">
+				<div class="cont-common-1 cont-roomSummary left">
+					<h2 class="cont-tit">
+						<strong>객실 현황</strong>
+					</h2>
+					<div class="grid-wrap">
+						<div class="grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width: 160px">
+									<col style="width: *">
+								</colgroup>	
+								<tbody>
+									<tr>
+										<th>
+											<div class="cell">총 객실</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input" readonly value="320">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">판매불가</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input" readonly value="112">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">판매가능</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input" readonly value="190">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">부재 중</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input" readonly >
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.cont-roomSummary -->
+				<div class="cont-common-1 cont-housekeeping right">
+					<h2 class="cont-tit">
+						<strong>객실 청소 상태</strong>
+					</h2>
+					<div class="grid-wrap">
+						<div class="grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width: 160px">
+									<col style="width: 110px">
+									<col style="width: 110px">
+									<col style="width: *">
+								</colgroup>	
+								<tbody>
+									<tr>
+										<th class="bg-none">
+											<div class="cell"></div>
+										</th>
+										<td class="ta-center fw-b">
+											<div class="cell">
+												빈
+											</div>
+										</td>
+										<td class="ta-center fw-b">
+											<div class="cell">
+												가득차 있는
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">검열된</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input inspected" readonly value="102">
+											</div>
+										</td>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input inspected" readonly value="0">
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">깨끗한</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input clean" readonly value="9">
+											</div>
+										</td>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input clean" readonly value="0">
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">더러운</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input dirty" readonly value="150">
+											</div>
+										</td>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input dirty" readonly value="34">
+											</div>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th>
+											<div class="cell">청소중</div>
+										</th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input working" readonly value="7">
+											</div>
+										</td>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input working" readonly value="0">
+											</div>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.cont-housekeeping -->
+			</div>
+			<div class="cont-common-1 cont-activity left">
+				<h2 class="cont-tit">
+					<strong>활동</strong>
+				</h2>
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl">
+							<colgroup>
+								<col style="width: 150px">
+								<col style="width: 75px">
+								<col style="width: 65px">
+								<col style="width: 65px">
+								<col style="width: *">
+							</colgroup>	
+							<tbody>
+								<tr>
+									<th class="bg-none">
+										<div class="cell"></div>
+									</th>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											방
+										</div>
+									</td>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											성인
+										</div>
+									</td>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											어린이
+										</div>
+									</td>
+									<td class="ta-center">
+										<div class="cell"></div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">스테이 오버</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="36">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="72">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">출발 특급.</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">실제 출발편</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="51">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="109">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="1">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">도착 예정</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="34">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="71">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">실제 도착</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="1">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="2">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">주간 사용 객실</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">도보 인</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td class="last">
+										<div class="cell">
+											<button class="btn-green">V</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-activity -->
+			<div class="cont-common-1 cont-projection right">
+				<h2 class="cont-tit">
+					<strong>마감 예정</strong>
+				</h2>
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl">
+							<colgroup>
+								<col style="width: 210px">
+								<col style="width: 115px">
+								<col style="width: 65px">
+								<col style="width: 65px">
+								<col style="width: *">
+							</colgroup>	
+							<tbody>
+								<tr>
+									<th class="bg-none">
+										<div class="cell"></div>
+									</th>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											방
+										</div>
+									</td>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											성인
+										</div>
+									</td>
+									<td class="ta-center fw-b">
+										<div class="cell">
+											어린이
+										</div>
+									</td>
+									<td class="ta-center">
+										<div class="cell"></div>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">이용가능</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="125">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">사용중</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="66">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="153">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input clean" readonly value="0">
+										</div>
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">점유률</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="34.2">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">픽업되지 않은 블록</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="0">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">객실 수익</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="3,031,060">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">방 수익 Adr.</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="42,691">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>
+										<div class="cell">Rev.Par</div>
+									</th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input inspected" readonly value="15,953">
+										</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-projection -->
+		</div>
+	</div>
+	<!-- //.wpop-contents.houseSt-contents -->
+
+</div>
+</body>
+</html>

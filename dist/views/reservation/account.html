@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Management-Go-Pub</title>
+
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="">
+    <!--<link rel="canonical" href="도메인">-->
+
+    <!--폰트-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+    <!--공통 Css-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/reset.css" type="text/css">-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/layout.css" type="text/css">-->
+    <link rel="stylesheet" href="../../public/css/reset.css">
+
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--개별 Css-->
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/include/winpop.css">
+    <link rel="stylesheet" href="../../public/css/include/pop.css">
+    <link rel="stylesheet" href="../../public/css/reservation/init.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        Modernizr.Detectizr.detect();
+    </script>
+
+    <!--개별 Js-->
+    <script src="../../public/js/common.js"></script>
+    <script src="../../public/js/reservation/init.js"></script>
+
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="page-reservation">
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="group cont-header">
+                <h1 class="logo">
+
+				<a href="/" class="logo-a">
+
+					<!-- 사이트 별 로고 -->
+
+					<img src="../../public/img/common/logo.png" alt="고코투어 CMS" class="logo-img">
+
+					<!-- <img src="../../public/img/common/logo_ocean.jpg" alt="고코투어 CMS" class="logo-img"> -->
+
+					<!-- <img src="../../public/img/common/logo_bsdogo.jpg" alt="고코투어 CMS" class="logo-img"> -->
+
+					<!-- <img src="../../public/img/common/logo_ramada.png" alt="고코투어 CMS" class="logo-img"> -->
+
+				</a>
+
+			</h1>
+                <nav class="cf gnb">
+                    <ul class="menu dep-1">
+                        <li>
+                            <a href="" class="ic-reservation">예약</a>
+                            <ul class="dep-2">
+                                <li><a href="../reservation/reservationFit.html">예약 조건</a>
+                                </li>
+                                <li><a href="../reservation/reservationGroup.html">예약 그룹</a>
+                                </li>
+                                <li><a href="../reservation/assignStatus.html">할당 현황</a>
+                                </li>
+                                <li><a href="../reservation/roomBlock.html">블럭 룸</a>
+                                </li>
+                                <li><a href="../reservation/reservationList.html">예약 목록</a>
+                                </li>
+                                <li><a href="../reservation/roomInventory.html">객실 목록</a>
+                                </li>
+                                <li><a href="../reservation/rateSchedule.html">요금 일정</a>
+                                </li>
+                                <li><a href="../reservation/account.html">계정</a>
+                                </li>
+                                <li><a href="../reservation/mailList.html">메일 목록</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-front">프론트</a>
+                            <ul class="dep-2">
+                                <li><a href="../front/chkIn.html">체크인</a>
+                                </li>
+                                <li><a href="../front/inHouse.html">사내</a>
+                                </li>
+                                <li><a href="../front/departures.html">출발</a>
+                                </li>
+                                <li><a href="../front/roomStay.html">숙박</a>
+                                </li>
+                                <li><a href="../front/roomStatus.html">객실 현황</a>
+                                </li>
+                                <li><a href="../front/roomStatusList.html">객실 현황 목록</a>
+                                </li>
+                                <li><a href="../front/logBook.html">통장</a>
+                                </li>
+                                <li><a href="../front/guestProfile.html">투숙객 정보</a>
+                                </li>
+                                <li><a href="../front/complain.html">컴플레인</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-cash">캐셔링</a>
+                            <ul class="dep-2">
+                                <li><a href="">C/L 캐셔링</a>
+                                </li>
+                                <li><a href="">교환</a>
+                                </li>
+                                <li><a href="">현금 서랍</a>
+                                </li>
+                                <li><a href="">예치금</a>
+                                </li>
+                                <li><a href="">현금출납계</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-cash">미수금</a>
+                            <ul class="dep-2">
+                                <li><a href="">미수금</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-housekeep">시설 관리</a>
+                            <ul class="dep-2">
+                                <li><a href="">청소 일정</a>
+                                </li>
+                                <li><a href="">청소 배정</a>
+                                </li>
+                                <li><a href="">객실 청소</a>
+                                </li>
+                                <li><a href="">객실 현황</a>
+                                </li>
+                                <li><a href="">도착 목록</a>
+                                </li>
+                                <li><a href="">사내 목록</a>
+                                </li>
+                                <li><a href="">출발 목록</a>
+                                </li>
+                                <li><a href="">분실물</a>
+                                </li>
+                                <li><a href="">EX-B 현황</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-fnb">음식료품</a>
+                            <ul class="dep-2">
+                                <li><a href="">업장</a>
+                                </li>
+                                <li><a href="">메뉴</a>
+                                </li>
+                                <li><a href="">목록</a>
+                                </li>
+                                <li><a href="">연회 목록</a>
+                                </li>
+                                <li><a href="">아침식사</a>
+                                </li>
+                                <li><a href="">연회 일정</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-report">보고서</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="">프론트</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">도착 목록</a>
+                                        </li>
+                                        <li><a href="">사내 목록</a>
+                                        </li>
+                                        <li><a href="">출발 목록</a>
+                                        </li>
+                                        <li><a href="">객실 변경 목록</a>
+                                        </li>
+                                        <li><a href="">이판 내역</a>
+                                        </li>
+                                        <li><a href="">투숙객 메시지</a>
+                                        </li>
+                                        <li><a href="">표시 금지 목록</a>
+                                        </li>
+                                        <li><a href="">고장 내역</a>
+                                        </li>
+                                        <li><a href="">품목 재고 예측</a>
+                                        </li>
+                                        <li><a href="">특별 요청 예측</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">영업 및 예약</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">일별 예약</a>
+                                        </li>
+                                        <li><a href="">매월 계정별 생산</a>
+                                        </li>
+                                        <li><a href="">계정 세부사항별 생산</a>
+                                        </li>
+                                        <li><a href="">국적별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">시장/구획 별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">소스별 판매량</a>
+                                        </li>
+                                        <li><a href="">객실 유형별 예보</a>
+                                        </li>
+                                        <li><a href="">시장/구획별 예측</a>
+                                        </li>
+                                        <li><a href="">출처별 예측</a>
+                                        </li>
+                                        <li><a href="">Mrk/Seg 의 판매 생산</a>
+                                        </li>
+                                        <li><a href="">소스 날짜별 판매 생산</a>
+                                        </li>
+                                        <li><a href="">예약 최소</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">야간 감사</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">관리자 보고</a>
+                                        </li>
+                                        <li><a href="">세부 청구 목록</a>
+                                        </li>
+                                        <li><a href="">세부 지불 목록</a>
+                                        </li>
+                                        <li><a href="">투숙객 원장</a>
+                                        </li>
+                                        <li><a href="">A/R 레저</a>
+                                        </li>
+                                        <li><a href="">예금 원장</a>
+                                        </li>
+                                        <li><a href="">시산표</a>
+                                        </li>
+                                        <li><a href="">일일 수익</a>
+                                        </li>
+                                        <li><a href="">일일 수입 수량</a>
+                                        </li>
+                                        <li><a href="">판매일보</a>
+                                        </li>
+                                        <li><a href="">객실료 체크(거래처별)</a>
+                                        </li>
+                                        <li><a href="">객실료 체크(객실별)</a>
+                                        </li>
+                                        <li><a href="">재실후불잔액(거래처별)</a>
+                                        </li>
+                                        <li><a href="">재실후불잔액(객실별)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">캐셔링</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">에이징 요약</a>
+                                        </li>
+                                        <li><a href="">계산원 요약</a>
+                                        </li>
+                                        <li><a href="">일일 청구서 목록</a>
+                                        </li>
+                                        <li><a href="">일일 지불 목록</a>
+                                        </li>
+                                        <li><a href="">예수금 리스트</a>
+                                        </li>
+                                        <li><a href="">내외국인 이용실적</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">수익 현황</a>
+                                    <ul class="dep-3">
+                                        <li><a href="">기간별 수입 현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-report">분석</a>
+                            <ul class="dep-2">
+                                <li><a href="">대시보드</a>
+                                </li>
+                                <li><a href="">전년대비 매출액 현황(월별)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-basic">기본</a>
+                            <ul class="dep-2">
+                                <li><a href="">내 정보</a>
+                                </li>
+                                <li><a href="">공통 코드</a>
+                                </li>
+                                <li><a href="">부동산 코드</a>
+                                </li>
+                                <li><a href="">특별 코드</a>
+                                </li>
+                                <li><a href="">패키지 설정</a>
+                                </li>
+                                <li><a href="">달력</a>
+                                </li>
+                                <li><a href="">메일 템플릿</a>
+                                </li>
+                                <li><a href="">ClickOnce 설치</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="ic-config">관리자</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="">시스템 관리</a>
+                                    <ul class="dep-3">
+                                        <li>
+                                            <a href="">권한관리</a>
+                                            <ul class="dep-4">
+                                                <li><a href="">권한 코드</a>
+                                                </li>
+                                                <li><a href="">메뉴 권한</a>
+                                                </li>
+                                                <li><a href="">사용자 권한</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">사용자 관리</a>
+                                            <ul class="dep-4">
+                                                <li><a href="">사용자 등록</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-bar">
+                    <span class="user">2018-12-13 관리자님 <i class="fa fa-user-circle"></i></span>
+                    <ul class="menu cf">
+                        <li class="item item-1"><a href="/"><i class="fa fa-home"></i> <span class="hidden">홈</span></a>
+                        </li>
+                        <li class="item item-2"><a href=""><i class="fa fa-internet-explorer"></i> <span class="hidden">바로가기</span></a>
+                        </li>
+                        <li class="item item-2"><a href=""><i class="fa fa-sign-out"></i> <span class="hidden">로그아웃</span></a>
+                        </li>
+                        <li class="item item-1"><a href="javascript:;" onclick="popFn.show('.pop-profile')"><i class="fa fa-gears"></i> <span class="hidden">정보수정</span></a>
+                        </li>
+                    </ul>
+                    <div class="site-info">
+                        <!-- <span class="siteName">오션투유리조트속초설악비치호텔앤콘도</span> -->
+
+                        <select name="" id="" class="slt-site">
+                            <option value="">오션투유리조트속초설악비치호텔앤콘도</option>
+                            <option value="">연호리조트</option>
+                            <option value="">BS콘도도고온천호텔앤리조트</option>
+                            <option value="">라마다앙코르평택</option>
+                            <option value="">지리산남원중앙하이츠콘도</option>
+                        </select>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--//.header-->
+
+        <aside class="sidebar left">
+            <h2 class="hidden">사이드 네비게이션</h2>
+            <div class="lnb">
+                <a href="javascrtip:;" class="btna quick-plus">
+                    <img src="../../public/img/icon/quick/quickMenuPlus.png" alt="즐겨찾기 메뉴 추가">
+                </a>
+                <!-- 메뉴 없을 시 노출 -->
+                <a href="javascript:;" class="btna quick-none">
+                    <img src="../../public/img/icon/quick/split.png" alt="즐겨찾기 메뉴 없음">
+                </a>
+                <ul class="menu cf">
+                    <!-- 메뉴 dep-1 카테고리별 이미지(캐셔링, 미수금 - front 이미지사용)-->
+                    <!-- <img src="../../public/img/icon/quick/reservation.png" alt="예약">
+				<img src="../../public/img/icon/quick/front.png" alt="프론트">
+				<img src="../../public/img/icon/quick/housekeep.png" alt="시설관리">
+				<img src="../../public/img/icon/quick/fnb.png" alt="음식료품">
+				<img src="../../public/img/icon/quick/report.png" alt="보고서">
+				<img src="../../public/img/icon/quick/basic.png" alt="기본">
+				<img src="../../public/img/icon/quick/admin.png" alt="관리자"> -->
+                    <li class="item on">
+                        <a href="javascript:;">
+                            <img src="../../public/img/icon/quick/front.png" alt="프론트">
+                            <span class="lbl">프론트</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;">
+                            <img src="../../public/img/icon/quick/report.png" alt="보고서">
+                            <span class="lbl">전년대비 매출액 현황</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--//.sidebar.left-->
+
+
+
+        <div class="cf contents account-contents">
+            <div class="cf row-h2">
+                <h2 class="page-title">계정</h2>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
+            </div>
+            <div class="cf cont-container-f">
+                <div class="cont-property">
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width: 90px">
+                                        <col style="width: 320px">
+                                            <col style="width: 90px">
+                                                <col style="width: 500px">
+                                                    <col style="width: 90px">
+                                                        <col style="width: *">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">시장</div>
+                                        </th>
+                                        <td colspan="5">
+                                            <div class="cell">
+                                                <select name="" id="" class="form-select white market-1">
+                                                    <option value="">마켓</option>
+                                                    <option value="">OTA</option>
+                                                    <option value="">INBOUND OFFLINE</option>
+                                                    <option value="">CORP-FIT</option>
+                                                    <option value="">DIRECT-FIT</option>
+                                                    <option value="">DIRECT-GROUP</option>
+                                                    <option value="">OTHER MARKET</option>
+                                                </select>
+                                                <select name="" id="" class="form-select white market-2">
+                                                    <option value=""></option>
+                                                </select>
+                                                <button type="button" class="btn-brown">SEARCH</button>
+                                                <button type="button" class="btn-gray">CLEAR</button>
+                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">검색</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <select name="" id="" class="form-select search">
+                                                    <option value="">거래처명</option>
+                                                    <option value="">대표자</option>
+                                                </select>
+                                                <input type="text" class="form-input search">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">등급</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <span class="chk-box">
+
+												<label><input type="checkbox">A 등급</label>
+
+												<label><input type="checkbox">B 등급</label>
+
+												<label><input type="checkbox">C 등급</label>
+
+												<label><input type="checkbox">D 등급</label>
+
+												<label><input type="checkbox">E 등급</label>
+
+												<label><input type="checkbox">F 등급</label>
+
+												<label><input type="checkbox">G 등급</label>
+
+											</span>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">판매자</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input sp">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-list">
+                    <div class="grid-wrap scr-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
+                                    <table class="grid-tbl list-tbl">
+                                        <colgroup>
+                                            <col style="width: 80px">
+                                                <col style="width: 180px">
+                                                    <col style="width: 100px">
+                                                        <col style="width: 100px">
+                                                            <col style="width: 180px">
+                                                                <col style="width: 120px">
+                                                                    <col style="width: 70px">
+                                                                        <col style="width: 170px">
+                                                                            <col style="width: 100px">
+                                                                                <col style="width: 100px">
+                                                                                    <col style="width: 250px">
+                                                                                        <col style="width: 250px">
+                                                                                            <col style="width: 250px">
+                                                                                                <col style="width: 110px">
+                                                                                                    <col style="width: 110px">
+                                                                                                        <col style="width: 110px">
+                                                                                                            <col style="width: 400px">
+                                        </colgroup>
+                                        <thead class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">거래처코드</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">거래처명</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">약칭</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">마켓분류</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">마켓</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Source</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">등급</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">판매자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">대표자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">사업번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">전화번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">팩스번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">이메일</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">키보이스 인보이스</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">키보이스 체크인</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Agent선결재</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">주소</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl list-tbl">
+                                    <colgroup>
+                                        <col style="width: 80px">
+                                            <col style="width: 180px">
+                                                <col style="width: 100px">
+                                                    <col style="width: 100px">
+                                                        <col style="width: 180px">
+                                                            <col style="width: 120px">
+                                                                <col style="width: 70px">
+                                                                    <col style="width: 170px">
+                                                                        <col style="width: 100px">
+                                                                            <col style="width: 100px">
+                                                                                <col style="width: 250px">
+                                                                                    <col style="width: 250px">
+                                                                                        <col style="width: 250px">
+                                                                                            <col style="width: 110px">
+                                                                                                <col style="width: 110px">
+                                                                                                    <col style="width: 110px">
+                                                                                                        <col style="width: 400px">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">000182</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">SFW</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">CORP-FIT</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Non-Contract</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Homepage</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">G 등급</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">N</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Y</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">N</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="cell">000182</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">한국일리스엔지니어링</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">CORP-FIT</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Annual Contract</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Homepage</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">B 등급</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">
+                                                    SPATZ
+                                                    <br>MICHAEL
+                                                    <br>HARRY EMIL
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">02-2276-0501~8</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">02-2271-1265</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">N</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Y</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">N</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //.grid-wrap -->
+                    <div class="cf grid-bottom">
+                        <a href="#" class="prev st">&lt;&lt;</a>
+                        <a href="#" class="prev">&lt;</a>
+                        <span class="num">0</span>
+                        <a href="#" class="next">&gt;</a>
+                        <a href="#" class="next st">&gt;&gt;</a>
+                        <span class="count">1 - 100 of 158 items</span>
+                    </div>
+                    <!-- //.grid-bottom-->
+                </div>
+                <!--//.cont-list-->
+                <div class="cont-addInfo fn-tabShow">
+                    <div class="cf tab-list">
+                        <a href="javascript:;" class="tab on">정보</a>
+                        <a href="javascript:;" class="tab">명</a>
+                        <a href="javascript:;" class="tab">카드</a>
+                    </div>
+                    <div class="item-list">
+                        <div class="common info-container on">
+                            <div class="grid-wrap">
+                                <div class="grid-contents">
+                                    <table class="grid-tbl tbl-info">
+                                        <colgroup>
+                                            <col style="width: 90px">
+                                                <col style="width: 260px">
+                                                    <col style="width: 90px">
+                                                        <col style="width: 260px">
+                                                            <col style="width: 90px">
+                                                                <col style="width: *">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell necess">시장</div>
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="cell">
+                                                        <select name="" id="" class="form-select white market-1">
+                                                            <option value="">마켓</option>
+                                                            <option value="">OTA</option>
+                                                            <option value="">INBOUND OFFLINE</option>
+                                                            <option value="">CORP-FIT</option>
+                                                            <option value="">DIRECT-FIT</option>
+                                                            <option value="">DIRECT-GROUP</option>
+                                                            <option value="">OTHER MARKET</option>
+                                                        </select>
+                                                        <select name="" id="" class="form-select white market-1">
+                                                            <option value=""></option>
+                                                        </select>
+                                                        <select name="" id="" class="form-select white market-1">
+                                                            <option value="">1. Homepage</option>
+                                                            <option value="">2. E-mail</option>
+                                                            <option value="">3. Phone</option>
+                                                            <option value="">4. Fax</option>
+                                                            <option value="">5. Visit</option>
+                                                            <option value="">6. CMS</option>
+                                                            <option value="">7. Others</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell necess">등급</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <select name="" id="" class="form-select grade">
+                                                            <option value="">A 등급</option>
+                                                            <option value="">B 등급</option>
+                                                            <option value="">C 등급</option>
+                                                            <option value="">D 등급</option>
+                                                            <option value="">E 등급</option>
+                                                            <option value="">F 등급</option>
+                                                            <option value="">G 등급</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell necess">거래처명</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">약칭</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">코드</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input code" readonly>
+                                                        <input type="text" class="form-input code" placeholder="통합코드" readonly>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">대표자</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">사업번호</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">업태</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input job">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">전화번호</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">팩스번호</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">업종</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input job">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">사이트</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">이메일</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell"></div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">국가코드</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input" placeholder="Nationality">
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">언어코드</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <select name="" id="" class="form-select langCode white">
+                                                            <option value="">Korean</option>
+                                                            <option value="">English</option>
+                                                            <option value="">Chinese</option>
+                                                            <option value="">Japanese</option>
+                                                        </select>
+                                                        <button type="button" class="btn-gray">CLEAR</button>
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <div class="cell">판매자</div>
+                                                </th>
+                                                <td>
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input sp" placeholder="판매자">
+                                                        <button type="button" class="btn-gray">CLEAR</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">기타</div>
+                                                </th>
+                                                <td colspan="5">
+                                                    <div class="cell">
+                                                        <span class="slt-box">
+
+														계약여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														후불여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														메일여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														사용여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														키오스크 인보이스 전송여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														키오스크 체크인 가능여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                        <span class="slt-box">
+
+														Account 선결재 여부
+
+														<select name="" id="" class="form-select white etc">
+
+															<option value="">Yes</option>
+
+															<option value="">No</option>
+
+														</select>
+
+													</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">주소</div>
+                                                </th>
+                                                <td colspan="5">
+                                                    <div class="cell">
+                                                        <input type="text" class="form-input addr-1" readonly>
+                                                        <button type="button" class="btn-gray">주소검색</button>
+                                                        <input type="text" class="form-input addr-2" readonly>
+                                                        <input type="text" class="form-input addr-3">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <div class="cell">비고</div>
+                                                </th>
+                                                <td colspan="5">
+                                                    <div class="cell">
+                                                        <textarea name="" id="" cols="30" rows="10" class="textarea-etc"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row-btn">
+                                <button type="button" class="btn-blue" disabled>SAVE</button>
+                                <button type="button" class="btn-red" disabled>DEL</button>
+                                <button type="button" class="btn-gray">CLEAR</button>
+                            </div>
+                        </div>
+                        <div class="common grid-container">
+                            <div class="grid-toolbar">
+                                <button type="button" class="btn-gray"><span class="a-i-p plus"></span> 새 레코드 추가</button>
+                            </div>
+                            <div class="grid-wrap scr-wrap">
+                                <div class="grid-scrollable-x">
+                                    <div class="grid-area grid-head">
+                                        <div class="grid-scrollable">
+                                            <table class="grid-tbl">
+                                                <colgroup>
+                                                    <col style="width: 150px">
+                                                        <col style="width: 280px">
+                                                            <col style="width: 375px">
+                                                                <col style="width: 225px">
+                                                                    <col style="width: 280px">
+                                                                        <col style="width: *">
+                                                </colgroup>
+                                                <thead class="rowgroup">
+                                                    <tr>
+                                                        <th>
+                                                            <div class="cell order-ui">구분</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">담당자(직함)</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">이메일</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">전화번호</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">휴대전화</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">비고</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui"></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="grid-area grid-contents">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width: 150px">
+                                                    <col style="width: 280px">
+                                                        <col style="width: 375px">
+                                                            <col style="width: 225px">
+                                                                <col style="width: 280px">
+                                                                    <col style="width: *">
+                                            </colgroup>
+                                            <tbody class="rowgroup">
+                                                <tr>
+                                                    <td>
+                                                        <div class="cell">DM staff</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">이주란</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">account@dailyhotel.co.kr</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">07074674901</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button>
+                                                            <button type="button" class="btn-gray"><span class="icon ic-del"></span> Delete</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- 새 레코드 추가 시 -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <select name="" id="" class="form-select">
+                                                                <option value="">일반</option>
+                                                                <option value="">DM 직원</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <button type="button" class="btn-orange"><span class="icon ic-check"></span>  <span>Update</span>
+                                                            </button>
+                                                            <button type="button" class="btn-gray"><span class="icon ic-cancel"></span>  <span>Cancel</span>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common grid-container">
+                            <div class="grid-toolbar">
+                                <button type="button" class="btn-gray"><span class="a-i-p plus"></span> 새 레코드 추가</button>
+                            </div>
+                            <div class="grid-wrap scr-wrap">
+                                <div class="grid-scrollable-x">
+                                    <div class="grid-area grid-head">
+                                        <div class="grid-scrollable">
+                                            <table class="grid-tbl">
+                                                <colgroup>
+                                                    <col style="width: 175px">
+                                                        <col style="width: 260px">
+                                                            <col style="width: 105px">
+                                                                <col style="width: 105px">
+                                                                    <col style="width: 140px">
+                                                                        <col style="width: 210px">
+                                                                            <col style="width: 140px">
+                                                                                <col style="width: 210px">
+                                                                                    <col style="width: 140px">
+                                                                                        <col style="width: *">
+                                                </colgroup>
+                                                <thead class="rowgroup">
+                                                    <tr>
+                                                        <th>
+                                                            <div class="cell order-ui">카드</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">번호</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">MM</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">YY</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">메인 카드</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">생성일자</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">생성자</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">변경된</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui">변경자</div>
+                                                        </th>
+                                                        <th>
+                                                            <div class="cell order-ui"></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="grid-area grid-contents">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width: 175px">
+                                                    <col style="width: 260px">
+                                                        <col style="width: 105px">
+                                                            <col style="width: 105px">
+                                                                <col style="width: 140px">
+                                                                    <col style="width: 210px">
+                                                                        <col style="width: 140px">
+                                                                            <col style="width: 210px">
+                                                                                <col style="width: 140px">
+                                                                                    <col style="width: *">
+                                            </colgroup>
+                                            <tbody class="rowgroup">
+                                                <tr>
+                                                    <td>
+                                                        <div class="cell">BC</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">9430069539368882</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">10</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">20</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">false</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">2016-08-09</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">lumia01</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">2016-08-09</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">lumia01</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <button type="button" class="btn-gray"><span class="icon ic-edit"></span> Edit</button>
+                                                            <button type="button" class="btn-gray"><span class="icon ic-del"></span> Delete</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- 새 레코드 추가 시 -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <select name="" id="" class="form-select division">
+                                                                <option value="">CARD</option>
+                                                                <option value="">BC</option>
+                                                                <option value="">VISA Overseas</option>
+                                                                <option value="">LG</option>
+                                                                <option value="">국민카드</option>
+                                                                <option value="">삼성카드</option>
+                                                                <option value="">제주카드</option>
+                                                                <option value="">AMEX</option>
+                                                                <option value="">MASTER</option>
+                                                                <option value="">롯데카드</option>
+                                                                <option value="">신한카드</option>
+                                                                <option value="">하나SK</option>
+                                                                <option value="">현대카드</option>
+                                                                <option value="">UNION PAY</option>
+                                                                <option value="">농협NH카드</option>
+                                                                <option value="">하나카드</option>
+                                                                <option value="">기타카드</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <input type="text" class="form-input">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"><span class="chk-box"><label><input type="checkbox"></label></span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell"></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="cell">
+                                                            <button type="button" class="btn-orange"><span class="icon ic-check"></span>  <span>Update</span>
+                                                            </button>
+                                                            <button type="button" class="btn-gray"><span class="icon ic-cancel"></span>  <span>Cancel</span>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //.cont-addInfo -->
+            </div>
+        </div>
+        <!-- //.contents -->
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>삼포지점 객실배치도</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout_bs.css">
+	<!-- <link rel="stylesheet" href="/static/css/task/room_layout_bs.css"> -->
+
+</head>
+
+<body>
+
+	<div id="headerW">
+		<div class="header">
+			<h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+			<div class="snb">
+				<span class="user">테스트용</span>
+				<a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+			</div>
+		</div>
+	</div>
+
+	<!--변경내용-->
+	<div id="nav-bar" style="z-index: 2; position: relative; top: 0px;">
+		<ul class="nav" style="height: 50px; top: 0px;">
+
+			<li><a href="/reserve.php">판매기록</a></li>
+			<li class="on">
+				<a href="/sale.php">객실관리</a>
+				<ul class="dep2-menu">
+					<li><a href="">요금</a></li>
+					<li><a href="">현황</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/room_day.php">판매현황</a>
+				<ul class="dep2-menu">
+					<li><a href="">일별</a></li>
+					<li><a href="">월별</a></li>
+				</ul>
+			</li>
+			<li><a href="/info.php">호텔정보</a></li>
+		</ul>
+	</div>
+
+	<div id="wrapper">
+		<div id="container">
+			<div id="alert_info" style="position: static; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>1건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span><span class="alert_tel">제휴점문의 : <strong>김민철 대리 &nbsp; | &nbsp; 070-4694-5803</strong> (09:00 ~ 18:00)</span></div>
+		</div>
+	</div>
+
+	<!--변경내용-->
+	<div class="cf"></div>
+	<div class="search-day cf">
+		<span>일정</span> <input class="day-inp" type="text"> <input class="day-search" type="button" value="검색">
+		<button type="button" class="btn" style="background: #3d5696; color: #fff;" onclick="reserve.add_rsv()">현장 예약하기</button>
+	</div>
+	<div id="room-layout-wrap">
+
+		<div class="layout-info cf">
+			<!--<ul class="u1">
+      <li><div class="th nth-1">객실타입</div><div class="th nth-2">총수</div><div class="th nth-3">제외</div><div class="th nth-4">가용수</div></li>
+      <li><div class="nth-1">오션뷰콘도</div><div class="nth-2">100</div><div class="nth-3">고장</div><div class="nth-4">80</div></li>
+      <li><div class="nth-1">오션뷰호텔</div><div class="nth-2">100</div><div class="nth-3">직원숙소</div><div class="nth-4">50</div></li>
+      <li><div class="nth-1">마운틴뷰콘도</div><div class="nth-2">100</div><div class="nth-3">기타</div><div class="nth-4">50</div></li>
+      <li><div class="nth-1">오션뷰콘도VIP</div><div class="nth-2">100</div><div class="nth-3">기타</div><div class="nth-4">50</div</li>
+    </ul>-->
+			<ul class="u2">
+				<li>
+					<div class="th">객실타입</div>
+					<div>총 객실</div>
+					<div>가용객실</div>
+					<div>기숙사</div>
+					<div>경매객실</div>
+					<div>이슈객실</div>
+					<div>비고</div>
+				</li>
+				<li>
+					<div class="th">디럭스(온돌)</div>
+					<div>34</div>
+					<div>30</div>
+					<div>2</div>
+					<div>1</div>
+					<div></div>
+					<div>1505, 1506객실 구조상</div>
+				</li>
+                <li>
+					<div class="th">스탠다드(온돌)</div>
+					<div>93</div>
+					<div>80</div>
+					<div>8</div>
+					<div>5</div>
+					<div></div>
+					<div></div>
+				</li>
+                <li>
+					<div class="th">디럭스(키즈)</div>
+					<div>24</div>
+					<div>24</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</li>
+                <li>
+					<div class="th">디럭스(트윈)</div>
+					<div>13</div>
+					<div>13</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</li>
+                <li>
+					<div class="th">디럭스(더블)</div>
+					<div>5</div>
+					<div>5</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</li>
+                <li>
+					<div class="th">스위트</div>
+					<div>187</div>
+					<div>169</div>
+					<div>10</div>
+					<div>7</div>
+					<div></div>
+					<div></div>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="room-layout">
+
+<!--
+			<ul class="rl-type cf">
+				<li class="t-a">A</li>
+				<li class="t-b">B</li>
+				<li class="t-c">C</li>
+			</ul>
+-->
+			<div class="floor-17 cf">
+				<div class="right">
+					<ul class="u1-1 cf">
+                        <li></li>
+						<!-- <li>1710</li>
+						<li>1711</li>
+						<li>1712</li>
+						<li>1713</li> -->
+                        <li class="n">
+							<div class="nth-1">1710</div>
+							<div class="nth-2">oc</div>
+							<div class="nth-3">판매불가</div>
+							<div class="nth-4">내용</div>
+						</li>
+						<li class="y">
+							<div class="nth-1">1711</div>
+							<div class="nth-2">mc</div>
+							<div class="nth-3">판매가능</div>
+							<div class="nth-4">내용</div>
+						</li>
+						<li class="y">
+							<div class="nth-1">1712</div>
+							<div class="nth-2">oc-vip</div>
+							<div class="nth-3">판매가능</div>
+							<div class="nth-4">내용</div>
+						</li>
+						<li class="y">
+							<div class="nth-1">1713</div>
+							<div class="nth-2">oc-re-vip</div>
+							<div class="nth-3">판매가능</div>
+							<div class="nth-4">내용</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="floor-16 cf">
+				<div class="left">
+					<ul class="u1-1 cf">
+						<li class="col2">헬스장</li>
+						<li class="col2">비즈니스센터</li>
+						<li class="col2">세탁실</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="u1-0 cf">
+						<li class="center">휴게실</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="u1-1 cf">
+						<li>1609</li>
+						<li>1610</li>
+						<li>1611</li>
+						<li>1612</li>
+						<li>1613</li>
+					</ul>
+				</div>
+			</div>
+			<div class="floor-15 cf">
+				<div class="left">
+					<ul class="u1-1 cf">
+						<li>1501</li>
+						<li>1502</li>
+						<li>1503</li>
+                        <li>1504</li>
+                        <li>1505</li>
+						<li>1506</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="u1-0 cf">
+						<li class="center">배연창</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="u1-1 cf">
+						<li>1509</li>
+						<li>1510</li>
+						<li>1511</li>
+						<li>1512</li>
+						<li>1513</li>
+					</ul>
+				</div>
+			</div>
+            
+                <div class="floor-14 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>1401</li>
+    						<li>1402</li>
+    						<li>1403</li>
+    						<li>1404</li>
+    						<li>1405</li>
+    						<li>1406</li>
+    						<li>1407</li>
+    						<li>1408</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>1409</li>
+    						<li>1410</li>
+    						<li>1411</li>
+    						<li>1412</li>
+    						<li>1413</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-13 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>1301</li>
+    						<li>1302</li>
+    						<li>1303</li>
+    						<li>1304</li>
+    						<li>1305</li>
+    						<li>1306</li>
+    						<li>1307</li>
+    						<li>1308</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>1309</li>
+    						<li>1310</li>
+    						<li>1311</li>
+    						<li>1312</li>
+    						<li>1313</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-12 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>1201</li>
+    						<li>1202</li>
+    						<li>1203</li>
+    						<li>1204</li>
+    						<li>1205</li>
+    						<li>1206</li>
+    						<li>1207</li>
+    						<li>1208</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>1209</li>
+    						<li>1210</li>
+    						<li>1211</li>
+    						<li>1212</li>
+    						<li>1213</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-11 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>1101</li>
+    						<li>1102</li>
+    						<li>1103</li>
+    						<li>1104</li>
+    						<li>1105</li>
+    						<li>1106</li>
+    						<li>1107</li>
+    						<li>1108</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>1109</li>
+    						<li>1110</li>
+    						<li>1111</li>
+    						<li>1112</li>
+    						<li>1113</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-10 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>1001</li>
+    						<li>1002</li>
+    						<li>1003</li>
+    						<li>1004</li>
+    						<li>1005</li>
+    						<li>1006</li>
+    						<li>1007</li>
+    						<li>1008</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>1009</li>
+    						<li>1010</li>
+    						<li>1011</li>
+    						<li>1012</li>
+    						<li>1013</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-9 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>901</li>
+    						<li>902</li>
+    						<li>903</li>
+    						<li>904</li>
+    						<li>905</li>
+    						<li>906</li>
+    						<li>907</li>
+    						<li>908</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>909</li>
+    						<li>910</li>
+    						<li>911</li>
+    						<li>912</li>
+    						<li>913</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-8 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>801</li>
+    						<li>802</li>
+    						<li>803</li>
+    						<li>804</li>
+    						<li>805</li>
+    						<li>806</li>
+    						<li>807</li>
+    						<li>808</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>809</li>
+    						<li>810</li>
+    						<li>811</li>
+    						<li>812</li>
+    						<li>813</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-7 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>701</li>
+    						<li>702</li>
+    						<li>703</li>
+    						<li>704</li>
+    						<li>705</li>
+    						<li>706</li>
+    						<li>707</li>
+    						<li>708</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>709</li>
+    						<li>710</li>
+    						<li>711</li>
+    						<li>712</li>
+    						<li>713</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-6 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>601</li>
+    						<li>602</li>
+    						<li>603</li>
+    						<li>604</li>
+    						<li>605</li>
+    						<li>606</li>
+    						<li>607</li>
+    						<li>608</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>609</li>
+    						<li>610</li>
+    						<li>611</li>
+    						<li>612</li>
+    						<li>613</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-5 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>501</li>
+    						<li>502</li>
+    						<li>503</li>
+    						<li>504</li>
+    						<li>505</li>
+    						<li>506</li>
+    						<li>507</li>
+    						<li>508</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>509</li>
+    						<li>510</li>
+    						<li>511</li>
+    						<li>512</li>
+    						<li>513</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-4 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>401</li>
+    						<li>402</li>
+    						<li>403</li>
+    						<li>404</li>
+    						<li>405</li>
+    						<li>406</li>
+    						<li>407</li>
+    						<li>408</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>409</li>
+    						<li>410</li>
+    						<li>411</li>
+    						<li>412</li>
+    						<li>413</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+                <div class="floor-3 cf">
+    				<div class="left">
+    					<ul class="u1-1 cf">
+    						<li>301</li>
+    						<li>302</li>
+    						<li>303</li>
+    						<li>304</li>
+    						<li>305</li>
+    						<li>306</li>
+    						<li>307</li>
+    						<li>308</li>
+    					</ul>
+    				</div>
+    				<div class="center">
+    					<ul class="u1-0 cf">
+    						<li class="center">배연창</li>
+    					</ul>
+    				</div>
+    				<div class="right">
+    					<ul class="u1-1 cf">
+    						<li>309</li>
+    						<li>310</li>
+    						<li>311</li>
+    						<li>312</li>
+    						<li>313</li>
+    					</ul>
+    				</div>
+    			</div>
+            
+			<div class="floor-2 cf">
+				<div class="left">
+					<ul class="u1-1 cf">
+						<li>201</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li>205</li>
+						<li>206</li>
+						<li>207</li>
+						<li>208</li>
+					</ul>
+				</div>
+				<div class="center">
+					<ul class="u1-0 cf">
+						<li class="center">배연창</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="u1-1 cf">
+						<li>209</li>
+						<li>210</li>
+						<li>211</li>
+						<li>212</li>
+						<li>213</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

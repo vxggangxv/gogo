@@ -1,0 +1,117 @@
+@charset "utf-8";
+// --------------
+// Scss변수
+// --------------
+// 폰트
+//$nnSquare: "Nanum Square", "NanumSquare", Dotum, Sans-serif;
+$font-stack: "Nanum Gothic", Dotum, Sans-serif;
+//$font-stack: "NanumSquareRound", Dotum, Sans-serif;
+$font-nnGothic: "Nanum Gothic", Dotum, Sans-serif;
+$font-nnSquareR: "NanumSquareRound", Dotum, Sans-serif;
+$font-ntss: "Noto Sans KR", Dotum, Sans-serif;
+$font-dt: Dotum, Sans-serif;
+$header-ht: 40px;
+
+$contents-minwth: 1695px;
+
+// 색상
+$primary-color: #111;
+
+// 네비게이션 컬러
+$fg-gnb: #afafaf;
+$fg-gnb-hover: #c0b09d;
+// 테이블 기본 경계선 컬러
+$bdg-tblBase: #c0b5a6;
+// 테이블 해더 컬러
+$bg-tblBase-th: #E7E4E2;
+// 테이블 배경 컬러
+$bg-tblBase: #f4f1ee;
+// 레전드 컬러
+$fg-legend: #968571;
+
+//roomLayout 페이지 폰트 컬러
+$fg-blue-1: #04003C;
+
+//좌측 네비게이션 폰트 컬러
+$fg-brown-1: #685743;
+//좌측 네비게이션 아이콘 컬러
+$fg-brown-1-light: #968571;
+//팝업 해더 폰트 컬러
+$fg-brown-popHd: #7b6a55;
+//알림 폰트 컬러
+$fg-brown-2: #908270;
+
+//red 폰트
+$fg-red-1: #E33335;
+$fg-red-2: #cd3532;
+//orange 폰트
+$fg-orange-1: #ed550b;
+$fg-orange-2: #f47820;
+
+//입금확인 - 확인
+$state-ok: #3885F1;
+//입금확인 - 취소
+$state-cancle: #E33335;
+//입금확인 - 미확인
+$state-unident: #F17721;
+//입금확인 - 입금대기
+$state-wait: #AB65C8;
+//입금확인 - 미사용
+$state-unused: #FE69AB;
+//입금확인 - 미사용
+$state-ing: #56dd00;
+
+//버튼 그레이 배경 컬러
+$bg-gray-1: #70757B;
+//버튼 확인됨 배경 컬러
+$bg-blue-1: #3885F1;
+//버튼 미확인 배경 컬러
+$bg-orange-1: #F17721;
+//버튼 주요 파란 컬러
+//$bg-blue-2: #3D5696;
+$bg-blue-2: #1976d2;
+//버튼 브라운 배경 컬러
+$bg-brown-4: #954A10;
+
+//좌측 네비게이션 배경 컬러
+$bg-brown-1: #c0b5a6;
+//좌측 네비게이션 dep2 배경 컬러
+$bg-brown-2: #b4a693;
+//팝업 저장 버튼
+$bg-brown-3: #a37e72;
+//팝업 테이블 row hover 시
+$bg-gray-2: #f5f5f5;
+
+//버튼 주요 컬러 - 브라운
+$bg-primary: #a37e72;
+$bg-primary-light: #d5ada1;
+$bg-primary-dark: #735247;
+
+
+//테이블 상단 경계선 컬러
+$bor-gray-tableTop: #a6a6a6;
+$bor-gray-table: #c5c5c5;
+// $bor-gray-table: #e4e5e7;
+
+// 금토 배경
+$bg-fs: #ffe8e8;
+
+//팝업 테이블 경계선 컬러
+$grid-cor-1: #c5c5c5;
+$grid-bor-1: 1px solid $grid-cor-1;
+$grid-bor-division: #a6a6a6;
+
+//row-color 
+$rc-impossi: #ccc;
+$rc-chkIn: #f3cc95;
+$rc-clean: #cefbc9;
+$rc-chkOut: #e6b8b7;
+$rc-re: #dbdbf2;
+
+// 달력 색상 및 배경 컬러
+$fg-sun: #F50057;
+$bg-sun-th: #F8BBD0;
+$bg-sun-td: #FCE4EC;
+$fg-sat: #2979FF;
+$bg-sat-th: #BBDEFB;
+$bg-sat-td: #E3F2FD;

@@ -1,0 +1,687 @@
+@@include('../include/_head.html', {
+	"page": "info"
+})
+
+<body class="page-info">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+	
+	<div class="cf contents">
+		<h2 class="page-title">호텔정보</h2>
+		<section class="cont-info cont-info-basic">
+			<h2 class="cf">
+				<span>오션투유리조트속초설악비치호텔앤콘도 연락처</span>
+				<div class="right">
+					<button type="button" class="btn-style-2 fn-sms">설악워터피아</button>
+					<button type="button" class="btn-style-2 fn-booking">현장 예약하기</button>
+				</div>
+			</h2>
+			<div class="grid-wrap grid-contact">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+						</colgroup>
+						<tbody class="rowgroup">
+							<!--(tr>(th+td)*2)-->
+							<tr>
+								<th class="ta-center">대표번호<br>(일반전화)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+								</td>
+								<th class="ta-center">관리자<br>(연락처)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<input type="text" class="inp-default manager-name" placeholder="관리자명">
+									<input type="text" class="inp-default rank" placeholder="직급">
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">FAX<br>(예약실)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+								</td>
+								<th class="ta-center">담당자1<br>(휴대폰)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="chk-box"><input type="checkbox" id=""><label for="">실시간 예약알림</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">FAX<br>(프론트)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+								</td>
+								<th class="ta-center">담당자2<br>(휴대폰)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="chk-box"><input type="checkbox" id=""><label for="">실시간 예약알림</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">FAX<br>(주말)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+								</td>
+								<th class="ta-center">담당자3<br>(휴대폰)</th>
+								<td>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="dot">-</span>
+									<input type="text" class="inp-default num phone-number">
+									<span class="chk-box"><input type="checkbox" id=""><label for="">실시간 예약알림</label></span>
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">이메일</th>
+								<td colspan="3">
+									<input type="text" class="inp-default email-n">
+									<span class="at">@</span>
+									<input type="text" class="inp-default email-a">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//.grid-contact-->
+			
+			<h2 class="cf">
+				<span>정보</span>
+			</h2>
+			<div class="grid-wrap grid-info">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+						</colgroup>
+						<tbody class="rowgroup">
+							<tr>
+								<th class="ta-center">분류</th>
+								<td>
+									리조트
+								</td>
+								<th class="ta-center">홈페이지</th>
+								<td>
+									http:// <input type="text" class="inp-default domain">
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">체크인</th>
+								<td>
+									<input type="text" class="inp-default num chk-time">
+								</td>
+								<th class="ta-center">체크아웃</th>
+								<td>
+									<input type="text" class="inp-default num chk-time">
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">주소</th>
+								<td colspan="3">
+									<input type="text" class="inp-default addr- addr-1" disabled>
+									<button type="button" class="btn-default btn-addr">주소찾기</button>
+									<input type="text" class="inp-default addr- addr-2">
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">부대시설</th>
+								<td colspan="3">
+									<input type="text" class="inp-default amenities">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//.grid-info-->
+			
+			<h2 class="cf">
+				<span>기본정보</span>
+			</h2>
+			<div class="grid-wrap grid-basicinfo">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+							<col class="nth-1" style="width:15%">
+							<col class="nth-2" style="width:35%">
+						</colgroup>
+						<tbody class="rowgroup">
+							<tr>
+								<th class="ta-center">인사말</th>
+								<td colspan="3">
+									<textarea name="" id="" cols="30" rows="10" class="texta greet">
+설악/속초/고성 위치!
+삼포해수욕장 바로 앞
+오션투유리조트
+
+- 설악/속초/고성 아우르는 최고의 리조트!  
+- 에메랄드 빛 삼포해변 1분거리!
+- 얕은 수심, 어린아이 위한 해수욕장!
+- 해변에서 조개잡이 가능
+  (조개잡이 물품 대여가능) 
+- 속초, 설악 모든 해변과 근접! 
+- 최대80%할인 , 특가할인
+
+▶ 단체 문의
+오션투유콘도는 최대 1800명 까지 수용 가능한 대형콘도입니다.
+기업체/단체교육/워크샵/수학여행/수련회/세미나
+워크샵/가족모임/행사/MICE(마이스)/설명회/연회장
+컨벤션/학회/기업행사/디너쇼/전시회/컨퍼런스
+비지니스미팅/소규모모임/대규모모임/여름성경학교
+
+▶견적문의
+단체 상담 및 견적문의
+예약실 : 1666-5683
+									</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center">숙소 공통사항</th>
+								<td colspan="3">
+									<textarea name="" id="" cols="30" rows="10" class="texta common">바베큐장, 슈퍼마켓, 카페, 한식당(조식이용가능),노래방</textarea>
+								</td>
+							</tr>
+							<tr>
+								<th class="ta-center"></th>
+								<td colspan="3">
+									<input type="text" class="inp-default evt" placeholder="준비된 이벤트가 없습니다.">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//.basicinfo-->
+			
+			<div class="row-btn">
+				<button type="button" class="btn-style-2 btn-modify">수정</button>
+			</div>
+		</section>
+		<!--//.cont-info.cont-info-basic-->
+		
+		<section class="cont-info cont-info-gallery">
+			<h2 class="cf">
+				<span>갤러리</span>
+				<div class="right">
+					<span class="add-txt fg-red-2">이미지 형식의(jpg, gif, png, jpeg) 파일만 등록됩니다. (규격 : 1000*667)</span>
+				</div>
+			</h2>
+			<hr class="sun">
+			
+			<div class="gallery-wrap">
+				<h3 class="cf">외관 및 내부 사진</h3>
+				<div class="cf gallery-contents">
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="야간전경사진" readonly></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보1"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="주간전경사진" readonly></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보1"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="외관"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="해변입구"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="삼포해수욕장"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					
+					<div class="cf"></div>
+					
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="외관"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="야경"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="야경"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="외관 및 내부사진 제목9"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="외관 및 내부사진 제목9"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="외관 및 내부사진 정보3"></textarea>
+						</div>
+					</div>
+					<!--//-->
+				</div>
+				<div class="row-btn">
+					<button type="button" class="btn-style-2 btn-modify">외부/내부 사진 수정</button>
+				</div>
+			</div>
+			<!--//.gallery-wrap-->
+			<div class="gallery-wrap">
+				<h3 class="cf">객실 사진</h3>
+				<div class="cf gallery-contents">
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="콘도"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보1"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="콘도"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보2"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="호텔"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="호텔"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보4"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="마운틴"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보5"></textarea>
+						</div>
+					</div>
+					
+					<div class="cf"></div>
+					
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="마운틴"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보6"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="오션"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보7"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="오션"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보8"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="테라스뷰"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보9"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="테라스뷰"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="객실사진 정보10"></textarea>
+						</div>
+					</div>
+					<!--//-->
+				</div>
+				<div class="row-btn">
+					<button type="button" class="btn-style-2 btn-modify">객실 사진 수정</button>
+				</div>
+			</div>
+			<!--//.gallery-wrap-->
+			<div class="gallery-wrap">
+				<h3 class="cf">외관 및 내부 사진</h3>
+				<div class="cf gallery-contents">
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="로비사진" readonly></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보1"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="로비"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보2"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="로비"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보3"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="바베큐"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보4"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="연회장"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보5"></textarea>
+						</div>
+					</div>
+					
+					<div class="cf"></div>
+					
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="GS편의점(오픈예정)"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보6"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="부대시설 및 주변시설 제목7"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보7"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="부대시설 및 주변시설 제목8"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보8"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="부대시설 및 주변시설 제목9"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보9"></textarea>
+						</div>
+					</div>
+					<div class="thumbnail-box">
+						<div class="row-tit"><input type="text" class="inp-default inp-name" value="부대시설 및 주변시설 제목10"></div>
+						<div class="row-img">
+							<img src="../../public/img/common/img_no.jpg" alt="이미지준비중">
+							<button type="button" class="btn-default btn-del">삭제</button>
+						</div>
+						<div class="row-file">
+							<input type="file" class="inp-file">
+						</div>
+						<div class="row-texta">
+							<textarea name="" id="" cols="30" rows="10" class="texta texta-info" placeholder="부대시설 및 주변시설 정보10"></textarea>
+						</div>
+					</div>
+					<!--//-->
+				</div>
+				<div class="row-btn">
+					<button type="button" class="btn-style-2 btn-modify">부대/주변 시설 수정</button>
+				</div>
+			</div>
+			<!--//.gallery-wrap-->
+			
+		</section>
+		<!--//.cont-info.cont-info-gallery-->
+	</div>
+
+
+</div>
+</body>
+</html>

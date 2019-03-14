@@ -1,0 +1,21 @@
+		<div class="cf row-alert">
+			<div class="cf alert-area">
+				<!--<span class="addTxt">현재 <span class="addColor">미확인</span>된 예약이 <span class="addColor">1건</span> 있습니다.</span>-->
+				<button type="button" class="btn-listView">확인 리스트 보기 <span class="ic-rArrow rArrow"></span></button>
+				<button type="button" class="btn-booking fn-booking">현장 예약하기 <span class="ic-rArrow rArrow"></span></button>
+				<span class="manager">시설담당자: <span class="addColor">임우석 차장 ㅣ 010-8817-1634</span> (24시간 통화가능)</span>
+			</div>
+			<script>
+				$(function() {
+					$(window).on("scroll", function() {
+						var scrTop = $(window).scrollTop();
+						if ( scrTop > 20 ) {
+							$(".row-alert .alert-area").addClass("active");
+						} else {
+							$(".row-alert .alert-area").removeClass("active");
+						}
+					});
+				});
+			</script>
+		</div>
+		<!--//.row-alert-->

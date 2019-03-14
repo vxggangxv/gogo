@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="author" content="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Management-Go-Pub</title>
+
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="">
+    <!--<link rel="canonical" href="도메인">-->
+
+    <!--폰트-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+
+    <!--공통 Css-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/reset.css" type="text/css">-->
+    <!--	<link rel="stylesheet" href="//static.go.co.kr/css/go/layout.css" type="text/css">-->
+    <link rel="stylesheet" href="../../public/css/reset.css">
+
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--개별 Css-->
+    <link rel="stylesheet" href="../../public/css/common.css">
+    <link rel="stylesheet" href="../../public/css/include/winpop.css">
+    <link rel="stylesheet" href="../../public/css/include/pop.css">
+    <link rel="stylesheet" href="../../public/css/reservation/init.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        Modernizr.Detectizr.detect();
+    </script>
+
+    <!--개별 Js-->
+    <script src="../../public/js/common.js"></script>
+    <script src="../../public/js/reservation/init.js"></script>
+
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body class="page-reservation">
+
+    <div class="wrapper">
+
+        <div class="wpop-header">
+            <h2>기록</h2>
+        </div>
+        <div class="cf wpop-contents trace-contents">
+            <div class="cont-property">
+                <div class="grid-wrap">
+                    <div class="grid-contents">
+                        <table class="grid-tbl tbl-property">
+                            <colgroup>
+                                <col style="width: 100px">
+                                    <col style="width: 260px">
+                                        <col style="width: 100px">
+                                            <col style="width: 260px">
+                                                <col style="width: 85px">
+                                                    <col style="width: 170px">
+                                                        <col style="width: 85px">
+                                                            <col style="width: *">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="cell necess">도착 날짜</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <span class="cal-box">
+
+											<input type="text" class="appe-reset inp-cal date-ui">
+
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                            </span>
+                                            <span class="mgSpace">~</span>
+                                            <span class="cal-box">
+
+											<input type="text" class="appe-reset inp-cal date-ui">
+
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <div class="cell necess">출발 날짜</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <span class="cal-box">
+
+											<input type="text" class="appe-reset inp-cal date-ui">
+
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                            </span>
+                                            <span class="mgSpace">~</span>
+                                            <span class="cal-box">
+
+											<input type="text" class="appe-reset inp-cal date-ui">
+
+											<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <div class="cell necess">결의</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <select name="" id="" class="form-select rmType">
+                                                <option value=""></option>
+                                                <option value="">resolve</option>
+                                                <option value="">unresolve</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <div class="cell necess">학과</div>
+                                    </th>
+                                    <td>
+                                        <div class="cell">
+                                            <input type="text" class="form-input departments">
+                                            <button type="button" class="btn-brown search">SEARCH</button>
+                                            <button type="button" class="btn-gray btn-i excel pull-right"><span class="icon ic-excel"></span>Excel</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--//.cont-property-->
+            <div class="cont-trace">
+                <div class="grid-wrap scr-wrap">
+                    <div class="grid-scrollable-x">
+                        <div class="grid-area grid-head">
+                            <div class="grid-scrollable">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 100px">
+                                            <col style="width: 100px">
+                                                <col style="width: 110px">
+                                                    <col style="width: 85px">
+                                                        <col style="width: 100px">
+                                                            <col style="width: 100px">
+                                                                <col style="width: *">
+                                                                    <col style="width: 300px">
+                                                                        <col style="width: 110px">
+                                    </colgroup>
+                                    <thead class="rowgroup">
+                                        <tr>
+                                            <th>
+                                                <div class="cell">도착 날짜</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">출발 날짜</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">REV#</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">객실#</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">Act.arrDt</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">Act.depDt</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">메시지</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">학과</div>
+                                            </th>
+                                            <th>
+                                                <div class="cell">확인</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="grid-area grid-contents">
+                            <table class="grid-tbl">
+                                <colgroup>
+                                    <col style="width: 100px">
+                                        <col style="width: 100px">
+                                            <col style="width: 110px">
+                                                <col style="width: 85px">
+                                                    <col style="width: 100px">
+                                                        <col style="width: 100px">
+                                                            <col style="width: *">
+                                                                <col style="width: 300px">
+                                                                    <col style="width: 110px">
+                                </colgroup>
+                                <tbody class="rowgroup">
+                                    <tr>
+                                        <td>
+                                            <div class="cell">text</div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                        <td>
+                                            <div class="cell"></div>
+                                        </td>
+                                    </tr>
+                                    <!--tr>(th+td)-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.cont-trace -->
+        </div>
+        <!-- //.wpop-contents.trace-contents -->
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,2060 @@
+@charset "utf-8";
+
+@import "../parts/variables";
+@import "../parts/mixins";
+
+/* 우측 사이드 콘텐츠 */
+.sidebar.right-reservation {
+	position: fixed;
+	z-index: 1;
+	box-sizing: border-box;
+	top: $header-ht;
+	right: 0;
+	min-width: 290px;
+	height: 100%;
+	background: #fff;
+	border-left: 1px solid #dbdbdb;
+	.folder {
+		position: relative;
+		background: $bdg_tblBase;
+		height: 30px;
+		.btn-a-folder {
+			display: inline-block;
+			// background: #000000;
+			height: 100%;
+			padding: 0 10px;
+			.ic-lArrow {
+				position: relative;
+				left: -3px;
+				&:after {
+					border-color: #fff;
+					top: 3px;
+					$wth: 8px;
+					width: $wth;
+					height: $wth;
+					border-width: 2px;
+				}
+				& + .ic-lArrow:after {
+					right: auto;
+					left: -3px;
+				}
+			}
+		}
+	}
+	.tab-list {
+		background: #f0f0f0;
+		padding: 12px;
+		.tab {
+			@include float;
+			margin-right: 5px;
+			> a {
+				display: block;
+				padding: 5px 10px;
+				background: #fff;
+				color: #968571;
+				border-radius: 5px;
+				font-size: 13px;
+			}
+			&:hover > a {
+				background: #d4c9bb;
+			}
+			&.on > a {
+				background: $fg-legend;
+				color: #fff;
+			}
+		}
+	}
+	.side-contents {
+		background: #fff;
+		padding: 0 12px;
+		padding-top: 10px;
+		font-size: 12px;
+		h2 {
+			font-size: 16px;
+			strong {
+				font-weight: 700;
+			}
+			& + .box-contents {
+				margin-top: 15px;
+			}
+		}
+		.box-contents {
+			margin-top: 10px;
+			h3 {
+				text-align: center;
+				background: $bg-tblBase-th;
+				border: 1px solid $bdg-tblBase;
+				padding: 5px 0;
+				strong {
+					font-weight: 700;
+				}
+			}
+			.cont-body {
+				padding: 10px 8px;
+				border: 1px solid $bdg-tblBase;
+				border-top: none;
+				color: #666;
+				font-weight: 700;
+				word-break: keep-all;
+				p.row {
+					line-height: 2;
+				}
+			}
+		}
+	}
+	.side-contents.cont-logbook {
+
+	}
+	&.unfold {
+		.side-contents.cont-logbook {
+			width: 600px;
+		}
+	}
+}
+
+/* 공통 스타일 */
+.contents .cont-common-1 {
+	position: relative;
+	box-sizing: border-box;
+	background: #f0f0f0;
+	padding: 20px 15px;
+	margin-top: 20px;
+	border-radius: 5px;
+	.cont-tit {
+		@include position(absolute, -20px, 15px);
+		@include show-reset;
+		color: $fg-legend;
+		font-size: 13px;
+		padding: 5px 10px;
+		background: #f0f0f0;
+		border-radius: 5px;
+		strong, label {
+			font-weight: 700;
+		}
+		strong {
+			margin-right: 10px;
+		}
+		.form-input {
+			width: 120px;
+			&.bookingNum {
+				margin-right: 10px;
+			}
+		}
+		.form-select {
+			width: 60px;
+			&.type {
+				margin-left: 30px;
+			}
+		}
+	}
+	.btn-gray, .btn-green, .btn-green, .btn-red, .btn-blue {
+		font-size: 11px;
+		padding: 2px 4px;
+	}
+}
+/* 예약 조건 */
+.contents.resFit-contents {
+	.split-1 {
+		@include float;
+		width: 622px;
+		.cont-secondBook {
+			// width: 625px;
+			.cont-tit {
+				color: #000;
+				label {
+					span + input {
+						top: 1px;
+					}
+				}
+				strong {
+					margin-right: 0;
+				}
+			}
+			.grid-container {
+				.grid-wrap {
+					@include float;
+					+ .grid-wrap {
+						margin-left: 15px;
+					}
+					.grid-contents {
+					}
+				}
+			}
+			.grid-tbl {
+				@include tbl-base;
+			}
+			.tbl-name {
+				width: 306px;
+				th, td {
+
+				}
+				th {
+					.cell {
+					}
+				}
+				td {
+					// min-width: 206px;
+					.cell {
+						$account-wth: 49%;
+						.form-input {
+							&.nights {
+								width: 30px;
+							}
+							&.pnum {
+								// width: 51px;
+								width: 26%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+							&.package {
+								width: 55%;
+							}
+							&.rate {
+								width: 70%;
+							}
+						}
+						.form-select {
+							&.rmType {
+								// width: 105px;
+								width: 54%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+						}
+						.cal-box {
+							// width: 105px;
+							width: 54%;
+							+ .rdo-box {
+								margin-left: 10px;
+							}
+						}
+						.add-rtxt {
+							// margin-left: 2px;
+						}
+					}
+				}
+			}
+			.tbl-assign {
+				width: 270px;
+				th, td {
+
+				}
+				th {
+					.cell {
+
+					}
+				}
+				td {
+					// min-width: 206px;
+					.cell {
+						$account-wth: 49%;
+						.form-input {
+							&.assign {
+								width: 30%;
+							}
+							&.time {
+								// width: 51px;
+								width: 35%;
+								text-align: center;
+							}
+							&.deposit {
+								width: 65%;
+							}
+							&.exp {
+								width: 23%;
+								text-align: center;
+							}
+							&.sperson {
+								width: 95%;
+							}
+							&.req {
+								width: 67%;
+							}
+							&.accompany {
+								width: 75%;
+							}
+						}
+						.form-select {
+							&.rmType {
+								// width: 105px;
+								width: 54%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+						}
+						.cal-box {
+							// width: 105px;
+							width: 54%;
+							+ .rdo-box {
+								margin-left: 10px;
+							}
+						}
+						.add-rtxt {
+							// margin-left: 2px;
+						}
+						.mg- {
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+		}
+		.cont-booker {
+			// 테이블 내 form 요소 및 기타 관리
+			.tbl-booker {
+				@include tbl-base;
+				th, td {
+
+				}
+				th {
+					.cell {
+					}
+				}
+				td {
+					+ th {
+						border-left: 1px solid $bdg-tblBase;
+					}
+					.cell {
+
+					}
+				}
+			}
+		}
+		.cont-message {
+			@include bx;
+			margin-top: 10px;
+			background: #F6F5F5;
+			padding: 5px;
+			height: 200px;
+			@include bdr(#c5c5c5);
+			.tab-list {
+				> * {
+					position: relative;
+					float: left;
+					color: #444;
+				}
+				.tab {
+					display: inline-block;
+					padding: 5px 12px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					background: #f7f7f7;
+					border: 1px solid #c5c5c5;
+					font-size: 12px;
+					border-bottom-color: #9f9f9f;
+					& + .tab {
+						left: -1px;
+					}
+					&.on {
+						z-index: 1;
+						background: #fff;
+						border-color: #9f9f9f;
+						border-bottom-color: #fff;
+					}
+					.plus {
+						vertical-align: middle;
+					}
+				}
+				label {
+					@include lbl;
+					top: 2px;
+					margin-left: 15px;
+				}
+			}
+			.item-list {
+				position: relative;
+				.grid-container {
+					display: none;
+					@include position(absolute, 0, 0);
+					padding: 12px;
+					background: #fff;
+					border: 1px solid #a9a9a9;
+					margin-top: -1px;
+					.grid-wrap.scr-wrap {
+						@include grid-scr-x(null, 100%, 4px);
+						.grid-tbl {
+							.ie8 & {
+								width: 581px;
+							}
+						}
+					}
+					&.on {
+						display: block;
+					}
+				}
+
+			}
+		}
+	}
+	.split-2 {
+		@include float;
+		width: 808px;
+		margin-left: 20px;
+		.cont-guestinfo {
+//			width: 805px;
+			.cont-tit {
+				label {
+					span + input {
+						top: 1px;
+					}
+				}
+			}
+			.grid-container {
+				.grid-wrap, .flt-box {
+					position: relative;
+					@include float;
+					box-sizing: border-box;
+				}
+				.grid-wrap {
+					+ .flt-box {
+						margin-left: 15px;
+					}
+					.grid-contents {
+					}
+				}
+				.flt-box {
+					width: 464px;
+					.grid-wrap.scr-wrap {
+						@include grid-scr-brown(580px, 464px);
+						.grid-tbl {
+							.ie8 & {
+								width: 462px;
+							}
+						}
+					} // .grie-wrap
+				}
+			}
+			// 테이블 내 form 요소 및 기타 관리
+			.tbl-guest {
+				@include tbl-base;
+				width: 295px;
+				th, td {
+
+				}
+				th {
+					.cell {
+					}
+				}
+				td {
+					.cell {
+						.form-input {
+						}
+						.form-select {
+							&.lang {
+								width: 65%;
+							}
+						}
+						.cal-box {
+							// width: 105px;
+							width: 54%;
+							+ .rdo-box {
+								margin-left: 10px;
+							}
+						}
+						.add-rtxt {
+							// margin-left: 2px;
+						}
+						.mg- {
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+			.row-txt {
+				clear: both;
+				border: 1px solid $bdg-tblBase;
+				border-top: none;
+				padding: 8px 7px;
+				text-align: right;
+				font-size: 12px;
+				color: #666;
+				line-height: 1.2;
+				background: #fafafa;
+				background-color: #eae8e8;
+				background-image: none,-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.8)),to(rgba(255,255,255,0)));
+				background-image: none,-webkit-linear-gradient(top,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+				background-image: none,linear-gradient(to bottom,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+				background-position: 50% 50%;
+				.num {
+					color: $fg-orange-2;
+				}
+			}
+			.row-tit {
+				margin-top: 2px;
+				padding: 3px 0;
+				font-size: 12px;
+				line-height: 1.5;
+				strong {
+					font-weight: 700;
+				}
+			}
+			.box-common {
+				background: #fff;
+				box-sizing: border-box;
+				padding: 5px 4px;
+				font-size: 12px;
+				border: 1px solid #c1c1c1;
+				overflow: auto;
+				&.history-box {
+					height: 30px;
+				}
+				&.notice-box {
+					width: 100%;
+					resize: none;
+					height: 143px;
+				}
+			}
+
+		}
+		.cont-rsvList {
+			float: none;
+			.grid-wrap.scr-wrap {
+				@include grid-scr-x(null, 100%, 4px);
+				.grid-area.grid-contents {
+					background: #fff;
+					height: 200px;
+				}
+				.grid-tbl {
+					.ie8 & {
+						width: 777px;
+					}
+					th, td {
+						.cell {
+							text-align: center;
+						}
+					}
+					td:first-child {
+						.cell {
+							line-height: 1;
+						}
+					}
+				}
+			}
+		}
+		.row-btn {
+			margin-top: 10px;
+			button[class*=btn-] {
+				letter-spacing: 0;
+			}
+			.btn-gray, .btn-green, .btn-red, .btn-blue {
+				padding: 3px 12px 2px;
+			}
+			button:first-child {
+				margin-right: 15px;
+			}
+			.wd-space {
+				margin-right: 80px;
+			}
+		}
+	}
+
+	.cont-booker, .cont-rsvList {
+		margin-top: 30px;
+	}
+
+}
+
+/* 예약 그룹 */
+.contents.rsvGroup-contents {
+	.split-1 {
+		@include float;
+		width: 622px;
+		.cont-secondBook {
+			// width: 625px;
+			.cont-tit {
+				color: #000;
+				label {
+					span + input {
+						top: 1px;
+					}
+				}
+				strong {
+					margin-right: 0;
+				}
+			}
+			.grid-container {
+				.grid-wrap {
+					@include float;
+					+ .grid-wrap {
+						margin-left: 15px;
+					}
+					.grid-contents {
+					}
+				}
+			}
+			.grid-tbl {
+				@include tbl-base;
+				.cell {
+				}
+			}
+			.tbl-name {
+				width: 306px;
+				th, td {
+
+				}
+				th {
+					.cell {
+					}
+				}
+				td {
+					// min-width: 206px;
+					.cell {
+						$account-wth: 49%;
+						.form-input {
+							&.nights {
+								width: 30px;
+							}
+							&.pnum {
+								// width: 51px;
+								width: 26%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+							&.package {
+								width: 55%;
+							}
+							&.rate {
+								width: 70%;
+							}
+						}
+						.form-select {
+							&.rmType {
+								// width: 105px;
+								width: 54%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+						}
+						.cal-box {
+							// width: 105px;
+							width: 54%;
+							+ .rdo-box {
+								margin-left: 10px;
+							}
+						}
+						.add-rtxt {
+							// margin-left: 2px;
+						}
+					}
+				}
+			}
+			.tbl-assign {
+				width: 270px;
+				th, td {
+
+				}
+				th {
+					.cell {
+
+					}
+				}
+				td {
+					// min-width: 206px;
+					.cell {
+						$account-wth: 49%;
+						.form-input {
+							&.assign {
+								width: 30%;
+							}
+							&.time {
+								// width: 51px;
+								width: 35%;
+								text-align: center;
+							}
+							&.deposit {
+								width: 65%;
+							}
+							&.exp {
+								width: 23%;
+								text-align: center;
+							}
+							&.sperson {
+								width: 95%;
+							}
+							&.req {
+								width: 67%;
+							}
+							&.accompany {
+								width: 75%;
+							}
+						}
+						.form-select {
+							&.rmType {
+								// width: 105px;
+								width: 54%;
+							}
+							&.account {
+								width: $account-wth;
+							}
+						}
+						.cal-box {
+							// width: 105px;
+							width: 54%;
+							+ .rdo-box {
+								margin-left: 10px;
+							}
+						}
+						.add-rtxt {
+							// margin-left: 2px;
+						}
+						.mg- {
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+		}
+		.cont-booker {
+			// 테이블 내 form 요소 및 기타 관리
+			.tbl-booker {
+				@include tbl-base;
+				th, td {
+
+				}
+				th {
+					.cell {
+					}
+				}
+				td {
+					+ th {
+						border-left: 1px solid $bdg-tblBase;
+					}
+					.cell {
+
+					}
+				}
+			}
+		}
+		.cont-message {
+			@include bx;
+			margin-top: 10px;
+			background: #F6F5F5;
+			padding: 5px;
+			height: 200px;
+			@include bdr(#c5c5c5);
+			.tab-list {
+				> * {
+					position: relative;
+					float: left;
+					color: #444;
+				}
+				.tab {
+					display: inline-block;
+					padding: 5px 12px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					background: #f7f7f7;
+					border: 1px solid #c5c5c5;
+					font-size: 12px;
+					border-bottom-color: #9f9f9f;
+					& + .tab {
+						left: -1px;
+					}
+					&.on {
+						z-index: 1;
+						background: #fff;
+						border-color: #9f9f9f;
+						border-bottom-color: #fff;
+					}
+					.plus {
+						vertical-align: middle;
+					}
+				}
+				label {
+					@include lbl;
+					top: 2px;
+					margin-left: 15px;
+				}
+			}
+			.item-list {
+				position: relative;
+				.grid-container {
+					display: none;
+					@include position(absolute, 0, 0);
+					padding: 12px;
+					background: #fff;
+					border: 1px solid #a9a9a9;
+					margin-top: -1px;
+					.grid-wrap.scr-wrap {
+						@include grid-scr-x(null, 100%, 4px);
+						.grid-tbl {
+							.ie8 & {
+								width: 581px;
+							}
+						}
+					}
+					&.on {
+						display: block;
+					}
+				}
+
+			}
+		}
+	}
+	.split-2 {
+		@include float;
+		width: 808px;
+		margin-left: 20px;
+		.cont-rsvList {
+			.cont-tit {
+				.form-select {
+					&.type {
+						margin-left: 0;
+					}
+				}
+				.inTxt {
+					color: #000;
+					margin-left: 10px;
+				}
+			}
+			float: none;
+			.grid-wrap.scr-wrap.grid-wrap-1 {
+				@include grid-scr-x(null, 100%, 4px);
+				.grid-area.grid-contents {
+					background: #fff;
+					height: 200px;
+				}
+				.grid-tbl {
+					.ie8 & {
+						width: 777px;
+					}
+					th, td {
+						.cell {
+							text-align: center;
+						}
+					}
+					td:first-child {
+						.cell {
+							line-height: 1;
+						}
+					}
+				}
+			}
+			.grid-toolbar {
+				@include bx;
+				@include gray-gradient;
+				$btn-lh: 1.5;
+				width: 100%;
+				border: 1px solid $bor-gray-table;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+				padding: 4px;
+				margin-top: 10px;
+				margin-bottom: -1px;
+				button {
+					.icon {
+					}
+				}
+				.btn-gray, .btn-green, .btn-red, .btn-blue {
+					padding: 12px, 3px 8px 2px;
+				}
+				.btn-gray {
+					color: #000;
+					&.btn-changes {
+						padding-left: 5px;
+						padding-right: 5px;
+					}
+				}
+			}
+			.grid-wrap.scr-wrap.grid-wrap-2 {
+				@include grid-scr-x(1440px, 100%, 0 0 4px 4px);
+				.grid-area.grid-contents {
+					background: #fff;
+					height: 380px;
+				}
+				$ie8-wth: 1440px;
+				.grid-head {
+					.grid-tbl {
+						.ie8 & {
+							width: $ie8-wth - 17px;
+						}
+					}
+				}
+				.grid-contents {
+					.grid-tbl {
+						.ie8 & {
+							width: $ie8-wth;
+						}
+					}
+				}
+				.grid-tbl {
+					th, td {
+						.cell {
+							text-align: center;
+						}
+					}
+					td:first-child {
+						.cell {
+							line-height: 1;
+						}
+					}
+				}
+			}
+
+		}
+		.row-btn {
+			margin-top: 10px;
+			$btn-lh: 1.5;
+			button[class*=btn-] {
+				letter-spacing: 0;
+			}
+			.btn-gray, .btn-green, .btn-red, .btn-blue, .btn-brown {
+				padding: 3px 12px 2px;
+			}
+			button:first-child {
+				margin-right: 15px;
+			}
+			.wd-space {
+				margin-right: 80px;
+			}
+		}
+	}
+
+	.cont-booker, .cont-rsvList {
+		margin-top: 30px;
+	}
+
+}
+
+/* 객실 목록 */
+.contents.roomInv-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 150px;
+						}
+					}
+					.btn-gray {
+						.prev, .next {
+							position: relative;
+							top: -1px;
+							color: #6E7A86;
+							padding: 0 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-roomInv {
+		.grid-container {
+//			@include grid-scr-x2(180px, null, 100%, 4px);
+			@include grid-scr-x2(180px, 2000px, 100%, 4px);
+			$ie8-wth: 1583px;
+			.ie8 .grid-area.grid-locked {
+				width: 180px;
+			}
+			.scr-wrap {
+				.ie8 & {
+					width: $ie8-wth;
+				}
+				.grid-tbl {
+					.ie8 & {
+						width: $ie8-wth;
+					}
+					th {
+						&.sat {
+							color: $fg-sat;
+						}
+						&.sun {
+							color: $fg-sun;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 할당 현황 */
+.assign-container {
+	min-width: 1780px;
+}
+.contents.assign-contents {
+	%kinds-color {
+		&.rsv {
+			background: #FFCC80;
+		}
+		&.rsv-g {
+			background: #FF5722;
+		}
+		&.chkIn {
+			background: #AED581;
+		}
+		&.chkIn-g {
+			background: #00C853;
+		}
+		&.adv {
+			background: #B3E5FC;
+		}
+		&.pay {
+			background: #E0E0E0;
+		}
+		&.ooo {
+			background: #333030;
+		}
+	}
+	.cont-property {
+		.grid-tbl {
+			@include tbl-style-1;
+			td {
+				border-left-style: solid;
+			}
+		}
+		.tbl-rmType-1 {
+			margin-bottom: -1px;
+			td {
+				.cell {
+					.form-select {
+						&.rmType {
+							width: 150px;
+						}
+					}
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 110px;
+							padding-left: 8px;
+						}
+					}
+					.btn-gray {
+						.prev, .next {
+							position: relative;
+							top: -1px;
+							color: #6E7A86;
+							padding: 0 5px;
+						}
+					}
+					.kinds {
+						dt, dd {
+							display: inline-block;
+							vertical-align: middle;
+						}
+						dt {
+							width: 50px;
+							height: 20px;
+							margin-left: 3px;
+							&:first-child {
+								margin-left: 0;
+							}
+							@extend %kinds-color;
+						}
+					}
+				}
+				&.search {
+					font-size: 14px;
+					font-weight: 700;
+					.fg-1 {
+						color: #666;
+					}
+					.fg-2 {
+						color: red;
+					}
+				}
+			}
+		}
+		.tbl-rmType-2 {
+			td {
+				height: auto;
+				color: #444;
+				text-align: center;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.cont-rmList {
+		.grid-wrap.list-wrap {
+			height: 750px;
+			padding-top: 5px;
+			overflow-y: auto;
+			overflow-x: hidden;
+			.tbl-list {
+				@include tbl-style-1;
+				th, td {
+					background: #fff;
+					height: auto;
+					.cell {
+
+					}
+				}
+				th {
+					text-align: center;
+					border-left-style: solid;
+					& + td {
+						border-left-style: solid;
+						border-left-color: $bdg-tblBase;
+					}
+					.cell {
+						font-weight: 400;
+					}
+				}
+				td {
+					border-left-color: transparent;
+					@extend %kinds-color;
+					color: #fff;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+/* 블럭 룸 */
+.rmBlock-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 150px;
+						}
+					}
+					.btn-gray {
+						.prev, .next {
+							position: relative;
+							top: -1px;
+							color: #6E7A86;
+							padding: 0 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 700px;
+			}
+			$ie8-wth: 1740px;
+			.grid-tbl {
+				.ie8 & {
+					width: $ie8-wth;
+				}
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+				td:first-child {
+					.cell {
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 예약 목록 */
+.rsvList-contents {
+	.cont-property {
+		background: #f0f0f0;
+		padding: 10px;
+		border-radius: 4px;
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.form-input {
+						&.account {
+							width: 40%;
+						}
+						&.package {
+							width: 70%;
+						}
+					}
+					.form-select {
+						&.account {
+							width: 55%;
+						}
+					}
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 100px;
+						}
+					}
+					.btn-gray {
+						.prev, .next {
+							position: relative;
+							top: -1px;
+							color: #6E7A86;
+							padding: 0 5px;
+						}
+					}
+					.total-dl {
+						dt, dd {
+							@include dp;
+							color: #444;
+						}
+						dt {
+							font-weight: 700;
+							margin-left: 100px;
+							&:first-child {
+								margin-left: 35px;
+							}
+						}
+						dd {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(4989px, 100%, 4px 4px 0 0);
+			$ie8-wth: 4989px;
+			.grid-area.grid-head {
+				.grid-tbl {
+					.ie8 & {
+						width: $ie8-wth - 17px;
+					}
+				}
+			}
+			.grid-area.grid-contents, .grid-area.grid-total {
+				.grid-tbl {
+					.ie8 & {
+						width: $ie8-wth
+					}
+				}
+			}
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 500px;
+				.grid-tbl {
+
+				}
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					border-top: 1px solid $bor-gray-table;
+					border-right: 0;
+					th, td {
+						background: #f5f5f5;
+					}
+					td {
+						&.last  {
+							.cell.inBl {
+								display: inline-block;
+							}
+							.square {
+								display: inline-block;
+								float: right;
+								height: 100%;
+								padding: 0;
+								border-left: 1px solid #c5c5c5;
+								width: 17px;
+								box-sizing: border-box;
+							}
+						}
+					}
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+				td:first-child {
+					.cell {
+						line-height: 1;
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			@include bdr-r(0, 0, 4px, 4px);
+			padding: 5px;
+			border: 1px solid $bor-gray-table;
+			border-top: 0;
+			> * {
+				@include va;
+				@include bx;
+				text-align: center;
+				border-radius: 50%;
+				font-weight: 700;
+			}
+			.prev, .next {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 24px;
+				background-color: #fff;
+				border: 1px solid #d2d2d2;
+				&.st {
+					letter-spacing: -3px;
+				}
+			}
+			.prev {
+				text-indent: -3px;
+				&.st {
+					text-indent: -5px;
+				}
+			}
+			.num {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 26px;
+				color: #fff;
+				background-color: #f35800;
+				border-color: #f85a00;
+			}
+			.next {
+				text-indent: 3px;
+				&.st {
+					text-indent: 0px;
+				}
+			}
+			.count {
+				@include float(right);
+				@include ft(12px, #313131, 400);
+				padding-right: 12px;
+				top: 3px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+}
+
+/* 요금 일정 */
+.rateSch-contents {
+	.cont-property {
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #ccc;
+		.tbl-property {
+			@include tbl-style-1;
+			border-left: 0;
+			border-right: 0;
+			th:first-child {
+				border-left: 0;
+			}
+			td {
+				.cell {
+					.form-input {
+
+					}
+					.form-select {
+						&.market-1 {
+							width: 280px;
+						}
+						&.market-2 {
+							width: 170px;
+						}
+						&.grade {
+							width: 100px;
+						}
+					}
+					.chk-box {
+						label {
+							margin-left: 5px;
+						}
+					}
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 145px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 15px;
+		h3 {
+			@include ft(14px, null, 700, $font-ntss);
+			margin-bottom: 10px;
+		}
+		$bg-hover: #e3ddd7;
+		.grid-wrap {
+			@include grid-scr-brown(null, 100%, 0);
+			@include bx;
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 60px;
+			}
+			.grid-tbl {
+				.rowgroup {
+					tr {
+						position: relative;
+						th, td {
+							border-left-style: dashed;
+							&:first-child {
+								border-left: 0;
+							}
+							.cell {
+								text-align: center;
+								&.read {
+									cursor: pointer;
+								}
+								.form-input {
+									@include form-base(100%, 23px);
+								}
+							}
+						}
+						td:first-child {
+							.cell {
+								line-height: 1;
+							}
+						}
+						td {
+							background: #f7f7f7;
+							.cell.edit {
+								display: none;
+							}
+						}
+						&:hover {
+							th, td {
+								text-shadow: 0px 1px 0px #fff;
+							}
+							td {
+								background: $bg-hover;
+							}
+						}
+					}
+					tr.edit {
+						td {
+							background: #D2D9DF;
+							border-bottom: 1px solid #7f8d9c;
+							.cell {
+								@include position(absolute, 0, 0);
+							}
+							.cell.edit {
+								position: relative;
+								display: block;
+								overflow: visible;
+								z-index: 1;
+								.btn-area {
+									width: 100px;
+									@include position(absolute, 29px, 43px);
+									padding: 3px;
+									padding-top: 1px;
+									background: #D2D9DF;
+									border: 1px solid #7f8d9c;
+									border-top: 0;
+									.btn-gray {
+										@include btn-gray(null, null, 11px, 2px 8px 2px);
+										line-height: $btn-lh;
+									}
+									.btn-brown {
+										@include btn-brown(null, null, 11px, 2px 8px 2px);
+										line-height: $btn-lh;
+									}
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+		.grid-wrap.list-1 {
+			.grid-area.grid-contents {
+				.grid-tbl {
+					td {
+						.cell {
+
+						}
+					}
+				}
+			}
+		}
+		.grid-wrap.list-2 {
+			margin-top: 10px;
+			.grid-area.grid-contents {
+				height: 530px;
+				.grid-tbl {
+					border-bottom: 1px solid $bdg-tblBase;
+					.rowgroup {
+						tr {
+							td {
+								background: #fff;
+								border-bottom: 0;
+							}
+							&.fs {
+								td {
+									background: $bg-fs;
+								}
+							}
+							&:hover td {
+								background: $bg-hover;
+							}
+						}
+						tr.edit {
+							td {
+								background: #D2D9DF;
+								border-bottom: 1px solid #7f8d9c;
+								.cell.edit {
+									.btn-area {
+										border: 1px solid #7f8d9c;
+										border-top: 0;
+									}
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			padding: 5px;
+			border: 1px solid $bdg-tblBase;
+			border-top: 0;
+			.count {
+				@include float(right);
+				@include ft(14px, #666, 700);
+				padding-right: 12px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+}
+
+/* 계정 */
+.account-contents {
+	.cont-property {
+		padding-bottom: 10px;
+		border-bottom: 1px dashed #ccc;
+		.tbl-property {
+			@include tbl-style-1;
+			border-left: 0;
+			border-right: 0;
+			th:first-child {
+				border-left: 0;
+			}
+			td {
+				.cell {
+					.form-input {
+						&.search {
+							width: 190px;
+						}
+						&.sp {
+							width: 160px;
+						}
+					}
+					.form-select {
+						&.market-1 {
+							width: 280px;
+						}
+						&.market-2 {
+							width: 170px;
+						}
+						&.search {
+							width: 100px;
+						}
+					}
+					.chk-box {
+						label {
+							margin-left: 5px;
+						}
+					}
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 145px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(2700px, 100%, 4px 4px 0 0);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 377px;
+			}
+			$ie8-wth: 2700px;
+			.grid-head {
+				.grid-tbl {
+					.ie8 & {
+						width: $ie8-wth - 17px;
+					}
+				}
+			}
+			.grid-contents {
+				.grid-tbl {
+					.ie8 & {
+						width: $ie8-wth;
+					}
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+			}
+			.grid-tbl.list-tbl {
+				th, td {
+					.cell {
+						text-align: left;
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			@include bdr-r(0, 0, 4px, 4px);
+			padding: 5px;
+			border: 1px solid $bor-gray-table;
+			border-top: 0;
+			> * {
+				@include va;
+				@include bx;
+				text-align: center;
+				border-radius: 50%;
+				font-weight: 700;
+			}
+			.prev, .next {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 24px;
+				background-color: #fff;
+				border: 1px solid #d2d2d2;
+				&.st {
+					letter-spacing: -3px;
+				}
+			}
+			.prev {
+				text-indent: -3px;
+				&.st {
+					text-indent: -5px;
+				}
+			}
+			.num {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 26px;
+				color: #fff;
+				background-color: #f35800;
+				border-color: #f85a00;
+			}
+			.next {
+				text-indent: 3px;
+				&.st {
+					text-indent: 0px;
+				}
+			}
+			.count {
+				@include float(right);
+				@include ft(12px, #313131, 400);
+				padding-right: 12px;
+				top: 3px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+	.cont-addInfo {
+		@include bx;
+		margin: 10px 0;
+		background: #F6F5F5;
+		padding: 5px;
+//		height: 200px;
+		@include bdr(#c5c5c5);
+		.tab-list {
+			> * {
+				position: relative;
+				float: left;
+				color: #444;
+			}
+			.tab {
+				display: inline-block;
+				padding: 5px 20px;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				background: #f7f7f7;
+				border: 1px solid #c5c5c5;
+				font-size: 12px;
+				border-bottom-color: #9f9f9f;
+				& + .tab {
+					left: -1px;
+				}
+				&.on {
+					z-index: 1;
+					background: #fff;
+					border-color: #9f9f9f;
+					border-bottom-color: #fff;
+				}
+			}
+			label {
+				@include lbl;
+				top: 2px;
+				margin-left: 15px;
+			}
+		}
+		.item-list {
+			position: relative;
+			.common {
+				display: none;
+				@include position(absolute, 0, 0);
+				padding: 12px;
+				background: #fff;
+				border: 1px solid #a9a9a9;
+				margin-top: -1px;
+				&:first-child {
+					display: block;
+				}
+				&.on {
+//					display: block;
+					position: relative;
+				}
+			}
+			.info-container {
+				padding: 12px;
+				.tbl-info {
+					@include tbl-style-1;
+					th:first-child {
+						border-left: 0;
+					}
+					td {
+						background: #fff;
+						.cell {
+							.form-input {
+								&.code {
+									width: 90px;
+								}
+								&.job, &.sp {
+									width: 156px;
+								}
+								&.addr-1 {
+									width: 60px;
+								}
+								&.addr-2 {
+									width: 210px;
+								}
+								&.addr-3 {
+									width: 410px;
+								}
+							}
+							.form-select {
+								&.market-1 {
+									width: 186px;
+								}
+								&.grade {
+									width: 156px;
+								}
+								&.langCode {
+									width: 185px;
+								}
+								&.etc {
+									width: 50px;
+								}
+							}
+							.chk-box {
+								label {
+									margin-left: 5px;
+								}
+							}
+							.rdo-box {
+								padding: 0 8px;
+								label {
+									margin-right: 5px;
+								}
+							}
+							.cal-box {
+								.inp-cal {
+									width: 145px;
+								}
+							}
+							.slt-box {
+								margin-right: 20px;
+							}
+							button[type=button] {
+								padding-left: 5px;
+								padding-right: 5px;
+							}
+							.textarea-etc {
+								width: 100%;
+								height: 55px;
+							}
+						}
+					}
+				}
+				.row-btn {
+					margin-top: 10px;
+					button[type=button] {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+				}
+			}
+			.grid-container {
+				.grid-toolbar {
+					@include bx;
+					@include gray-gradient;
+					$btn-lh: 1.5;
+					width: 100%;
+					border: 1px solid $bor-gray-table;
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+					padding: 4px;
+					margin-top: 10px;
+					margin-bottom: -1px;
+					.btn-gray, .btn-green, .btn-red, .btn-blue {
+						padding: 12px, 3px 8px 2px;
+					}
+					.btn-gray {
+						color: #000;
+					}
+					.plus {
+						vertical-align: middle;
+						&:before, &:after {
+							top: 7px;
+						}
+					}
+				}
+				.grid-wrap.scr-wrap {
+					@include grid-scr-x(null, 100%, 4px);
+					.grid-tbl {
+						.ie8 & {
+							width: 581px;
+						}
+						td {
+							.cell {
+								.form-input {
+
+								}
+							}
+						}
+					}
+					.grid-area.grid-contents {
+						height: 140px;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+/* 메일 목록 */
+.maList-contents {
+	.tab-list {
+		> * {
+			position: relative;
+			float: left;
+			color: #444;
+		}
+		.tab {
+			display: inline-block;
+			padding: 5px 20px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			background: #f7f7f7;
+			border: 1px solid #c5c5c5;
+			font-size: 12px;
+			border-bottom-color: #9f9f9f;
+			& + .tab {
+				left: -1px;
+			}
+			&.on {
+				z-index: 1;
+				background: #fff;
+				border-color: #9f9f9f;
+				border-bottom-color: #fff;
+			}
+		}
+	}
+	.item-list {
+		position: relative;
+		.item-container {
+			@include position(absolute, 0, 0);
+			display: none;
+			.cont-property {
+				border-top: 1px solid #9f9f9f;
+				margin-top: -1px;
+				padding-top: 10px;
+				.tbl-property {
+					@include tbl-style-1;
+					border-left: 0;
+					border-right: 0;
+					th:first-child {
+						border-left: 0;
+					}
+					td {
+						.cell {
+							.form-input {
+								width: 190px;
+							}
+							.form-select {
+								&.status {
+									width: 120px;
+								}
+								&.search {
+									width: 100px;
+								}
+							}
+							.rdo-box {
+								padding: 0 8px;
+								label {
+									margin-right: 5px;
+								}
+							}
+							.cal-box {
+								.inp-cal {
+									width: 105px;
+								}
+							}
+							.btn-gray {
+								.prev, .next {
+									position: relative;
+									top: -1px;
+									color: #6E7A86;
+									padding: 0 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.cont-list {
+				margin-top: 10px;
+				.grid-wrap {
+					@include grid-scr-x(null, 100%, 4px);
+					.grid-area.grid-contents {
+						background: #fff;
+						height: 630px;
+					}
+					$ie8-wth: 1740px;
+					.grid-tbl {
+						.ie8 & {
+							width: $ie8-wth;
+						}
+						th, td {
+							.cell {
+								text-align: center;
+							}
+						}
+						td:first-child {
+							.cell {
+								line-height: 1;
+							}
+						}
+					}
+				}
+				.grid-bottom {
+					@include gray-gradient;
+					@include bdr-r(0, 0, 4px, 4px);
+					padding: 5px;
+					border: 1px solid $bor-gray-table;
+					border-top: 0;
+					> * {
+						@include va;
+						@include bx;
+						text-align: center;
+						border-radius: 50%;
+						font-weight: 700;
+					}
+					.prev, .next {
+						@include ft(12px, #918884);
+						@include sizes(26px);
+						line-height: 24px;
+						background-color: #fff;
+						border: 1px solid #d2d2d2;
+						&.st {
+							letter-spacing: -3px;
+						}
+					}
+					.prev {
+						text-indent: -3px;
+						&.st {
+							text-indent: -5px;
+						}
+					}
+					.num {
+						@include ft(12px, #918884);
+						@include sizes(26px);
+						line-height: 26px;
+						color: #fff;
+						background-color: #f35800;
+						border-color: #f85a00;
+					}
+					.next {
+						text-indent: 3px;
+						&.st {
+							text-indent: 0px;
+						}
+					}
+					.count {
+						@include float(right);
+						@include ft(12px, #313131, 400);
+						padding-right: 12px;
+						top: 3px;
+						.co {
+							color: $fg-orange-1;
+						}
+					}
+				}
+			}
+			&.on {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+// common
+@import "../parts/common";
+
+.contents {
+	min-width: 1695px;
+}
+$common-pd: 0 20px;
+
+%grid-wrap-style1 {
+	font-size: 13px;
+}
+%btn-style-2 {
+	@extend %btn-default;
+	background: $bg-blue-2;
+//	background: $bg-brown-primary;
+//	border-color: $bg-brown-primary;
+    color: #fff;
+}
+%btn-style-3 {
+	@extend %btn-default;
+	background: $bg-brown-4;
+    color: #fff;
+}
+%btn-style-4 {
+	@extend %btn-default;
+	background: $bg-orange-1;
+    color: #fff;
+}
+%inp-default, %slt-default {
+	@extend %inp-txt-base;
+	height: 30px;
+	font-size: 13px;
+}
+%inp-default {
+	width: 80px;
+}
+%slt-default {
+	padding-bottom: 5px;
+}
+
+/* 분류 버튼 */
+%classify-itmBefore {
+	position: relative;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 13px;
+	top: -1px;
+	margin-right: 3px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid #000;
+}
+%btn-green {
+	@extend %btn-base;
+	color: #deffbb;
+	background: #84c35c;
+	border: 1px solid #69994d;
+	text-shadow: 0px -1px #729a59;
+	&:hover {
+		color: #fff;
+		background: #66ba2c;
+	}
+}
+%btn-red {
+	@extend %btn-base;
+	border: 1px solid #882f29;
+	background: #BB4749;
+	color: #ffccc8;
+	text-shadow: 0px -1px #aa4949;
+	&:hover {
+		color: #fff;
+		background: #ba383a;
+	}
+}
+%btn-blue {
+	@extend %btn-base;
+	border: 1px solid #1a70ba;
+    color: #dfeffc;
+    text-shadow: 0px -1px #5692c2;
+    background: #4F8BBF;
+	&:hover {
+	    color: #fff;
+		background: #2274ba;
+	}
+}
+
+.page-title {
+	@extend %page-title;
+}
+
+/* 판매목록 페이지 */
+.cont-bkHistory {
+//	min-width: 1692px;
+	padding: $common-pd;
+	padding-top: 20px;
+	h2 {
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: -0.5px;
+		> span {
+			font-family: $font-ntss;
+		}
+		.right {
+			float: right;
+			.btn-water, .btn-booking {
+				@extend %btn-style-2;
+			}
+			button + button {
+				
+			}
+		}
+	}
+	.grid-wrap {
+		@extend %grid-wrap-style1;
+		.grid-tbl {
+			tr {
+				&[class*="row-"] {
+					color: $fg-red-2;
+				}
+				th, td {
+					font-family: $font-ntss;
+				}
+				th {
+//					font-weight: 700;
+				}
+				td {
+					
+				}
+				.alert {
+					font-size: 12px;
+					display: inline-block;
+					line-height: 20px;
+					padding: 1px 6px;
+					border-radius: 4px;
+					color: #fff;
+					&.alert-ok {
+						background: $state-ok;
+					}
+					&.alert-cancle {
+						background: $state-cancle;
+					}
+					&.alert-unident {
+						background: $state-unident;
+					}
+					&.alert-wait {
+						background: $state-wait;
+					}
+					&.alert-unused {
+						background: $state-unused;
+					}
+					&.alert-ing {
+						background: $state-ing;
+					}
+				}
+			}
+		}
+		&.grid-total {
+			.grid-tbl {
+				table-layout: fixed;
+				tr {
+					th, td {
+						text-align: center;
+					}
+					td {
+						font-size: 20px;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		&.grid-detail {
+			.grid-tbl {
+				tr {
+					th {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.row-option {
+		margin-top: 30px;
+		.chk-area {
+			padding: 0 3px;
+			.chk-box {
+				font-size: 13px;
+				margin-left: 8px;
+				input[type=checkbox] {
+					position: relative;
+					margin-right: 2px;
+					vertical-align: middle;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			} 
+		}
+		.date {
+			text-align: center;
+		}
+		.nameNumber {
+			width: 160px;
+		}
+		.partner {
+			min-width: 150px;
+		}
+	}
+	.btn-default {
+		@extend %btn-default;
+	}
+	.btn-style-2 {
+		@extend %btn-style-2;
+	}
+	.inp-default {
+		@extend %inp-default;
+		&.type-2 {
+			width: 62px;
+			text-align: center;
+		}
+	}
+	.slt-default {
+		@extend %slt-default;
+	}
+	.pagenation {
+		@extend %pagenation;
+	}
+}
+
+/* 이벤트 판매목록 페이지 기본*/
+.cont-bkHistory.cont-virtual {
+	h2 {
+		padding-bottom: 5px;
+		border-bottom: 2px solid $bor-gray-tableTop;
+	}
+}
+
+/* 입금대기 페이지 */
+.cont-bkHistory.cont-virtual {
+	
+}
+
+/* 투숙자 리스트 페이지 */
+.cont-bkHistory.cont-chkIn {
+	.row-color {
+		margin-top: 30px;
+		.rc-box {
+			> * {
+				@extend %va-middle;
+			}
+			[class*="rc-"] {
+				@extend %bor-box;
+				width: 20px;
+				height: 20px;
+				border: 1px solid #f0f0f0;
+			}
+			.rc-impossi { 
+				background: $rc-impossi;
+			}
+			.rc-chkIn {
+				background: $rc-chkIn;
+			}
+			.rc-clean {
+				background: $rc-clean;
+			}
+			.rc-chkOut {
+				background: $rc-chkOut;
+			}
+			.rc-re {
+				background: $rc-re;
+			}
+			.naming {
+				font-size: 13px;
+				top: -1px;
+			}
+		}
+	}
+	.row-option {
+		margin-top: 15px;
+		.date {
+			width: 100px;
+		}
+	}
+	.grid-wrap {
+		.grid-tbl {
+			tr {
+				&[class*="row-"] {
+					color: $fg-red-2;
+				}
+				&.rc-impossi { 
+					background: $rc-impossi;
+				}
+				&.rc-chkIn {
+					background: $rc-chkIn;
+				}
+				&.rc-clean {
+					background: $rc-clean;
+				}
+				&.rc-chkOut {
+					background: $rc-chkOut;
+				}
+				&.rc-re {
+					background: $rc-re;
+				}
+				th, td {
+					font-family: $font-ntss;
+				}
+				th {
+//					font-weight: 700;
+					.arr-box {
+						font-family: $font-nnGothic;
+						position: relative;
+						display: inline-block;
+//						display: none;
+						vertical-align: middle;
+						margin-left: 8px; margin-right: -2px;
+						margin-top: -2px;
+						*zoom: 1;
+						&:after {
+							content: "";
+							display: block;
+							clear: both;
+						}
+						span {
+							display: block;
+							font-size: 11px;
+						}
+					}
+				}
+				td {
+					
+				}
+			}
+		}
+	}
+}
+
+/* 부대시설 현황 페이지 */
+.cont-bkHistory.cont-etc {
+	.grid-wrap.grid-total {
+		.grid-tbl {
+			tr {
+				th, td {
+					word-break: keep-all;
+				}
+				td {
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.grid-wrap.grid-detail {
+		.grid-tbl {
+			tr {
+				th, td {
+				}
+				td {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.row-option {
+		.chk-area {
+			margin: 0 10px;
+		}
+		.date {
+			width: 100px;
+		}
+	}
+}

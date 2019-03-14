@@ -1,0 +1,199 @@
+@@include('../include/_head.html', {
+	"page": "reserve"
+})
+
+<body class="page-reserve">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+	
+	<div class="cf contents">
+		<h2 class="page-title">부대시설현황</h2>
+		<section class="cont-bkHistory cont-etc">
+			<h2 class="cf">
+				<span>부대시설 현황</span>
+			</h2>
+			<div class="grid-wrap grid-total">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<thead class="rowgroup">
+							<tr>
+								<th colspan="2">아메리칸 조식</th>
+								<th colspan="3">일반메뉴</th>
+								<th rowspan="2">바베큐장 대여</th>
+								<th colspan="3">모듬회</th>
+								<th colspan="4">물회</th>
+								<th colspan="2">바이크</th>
+								<th colspan="3">불꽃놀이</th>
+								<th rowspan="2">조개</th>
+								<th rowspan="2">바베큐 배달</th>
+								<th colspan="2">레이트체크아웃</th>
+								<th rowspan="2">합계</th>
+							</tr>
+							<tr>
+								<th>성인</th>
+								<th>소인</th>
+								<th>우거지 갈비탕</th>
+								<th>황태 해장국</th>
+								<th>광어 미역국</th>
+								<th>소</th>
+								<th>중</th>
+								<th>대</th>
+								<th>2인</th>
+								<th>3인</th>
+								<th>4인</th>
+								<th>5인이상</th>
+								<th>1인승</th>
+								<th>2인승</th>
+								<th>소</th>
+								<th>중</th>
+								<th>대</th>
+								<th>13:00</th>
+								<th>15:00</th>
+							</tr>
+						</thead>
+						<tbody class="rowgroup">
+							<tr>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+								<td>0건</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!--//.grid-total-->
+			<div class="row-option">
+				<input type="text" class="inp-default date">
+				<select name="" id="" class="slt-default payment">
+					<option value="">체크인</option>
+					<option value="">체크아웃</option>
+					<option value="" selected="selected">이용일</option>
+					<option value="">결제일</option>
+				</select>
+				<span class="chk-area">
+					<span class="chk-box"><input type="checkbox" id=""><label for="">전체</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">조식</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">바베큐장</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">모듬회</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">물회</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">바이크</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">불꽃놀이</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">조개</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">바베큐배달</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">레이트체크아웃</label></span>
+				</span>
+				<input type="text" class="inp-default nameNumber" placeholder="고객명/전화번호">
+				<button type="button" class="btn-style-2">조회</button>
+				<button type="button" class="btn-style-2">엑셀</button>
+				<button type="button" class="btn-style-2">프린트</button>
+			</div>
+			<!--//.row-option-->
+			<div class="grid-wrap grid-detail">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="">
+							<col class="nth-2" style="">
+							<col class="nth-3" style="">
+							<col class="nth-4" style="">
+							<col class="nth-5">
+							<col class="nth-6">
+							<col class="nth-7">
+							<col class="nth-8">
+							<col class="nth-9">
+							<col class="nth-10">
+							<col class="nth-11">
+							<col class="nth-12">
+							<col class="nth-13">
+							<col class="nth-14">
+						</colgroup>
+						<thead class="rowgroup">
+							<tr>
+								<th>번호</th>
+								<th>고객명</th>
+								<th>전화번호</th>
+								<th>결제일</th>
+								<th>이용일</th>
+								<th>부대시설</th>
+								<th>상세옵션</th>
+								<th>총 개수</th>
+								<th>결제금액</th>
+								<th>판매구분</th>
+								<th>관리</th>
+							</tr>
+						</thead>
+						<tbody class="rowgroup">
+							<tr>
+								<td>5</td>
+								<td>모성은</td>
+								<td>010-3955-8210</td>
+								<td>2018-12-28 12:47:59</td>
+								<td>2018-12-28</td>
+								<td>오션숯불갈비</td>
+								<td>커플셋트(2~3인) 1개</td>
+								<td>1</td>
+								<td>39,000</td>
+								<td>이벤트</td>
+								<td class="ta-center">
+									<button type="" class="btn-default fn-detail">상세</button>
+									<button type="" class="btn-default fn-detail">미사용</button>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>이우복</td>
+								<td>010-5114-2925</td>
+								<td>2018-12-28 05:31:59</td>
+								<td>2018-12-28</td>
+								<td>조식패키지</td>
+								<td>아메리칸 뷔페 성인 4인</td>
+								<td>4</td>
+								<td>39,600</td>
+								<td>브랜드</td>
+								<td class="ta-center">
+									<button type="" class="btn-default fn-detail">상세</button>
+									<button type="" class="btn-default fn-detail">미사용</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="pagenation" id="pagenation">
+					<a class="pprev" href="javascript:;">&lt;&lt;</a>
+					<a class="prev" href="javascript:;">&lt;</a>
+					<a class="on" href="javascript:;">1</a>
+					<a class="next" href="javascript:;" onclick="">&gt;</a>
+					<a class="nnext" href="javascript:;" onclick="">&gt;&gt;</a>
+				</div>
+			</div>
+			<!--//.grid-detail-->			
+		</section>
+		<!--//.cont-bookingHistory.cont-etc-->
+	</div>
+	<!--//.contents-->
+
+</div>
+</body>
+</html>

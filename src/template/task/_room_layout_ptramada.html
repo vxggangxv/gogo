@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>삼포지점 객실배치도</title>
+	<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="//static.go.co.kr/css/go/reset.css" type="text/css">
+	<link rel="stylesheet" href="//static.go.co.kr/css/go/layout.css" type="text/css">
+	<link rel="stylesheet" href="//static.go.co.kr/css/task/room_layout.css">
+	<!-- <link rel="stylesheet" href="/static/css/task/room_layout.css"> -->
+
+	<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+
+	<!--변경내용-->
+	<div class="cf"></div>
+	<div id="room-layout-wrap">
+        <!-- <div class="layout-info cf" style="text-align: right;">
+    		<button type="button" class="btn" style="background: #3d5696; color: #fff;" onclick="page.layer(&quot;room_log&quot;, 0)">객실관리 로그</button>
+    		<button type="button" class="btn" style="background: #3d5696; color: #fff;" onclick="page.layer('sms', '')">설악워터피아</button>
+    		<button type="button" class="btn" style="background: #3d5696; color: #fff;" onclick="page.layer('booking', '')">현장 예약하기</button>
+    	</div> -->
+
+        <div class="layout-info cf">
+    		<ul class="u2" style="width:100%">
+    			<li>
+    				<div class="th">객실타입</div>
+    				<div>디럭스트윈 <span>()</span></div>
+    				<div>디럭스더블 <span>()</span></div>
+    				<div>패밀리트윈 <span>()</span></div>
+    				<div>트리플 <span>()</span></div>
+    				<div>테라스더블 <span>()</span></div>
+    				<div>스위트 <span>()</span></div>
+    				<div>확인불가 <span>()</span></div>
+    				<div>합계</div>
+    			</li>
+    			<li>
+    				<div class="th">총수</div>
+    				<div>168</div>
+    				<div>50</div>
+    				<div>48</div>
+    				<div>25</div>
+    				<div>6</div>
+    				<div>4</div>
+    				<div>1</div>
+    				<div>302</div>
+
+    			</li>
+    			<li>
+    				<div class="th">제외</div>
+    				<div>24</div>
+    				<div>0</div>
+    				<div>4</div>
+    				<div>5</div>
+    				<div>1</div>
+    				<div>0</div>
+    				<div>1</div>
+    				<div>35</div>
+    			</li>
+    			<li>
+    				<div class="th">가용수</div>
+    				<div>145</div>
+    				<div>50</div>
+    				<div>44</div>
+    				<div>20</div>
+    				<div>5</div>
+    				<div>4</div>
+    				<div>0</div>
+    				<div>268</div>
+    			</li>
+    		</ul>
+    	</div>
+        <!-- //.layout-info -->
+
+		<div class="room-layout room-layout-ptramada">
+
+			<!-- 클래스 - 판매가능 y , 판매 불가 n -->
+            <% for(var i = 17; i > 1; i--) { %>
+                <div class="floor-<%=i %> cf">
+    				<div class="">
+    					<ul class="u1-1 cf">
+                            <% for(var j=1; j < 23; j++) {
+                                if (j < 10) {
+                                    j = "0" + j;
+                                } %>
+
+                                <li class="">
+                                    <div class="nth-1"><%=i %><%=j %></div>
+                                    <div class="nth-2">이름</div>
+                                    <div class="nth-3">판매가능</div>
+                                    <div class="nth-4">내용</div>
+                                </li>
+
+
+                            <% } %>
+    					</ul>
+    				</div>
+    			</div>
+            <% } %>
+
+		</div>
+		<script>
+			// $(function () {
+			// 	$(".u1-1 li").click(function() {
+			// 		alert("hi");
+			// 	});
+			// });
+		</script>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@@include('../include/_head.html', {
+	"page": "reserve"
+})
+
+<body class="page-reserve">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+	
+	<div class="cf contents">
+		<h2 class="page-title">입금대기</h2>
+		<section class="cont-bkHistory cont-virtual">
+			<h2 class="cf">
+				<span class="date">2018 / 11 / 21 ~ 2018 / 12 /21 </span>
+				<span>입금대기</span>
+				<span class="right">
+					<button type="button" class="btn-water fn-sms">설악워터피아</button>
+					<button type="button" class="btn-booking fn-booking">현장 예약하기</button>
+				</span>
+			</h2>
+			<div class="row-option">
+				<input type="text" class="inp-default date">
+				<span class="to">∼</span>
+				<input type="text" class="inp-default date">
+				<select name="" id="" class="slt-default payment">
+					<option value="">체크인</option>
+					<option value="">체크아웃</option>
+					<option value="" selected="selected">결제일</option>
+					<option value="">투숙일</option>
+				</select>
+				<select name="" id="" class="slt-default roomPkg">
+					<option value="" selected="selected">객실/패키지</option>
+					<option value="room">=== 객실 ===</option>
+					<option value="">스탠다드 마운틴뷰 콘도</option>
+					<option value="">디럭스 오션뷰 콘도</option>
+					<option value="">리노베이션 오션뷰 호텔</option>
+					<option value="">리노베이션 오션뷰 콘도</option>
+					<option value="">리노베이션 마운틴뷰 콘도</option>
+					<option value="">바베큐 배달서비스</option>
+					<option value="">리노베이션 오션뷰 콘도테라스</option>
+					<option value="">삼포해변카라반</option>
+					<option value="">[BUS왕복이용권] 서울 ↔ 오션투유 (성인1인)</option>
+					<option value="pkg">=== 패키지 ===</option>
+					<option value="">조개 캐기 패키지</option>
+					<option value="">불꽃놀이 패키지</option>
+					<option value="">모듬회1</option>
+					<option value="">물회</option>
+					<option value="">레이트체크아웃</option>
+				</select>
+				<select name="" id="" class="slt-default saleChn">
+					<option value="" selected="selected">판매채널</option>
+					<option value="O">오픈마켓</option>				
+					<option value="S">소셜</option>
+					<option value="P">당일앱</option>
+					<option value="A">해외OTA</option>
+					<option value="M">폐쇄몰</option>
+					<option value="T">여행사</option>
+				</select>
+				<span class="chk-area">
+					<span class="chk-box"><input type="checkbox" id=""><label for="">확인</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">미확인</label></span>
+					<span class="chk-box"><input type="checkbox" id=""><label for="">취소</label></span>
+				</span>
+				<input type="text" class="inp-default roomName" placeholder="객실명">
+				<input type="text" class="inp-default nameNumber" placeholder="고객명/전화번호">
+				<button type="button" class="btn-default">오늘</button>
+				<button type="button" class="btn-default">어제</button>
+				<button type="button" class="btn-default">7일</button>
+				<button type="button" class="btn-default">30일</button>
+				<button type="button" class="btn-default">지난달</button>
+				<button type="button" class="btn-default">이번달</button>
+				<button type="button" class="btn-default">다음달</button>
+				<button type="button" class="btn-style-2">조회</button>
+				<button type="button" class="btn-style-2">엑셀</button>
+			</div>
+			<!--//.row-option-->
+			<div class="grid-wrap grid-detail">
+				<div class="grid-area grid-contents">
+					<table class="grid-tbl">
+						<colgroup>
+							<col class="nth-1" style="">
+							<col class="nth-2" style="">
+							<col class="nth-3" style="">
+							<col class="nth-4" style="">
+							<col class="nth-5">
+							<col class="nth-6">
+							<col class="nth-7">
+							<col class="nth-8">
+							<col class="nth-9">
+							<col class="nth-10">
+							<col class="nth-11">
+							<col class="nth-12">
+							<col class="nth-13">
+							<col class="nth-14">
+						</colgroup>
+						<thead class="rowgroup">
+							<tr>
+								<th>결제일시</th>
+								<th>고객명(투숙자)</th>
+								<th>전화번호</th>
+								<th>체크인</th>
+								<th>박수</th>
+								<th>객실명</th>
+								<th>인원</th>
+								<th>객실수</th>
+								<th>판매가</th>
+								<th>판매처</th>
+								<th>예약확인</th>
+								<th>입력확인</th>
+								<th>메모</th>
+								<th>상세</th>
+							</tr>
+						</thead>
+						<tbody class="rowgroup">
+							<tr>
+								<td>18/12/02 17:11</td>
+								<td>&nbsp;김성현<br>(김성현)</td>
+								<td class="ta-center">010-2997-6119</td>
+								<td class="ta-center">18/12/02(일)</td>
+								<td class="ta-center">1박</td>
+								<td>마운틴 콘도</td>
+								<td class="ta-center">3명</td>
+								<td class="ta-center">1개</td>
+								<td class="ta-right">48,000</td>
+								<td class="ta-center">회원</td>
+								<td class="ta-center"><span class="alert alert-unident">미확인</span></td>
+								<td class="ta-center">
+									<input type="text" class="inp-default type-2 bkNum" placeholder="예약번호">
+									<input type="text" class="inp-default type-2 rmNum" placeholder="방배정"><br>
+									<button type="button" class="btn-default">확인</button>
+									<button type="button" class="btn-default">마감</button>
+								</td>
+								<td class="ta-center">-</td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">상세</button></td>
+							</tr>
+							<tr>
+								<td>18/12/19 15:52</td>
+								<td>&nbsp;고계화<br>(고계화)</td>
+								<td class="ta-center">010-7900-1393</td>
+								<td class="ta-center">19/01/19(토)</td>
+								<td class="ta-center">1박</td>
+								<td>스탠다드 마운틴뷰 콘도</td>
+								<td class="ta-center">4명</td>
+								<td class="ta-center">4개</td>
+								<td class="ta-right">248,400</td>
+								<td class="ta-center">위메이크프라이스</td>
+								<td class="ta-center"><span class="alert alert-ok">확인됨</span></td>
+								<td class="ta-center">성함입실(고계화)</td>
+								<td class="ta-center">1</td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">상세</button></td>
+							</tr>
+							<tr class="row-cancle">
+								<td>18/12/19 09:56</td>
+								<td>&nbsp;이선우<br>(이선우)</td>
+								<td class="ta-center">010-9964-3052</td>
+								<td class="ta-center">18/12/22(토)</td>
+								<td class="ta-center">1박</td>
+								<td>리노베이션 오션뷰 콘도</td>
+								<td class="ta-center">2명</td>
+								<td class="ta-center">1개</td>
+								<td class="ta-right">168,000</td>
+								<td class="ta-center">인터파크</td>
+								<td class="ta-center">
+									<span class="alert alert-cancle">취소됨</span><br>
+									00/00/00<br>
+									(고객)
+								</td>
+								<td class="ta-center">성함입실(이선우)</td>
+								<td class="ta-center">1</td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">상세</button></td>
+							</tr>
+							<tr class="row-wait">
+								<td>18/12/19 09:56</td>
+								<td>&nbsp;우남윤<br>(우남윤)</td>
+								<td class="ta-center">010-9964-3052</td>
+								<td class="ta-center">18/12/22(토)</td>
+								<td class="ta-center">1박</td>
+								<td>리노베이션 오션뷰 콘도</td>
+								<td class="ta-center">2명</td>
+								<td class="ta-center">1개</td>
+								<td class="ta-right">256,000</td>
+								<td class="ta-center">브랜드</td>
+								<td class="ta-center">
+									<span class="alert alert-wait">입금대기</span>
+								</td>
+								<td class="ta-center">신한은행 입금 대기<br>56200622383574</td>
+								<td class="ta-center">1</td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">상세</button></td>
+							</tr>
+							<tr class="row-unused">
+								<td>18/12/19 09:56</td>
+								<td>&nbsp;구원모<br>(구원모)</td>
+								<td class="ta-center">010-9964-3052</td>
+								<td class="ta-center">00/00/00(수)</td>
+								<td class="ta-center">·</td>
+								<td>이벤트(예약대기)</td>
+								<td class="ta-center">·</td>
+								<td class="ta-center">·</td>
+								<td class="ta-right">39,000</td>
+								<td class="ta-center">이벤트</td>
+								<td class="ta-center">
+									<span class="alert alert-unused">미사용</span><br>
+									(고객)
+								</td>
+								<td class="ta-center">결제완료</td>
+								<td class="ta-center">2</td>
+								<td class="ta-center"><button type="" class="btn-default fn-detail">상세</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="pagenation" id="pagenation">
+					<a class="pprev" href="javascript:;">&lt;&lt;</a>
+					<a class="prev" href="javascript:;">&lt;</a>
+					<a class="on" href="javascript:;">1</a>
+					<a class="next" href="javascript:;" onclick="">&gt;</a>
+					<a class="nnext" href="javascript:;" onclick="">&gt;&gt;</a>
+				</div>
+			</div>
+			<!--//.grid-detail-->
+		</section>
+		<!--//.cont-bookingHistory-->
+	</div>
+	<!--//.contents-->
+
+
+</div>
+</body>
+</html>
