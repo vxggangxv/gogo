@@ -256,13 +256,13 @@ $btn-lh: 1.5;
 	cursor: pointer;
 	border-radius: 3px;
 	background: #fff;
-	borer-color: #cdcdcd;
+	border-color: #cdcdcd;
 	color: #444;
 }
 // 색상별 버튼
 @mixin btn-gray($wth: null, $he:null, $fz: null, $pd: null) {
 //	@include btn-base(null, null, #f7f7f7, #b9babc, #6e7a86);
-	@include btn-base(null, null, #f2f0f0, #b9babc, #6e7a86);
+	@include btn-base(null, null, #f2f0f0, #b9babc, #333);
 	width: $wth;
 	height: $he;
 	font-size: $fz;

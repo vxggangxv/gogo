@@ -2,8 +2,6 @@
 	"page": "front"
 })
 
-<!-- 페이지 전용 -->
-
 <body class="page-front">
 
 @@include('../include/pop/pop_rsv.html')
@@ -11,14 +9,244 @@
 <div class="wrapper">
 	@@include('../include/_header.html')
 
-	<div class="cf contents name-contents">
+	<div class="cf contents gstProfile-contents">
+
 		@@include('../include/_row_h2.html', {
-			"page-title": "예약 조건"
+			"page-title": "게스트 프로필"
 		})
+		<div class="cf cont-container-f">
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width: 90px">
+								<col style="width: 200px">
+								<col style="width: 90px">
+								<col style="width: 200px">
+								<col style="width: 100px">
+								<col style="width: 200px">
+								<col style="width: 90px">
+								<col style="width: 200px">
+								<col style="width: 90px">
+								<col style="width: 200px">
+								<col style="width: 100px">
+								<col style="width: *">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">속성</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select w-1">
+												<option value="">Ramadapt</option>
+											</select>
+										</div>
+									</td>
+									<th><div class="cell">이름</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">회원번호</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">전화</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">생일</div></th>
+									<td>
+										<div class="cell">
+											<span class="cal-box w-1">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<!-- <button type="button" class="btn-brown">SEARCH</button> -->
+										</div>
+									</td>
+									<th><div class="cell">게스트 유형</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select w-1">
+												<option value="">개인</option>
+												<option value="">기업</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<th><div class="cell">국적</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-2">
+											<button type="button" class="btn-gray">CLEAR</button>
+										</div>
+									</td>
+									<th><div class="cell">언어</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select w-2">
+												<option value="">Korean</option>
+												<option value="">English</option>
+												<option value="">Chinese</option>
+												<option value="">Japanese</option>
+											</select>
+											<button type="button" class="btn-gray">CLEAR</button>
+										</div>
+									</td>
+									<th><div class="cell">여권번호</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">수평</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select w-2">
+												<option value="">Korean</option>
+												<option value="">English</option>
+												<option value="">Chinese</option>
+												<option value="">Japanese</option>
+											</select>
+										</div>
+									</td>
+									<th><div class="cell">우편</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">손님 번호</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><div class="cell">차 번호</div></th>
+									<td colspan="11">
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+											<div class="pull-right">
+												<button type="button" class="btn-brown">SEARCH</button>
+												<button type="button" class="btn-brown">CLEAR</button>
+												<button type="button" class="btn-gray"><span class="icon ic-excel"></span> Excel</button>
+												<button type="button" class="btn-gray"><span class="icon ic-pdf"></span> PDF</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="cont-list">
+				<div class="grid-toolbar">
+					<button type="button" class="btn-gray btn-changes"><span class="icon ic-pdf"></span> Export to Excel</button>
+				</div>
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:30px">
+										<col style="width:130px">
+										<col style="width:120px">
+										<col style="width:200px">
+										<col style="width:60px">
+										<col style="width:50px">
+										<col style="width:160px">
+										<col style="width:140px">
+										<col style="width:140px">
+										<col style="width:150px">
+										<col style="width:120px">
+										<col style="width:90px">
+										<col style="width:120px">
+										<col style="width:100px">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th><div class="cell">M</div></th>
+											<th><div class="cell">게스트 번호</div></th>
+											<th><div class="cell">회원 번호</div></th>
+											<th><div class="cell">이름</div></th>
+											<th><div class="cell">Level</div></th>
+											<th><div class="cell">등급</div></th>
+											<th><div class="cell">Tel</div></th>
+											<th><div class="cell">Mobile</div></th>
+											<th><div class="cell">Fax</div></th>
+											<th><div class="cell">Mail</div></th>
+											<th><div class="cell">국적</div></th>
+											<th><div class="cell">Birth</div></th>
+											<th><div class="cell">여권 번호</div></th>
+											<th><div class="cell">차 번호</div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width:50px">
+									<col style="width:110px">
+									<col style="width:205px">
+									<col style="width:*">
+									<col style="width:85px">
+									<col style="width:110px">
+									<col style="width:110px">
+									<col style="width:110px">
+									<col style="width:110px">
+									<col style="width:410px">
+								</colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->
+				<div class="cf grid-bottom">
+					<a href="#" class="prev st">&lt;&lt;</a>
+					<a href="#" class="prev">&lt;</a>
+					<span class="num">0</span>
+					<a href="#" class="next">&gt;</a>
+  					<a href="#" class="next st">&gt;&gt;</a>
+					<span class="count">1 - 100 of 158 items</span>
+				</div>
+				<!-- //.grid-bottom-->
+			</div>
+			<!--//.cont-rmBlock-->
+		</div>
 	</div>
 	<!-- //.contents -->
-	
-</div>
 
+
+</div>
 </body>
 </html>
