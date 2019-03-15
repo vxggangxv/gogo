@@ -1,9 +1,10 @@
 $(function() {
-	
+
 	popClsFn();
 	datePick();
 	ascending();
-	
+	tabFn();
+
 });
 
 // 팝업 기능 등록
@@ -18,7 +19,7 @@ function popClsFn() {
 	var containerName = ".pop-container",
 		popContainer = $(containerName),
 		btn_cls = popContainer.find(".fn-cls");
-	
+
 	btn_cls.on("click", function() {
 		$(this).closest(containerName).hide();
 	});
@@ -38,5 +39,16 @@ function datePick() {
 function ascending() {
 	$(".order-ui").on("click", function() {
 		$(this).toggleClass("ascending");
+	});
+}
+
+// 탭 기능
+function tabFn() {
+	var box = $(".fn-tabShow");
+	box.find(".tab-list > li").on("click", function() {
+		var idx = $(this).index();
+		$(this).addClass("on").siblings().removeClass("on");
+		box.find(".item-list > div").eq(idx).addClass("on").siblings().removeClass("on");
+		box.find(".item-list > div").eq(idx).show().siblings().hide();
 	});
 }

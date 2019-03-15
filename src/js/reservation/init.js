@@ -1,7 +1,6 @@
 $(function() {
-	
+
 	periodRateFn();
-	tabFn();
 	
 });
 
@@ -16,16 +15,5 @@ function periodRateFn() {
 			thisTr.find(".cell.read").show();
 			thisTr.removeClass("edit");
 		});
-	});
-}
-
-// 탭 기능
-function tabFn() {
-	var box = $(".fn-tabShow");
-	box.find(".tab-list > a").on("click", function() {
-		var idx = $(this).index();
-		$(this).addClass("on").siblings().removeClass("on");
-		box.find(".item-list > div").eq(idx).addClass("on").siblings().removeClass("on");
-		box.find(".item-list > div").eq(idx).show().siblings().hide();
 	});
 }

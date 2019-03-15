@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // common
-@import "../parts/variables"; 
+@import "../parts/variables";
 @import "../parts/mixins";
 
 /* datepicker UI */
@@ -21,12 +21,12 @@
 		z-index: 20;
 	}
 	.bg-back {
-		position: fixed; 
-		top: 0; 
-		left: 0; 
-		width: 100%; 
-		height: 100%; 
-		background: #000; 
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
 		opacity: 0.3;
 		filter: alpha(opacity=30);
 	}
@@ -63,14 +63,14 @@
 		@include btn-orange(null, null, 12px, 3px 8px 2px);
 		line-height: $btn-lh;
 	}
-	
+
 	.form-select {
 		@include slt-base(100%);
 	}
 	.form-input {
 		@include form-base(100%);
 	}
-	
+
 	.hSpace-5 {
 		font-size: 1px;
 		line-height: 1px;
@@ -216,7 +216,7 @@
 								width: $ie8-wth;
 							}
 							th {
-								
+
 							}
 						}
 					}
@@ -365,7 +365,7 @@
 								background: -moz-linear-gradient(top, #f9f9f9 0%, #f9f9f9 50%, #f1f2f4 51%, #ebecee 100%); /* FF3.6-15 */
 								background: -webkit-linear-gradient(top, #f9f9f9 0%,#f9f9f9 50%,#f1f2f4 51%,#ebecee 100%); /* Chrome10-25,Safari5.1-6 */
 								background: linear-gradient(to bottom, #f9f9f9 0%,#f9f9f9 50%,#f1f2f4 51%,#ebecee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ebecee',GradientType=0 ); /* IE6-9 */	
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ebecee',GradientType=0 ); /* IE6-9 */
 								border-left: 1px solid silver;
 							}
 							td {
@@ -470,7 +470,7 @@
 		.pop-contents {
 			padding: 20px;
 			padding-top: 30px;
-			.row-add { 
+			.row-add {
 				text-align: right;
 				padding-bottom: 15px;
 				[class*="btn-"] {
@@ -566,7 +566,7 @@
 		.pop-contents {
 			padding: 20px;
 			padding-top: 30px;
-			.row-add { 
+			.row-add {
 				text-align: right;
 				padding-bottom: 15px;
 				[class*="btn-"] {
@@ -642,7 +642,7 @@
 		}
 		.pop-contents {
 			padding: 20px;
-			.row-add { 
+			.row-add {
 				text-align: right;
 				padding-bottom: 15px;
 				[class*="btn-"] {
@@ -738,7 +738,7 @@
 		.pop-contents {
 			padding: 20px;
 			padding-top: 30px;
-			.row-add { 
+			.row-add {
 				text-align: right;
 				padding-bottom: 15px;
 				[class*="btn-"] {
@@ -824,7 +824,7 @@
 						}
 					}
 				}
-			}	
+			}
 			.cont-list {
 				margin-top: 10px;
 				.grid-wrap {
@@ -870,7 +870,7 @@
 									}
 								}
 							}
-						}	
+						}
 					}
 					.grid-tbl {
 						th, td {
@@ -886,7 +886,7 @@
 						tr.total {
 							th, td {
 								background: #f5f5f5;
-								
+
 							}
 						}
 					}
@@ -964,7 +964,7 @@
 							}
 						}
 					}
-				}	
+				}
 				.cont-property.mkGrade {
 					margin-top: 15px;
 					padding-top: 15px;
@@ -991,7 +991,7 @@
 								width: $ie8-wth;
 							}
 							th {
-								
+
 							}
 						}
 					}
@@ -1049,6 +1049,78 @@
 								color: $fg-orange-1;
 							}
 						}
+					}
+				}
+			}
+		}
+		.pop-footer {
+			@include pop-footer-base;
+		}
+	}
+}
+
+/* 특별 요구사 */
+.spReq-container {
+	.pop-wrap {
+		width: 500px;
+		.pop-header {
+			@include pop-header-base;
+		}
+		.pop-contents {
+			padding: 20px;
+			.tab-list {
+				> * {
+					position: relative;
+					float: left;
+					color: #444;
+				}
+				.tab {
+					display: inline-block;
+					padding: 5px 12px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					background: #f7f7f7;
+					border: 1px solid #c5c5c5;
+					font-size: 12px;
+					border-bottom-color: #9f9f9f;
+					cursor: pointer;
+					& + .tab {
+						left: -1px;
+					}
+					&.on {
+						z-index: 1;
+						background: #fff;
+						border-color: #9f9f9f;
+						border-bottom-color: #fff;
+					}
+					.plus {
+						vertical-align: middle;
+					}
+				}
+				label {
+					@include lbl;
+					top: 2px;
+					margin-left: 15px;
+				}
+			}
+			.item-list {
+				position: relative;
+				height: 425px;
+				.common {
+					display: none;
+					@include position(absolute, 0, 0);
+					padding: 12px;
+					background: #fff;
+					border: 1px solid #a9a9a9;
+					margin-top: -1px;
+					.grid-wrap.scr-wrap {
+						@include grid-scr-x(null, 100%, 4px);
+						.grid-area.grid-contents {
+							height: 370px;
+						}
+					}
+					&.on {
+						display: block;
 					}
 				}
 			}
