@@ -946,11 +946,11 @@
 
 .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-red:hover { color: #fff; background: #ba383a; }
 
-.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { position: relative; display: inline-block; border: 1px solid #1a70ba; background-color: #4F8BBF; border-color: #1a70ba; color: #dfeffc; box-shadow: 0px 1px rgba(217, 217, 217, 0.75); text-shadow: 0px -1px #34668c; padding: 1px 5px 0px; margin: 0 auto; box-sizing: border-box; vertical-align: middle; font-size: 13px; line-height: 1.6; letter-spacing: -0.5px; cursor: pointer; border-radius: 3px; height: 36px; line-height: 1.3; padding: 3px 18px 1px; }
+.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue { position: relative; display: inline-block; border: 1px solid #1a70ba; background-color: #5394cc; border-color: #1a70ba; color: #dfeffc; box-shadow: 0px 1px rgba(217, 217, 217, 0.75); text-shadow: 0px -1px #34668c; padding: 1px 5px 0px; margin: 0 auto; box-sizing: border-box; vertical-align: middle; font-size: 13px; line-height: 1.6; letter-spacing: -0.5px; cursor: pointer; border-radius: 3px; height: 36px; line-height: 1.3; padding: 3px 18px 1px; }
 
 .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue[disabled], .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue[disabled]:hover { background: #ccc; border-color: #ccc; color: #fff; text-shadow: 0px -1px #aeaeae; box-shadow: none; }
 
-.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue:hover { color: #fff; background: #2274ba; }
+.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .row-btn .btn-blue:hover { color: #fff; background: #237dc9; }
 
 .rmStatus-contents .cont-roomStatus .room-area { margin-top: 5px; padding-top: 0px; padding-bottom: 0px; width: 100%; padding-right: 380px; box-sizing: border-box; }
 

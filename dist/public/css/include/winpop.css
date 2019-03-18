@@ -22,11 +22,11 @@
 
 .wpop-contents .btn-red:hover { color: #fff; background: #ba383a; }
 
-.wpop-contents .btn-blue { position: relative; display: inline-block; border: 1px solid #1a70ba; background-color: #4F8BBF; border-color: #1a70ba; color: #dfeffc; box-shadow: 0px 1px rgba(217, 217, 217, 0.75); text-shadow: 0px -1px #34668c; padding: 1px 5px 0px; margin: 0 auto; box-sizing: border-box; vertical-align: middle; font-size: 13px; line-height: 1.6; letter-spacing: -0.5px; cursor: pointer; border-radius: 3px; font-size: 12px; padding: 3px 8px 2px; line-height: 1.5; }
+.wpop-contents .btn-blue { position: relative; display: inline-block; border: 1px solid #1a70ba; background-color: #5394cc; border-color: #1a70ba; color: #dfeffc; box-shadow: 0px 1px rgba(217, 217, 217, 0.75); text-shadow: 0px -1px #34668c; padding: 1px 5px 0px; margin: 0 auto; box-sizing: border-box; vertical-align: middle; font-size: 13px; line-height: 1.6; letter-spacing: -0.5px; cursor: pointer; border-radius: 3px; font-size: 12px; padding: 3px 8px 2px; line-height: 1.5; }
 
 .wpop-contents .btn-blue[disabled], .wpop-contents .btn-blue[disabled]:hover { background: #ccc; border-color: #ccc; color: #fff; text-shadow: 0px -1px #aeaeae; box-shadow: none; }
 
-.wpop-contents .btn-blue:hover { color: #fff; background: #2274ba; }
+.wpop-contents .btn-blue:hover { color: #fff; background: #237dc9; }
 
 .wpop-contents .btn-brown { position: relative; display: inline-block; border: 1px solid #624f31; background-color: #b29b7a; border-color: #624f31; color: #f2dfc3; box-shadow: 0px 1px rgba(217, 217, 217, 0.75); text-shadow: 0px -1px #8e7d64; padding: 1px 5px 0px; margin: 0 auto; box-sizing: border-box; vertical-align: middle; font-size: 13px; line-height: 1.6; letter-spacing: -0.5px; cursor: pointer; border-radius: 3px; font-size: 12px; padding: 3px 8px 2px; line-height: 1.5; }
 

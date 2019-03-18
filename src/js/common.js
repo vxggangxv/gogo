@@ -45,7 +45,7 @@ function ascending() {
 // 탭 기능
 function tabFn() {
 	var box = $(".fn-tabShow");
-	box.find(".tab-list > li").on("click", function() {
+	box.find(".tab-list > .tab").on("click", function() {
 		var idx = $(this).index();
 		$(this).addClass("on").siblings().removeClass("on");
 		box.find(".item-list > div").eq(idx).addClass("on").siblings().removeClass("on");

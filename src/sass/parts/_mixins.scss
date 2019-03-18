@@ -314,14 +314,14 @@ $btn-lh: 1.5;
 	}
 }
 @mixin btn-blue($wth: null, $he:null, $fz: null, $pd: null) {
-	@include btn-base(null, null, #4F8BBF, #1a70ba, #dfeffc, #34668c);
+	@include btn-base(null, null, #5394cc, #1a70ba, #dfeffc, #34668c);
 	width: $wth;
 	height: $he;
 	font-size: $fz;
 	padding: $pd;
 	&:hover {
 	    color: #fff;
-		background: #2274ba;
+		background: #237dc9;
 	}
 }
 @mixin btn-brown($wth: null, $he:null, $fz: null, $pd: null) {

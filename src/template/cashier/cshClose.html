@@ -11,16 +11,274 @@
 <div class="wrapper">
 	@@include('../include/_header.html')
 
-	<div class="cf contents chkIn-contents">
+	<div class="cf contents cshClose-contents">
 
 		@@include('../include/_row_h2.html', {
-			"page-title": "체크인"
+			"page-title": "Cashier Close"
 		})
 
-		<div class="cf cont-container-f">
-        </div>
-    </div>
-    <!-- //.contents -->
+		<div class="cf cont-container-f fn-tabShow">
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width:90px">
+								<col style="width:250px">
+								<col style="width:90px">
+								<col style="width:*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">날짜</div></th>
+									<td>
+										<div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<button type="button" class="btn-brown search">SEARCH</button>
+										</div>
+									</td>
+									<th><div class="cell">보고서</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select report">
+												<option value="">Manager Report</option>
+												<option value="">Detail Bill List</option>
+												<option value="">Detail Payment List</option>
+												<option value="">Guest Ledger</option>
+											</select>
+											<span class="rdo-box"><label><input type="radio" name="rdo-1">Pdf print</label></span>
+											<span class="rdo-box"><label><input type="radio" name="rdo-1">Excel down</label></span>
+											<button type="button" class="btn-gray action" disabled>ACTION</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-property -->
+
+			<div class="cf tab-list">
+				<a href="javascript:;" class="tab on">계산원 요약</a>
+				<a href="javascript:;" class="tab">일일 청구서</a>
+				<a href="javascript:;" class="tab">일일 결제</a>
+				<a href="javascript:;" class="tab">크레디트</a>
+				<a href="javascript:;" class="tab">실</a>
+				<a href="javascript:;" class="tab">엑스트라</a>
+				<a href="javascript:;" class="tab">교환</a>
+				<a href="javascript:;" class="tab">시설</a>
+			</div>
+			<!-- /.tab-list -->
+			<div class="item-list">
+				<div class="item-container">
+					<div class="grid-wrap scr-wrap">
+						<div class="grid-scrollable-x">
+							<div class="grid-area grid-head">
+								<div class="grid-scrollable">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width:85px">
+											<col style="width:90px">
+											<col style="width:120px">
+											<col style="width:150px">
+											<col style="width:60px">
+											<col style="width:60px">
+											<col style="width:90px">
+											<col style="width:40px">
+											<col style="width:90px">
+											<col style="width:40px">
+											<col style="width:120px">
+											<col style="width:90px">
+											<col style="width:120px">
+											<col style="width:120px">
+											<col style="width:120px">
+											<col style="width:120px">
+											<col style="width:100px">
+										</colgroup>
+										<thead class="rowgroup">
+											<tr>
+												<th><div class="cell">예약 번호</div></th>
+												<th><div class="cell">예약 날짜</div></th>
+												<th><div class="cell">Agent</div></th>
+												<th><div class="cell">게스트</div></th>
+												<th><div class="cell">객실 유형</div></th>
+												<th><div class="cell">GRP / FIT</div></th>
+												<th><div class="cell">도착 날짜</div></th>
+												<th><div class="cell">Nts</div></th>
+												<th><div class="cell">출발 날짜</div></th>
+												<th><div class="cell">Rms</div></th>
+												<th><div class="cell">총액</div></th>
+												<th><div class="cell">보증금 날짜</div></th>
+												<th><div class="cell">입금 금액</div></th>
+												<th><div class="cell">예금 잔고</div></th>
+												<th><div class="cell">C / I 전송</div></th>
+												<th><div class="cell">방법</div></th>
+												<th><div class="cell">CC 유형</div></th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+							</div>
+							<div class="grid-area grid-contents">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:85px">
+										<col style="width:90px">
+										<col style="width:120px">
+										<col style="width:150px">
+										<col style="width:60px">
+										<col style="width:60px">
+										<col style="width:90px">
+										<col style="width:40px">
+										<col style="width:90px">
+										<col style="width:40px">
+										<col style="width:120px">
+										<col style="width:90px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:100px">
+									</colgroup>
+									<tbody class="rowgroup">
+										<tr>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="grid-area grid-total">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:85px">
+										<col style="width:90px">
+										<col style="width:120px">
+										<col style="width:150px">
+										<col style="width:60px">
+										<col style="width:60px">
+										<col style="width:90px">
+										<col style="width:40px">
+										<col style="width:90px">
+										<col style="width:40px">
+										<col style="width:120px">
+										<col style="width:90px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:100px">
+									</colgroup>
+									<tbody class="rowgroup">
+										<tr>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td class="ta-left fw-b"><div class="cell">합계 : 0</div></td>
+											<td><div class="cell"></div></td>
+											<td class="ta-left fw-b"><div class="cell">합계 : 0</div></td>
+											<td class="ta-left fw-b"><div class="cell">합계 : 0</div></td>
+											<td class="ta-left fw-b"><div class="cell">합계 : 0</div></td>
+											<td><div class="cell"></div></td>
+											<td class="last"><div class="cell inBl"></div><span class="square"></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- //.grid-wrap -->
+					<div class="cf grid-bottom">
+						<a href="#" class="prev st">&lt;&lt;</a>
+						<a href="#" class="prev">&lt;</a>
+						<span class="num">0</span>
+						<a href="#" class="next">&gt;</a>
+						<a href="#" class="next st">&gt;&gt;</a>
+						<span class="count">1 - 100 of 158 items</span>
+					</div>
+					<!-- //.grid-bottom-->
+				</div>
+			</div>
+			<!-- //.item-list -->
+
+			<div class="cont-closed">
+				<h3>휴무일</h3>
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl">
+							<colgroup>
+								<col class="nth-1" style="width: 150px">
+								<col class="nth-2" style="width: *">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">마감일</div></th>
+									<td><div class="cell">2019-01-25</div></td>
+								</tr>
+								<tr>
+									<th><div class="cell">상태</div></th>
+									<td><div class="cell"></div></td>
+								</tr>
+								<tr>
+									<th><div class="cell">생성</div></th>
+									<td><div class="cell"></div></td>
+								</tr>
+								<tr>
+									<th><div class="cell">수정</div></th>
+									<td><div class="cell"></div></td>
+								</tr>
+								<tr>
+									<th><div class="cell">이전 휴관일</div></th>
+									<td><div class="cell">2019-01-24</div></td>
+								</tr>
+								<tr>
+									<th><div class="cell">비고</div></th>
+									<td>
+										<div class="cell">
+											<textarea name="" id="" cols="30" rows="10" class="texta-etc"></textarea>
+										</div>
+									</td>
+								</tr>
+								<!--{tr(th>div.cell^+td>div.cell)}-->
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /.grid-wrap -->
+				<div class="row-btn">
+					<button type="button" class="btn-blue">폐쇄</button>
+				</div>
+			</div>
+			<!-- /.cont-closed -->
+		</div>
+	</div>
+	<!-- //.contents -->
 
 </div>
 

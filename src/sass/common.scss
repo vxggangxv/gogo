@@ -157,6 +157,10 @@ $sidebar-wd: 96px;
 		top: -1px;
 		left: -4px;
 	}
+    &.ic-plus {
+        background-position: -32px -64px;
+        top: -1px;
+    }
 	& + * {
 		vertical-align: middle;
 	}
@@ -356,6 +360,9 @@ $sidebar-wd: 96px;
 				top: 1px;
 			}
 		}
+        .mg- {
+            vertical-align: middle;
+        }
 	}
 	.textarea-etc {
 		@include texta-base(150px, 80px, vertical);
