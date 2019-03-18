@@ -346,10 +346,11 @@ $btn-lh: 1.5;
 		background: #f76803;
 	}
 }
-@mixin btn-pd-lr($pl: 15px, $pr: 15px, $ls: 0) {
+@mixin btn-pd-lr($pl: 15px, $pr: 15px, $ls: 0, $fz: null) {
 	padding-left: $pl;
 	padding-right: $pr;
 	letter-spacing: $ls;
+	font-size: $fz;
 }
 
 @mixin texta-base($wth: null, $he: null, $type: none) {
@@ -359,10 +360,10 @@ $btn-lh: 1.5;
 	height: $he;
 	resize: $type;
 }
-@mixin page-title($fz: 18px, $pd: 0 10px) {
-	font-family: $font-ntss;
+@mixin page-title($fz: 20px, $pd: 0 10px) {
 	font-size: $fz;
 	padding: $pd;
+	font-family: $font-ntss;
 	color: #908270;
 }
 // 테이블
@@ -835,6 +836,7 @@ $btn-lh: 1.5;
 				tr:nth-child(2n) {
 					th, td {
 						background: #fbfbfb;
+						background: #f1f1f1;
 					}
 				}
 				tr:hover {

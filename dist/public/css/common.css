@@ -239,7 +239,7 @@ label > * { position: relative; vertical-align: middle; display: inline-block; }
 
 .contents .textarea-etc[disabled], .contents .textarea-etc[readonly] { background: #eee; color: #676767; }
 
-.page-title { font-family: "Noto Sans KR", Dotum, Sans-serif; font-size: 18px; padding: 0 10px; color: #908270; }
+.page-title { font-size: 20px; padding: 0 10px; font-family: "Noto Sans KR", Dotum, Sans-serif; color: #908270; }
 
 .row-h2 { position: relative; box-sizing: border-box; display: inline-block; padding-right: 10px; }
 

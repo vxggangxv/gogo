@@ -264,7 +264,7 @@
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -472,7 +472,7 @@
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -707,7 +707,7 @@
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -785,7 +785,7 @@
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -869,7 +869,7 @@
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -1244,7 +1244,7 @@
 
 .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -1383,7 +1383,7 @@
 
 .rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .rsvList-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -1749,7 +1749,7 @@
 
 .account-contents .cont-list .grid-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.account-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .account-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.account-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .account-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .account-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -1957,7 +1957,7 @@
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
@@ -2096,7 +2096,7 @@
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 

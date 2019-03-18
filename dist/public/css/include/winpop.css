@@ -435,7 +435,7 @@
 
 .wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; }
 
-.wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; background: #f1f1f1; }
 
 .wpop-contents.trace-contents .cont-trace .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
