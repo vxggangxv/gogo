@@ -11,16 +11,150 @@
 <div class="wrapper">
 	@@include('../include/_header.html')
 
-	<div class="cf contents chkIn-contents">
+	<div class="cf contents exchange-contents">
+
+		<div class="row-top-btn">
+			<button type="button" class="btn-green" onclick="popFn.show('.')">환율설정</button>
+			<button type="button" class="btn-green">NEW</button>
+		</div>
 
 		@@include('../include/_row_h2.html', {
-			"page-title": "체크인"
+			"page-title": "교환"
 		})
 
 		<div class="cf cont-container-f">
-        </div>
-    </div>
-    <!-- //.contents -->
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width:125px">
+								<col style="width:285px">
+								<col style="width:125px">
+								<col style="width:*">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">날짜</div></th>
+									<td>
+										<div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<span class="mg-">~</span>
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+										</div>
+									</td>
+									<th><div class="cell">게스트 이름</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input name">
+											<button type="button" class="btn-brown">SEARCH</button>
+											<button type="button" class="btn-brown">CLEAR</button>
+											<div class="pull-right">
+												<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+												<button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-property -->
+
+			<div class="cont-list">
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="30px">
+										<col style="width:150px">
+										<col style="width:85px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:150px">
+										<col style="width:116px">
+										<col style="width:*">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th><div class="cell"></div></th>
+											<th><div class="cell">교환 날짜</div></th>
+											<th><div class="cell">통화</div></th>
+											<th><div class="cell">환율</div></th>
+											<th><div class="cell">수령액</div></th>
+											<th><div class="cell">교환 금액</div></th>
+											<th><div class="cell">게스트</div></th>
+											<th><div class="cell">국적</div></th>
+											<th><div class="cell">여권 번호</div></th>
+											<th><div class="cell">인증서 번호</div></th>
+											<th><div class="cell">말</div></th>
+											<th><div class="cell">생성자</div></th>
+											<th><div class="cell">생성날짜</div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col class="30px">
+									<col style="width:150px">
+									<col style="width:85px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:150px">
+									<col style="width:116px">
+									<col style="width:*">
+								</colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->
+			</div>
+			<!-- //.cont-list -->
+		</div>
+	</div>
+	<!-- //.contents -->
 
 </div>
 

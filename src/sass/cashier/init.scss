@@ -2,3 +2,417 @@
 
 @import "../parts/variables";
 @import "../parts/mixins";
+
+/* C/L 캐셔링 */
+.cashier-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.rdo-box {
+						padding: 0 3px;
+						label {
+							margin-right: 0px;
+						}
+					}
+					.cal-box {
+						width: 120px;
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px 4px 0 0);
+			.grid-area.grid-head {
+				th {
+					&.bor {
+						border-bottom: 1px solid $bor-gray-table;
+					}
+				}
+			}
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 220px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					border-top: 1px solid $bor-gray-table;
+					border-right: 0;
+					th, td {
+						background: #f5f5f5;
+
+					}
+					td {
+						&.last  {
+							.cell.inBl {
+								display: inline-block;
+							}
+							.square {
+								display: inline-block;
+								float: right;
+								height: 100%;
+								padding: 0;
+								border-left: 1px solid #c5c5c5;
+								width: 17px;
+								box-sizing: border-box;
+							}
+						}
+					}
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+				td {
+					.cell {
+						button.action {
+							@include btn-pd-lr;
+						}
+					}
+				}
+				td:first-child {
+					.cell {
+						line-height: 1;
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			@include bdr-r(0, 0, 4px, 4px);
+			padding: 5px;
+			border: 1px solid $bor-gray-table;
+			border-top: 0;
+			> * {
+				@include va;
+				@include bx;
+				text-align: center;
+				border-radius: 50%;
+				font-weight: 700;
+			}
+			.prev, .next {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 24px;
+				background-color: #fff;
+				border: 1px solid #d2d2d2;
+				&.st {
+					letter-spacing: -3px;
+				}
+			}
+			.prev {
+				text-indent: -3px;
+				&.st {
+					text-indent: -5px;
+				}
+			}
+			.num {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 26px;
+				color: #fff;
+				background-color: #f35800;
+				border-color: #f85a00;
+			}
+			.next {
+				text-indent: 3px;
+				&.st {
+					text-indent: 0px;
+				}
+			}
+			.count {
+				@include float(right);
+				@include ft(12px, #313131, 400);
+				padding-right: 12px;
+				top: 3px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+}
+
+/* 교환 */
+.exchange-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+            border-right: 1px solid $bdg-tblBase;
+            width: 100%;
+			td {
+				.cell {
+					.form-input {
+						&.name {
+							width: 135px;
+						}
+					}
+					.cal-box {
+						width: 110px;
+						.inp-cal {
+							// width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 750px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					border-top: 1px solid $bor-gray-table;
+					border-right: 0;
+					th, td {
+						background: #f5f5f5;
+					}
+					td {
+						&.last  {
+							.cell.inBl {
+								display: inline-block;
+							}
+							.square {
+								display: inline-block;
+								float: right;
+								height: 100%;
+								padding: 0;
+								border-left: 1px solid #c5c5c5;
+								width: 17px;
+								box-sizing: border-box;
+							}
+						}
+					}
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+				td {
+					.cell {
+						button.action {
+							@include btn-pd-lr;
+						}
+					}
+				}
+				td:first-child {
+					.cell {
+						line-height: 1;
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			@include bdr-r(0, 0, 4px, 4px);
+			padding: 5px;
+			border: 1px solid $bor-gray-table;
+			border-top: 0;
+			> * {
+				@include va;
+				@include bx;
+				text-align: center;
+				border-radius: 50%;
+				font-weight: 700;
+			}
+			.prev, .next {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 24px;
+				background-color: #fff;
+				border: 1px solid #d2d2d2;
+				&.st {
+					letter-spacing: -3px;
+				}
+			}
+			.prev {
+				text-indent: -3px;
+				&.st {
+					text-indent: -5px;
+				}
+			}
+			.num {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 26px;
+				color: #fff;
+				background-color: #f35800;
+				border-color: #f85a00;
+			}
+			.next {
+				text-indent: 3px;
+				&.st {
+					text-indent: 0px;
+				}
+			}
+			.count {
+				@include float(right);
+				@include ft(12px, #313131, 400);
+				padding-right: 12px;
+				top: 3px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+}
+
+/* 현금 서랍 */
+
+/* 예치금 */
+.advDeposit-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.w-1 {
+						width: 135px;
+					}
+					.form-select {
+						&.property {
+							width: 150px;
+						}
+					}
+					.rdo-box {
+						padding: 0 3px;
+						label {
+							margin-right: 0px;
+						}
+					}
+					.cal-box {
+						width: 110px;
+					}
+					button {
+						&.search {
+							margin-left: 100px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px 4px 0 0);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 500px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					border-top: 1px solid $bor-gray-table;
+					border-right: 0;
+					th, td {
+						background: #f5f5f5;
+					}
+					td {
+						&.last  {
+							.cell.inBl {
+								display: inline-block;
+							}
+							.square {
+								display: inline-block;
+								float: right;
+								height: 100%;
+								padding: 0;
+								border-left: 1px solid #c5c5c5;
+								width: 17px;
+								box-sizing: border-box;
+							}
+						}
+					}
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell {
+						text-align: center;
+					}
+				}
+				td {
+					.cell {
+						button.action {
+							@include btn-pd-lr;
+						}
+					}
+				}
+				td:first-child {
+					.cell {
+						line-height: 1;
+					}
+				}
+			}
+		}
+		.grid-bottom {
+			@include gray-gradient;
+			@include bdr-r(0, 0, 4px, 4px);
+			padding: 5px;
+			border: 1px solid $bor-gray-table;
+			border-top: 0;
+			> * {
+				@include va;
+				@include bx;
+				text-align: center;
+				border-radius: 50%;
+				font-weight: 700;
+			}
+			.prev, .next {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 24px;
+				background-color: #fff;
+				border: 1px solid #d2d2d2;
+				&.st {
+					letter-spacing: -3px;
+				}
+			}
+			.prev {
+				text-indent: -3px;
+				&.st {
+					text-indent: -5px;
+				}
+			}
+			.num {
+				@include ft(12px, #918884);
+				@include sizes(26px);
+				line-height: 26px;
+				color: #fff;
+				background-color: #f35800;
+				border-color: #f85a00;
+			}
+			.next {
+				text-indent: 3px;
+				&.st {
+					text-indent: 0px;
+				}
+			}
+			.count {
+				@include float(right);
+				@include ft(12px, #313131, 400);
+				padding-right: 12px;
+				top: 3px;
+				.co {
+					color: $fg-orange-1;
+				}
+			}
+		}
+	}
+}
