@@ -825,6 +825,9 @@ $btn-lh: 1.5;
 					background-image: none,linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,0) 100%);
 					background-position: 50% 50%;
 					background-color: #eae8e8;
+					&.bor {
+						border-bottom: 1px solid $bd-c;
+					}
 				}
 			}
 		}

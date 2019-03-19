@@ -86,6 +86,8 @@ label > * { position: relative; vertical-align: middle; display: inline-block; }
 
 .co-red { color: red !important; }
 
+.co-green { color: green !important; }
+
 .icon { position: relative; display: inline-block; vertical-align: middle; width: 16px; height: 16px; overflow: hidden; background: url(../img/common/sprite.png) no-repeat; font-size: 0; line-height: 0; text-align: center; }
 
 .icon.ic-check { background-position: -32px -32px; top: -1px; }
@@ -96,7 +98,7 @@ label > * { position: relative; vertical-align: middle; display: inline-block; }
 
 .icon.ic-del { background-position: -48px -16px; margin-left: -2px; top: -1px; }
 
-.icon.ic-excel { background-position: -64px -96px; top: -2px; left: -4px; }
+.icon.ic-excel { background-position: -64px -96px; top: -1px; left: -4px; }
 
 .icon.ic-pdf { background-position: -64px -80px; top: -1px; left: -4px; }
 

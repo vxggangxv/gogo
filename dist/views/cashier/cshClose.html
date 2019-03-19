@@ -3013,7 +3013,7 @@
                 <!-- //.cont-property -->
 
                 <div class="cf tab-list">
-                    <a href="javascript:;" class="tab on">계산원 요약</a>
+                    <a href="javascript:;" class="tab">계산원 요약</a>
                     <a href="javascript:;" class="tab">일일 청구서</a>
                     <a href="javascript:;" class="tab">일일 결제</a>
                     <a href="javascript:;" class="tab">크레디트</a>
@@ -3024,83 +3024,111 @@
                 </div>
                 <!-- /.tab-list -->
                 <div class="item-list">
-                    <div class="item-container">
+                    <div class="item-container summary">
+                        <h3>
+
+						<span class="t">Option</span>
+
+						<span class="rdo-box"><label><input type="radio" name="rdo-1" checked>Summary</label></span>
+
+						<span class="rdo-box"><label><input type="radio" name="rdo-1">Detail</label></span>
+
+					</h3>
+
+                        <div class="grid-toolbar">
+                            <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+                        </div>
+                        <!-- /.grid-toolbar -->
                         <div class="grid-wrap scr-wrap">
                             <div class="grid-scrollable-x">
                                 <div class="grid-area grid-head">
                                     <div class="grid-scrollable">
                                         <table class="grid-tbl">
                                             <colgroup>
-                                                <col style="width:85px">
-                                                    <col style="width:90px">
-                                                        <col style="width:120px">
-                                                            <col style="width:150px">
-                                                                <col style="width:60px">
-                                                                    <col style="width:60px">
-                                                                        <col style="width:90px">
-                                                                            <col style="width:40px">
-                                                                                <col style="width:90px">
-                                                                                    <col style="width:40px">
-                                                                                        <col style="width:120px">
-                                                                                            <col style="width:90px">
-                                                                                                <col style="width:120px">
-                                                                                                    <col style="width:120px">
-                                                                                                        <col style="width:120px">
-                                                                                                            <col style="width:120px">
-                                                                                                                <col style="width:100px">
+                                                <col style="width:60px">
+                                                    <col style="width:60px">
+                                                        <col style="width:100px">
+                                                            <col style="width:80px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:80px">
+                                                                        <col style="width:100px">
+                                                                            <col style="width:100px">
+                                                                                <col style="width:100px">
+                                                                                    <col style="width:80px">
+                                                                                        <col style="width:80px">
+                                                                                            <col style="width:100px">
+                                                                                                <col style="width:60px">
+                                                                                                    <col style="width:110px">
+                                                                                                        <col style="width:150px">
+                                                                                                            <col style="width:100px">
+                                                                                                                <col style="width:*">
                                             </colgroup>
                                             <thead class="rowgroup">
                                                 <tr>
+                                                    <th class="bor" colspan="2">
+                                                        <div class="cell">출납원</div>
+                                                    </th>
+                                                    <th class="bor" colspan="5">
+                                                        <div class="cell">현금</div>
+                                                    </th>
+                                                    <th class="bor" colspan="4">
+                                                        <div class="cell">현금 제외</div>
+                                                    </th>
+                                                    <th rowspan="2">
+                                                        <div class="cell">합계</div>
+                                                    </th>
+                                                    <th class="bor" colspan="5">
+                                                        <div class="cell">상세 정보</div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
                                                     <th>
-                                                        <div class="cell">예약 번호</div>
+                                                        <div class="cell">신분증</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">예약 날짜</div>
+                                                        <div class="cell">이름</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">Agent</div>
+                                                        <div class="cell">현금</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">게스트</div>
+                                                        <div class="cell">현금(Adv.)</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">객실 유형</div>
+                                                        <div class="cell">유급</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">GRP / FIT</div>
+                                                        <div class="cell">환불금</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">도착 날짜</div>
+                                                        <div class="cell">소계</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">Nts</div>
+                                                        <div class="cell">카드</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">출발 날짜</div>
+                                                        <div class="cell">C / L</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">Rms</div>
+                                                        <div class="cell">G / L</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">총액</div>
+                                                        <div class="cell">카드(Adv.)</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">보증금 날짜</div>
+                                                        <div class="cell">발행물</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">입금 금액</div>
+                                                        <div class="cell">Rsv / Chk</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">예금 잔고</div>
+                                                        <div class="cell">손님</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">C / I 전송</div>
+                                                        <div class="cell">도착 / 출발</div>
                                                     </th>
                                                     <th>
-                                                        <div class="cell">방법</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">CC 유형</div>
+                                                        <div class="cell">객실#</div>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -3110,61 +3138,61 @@
                                 <div class="grid-area grid-contents">
                                     <table class="grid-tbl">
                                         <colgroup>
-                                            <col style="width:85px">
-                                                <col style="width:90px">
-                                                    <col style="width:120px">
-                                                        <col style="width:150px">
-                                                            <col style="width:60px">
-                                                                <col style="width:60px">
-                                                                    <col style="width:90px">
-                                                                        <col style="width:40px">
-                                                                            <col style="width:90px">
-                                                                                <col style="width:40px">
-                                                                                    <col style="width:120px">
-                                                                                        <col style="width:90px">
-                                                                                            <col style="width:120px">
-                                                                                                <col style="width:120px">
-                                                                                                    <col style="width:120px">
-                                                                                                        <col style="width:120px">
-                                                                                                            <col style="width:100px">
+                                            <col style="width:60px">
+                                                <col style="width:60px">
+                                                    <col style="width:100px">
+                                                        <col style="width:80px">
+                                                            <col style="width:80px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:100px">
+                                                                        <col style="width:100px">
+                                                                            <col style="width:100px">
+                                                                                <col style="width:80px">
+                                                                                    <col style="width:80px">
+                                                                                        <col style="width:100px">
+                                                                                            <col style="width:60px">
+                                                                                                <col style="width:110px">
+                                                                                                    <col style="width:150px">
+                                                                                                        <col style="width:100px">
+                                                                                                            <col style="width:*">
                                         </colgroup>
                                         <tbody class="rowgroup">
                                             <tr>
                                                 <td>
-                                                    <div class="cell"></div>
+                                                    <div class="cell">김민경</div>
                                                 </td>
                                                 <td>
-                                                    <div class="cell"></div>
+                                                    <div class="cell">김민경</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-blue">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-blue">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-red">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-red">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-green">
+                                                    <div class="cell">2,240,000</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-green">
+                                                    <div class="cell">152,910</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-green">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right co-green">
+                                                    <div class="cell">0</div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right">
+                                                    <div class="cell">2,392,910</div>
                                                 </td>
                                                 <td>
                                                     <div class="cell"></div>
@@ -3188,23 +3216,23 @@
                                 <div class="grid-area grid-total">
                                     <table class="grid-tbl">
                                         <colgroup>
-                                            <col style="width:85px">
-                                                <col style="width:90px">
-                                                    <col style="width:120px">
-                                                        <col style="width:150px">
-                                                            <col style="width:60px">
-                                                                <col style="width:60px">
-                                                                    <col style="width:90px">
-                                                                        <col style="width:40px">
-                                                                            <col style="width:90px">
-                                                                                <col style="width:40px">
-                                                                                    <col style="width:120px">
-                                                                                        <col style="width:90px">
-                                                                                            <col style="width:120px">
-                                                                                                <col style="width:120px">
-                                                                                                    <col style="width:120px">
-                                                                                                        <col style="width:120px">
-                                                                                                            <col style="width:100px">
+                                            <col style="width:60px">
+                                                <col style="width:60px">
+                                                    <col style="width:100px">
+                                                        <col style="width:80px">
+                                                            <col style="width:80px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:100px">
+                                                                        <col style="width:100px">
+                                                                            <col style="width:100px">
+                                                                                <col style="width:80px">
+                                                                                    <col style="width:80px">
+                                                                                        <col style="width:100px">
+                                                                                            <col style="width:60px">
+                                                                                                <col style="width:110px">
+                                                                                                    <col style="width:150px">
+                                                                                                        <col style="width:100px">
+                                                                                                            <col style="width:*">
                                         </colgroup>
                                         <tbody class="rowgroup">
                                             <tr>
@@ -3214,8 +3242,35 @@
                                                 <td>
                                                     <div class="cell"></div>
                                                 </td>
-                                                <td>
-                                                    <div class="cell"></div>
+                                                <td class="ta-right fw-b co-blue">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-blue">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-red">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-red">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-green">
+                                                    <div class="cell">2,240,000</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-green">
+                                                    <div class="cell">152,910</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-green">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b co-green">
+                                                    <div class="cell">0</div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">2,392,910</div>
                                                 </td>
                                                 <td>
                                                     <div class="cell"></div>
@@ -3225,33 +3280,6 @@
                                                 </td>
                                                 <td>
                                                     <div class="cell"></div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell"></div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell"></div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell"></div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell"></div>
-                                                </td>
-                                                <td class="ta-left fw-b">
-                                                    <div class="cell">합계 : 0</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell"></div>
-                                                </td>
-                                                <td class="ta-left fw-b">
-                                                    <div class="cell">합계 : 0</div>
-                                                </td>
-                                                <td class="ta-left fw-b">
-                                                    <div class="cell">합계 : 0</div>
-                                                </td>
-                                                <td class="ta-left fw-b">
-                                                    <div class="cell">합계 : 0</div>
                                                 </td>
                                                 <td>
                                                     <div class="cell"></div>
@@ -3276,10 +3304,221 @@
                         </div>
                         <!-- //.grid-bottom-->
                     </div>
+                    <!-- /.summary -->
+                    <div class="item-container on dailyBill">
+
+                        <div class="grid-toolbar">
+                            <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+                        </div>
+                        <!-- /.grid-toolbar -->
+                        <div class="grid-wrap scr-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width:100px">
+                                                    <col style="width:120px">
+                                                        <col style="width:215px">
+                                                            <col style="width:215px">
+                                                                <col style="width:120px">
+                                                                    <col style="width:70px">
+                                                                        <col style="width:240px">
+                                                                            <col style="width:180px">
+                                                                                <col style="width:120px">
+                                                                                    <col style="width:120px">
+                                                                                        <col style="width:120px">
+                                                                                            <col style="width:60px">
+                                                                                                <col style="width:*">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">출납원</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">항목</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">계산서</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Posting</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">계정 #</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">객실 #</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">손님 이름</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Agent</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">R-rate</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Amount</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Vat</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">수량</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">요금</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:100px">
+                                                <col style="width:120px">
+                                                    <col style="width:215px">
+                                                        <col style="width:215px">
+                                                            <col style="width:120px">
+                                                                <col style="width:70px">
+                                                                    <col style="width:240px">
+                                                                        <col style="width:180px">
+                                                                            <col style="width:120px">
+                                                                                <col style="width:120px">
+                                                                                    <col style="width:120px">
+                                                                                        <col style="width:60px">
+                                                                                            <col style="width:*">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell">김민경</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">방</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">룸 수입 - 개인 - 정상</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">방</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">KSG1902075516</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">1706sus</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">박서연</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">아고 다</div>
+                                                </td>
+                                                <td class="ta-right">
+                                                    <div class="cell">100,000</div>
+                                                </td>
+                                                <td class="ta-right">
+                                                    <div class="cell">65,243</div>
+                                                </td>
+                                                <td class="ta-right">
+                                                    <div class="cell">6,524</div>
+                                                </td>
+                                                <td class="ta-right">
+                                                    <div class="cell">1</div>
+                                                </td>
+                                                <td class="ta-right">
+                                                    <div class="cell">71,767</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="grid-area grid-total">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:100px">
+                                                <col style="width:120px">
+                                                    <col style="width:215px">
+                                                        <col style="width:215px">
+                                                            <col style="width:120px">
+                                                                <col style="width:70px">
+                                                                    <col style="width:240px">
+                                                                        <col style="width:180px">
+                                                                            <col style="width:120px">
+                                                                                <col style="width:120px">
+                                                                                    <col style="width:120px">
+                                                                                        <col style="width:60px">
+                                                                                            <col style="width:*">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">3,661,000</div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">1,729,626</div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">172,859</div>
+                                                </td>
+                                                <td class="ta-right fw-b">
+                                                    <div class="cell">40</div>
+                                                </td>
+                                                <td class="ta-right fw-b last">
+                                                    <div class="cell inBl">1,901,485</div><span class="square"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                        <div class="cf grid-bottom">
+                            <a href="#" class="prev st">&lt;&lt;</a>
+                            <a href="#" class="prev">&lt;</a>
+                            <span class="num">0</span>
+                            <a href="#" class="next">&gt;</a>
+                            <a href="#" class="next st">&gt;&gt;</a>
+                            <span class="count">1 - 100 of 158 items</span>
+                        </div>
+                        <!-- //.grid-bottom-->
+                    </div>
+                    <!-- /.dailyBill -->
                 </div>
                 <!-- //.item-list -->
 
-                <div class="cont-closed">
+                <div class="cont-closed" style="display: none">
                     <h3>휴무일</h3>
                     <div class="grid-wrap">
                         <div class="grid-contents">
@@ -3346,10 +3585,18 @@
                     </div>
                     <!-- /.grid-wrap -->
                     <div class="row-btn">
-                        <button type="button" class="btn-blue">폐쇄</button>
+                        <button type="button" class="btn-blue">CLOSING</button>
                     </div>
                 </div>
                 <!-- /.cont-closed -->
+
+                <script>
+                    $(function() {
+                    					$(".tab-list > .tab").on("click", function() {
+                    						$(".cont-closed").hide();
+                    					});
+                    				});
+                </script>
             </div>
         </div>
         <!-- //.contents -->

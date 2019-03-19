@@ -126,6 +126,9 @@ $sidebar-wd: 96px;
 .co-red {
 	color: red !important;
 }
+.co-green {
+	color: green !important;
+}
 
 .icon {
 	@include i-sprite-1(url(../img/common/sprite.png) no-repeat);
@@ -149,7 +152,7 @@ $sidebar-wd: 96px;
 	}
 	&.ic-excel {
 		background-position: -64px -96px;
-		top: -2px;
+		top: -1px;
 		left: -4px;
 	}
 	&.ic-pdf {

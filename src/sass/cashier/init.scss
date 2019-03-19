@@ -565,6 +565,7 @@
 	}
 }
 
+/* cashier close */
 .cshClose-contents {
 	.cont-property {
 		.tbl-property {
@@ -623,11 +624,37 @@
 		border-top: 1px solid #9f9f9f;
 		padding-top: 10px;
 		margin-top: -1px;
+		.grid-toolbar {
+			@include bx;
+			@include gray-gradient;
+			$btn-lh: 1.5;
+			width: 100%;
+			border: 1px solid $bor-gray-table;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			padding: 4px;
+			margin-top: 10px;
+			margin-bottom: -1px;
+			button {
+				.icon {
+				}
+			}
+			.btn-gray, .btn-green, .btn-red, .btn-blue {
+				padding: 12px, 3px 8px 2px;
+			}
+			.btn-gray {
+				color: #000;
+				&.btn-changes {
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
 		.grid-wrap {
-			@include grid-scr-x(null, 100%, 4px);
+			@include grid-scr-x(null, 100%, 4px 4px 0 0);
 			.grid-area.grid-contents {
 				background: #fff;
-				height: 650px;
+				height: 500px;
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
@@ -637,6 +664,7 @@
 						background: #f5f5f5;
 					}
 					td {
+						border-bottom: 0;
 						&.last  {
 							.cell.inBl {
 								display: inline-block;
@@ -714,9 +742,33 @@
 			}
 		}
 		.item-container {
+			h3 {
+				@include ft(14px, null, 700);
+				letter-spacing: 0;
+				.t {
+					margin-right: 10px;
+				}
+				.rdo-box {
+					input {
+						margin-right: 3px;
+					}
+					margin-right: 5px;
+				}
+			}
 			display: none;
 			&.on {
 				display: block;
+			}
+		}
+		.item-container.summary {
+			.grid-toolbar {
+
+			}
+			.grid-wrap {
+				.grid-area.grid-contents {
+					background: #fff;
+					height: 530px;
+				}
 			}
 		}
 	}
@@ -744,7 +796,7 @@
 			padding: 15px 0 10px;
 			text-align: center;
 			button {
-				@include btn-pd-lr(25px, 25px, 0);
+				@include btn-pd-lr(20px, 20px, 0);
 			}
 		}
 	}
