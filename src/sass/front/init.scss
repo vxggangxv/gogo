@@ -94,27 +94,7 @@
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
-					border-top: 1px solid $bor-gray-table;
-					border-right: 0;
-					th, td {
-						background: #f5f5f5;
-					}
-					td {
-						&.last  {
-							.cell.inBl {
-								display: inline-block;
-							}
-							.square {
-								display: inline-block;
-								float: right;
-								height: 100%;
-								padding: 0;
-								border-left: 1px solid #c5c5c5;
-								width: 17px;
-								box-sizing: border-box;
-							}
-						}
-					}
+
 				}
 			}
 			.grid-tbl {
@@ -292,27 +272,6 @@
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
-					border-top: 1px solid $bor-gray-table;
-					border-right: 0;
-					th, td {
-						background: #f5f5f5;
-					}
-					td {
-						&.last  {
-							.cell.inBl {
-								display: inline-block;
-							}
-							.square {
-								display: inline-block;
-								float: right;
-								height: 100%;
-								padding: 0;
-								border-left: 1px solid #c5c5c5;
-								width: 17px;
-								box-sizing: border-box;
-							}
-						}
-					}
 				}
 			}
 			.grid-tbl {
@@ -482,27 +441,7 @@
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
-					border-top: 1px solid $bor-gray-table;
-					border-right: 0;
-					th, td {
-						background: #f5f5f5;
-					}
-					td {
-						&.last  {
-							.cell.inBl {
-								display: inline-block;
-							}
-							.square {
-								display: inline-block;
-								float: right;
-								height: 100%;
-								padding: 0;
-								border-left: 1px solid #c5c5c5;
-								width: 17px;
-								box-sizing: border-box;
-							}
-						}
-					}
+
 				}
 			}
 			.grid-tbl {
@@ -680,27 +619,7 @@
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
-					border-top: 1px solid $bor-gray-table;
-					border-right: 0;
-					th, td {
-						background: #f5f5f5;
-					}
-					td {
-						&.last  {
-							.cell.inBl {
-								display: inline-block;
-							}
-							.square {
-								display: inline-block;
-								float: right;
-								height: 100%;
-								padding: 0;
-								border-left: 1px solid #c5c5c5;
-								width: 17px;
-								box-sizing: border-box;
-							}
-						}
-					}
+
 				}
 			}
 			.grid-tbl {
@@ -1816,7 +1735,7 @@
 			}
 		}
 		.grid-wrap {
-			@include grid-scr-x(null, 100%, 4px 0 0 4px);
+			@include grid-scr-x(null, 100%0);
 			.grid-area.grid-contents {
 				background: #fff;
 				height: 650px;
@@ -1932,7 +1851,7 @@
 			}
 		}
 		.grid-wrap {
-			@include grid-scr-x(null, 100%, 4px 0 0 4px);
+			@include grid-scr-x(null, 100%, 0);
 			.grid-area.grid-contents {
 				background: #fff;
 				height: 280px;
@@ -2081,28 +2000,7 @@
 				}
 				.grid-area.grid-total {
 					.grid-tbl {
-						border-top: 1px solid $bor-gray-table;
-						border-right: 0;
-						th, td {
-							background: #f5f5f5;
-							border-bottom: 0;
-						}
-						td {
-							&.last  {
-								.cell.inBl {
-									display: inline-block;
-								}
-								.square {
-									display: inline-block;
-									float: right;
-									height: 100%;
-									padding: 0;
-									border-left: 1px solid #c5c5c5;
-									width: 17px;
-									box-sizing: border-box;
-								}
-							}
-						}
+
 					}
 				}
 			}
