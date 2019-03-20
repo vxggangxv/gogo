@@ -571,3 +571,82 @@
 .exb-contents .cont-list .grid-wrap .grid-tbl th, .exb-contents .cont-list .grid-wrap .grid-tbl td { text-align: center; }
 
 .exb-contents .cont-list .grid-wrap .grid-tbl td .cell button.action { padding-left: 15px; padding-right: 15px; letter-spacing: 0; }
+
+/* 청소 배정 */
+.maidAss-contents .cont-property .tbl-property { width: 100%; border: 1px solid #c0b5a6; border-bottom: none; table-layout: fixed; }
+
+.maidAss-contents .cont-property .tbl-property th, .maidAss-contents .cont-property .tbl-property td { height: 28px; border-bottom: 1px solid #c0b5a6; background: #f4f1ee; color: #666; font-size: 12px; }
+
+.maidAss-contents .cont-property .tbl-property th .cell, .maidAss-contents .cont-property .tbl-property td .cell { position: relative; padding: 3px 7px; }
+
+.maidAss-contents .cont-property .tbl-property th .cell::before, .maidAss-contents .cont-property .tbl-property th .cell::after, .maidAss-contents .cont-property .tbl-property td .cell::before, .maidAss-contents .cont-property .tbl-property td .cell::after { content: ''; display: table; }
+
+.maidAss-contents .cont-property .tbl-property th .cell::after, .maidAss-contents .cont-property .tbl-property td .cell::after { clear: both; }
+
+.ie8 .maidAss-contents .cont-property .tbl-property th .cell, .ie8 .maidAss-contents .cont-property .tbl-property td .cell { zoom: 1; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.pd-0, .maidAss-contents .cont-property .tbl-property td .cell.pd-0 { padding-top: 0; padding-bottom: 0px; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.necess, .maidAss-contents .cont-property .tbl-property td .cell.necess { background: url("../../img/tick-small-red.png") no-repeat 100% 58%; }
+
+.maidAss-contents .cont-property .tbl-property th { height: 33px; border-left: 1px dashed #c0b5a6; overflow: visible; color: #444; text-align: center; }
+
+.maidAss-contents .cont-property .tbl-property th .cell { font-weight: 700; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.order-ui { cursor: pointer; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.order-ui:after { content: "▼"; position: relative; display: none; margin-left: 2px; font-size: 10px; color: #73787D; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.order-ui:hover:after { display: inline; }
+
+.maidAss-contents .cont-property .tbl-property th .cell.order-ui.ascending:after { content: "▲"; }
+
+.maidAss-contents .cont-property .tbl-property td { border-left: 1px dashed #c0b5a6; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .chk-box input, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box input { margin-right: 3px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .maidAss-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .rdo-box label { margin-right: 5px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .cal-box .inp-cal { width: 150px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .chk-box { margin: 0 10px 0 5px; }
+
+.maidAss-contents .cont-property .tbl-property td .cell .btn-gray .prev, .maidAss-contents .cont-property .tbl-property td .cell .btn-gray .next { position: relative; top: -1px; color: #6E7A86; padding: 0 5px; }
+
+.maidAss-contents .cont-roomStatus { /* 객실관리 - 룸현황 */ }
+
+.maidAss-contents .cont-roomStatus .room-area { margin-top: 5px; padding-top: 0px; padding-bottom: 0px; width: 100%; box-sizing: border-box; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room { font-family: "NanumSquareRound", Dotum, Sans-serif; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room { margin: 0px 10px 10px 0px; border: 2px solid #d5d5d5; border-radius: 2px; background: #fff; width: 126px; float: left; min-height: 126px; font-size: 13px; font-weight: bold; letter-spacing: -1px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); /*방 리스트 기본 스타일 .base*/ /*방 리스트 체크인 스타일 .chkIn*/ /*클릭시 테두리 변경 .clk*/ }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room > div { position: relative; box-sizing: border-box; padding: 0 3px; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room > div:first-child, .maidAss-contents .cont-roomStatus .room-area .list-room .item-room > div.guestName { border: 0 !important; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room .roomNo { line-height: 26px; font-weight: 800; padding: 0 5px; text-align: center; font-size: 14px; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room .roomNo .num { float: left; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room .roomNo .status { position: relative; top: -1px; float: right; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room.on { border: 2px solid #C0B5A6; background: #C0B5A6; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room.on .roomNo { color: #fff; text-shadow: 1px 1px #000; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-room .item-room.on.red { border: 2px solid #FD4B4B; background: #FD4B4B; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-floor { position: absolute; top: 0px; right: 0px; font-size: 13px; text-align: center; font-weight: bold; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-floor .tit { color: #c0b5a6; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-floor .floor.total { background-color: #c0b5a6; color: #fff; }
+
+.maidAss-contents .cont-roomStatus .room-area .list-floor .floor { width: 43px; height: 28px; border: 2px solid #c0b5a6; background: #fff; color: #c0b5a6; padding-top: 10px; margin-bottom: 2px; cursor: pointer; }

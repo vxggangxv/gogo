@@ -896,6 +896,9 @@
 				}
 			}
 			.cont-side.right {
+				// position: fixed;
+				// top: 115px;
+				// right: 10px;
 				position: absolute;
 				top: 10px;
 				right: 0px;
@@ -1264,6 +1267,8 @@
 				}
 			}
 			.list-floor {
+				// position: fixed;
+				// top: 175px;
 				position: absolute;
 				top: 0px;
 				right: $wth + 20px;
@@ -1729,7 +1734,7 @@
 			}
 		}
 		.grid-wrap {
-			@include grid-scr-x(null, 100%0);
+			@include grid-scr-x(null, 100%, 0);
 			.grid-area.grid-contents {
 				background: #fff;
 				height: 650px;

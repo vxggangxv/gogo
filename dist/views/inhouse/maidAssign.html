@@ -440,9 +440,9 @@
 
 
 
-        <div class="cf contents maidSch-contents">
+        <div class="cf contents maidAss-contents">
             <div class="cf row-h2">
-                <h2 class="page-title">청소 일정</h2>
+                <h2 class="page-title">청소 배정</h2>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
@@ -460,7 +460,7 @@
                                 <tbody>
                                     <tr>
                                         <th>
-                                            <div class="cell">시작 날짜</div>
+                                            <div class="cell">날짜</div>
                                         </th>
                                         <td>
                                             <div class="cell">
@@ -470,11 +470,16 @@
 
 												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
                                                 </span>
+                                                <span class="chk-box"><label><input type="checkbox"> Assign Available</label></span>
 
+                                                <div class="btn-brown"><span class="prev">◀</span>
+                                                </div>
+                                                <div class="btn-brown"><span class="next">▶</span>
+                                                </div>
                                                 <button type="button" class="btn-brown">SEARCH</button>
-                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
-                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
-                                                <button type="button" class="btn-gray pull-right">일괄저장</button>
+                                                <button type="button" class="btn-brown">Assign Status</button>
+                                                <button type="button" class="btn-green">Floor Setting</button>
+                                                <button type="button" class="btn-blue">PRINT</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -483,204 +488,144 @@
                         </div>
                     </div>
                 </div>
-                <div class="cont-list">
-                    <div class="grid-container">
-                        <div class="grid-area grid-locked">
-                            <table class="grid-tbl">
-                                <colgroup>
-                                    <col style="width: 245px">
-                                </colgroup>
-                                <thead class="rowgroup">
-                                    <tr>
-                                        <th class="locked"></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="rowgroup">
-                                    <tr>
-                                        <td>
-                                            <div class="cell">text</div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="grid-wrap scr-wrap">
-                            <div class="grid-scrollable-x">
-                                <div class="grid-area grid-head">
-                                    <div class="grid-scrollable">
-                                        <table class="grid-tbl">
-                                            <colgroup>
-                                                <col style="width: 110px">
-                                            </colgroup>
-                                            <thead class="rowgroup">
-                                                <tr>
-                                                    <th>
-                                                        <div class="cell"></div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/01</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/02</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/03</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/04</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/05</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/06</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/07</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/08</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/09</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/10</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/11</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/12</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/13</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/14</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/15</div>
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <th>
-                                                        <div class="cell">근무일수</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="grid-area grid-contents">
-                                    <table class="grid-tbl">
-                                        <colgroup>
-                                            <col style="width: 110px">
-                                        </colgroup>
-                                        <tbody class="rowgroup">
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">11004</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!--//.cont-name-->
+                <div class="cont-roomStatus">
+                    <div class="area room-area">
+                        <ul class="cf list-room">
+                            <!--스타일 off, on 클릭 스타일 .clk 추가-->
+                            <li class="item-room off">
+                                <div class="cf roomNo">
+                                    <span class="left num">1701</span>
+                                    <span class="center name">RST</span>
+                                    <span class="right status">
+
+									<img src="../../public/img/icon/ebOut.png" alt="아웃">
+
+								</span>
+                                </div>
+                                <div class="row">
+                                    <select name="" id="" class="form-select">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li class="item-room on">
+                                <div class="cf roomNo">
+                                    <span class="left num">1601</span>
+                                    <span class="center name">RST</span>
+                                    <span class="right status">
+
+									<img src="../../public/img/icon/ebOut.png" alt="아웃">
+
+								</span>
+                                </div>
+                                <div class="row">
+                                    <select name="" id="" class="form-select">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="item-room on red">
+                                <div class="cf roomNo">
+                                    <span class="left num">1601</span>
+                                    <span class="center name">RST</span>
+                                    <span class="right status">
+
+									<img src="../../public/img/icon/ebOut.png" alt="아웃">
+
+								</span>
+                                </div>
+                                <div class="row">
+                                    <select name="" id="" class="form-select">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--//.list-room-->
+                        <script>
+                            $(function() {
+                            							$(".room-area .list-room > li").on("click", function() {
+                            								$(this).toggleClass("clk");
+                            							});
+                            						});
+                        </script>
+                        <ul class="list-floor">
+                            <li class="item-floor">
+                                <div class="tit">Floor</div>
+                            </li>
+
+                            <!-- 클래스 - 판매가능 y , 판매 불가 n -->
+
+                            <li class="item-floor">
+                                <div class="floor total">Total</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">17</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">16</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">15</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">14</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">13</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">12</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">11</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">10</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">9</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">8</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">7</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">6</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">5</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">4</div>
+                            </li>
+
+                            <li class="item-floor">
+                                <div class="floor">3</div>
+                            </li>
+                        </ul>
+                        <!--//.list-floor-->
+                    </div>
+                    <!--//.room-area-->
+                </div>
             </div>
         </div>
         <!-- //.contents -->
