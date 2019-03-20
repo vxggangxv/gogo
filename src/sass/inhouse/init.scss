@@ -40,13 +40,16 @@
 				.grid-tbl {
 					th {
 						&.sat {
-							color: $fg-sat;
+							color: blue;
 						}
 						&.sun {
-							color: $fg-sun;
+							color: red;
 						}
 					}
 				}
+                .grid-area.grid-contents {
+                    height: 680px;
+                }
 			}
 		}
 	}

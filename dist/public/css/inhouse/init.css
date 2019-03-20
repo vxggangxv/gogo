@@ -98,6 +98,8 @@
 
 .maidSch-contents .cont-roomInv .grid-container .grid-area.grid-contents { overflow-y: scroll; height: 613px; }
 
-.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sat { color: #2979FF; }
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sat { color: blue; }
 
-.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sun { color: #F50057; }
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sun { color: red; }
+
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-area.grid-contents { height: 680px; }
