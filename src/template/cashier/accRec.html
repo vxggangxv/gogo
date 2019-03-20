@@ -1,0 +1,214 @@
+@@include('../include/_head.html', {
+	"page": "cashier"
+})
+
+<!-- 페이지 전용 -->
+
+<body class="page-cashier">
+
+@@include('../include/pop/pop_rsv.html')
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents accRcc-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "C/L 계산원"
+		})
+
+		<div class="cf cont-container-f">
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width:90px">
+								<col style="width:415px">
+								<col style="width:90px">
+								<col style="width:160px">
+								<col style="width:*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">날짜</div></th>
+									<td>
+										<div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<span class="mg-">~</span>
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<select name="" id="" class="form-select gray day">
+												<option value="">Pay(TR) Day</option>
+												<option value="">Receive Day</option>
+											</select>
+										</div>
+									</td>
+									<th><div class="cell">계정</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input account">
+										</div>
+									</td>
+									<td>
+										<div class="cell">
+											<span class="rdo-box"><label><input type="radio" name="ex">City Ledger</label></span>
+											<span class="rdo-box"><label><input type="radio" name="ex">Credit Card</label></span>
+											<select name="" id="" class="form-select gray card">
+												<option value=""></option>
+												<option value="">비씨카드</option>
+												<option value="">국민카드</option>
+												<option value="">하나카드</option>
+												<option value="">신한카드</option>
+												<option value="">삼성카드</option>
+											</select>
+
+											<button type="button" class="btn-brown">SEARCH</button>
+											<button type="button" class="btn-brown">CLEAR</button>
+											<button type="button" class="btn-green">C/L APPLY</button>
+											<div class="pull-right">
+												<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+												<button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-property -->
+
+			<div class="cont-list">
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:230px">
+										<col style="width:230px">
+										<col style="width:185px">
+										<col style="width:185px">
+										<col style="width:185px">
+										<col style="width:185px">
+										<col style="width:185px">
+										<col style="width:185px">
+										<col style="width:*">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th rowspan="2"><div class="cell">계정</div></th>
+											<th rowspan="2"><div class="cell">시장</div></th>
+											<th rowspan="2"><div class="cell">Receivable</div></th>
+											<th rowspan="2"><div class="cell">Occurrence</div></th>
+											<th colspan="4" class="bor"><div class="cell">Paid</div></th>
+											<th rowspan="2"><div class="cell">Balance</div></th>
+										</tr>
+										<tr>
+											<th><div class="cell">Total</div></th>
+											<th><div class="cell">Received</div></th>
+											<th><div class="cell">Free</div></th>
+											<th><div class="cell">Difference</div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width:230px">
+									<col style="width:230px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:*">
+								</colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell">개인</div></td>
+										<td><div class="cell">walk in</div></td>
+										<td class="ta-right fw-b"><div class="cell">100,000</div></>
+										<td class="ta-right co-red fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right"><div class="cell">100,000</div></td>
+									</tr>
+									<tr>
+										<td><div class="cell">개인</div></td>
+										<td><div class="cell">walk in</div></td>
+										<td class="ta-right fw-b"><div class="cell">100,000</div></>
+										<td class="ta-right co-red fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right"><div class="cell">100,000</div></td>
+									</tr>
+									<tr>
+										<td><div class="cell">개인</div></td>
+										<td><div class="cell">walk in</div></td>
+										<td class="ta-right fw-b"><div class="cell">100,000</div></>
+										<td class="ta-right co-red fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right"><div class="cell">100,000</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="grid-area grid-total">
+							<table class="grid-tbl">
+								<colgroup>
+									<col style="width:230px">
+									<col style="width:230px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:185px">
+									<col style="width:*">
+								</colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td class="ta-right fw-b"><div class="cell">591,380,569</div></>
+										<td class="ta-right co-red fw-b"><div class="cell">231,730</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right co-blue fw-b"><div class="cell">0</div></td>
+										<td class="ta-right fw-b last"><div class="cell inBl">591,612,299</div><span class="square"></span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->
+			</div>
+			<!-- //.cont-list -->
+		</div>
+	</div>
+	<!-- //.contents -->
+
+</div>
+
+</body>
+</html>

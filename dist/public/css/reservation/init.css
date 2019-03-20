@@ -272,7 +272,7 @@
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -354,7 +354,7 @@
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -482,7 +482,7 @@
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -719,7 +719,7 @@
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -799,7 +799,7 @@
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -885,7 +885,7 @@
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl th, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -1262,7 +1262,7 @@
 
 .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .rmBlock-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -1403,7 +1403,7 @@
 
 .rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .rsvList-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -1560,7 +1560,7 @@
 
 .rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -1763,7 +1763,7 @@
 
 .account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .account-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -1973,7 +1973,7 @@
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl th, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
@@ -2114,7 +2114,7 @@
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
-.maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; }
+.maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl th, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td { background: #f5f5f5; color: #2e2e2e; border-bottom: 0; }
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-area.grid-total .grid-tbl td.last .cell.inBl { margin-right: 17px; }
 
