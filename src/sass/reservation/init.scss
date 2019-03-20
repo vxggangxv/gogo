@@ -521,9 +521,8 @@
 						width: 777px;
 					}
 					th, td {
-						.cell {
-							text-align: center;
-						}
+						text-align: center;
+						.cell { }
 					}
 					td:first-child {
 						.cell {
@@ -823,9 +822,8 @@
 						width: 777px;
 					}
 					th, td {
-						.cell {
-							text-align: center;
-						}
+						text-align: center;
+						.cell { }
 					}
 					td:first-child {
 						.cell {
@@ -883,9 +881,8 @@
 				}
 				.grid-tbl {
 					th, td {
-						.cell {
-							text-align: center;
-						}
+						text-align: center;
+						.cell { }
 					}
 					td:first-child {
 						.cell {
@@ -1162,9 +1159,8 @@
 					width: $ie8-wth;
 				}
 				th, td {
-					.cell {
-						text-align: center;
-					}
+					text-align: center;
+					.cell { }
 				}
 				td:first-child {
 					.cell {
@@ -1271,9 +1267,8 @@
 			}
 			.grid-tbl {
 				th, td {
-					.cell {
-						text-align: center;
-					}
+					text-align: center;
+					.cell { }
 				}
 				td:first-child {
 					.cell {
@@ -1407,11 +1402,11 @@
 						position: relative;
 						th, td {
 							border-left-style: dashed;
+							text-align: center;
 							&:first-child {
 								border-left: 0;
 							}
 							.cell {
-								text-align: center;
 								&.read {
 									cursor: pointer;
 								}
@@ -1621,16 +1616,14 @@
 			}
 			.grid-tbl {
 				th, td {
-					.cell {
-						text-align: center;
-					}
+					text-align: center;
+					.cell { }
 				}
 			}
 			.grid-tbl.list-tbl {
 				th, td {
-					.cell {
-						text-align: left;
-					}
+					text-align: left;
+					.cell { }
 				}
 			}
 		}
@@ -1965,9 +1958,8 @@
 							width: $ie8-wth;
 						}
 						th, td {
-							.cell {
-								text-align: center;
-							}
+							text-align: center;
+							.cell { }
 						}
 						td:first-child {
 							.cell {

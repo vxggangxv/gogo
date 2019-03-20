@@ -9,7 +9,7 @@
 
 	<div class="cf contents maidSch-contents">
 		@@include('../include/_row_h2.html', {
-			"page-title": "객실 목록"
+			"page-title": "청소 일정"
 		})
 		<div class="cf cont-container-f">
 			<div class="cont-property">
@@ -17,22 +17,11 @@
 					<div class="grid-contents">
 						<table class="grid-tbl tbl-property">
 							<colgroup>
-								<col style="width: 104px">
-								<col style="width: 190px">
 								<col style="width: 120px">
-								<col style="width: 278px">
 								<col style="width: *">
 							</colgroup>
 							<tbody>
 								<tr>
-									<th><div class="cell">속성</div></th>
-									<td>
-										<div class="cell">
-											<select name="" id="" class="form-select gray">
-												<option value="">Ramada pt</option>
-											</select>
-										</div>
-									</td>
 									<th><div class="cell">시작 날짜</div></th>
 									<td>
 										<div class="cell">
@@ -40,18 +29,11 @@
 												<input type="text" class="appe-reset inp-cal date-ui">
 												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
 											</span>
-											<div class="btn-gray"><span class="prev">◀</span></div>
-											<div class="btn-gray"><span class="next">▶</span></div>
-										</div>
-									</td>
-									<td>
-										<div class="cell">
-											<span class="rdo-box"><label><input type="radio" name="optionSc" checked> Stock</label>
-												<label><input type="radio" name="optionSc"> Occ</label></span>
-											<span class="btn-box"><button type="button" class="btn-brown">SEARCH</button>
-												<button type="button" class="btn-gray">CLEAR</button>
-												<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
-												<button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button></span>
+
+										    <button type="button" class="btn-brown">SEARCH</button>
+											<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+											<button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+											<button type="button" class="btn-gray pull-right">일괄저장</button>
 										</div>
 									</td>
 								</tr>
@@ -60,12 +42,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="cont-roomInv">
+			<div class="cont-list">
 				<div class="grid-container">
 					<div class="grid-area grid-locked">
 						<table class="grid-tbl">
 							<colgroup>
-								<col style="width: 180px">
+								<col style="width: 245px">
 							</colgroup>
 							<thead class="rowgroup">
 								<tr>
@@ -73,40 +55,7 @@
 								</tr>
 							</thead>
 							<tbody class="rowgroup">
-								<tr>
-									<td><div class="cell">남은 객실 <span class="num">[302]</span></div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">사용 객실</div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">RST <span class="num">[4]</span></div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">DDB <span class="num">[38]</span></div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">SDT <span class="num">[6]</span></div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">DTW <span class="num">[145]</span></div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">판매 가능</div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">고장난</div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">부재 중</div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">하우스 사용</div></td>
-								</tr>
-								<tr>
-									<td><div class="cell">비교</div></td>
-								</tr>
-								<tr><td><div class="cell">추가 침대</div></td></tr>
+								<tr><td><div class="cell">text</div></td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -115,8 +64,12 @@
 							<div class="grid-area grid-head">
 								<div class="grid-scrollable">
 									<table class="grid-tbl">
+                                        <colgroup>
+            								<col style="width: 110px">
+            							</colgroup>
 										<thead class="rowgroup">
 											<tr>
+												<th><div class="cell"></div></th>
 												<th><div class="cell">02/01</div></th>
 												<th><div class="cell">02/02</div></th>
 												<th><div class="cell">02/03</div></th>
@@ -132,24 +85,9 @@
 												<th class="sat"><div class="cell">02/13</div></th>
 												<th class="sun"><div class="cell">02/14</div></th>
 												<th><div class="cell">02/15</div></th>
-												<th><div class="cell">02/16</div></th>
-												<th><div class="cell">02/17</div></th>
-												<th><div class="cell">02/18</div></th>
-												<th><div class="cell">02/19</div></th>
-												<th class="sat"><div class="cell">02/20</div></th>
-												<th class="sun"><div class="cell">02/21</div></th>
-												<th><div class="cell">02/22</div></th>
-												<th><div class="cell">02/23</div></th>
-												<th><div class="cell">02/24</div></th>
-												<th><div class="cell">02/25</div></th>
-												<th><div class="cell">02/26</div></th>
-												<th class="sat"><div class="cell">02/27</div></th>
-												<th class="sun"><div class="cell">02/28</div></th>
-												<th><div class="cell">02/29</div></th>
-												<th><div class="cell">02/30</div></th>
-												<th><div class="cell">02/31</div></th>
 											</tr>
 											<tr>
+                                                <th><div class="cell">근무일수</div></th>
 												<th><div class="cell">Mon</div></th>
 												<th><div class="cell">Tue</div></th>
 												<th><div class="cell">Wed</div></th>
@@ -165,22 +103,6 @@
 												<th class="sat"><div class="cell">Sat</div></th>
 												<th class="sun"><div class="cell">Sun</div></th>
 												<th><div class="cell">Mon</div></th>
-												<th><div class="cell">Tue</div></th>
-												<th><div class="cell">Wed</div></th>
-												<th><div class="cell">Thu</div></th>
-												<th><div class="cell">Fri</div></th>
-												<th class="sat"><div class="cell">Sat</div></th>
-												<th class="sun"><div class="cell">Sun</div></th>
-												<th><div class="cell">Mon</div></th>
-												<th><div class="cell">Tue</div></th>
-												<th><div class="cell">Wed</div></th>
-												<th><div class="cell">Thu</div></th>
-												<th><div class="cell">Fri</div></th>
-												<th class="sat"><div class="cell">Sat</div></th>
-												<th class="sun"><div class="cell">Sun</div></th>
-												<th><div class="cell">Mon</div></th>
-												<th><div class="cell">Tue</div></th>
-												<th><div class="cell">Wed</div></th>
 											</tr>
 										</thead>
 									</table>
@@ -188,10 +110,14 @@
 							</div>
 							<div class="grid-area grid-contents">
 								<table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width: 110px">
+                                    </colgroup>
 									<tbody class="rowgroup">
 										<tr>
 											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
+											<td><div class="cell">138</div></td>
+											<td><div class="cell">11004</div></td>
 											<td><div class="cell">220</div></td>
 											<td><div class="cell">233</div></td>
 											<td><div class="cell">224</div></td>
@@ -205,387 +131,7 @@
 											<td><div class="cell">232</div></td>
 											<td><div class="cell">233</div></td>
 											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
 										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<tr>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">138</div></td>
-											<td><div class="cell">114</div></td>
-											<td><div class="cell">220</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">233</div></td>
-											<td><div class="cell">224</div></td>
-											<td><div class="cell">232</div></td>
-										</tr>
-										<!--tr>(th+td)-->
 									</tbody>
 								</table>
 							</div>

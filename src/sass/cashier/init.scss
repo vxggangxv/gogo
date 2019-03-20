@@ -174,9 +174,8 @@
 			}
 			.grid-tbl {
 				th, td {
-					.cell {
-						text-align: center;
-					}
+					text-align: center;
+					.cell { }
 				}
 				td {
 					.cell {
@@ -184,64 +183,6 @@
 							@include btn-pd-lr;
 						}
 					}
-				}
-				td:first-child {
-					.cell {
-						line-height: 1;
-					}
-				}
-			}
-		}
-		.grid-bottom {
-			@include gray-gradient;
-			@include bdr-r(0, 0, 4px, 4px);
-			padding: 5px;
-			border: 1px solid $bor-gray-table;
-			border-top: 0;
-			> * {
-				@include va;
-				@include bx;
-				text-align: center;
-				border-radius: 50%;
-				font-weight: 700;
-			}
-			.prev, .next {
-				@include ft(12px, #918884);
-				@include sizes(26px);
-				line-height: 24px;
-				background-color: #fff;
-				border: 1px solid #d2d2d2;
-				&.st {
-					letter-spacing: -3px;
-				}
-			}
-			.prev {
-				text-indent: -3px;
-				&.st {
-					text-indent: -5px;
-				}
-			}
-			.num {
-				@include ft(12px, #918884);
-				@include sizes(26px);
-				line-height: 26px;
-				color: #fff;
-				background-color: #f35800;
-				border-color: #f85a00;
-			}
-			.next {
-				text-indent: 3px;
-				&.st {
-					text-indent: 0px;
-				}
-			}
-			.count {
-				@include float(right);
-				@include ft(12px, #313131, 400);
-				padding-right: 12px;
-				top: 3px;
-				.co {
-					color: $fg-orange-1;
 				}
 			}
 		}

@@ -267,33 +267,9 @@
 
 .exchange-contents .cont-list .grid-wrap .grid-area.grid-contents { background: #fff; height: 750px; }
 
-.exchange-contents .cont-list .grid-wrap .grid-tbl th .cell, .exchange-contents .cont-list .grid-wrap .grid-tbl td .cell { text-align: center; }
+.exchange-contents .cont-list .grid-wrap .grid-tbl th, .exchange-contents .cont-list .grid-wrap .grid-tbl td { text-align: center; }
 
 .exchange-contents .cont-list .grid-wrap .grid-tbl td .cell button.action { padding-left: 15px; padding-right: 15px; letter-spacing: 0; }
-
-.exchange-contents .cont-list .grid-wrap .grid-tbl td:first-child .cell { line-height: 1; }
-
-.exchange-contents .cont-list .grid-bottom { background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; border-radius: 0 0 4px 4px; padding: 5px; border: 1px solid #c5c5c5; border-top: 0; }
-
-.exchange-contents .cont-list .grid-bottom > * { position: relative; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; text-align: center; border-radius: 50%; font-weight: 700; }
-
-.exchange-contents .cont-list .grid-bottom .prev, .exchange-contents .cont-list .grid-bottom .next { font-size: 12px; color: #918884; width: 26px; height: 26px; line-height: 24px; background-color: #fff; border: 1px solid #d2d2d2; }
-
-.exchange-contents .cont-list .grid-bottom .prev.st, .exchange-contents .cont-list .grid-bottom .next.st { letter-spacing: -3px; }
-
-.exchange-contents .cont-list .grid-bottom .prev { text-indent: -3px; }
-
-.exchange-contents .cont-list .grid-bottom .prev.st { text-indent: -5px; }
-
-.exchange-contents .cont-list .grid-bottom .num { font-size: 12px; color: #918884; width: 26px; height: 26px; line-height: 26px; color: #fff; background-color: #f35800; border-color: #f85a00; }
-
-.exchange-contents .cont-list .grid-bottom .next { text-indent: 3px; }
-
-.exchange-contents .cont-list .grid-bottom .next.st { text-indent: 0px; }
-
-.exchange-contents .cont-list .grid-bottom .count { position: relative; float: right; font-size: 12px; color: #313131; font-weight: 400; padding-right: 12px; top: 3px; }
-
-.exchange-contents .cont-list .grid-bottom .count .co { color: #ed550b; }
 
 /* 현금 서랍 */
 .cshDraw-contents .cont-property .tbl-property { width: 100%; border: 1px solid #c0b5a6; border-bottom: none; table-layout: fixed; border-right: 1px solid #c0b5a6; width: 100%; }
@@ -930,7 +906,7 @@
 
 .cshClose-contents .cont-closed .grid-wrap .grid-tbl td .cell .texta-etc { position: relative; height: 25px; padding: 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; padding: 4px; width: 100%; height: 80px; resize: none; }
 
-.cshClose-contents .cont-closed .grid-wrap .grid-tbl td .cell .texta-etc[disabled], .cshClose-contents .cont-closed .grid-wrap .grid-tbl td .cell .texta-etc[readonly] { background: #eee; color: #676767; }
+.cshClose-contents .cont-closed .grid-wrap .grid-tbl td .cell .texta-etc[disabled], .cshClose-contents .cont-closed .grid-wrap .grid-tbl td .cell .texta-etc[readonly] { background: #f9f8f8; color: #676767; }
 
 .cshClose-contents .cont-closed .row-btn { padding: 15px 0 10px; text-align: center; }
 

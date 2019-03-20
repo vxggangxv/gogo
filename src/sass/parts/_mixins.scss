@@ -171,7 +171,8 @@
     border-radius: 4px;
     line-height: 1.6;
     &[disabled], &[readonly] {
-		background: #eee;
+		// background: #eee;
+		background: #f9f8f8;
 		color: #676767;
 	}
 }
