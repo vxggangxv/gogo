@@ -165,13 +165,13 @@
                                 </li>
                                 <li><a href="../inhouse/roomCleaning.html">객실 청소</a>
                                 </li>
-                                <li><a href="../inhouse/roomStatus.html">객실 현황</a>
+                                <li><a href="../front/roomStatus.html">객실 현황</a>
                                 </li>
-                                <li><a href="../inhouse/arrivalList.html">도착 목록</a>
+                                <li><a href="../inhouse/report.html">도착 목록</a>
                                 </li>
-                                <li><a href="../inhouse/inhouseList">사내 목록</a>
+                                <li><a href="../inhouse/report.html">사내 목록</a>
                                 </li>
-                                <li><a href="../inhouse/departuresList.html">출발 목록</a>
+                                <li><a href="../inhouse/report.html">출발 목록</a>
                                 </li>
                                 <li><a href="../inhouse/lostFound.html">분실물</a>
                                 </li>
@@ -440,9 +440,9 @@
 
 
 
-        <div class="cf contents maidSch-contents">
+        <div class="cf contents lf-contents">
             <div class="cf row-h2">
-                <h2 class="page-title">객실 목록</h2>
+                <h2 class="page-title">분실물</h2>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
@@ -454,53 +454,57 @@
                         <div class="grid-contents">
                             <table class="grid-tbl tbl-property">
                                 <colgroup>
-                                    <col style="width: 104px">
-                                        <col style="width: 190px">
+                                    <col style="width: 120px">
+                                        <col style="width: 250px">
                                             <col style="width: 120px">
-                                                <col style="width: 278px">
-                                                    <col style="width: *">
+                                                <col style="width: 250px">
+                                                    <col style="width: 120px">
+                                                        <col style="width: *">
                                 </colgroup>
                                 <tbody>
                                     <tr>
                                         <th>
-                                            <div class="cell">속성</div>
+                                            <div class="cell">요청 유형</div>
                                         </th>
                                         <td>
                                             <div class="cell">
-                                                <select name="" id="" class="form-select gray">
-                                                    <option value="">Ramada pt</option>
+                                                <select name="" id="" class="form-select req" disabled>
+                                                    <option value="">1. Lost&Found</option>
+                                                </select>
+                                                <button type="button" class="btn-green">ADD</button>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">상태</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <select name="" id="" class="form-select status">
+                                                    <option value=""></option>
+                                                    <option value="">접수</option>
+                                                    <option value="">처리</option>
                                                 </select>
                                             </div>
                                         </td>
                                         <th>
-                                            <div class="cell">시작 날짜</div>
+                                            <div class="cell">도착 날짜</div>
                                         </th>
                                         <td>
                                             <div class="cell">
                                                 <span class="cal-box">
 
-												<input type="text" class="appe-reset inp-cal date-ui">
+												<input type="text" class="appe-reset inp-cal date-ui" value="2019-03-20">
 
 												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
                                                 </span>
-                                                <div class="btn-gray"><span class="prev">◀</span>
-                                                </div>
-                                                <div class="btn-gray"><span class="next">▶</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="cell">
-                                                <span class="rdo-box"><label><input type="radio" name="optionSc" checked> Stock</label>
+                                                <span class="mg-">~</span>
+                                                <span class="cal-box">
 
-												<label><input type="radio" name="optionSc"> Occ</label></span>
-                                                <span class="btn-box"><button type="button" class="btn-brown">SEARCH</button>
+												<input type="text" class="appe-reset inp-cal date-ui" value="2019-03-20">
 
-												<button type="button" class="btn-gray">CLEAR</button>
-
-												<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
-                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
                                                 </span>
+                                                <button type="button" class="btn-brown">SEARCH</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -509,1439 +513,137 @@
                         </div>
                     </div>
                 </div>
-                <div class="cont-roomInv">
-                    <div class="grid-container">
-                        <div class="grid-area grid-locked">
-                            <table class="grid-tbl">
-                                <colgroup>
-                                    <col style="width: 180px">
-                                </colgroup>
-                                <thead class="rowgroup">
-                                    <tr>
-                                        <th class="locked"></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="rowgroup">
-                                    <tr>
-                                        <td>
-                                            <div class="cell">남은 객실 <span class="num">[302]</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">사용 객실</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">RST <span class="num">[4]</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">DDB <span class="num">[38]</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">SDT <span class="num">[6]</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">DTW <span class="num">[145]</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">판매 가능</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">고장난</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">부재 중</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">하우스 사용</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">비교</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="cell">추가 침대</div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="grid-wrap scr-wrap">
-                            <div class="grid-scrollable-x">
-                                <div class="grid-area grid-head">
-                                    <div class="grid-scrollable">
-                                        <table class="grid-tbl">
-                                            <thead class="rowgroup">
-                                                <tr>
-                                                    <th>
-                                                        <div class="cell">02/01</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/02</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/03</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/04</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/05</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/06</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/07</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/08</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/09</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/10</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/11</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/12</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/13</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/14</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/15</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/16</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/17</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/18</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/19</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/20</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/21</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/22</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/23</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/24</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/25</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/26</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">02/27</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">02/28</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/29</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/30</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">02/31</div>
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Thu</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Fri</div>
-                                                    </th>
-                                                    <th class="sat">
-                                                        <div class="cell">Sat</div>
-                                                    </th>
-                                                    <th class="sun">
-                                                        <div class="cell">Sun</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Mon</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Tue</div>
-                                                    </th>
-                                                    <th>
-                                                        <div class="cell">Wed</div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="grid-area grid-contents">
+                <div class="cont-list">
+                    <div class="grid-toolbar">
+                        <button type="button" class="btn-gray"><span class="icon ic-plus"></span> 새 레코드 추가</button>
+                    </div>
+                    <!-- //.grid-toolbar -->
+                    <div class="grid-wrap scr-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
                                     <table class="grid-tbl">
-                                        <tbody class="rowgroup">
+                                        <colgroup>
+                                            <col style="width:55px">
+                                                <col style="width:130px">
+                                                    <col style="width:200px">
+                                                        <col style="width:200px">
+                                                            <col style="width:330px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:130px">
+                                                                        <col style="width:105px">
+                                                                            <col style="width:105px">
+                                                                                <col style="width:105px">
+                                                                                    <col style="width:*">
+                                        </colgroup>
+                                        <thead class="rowgroup">
                                             <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
+                                                <th>
+                                                    <div class="cell">번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">유형</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">객실# / 장소</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">항목</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">내용</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">상태</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">수용 날짜</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">수용자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Processed Date</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Processed By</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">결과</div>
+                                                </th>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">138</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">114</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">220</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">233</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">224</div>
-                                                </td>
-                                                <td>
-                                                    <div class="cell">232</div>
-                                                </td>
-                                            </tr>
-                                            <!--tr>(th+td)-->
-                                        </tbody>
+                                        </thead>
                                     </table>
                                 </div>
                             </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width:55px">
+                                            <col style="width:130px">
+                                                <col style="width:200px">
+                                                    <col style="width:200px">
+                                                        <col style="width:330px">
+                                                            <col style="width:80px">
+                                                                <col style="width:130px">
+                                                                    <col style="width:105px">
+                                                                        <col style="width:105px">
+                                                                            <col style="width:105px">
+                                                                                <col style="width:*">
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr>
+                                            <td>
+                                                <div class="cell">30</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">Lost&Found</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">707</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">충전기</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2층 사무실</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">접수</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2019-03-18</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">한애순</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
+                    <!-- //.grid-wrap -->
+                    <div class="cf grid-bottom">
+                        <a href="#" class="prev st">&lt;&lt;</a>
+                        <a href="#" class="prev">&lt;</a>
+                        <span class="num">0</span>
+                        <a href="#" class="next">&gt;</a>
+                        <a href="#" class="next st">&gt;&gt;</a>
+                        <span class="count">1 - 100 of 158 items</span>
+                    </div>
+                    <!-- //.grid-bottom-->
                 </div>
-                <!--//.cont-name-->
+                <!-- //.cont-list -->
             </div>
         </div>
         <!-- //.contents -->

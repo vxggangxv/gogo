@@ -82,7 +82,7 @@
 
 /* 윈도우 팝업 콘텐츠 영역 */
 /* 공통 스타일 */
-.wpop-contents .cont-common-1 { position: relative; float: left; box-sizing: border-box; background: #f0f0f0; padding: 20px 15px; margin-top: 20px; border-radius: 5px; }
+.wpop-contents .cont-common-1 { position: relative; float: left; box-sizing: border-box; background: #f0f0f0; padding: 20px 15px 15px 15px; margin-top: 20px; border-radius: 5px; }
 
 .wpop-contents .cont-common-1 .cont-tit { position: absolute; top: -20px; left: 15px; width: auto; height: auto; text-indent: 0; font-size: 100%; line-height: normal; visibility: visible; color: #968571; font-size: 13px; padding: 5px 10px; background: #f0f0f0; border-radius: 5px; }
 

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // common
-@import "../parts/variables"; 
+@import "../parts/variables";
 @import "../parts/mixins";
 
 /* 서브 - 공통 */
@@ -31,14 +31,14 @@
 		@include btn-orange(null, null, 12px, 3px 8px 2px);
 		line-height: $btn-lh;
 	}
-	
+
 	.form-input {
 		@include form-base(100%);
 	}
 	.form-select {
 		@include slt-base(100%);
 	}
-	
+
 	.hSpace-5 {
 		font-size: 1px;
 		line-height: 1px;
@@ -127,7 +127,7 @@
 	@include float;
 	box-sizing: border-box;
 	background: #f0f0f0;
-	padding: 20px 15px;
+	padding: 20px 15px 15px 15px;
 	margin-top: 20px;
 	border-radius: 5px;
 	.cont-tit {
@@ -190,7 +190,7 @@
 				}
 			}
 		}
-	}	
+	}
 	.cont-roomInv {
 		.grid-container {
 //			@include grid-scr-x2(180px, null, 100%, 4px);
@@ -250,7 +250,7 @@
 				}
 			}
 		}
-	}	
+	}
 	.cont-itemInv {
 		.grid-container {
 //			@include grid-scr-x2(180px, null, 100%, 4px);
@@ -319,7 +319,7 @@
 				}
 			}
 		}
-	}	
+	}
 	.cont-trace {
 		margin-top: 10px;
 		.grid-wrap.scr-wrap {
@@ -388,7 +388,7 @@
 					}
 				}
 			}
-		}	
+		}
 	}
 	.contents-container .cont-common-1 {
 		margin-top: 35px;
@@ -478,7 +478,7 @@
 							background: #84FFFF;
 						}
 						&.dirty {
-							background: #EF5350;	
+							background: #EF5350;
 						}
 						&.working {
 							background: #FFF59D;
@@ -491,11 +491,11 @@
 	.contents-container .cont-activity {
 		.grid-tbl {
 			td {
-				
+
 			}
 		}
 	}
 	.contents-container .cont-projection {
-		
+
 	}
 }
