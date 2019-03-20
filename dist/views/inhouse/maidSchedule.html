@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/include/winpop.css">
     <link rel="stylesheet" href="../../public/css/include/pop.css">
-    <link rel="stylesheet" href="../../public/css/reserve/init.css">
+    <link rel="stylesheet" href="../../public/css/inhouse/init.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -56,7 +56,7 @@
 
     <!--개별 Js-->
     <script src="../../public/js/common.js"></script>
-    <script src="../../public/js/reserve/init.js"></script>
+    <script src="../../public/js/inhouse/init.js"></script>
 
     <!--[if lt IE 9]>
 		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -64,7 +64,7 @@
 
 </head>
 
-<body class="page-reserve">
+<body class="page-inhouse">
 
     <div class="wrapper">
         <header class="header">
@@ -440,14 +440,251 @@
 
 
 
-        <div class="cf contents">
-            <h2 class="page-title">페이지 타이틀</h2>
-            <section class="cont-name">
+        <div class="cf contents maidSch-contents">
+            <div class="cf row-h2">
+                <h2 class="page-title">청소 일정</h2>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
+            </div>
+            <div class="cf cont-container-f">
+                <div class="cont-property">
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width: 120px">
+                                        <col style="width: *">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div class="cell">시작 날짜</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <span class="cal-box">
 
-            </section>
-            <!--//.cont-name-->
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+
+                                                <span class="btn-box"><button type="button" class="btn-brown">SEARCH</button>
+
+											<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
+                                                <button type="button" class="btn-gray pull-right">일괄저장</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-roomInv">
+                    <div class="grid-container">
+                        <div class="grid-area grid-locked">
+                            <table class="grid-tbl">
+                                <colgroup>
+                                    <col style="width: 245px">
+                                </colgroup>
+                                <thead class="rowgroup">
+                                    <tr>
+                                        <th class="locked"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="rowgroup">
+                                    <tr>
+                                        <td>
+                                            <div class="cell">text</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="grid-wrap scr-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width: 110px">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell"></div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/01</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/02</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/03</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/04</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/05</div>
+                                                    </th>
+                                                    <th class="sat">
+                                                        <div class="cell">02/06</div>
+                                                    </th>
+                                                    <th class="sun">
+                                                        <div class="cell">02/07</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/08</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/09</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/10</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/11</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/12</div>
+                                                    </th>
+                                                    <th class="sat">
+                                                        <div class="cell">02/13</div>
+                                                    </th>
+                                                    <th class="sun">
+                                                        <div class="cell">02/14</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">02/15</div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">근무일수</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Mon</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Tue</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Wed</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Thu</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Fri</div>
+                                                    </th>
+                                                    <th class="sat">
+                                                        <div class="cell">Sat</div>
+                                                    </th>
+                                                    <th class="sun">
+                                                        <div class="cell">Sun</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Mon</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Tue</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Wed</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Thu</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Fri</div>
+                                                    </th>
+                                                    <th class="sat">
+                                                        <div class="cell">Sat</div>
+                                                    </th>
+                                                    <th class="sun">
+                                                        <div class="cell">Sun</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">Mon</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width: 110px">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell">138</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">138</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">11004</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">220</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">233</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">224</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">232</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">233</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">138</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">114</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">220</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">233</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">224</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">232</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">233</div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell">138</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.cont-name-->
+            </div>
         </div>
-        <!--//.contents-->
+        <!-- //.contents -->
 
 
     </div>

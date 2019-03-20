@@ -952,7 +952,6 @@
 	}
 	.cont-roomInv {
 		.grid-container {
-//			@include grid-scr-x2(180px, null, 100%, 4px);
 			@include grid-scr-x2(180px, 2000px, 100%, 4px);
 			$ie8-wth: 1583px;
 			.ie8 .grid-area.grid-locked {
@@ -1267,7 +1266,7 @@
 			}
 			.grid-area.grid-total {
 				.grid-tbl {
-					
+
 				}
 			}
 			.grid-tbl {

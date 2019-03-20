@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@import "../parts/variables";
+@import "../parts/mixins";
+
+/* 청소부 일정 */
+.maidSch-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+			td {
+				.cell {
+					.rdo-box {
+						padding: 0 8px;
+						label {
+							margin-right: 5px;
+						}
+					}
+					.cal-box {
+						.inp-cal {
+							width: 150px;
+						}
+					}
+					.btn-gray {
+						.prev, .next {
+							position: relative;
+							top: -1px;
+							color: #6E7A86;
+							padding: 0 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-roomInv {
+		.grid-container {
+			@include grid-scr-x2(245px, null, 100%, 4px);
+			.scr-wrap {
+				.grid-tbl {
+					th {
+						&.sat {
+							color: $fg-sat;
+						}
+						&.sun {
+							color: $fg-sun;
+						}
+					}
+				}
+			}
+		}
+	}
+}

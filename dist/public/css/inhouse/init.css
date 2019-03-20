@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 청소부 일정 */
+.maidSch-contents .cont-property .tbl-property { width: 100%; border: 1px solid #c0b5a6; border-bottom: none; table-layout: fixed; }
+
+.maidSch-contents .cont-property .tbl-property th, .maidSch-contents .cont-property .tbl-property td { height: 28px; border-bottom: 1px solid #c0b5a6; background: #f4f1ee; color: #666; font-size: 12px; }
+
+.maidSch-contents .cont-property .tbl-property th .cell, .maidSch-contents .cont-property .tbl-property td .cell { position: relative; padding: 3px 7px; }
+
+.maidSch-contents .cont-property .tbl-property th .cell::before, .maidSch-contents .cont-property .tbl-property th .cell::after, .maidSch-contents .cont-property .tbl-property td .cell::before, .maidSch-contents .cont-property .tbl-property td .cell::after { content: ''; display: table; }
+
+.maidSch-contents .cont-property .tbl-property th .cell::after, .maidSch-contents .cont-property .tbl-property td .cell::after { clear: both; }
+
+.ie8 .maidSch-contents .cont-property .tbl-property th .cell, .ie8 .maidSch-contents .cont-property .tbl-property td .cell { zoom: 1; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.pd-0, .maidSch-contents .cont-property .tbl-property td .cell.pd-0 { padding-top: 0; padding-bottom: 0px; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.necess, .maidSch-contents .cont-property .tbl-property td .cell.necess { background: url("../../img/tick-small-red.png") no-repeat 100% 58%; }
+
+.maidSch-contents .cont-property .tbl-property th { height: 33px; border-left: 1px dashed #c0b5a6; overflow: visible; color: #444; text-align: center; }
+
+.maidSch-contents .cont-property .tbl-property th .cell { font-weight: 700; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.order-ui { cursor: pointer; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.order-ui:after { content: "▼"; position: relative; display: none; margin-left: 2px; font-size: 10px; color: #73787D; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.order-ui:hover:after { display: inline; }
+
+.maidSch-contents .cont-property .tbl-property th .cell.order-ui.ascending:after { content: "▲"; }
+
+.maidSch-contents .cont-property .tbl-property td { border-left: 1px dashed #c0b5a6; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .chk-box input, .maidSch-contents .cont-property .tbl-property td .cell .rdo-box input { margin-right: 3px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .maidSch-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .maidSch-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .maidSch-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .rdo-box label { margin-right: 5px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .cal-box .inp-cal { width: 150px; }
+
+.maidSch-contents .cont-property .tbl-property td .cell .btn-gray .prev, .maidSch-contents .cont-property .tbl-property td .cell .btn-gray .next { position: relative; top: -1px; color: #6E7A86; padding: 0 5px; }
+
+.maidSch-contents .cont-roomInv .grid-container { margin-top: 10px; border: 1px solid #c5c5c5; overflow: hidden; box-sizing: border-box; border-radius: 4px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl { width: 100%; table-layout: fixed; border: none; border-right: 1px solid #c5c5c5; }
+
+.ie8 .maidSch-contents .cont-roomInv .grid-container .grid-tbl { width: 1740px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td { font-size: 12px; box-sizing: border-box; border-left: 1px solid #c5c5c5; border-bottom: 1px solid #c5c5c5; text-align: center; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th .cell, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell { padding: 3px 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th:first-child, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td:first-child { border-left: none; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th { font-weight: 700; height: 33px; border-bottom: none; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th .cell.order-ui { cursor: pointer; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th .cell.order-ui:after { content: "▼"; position: relative; display: none; margin-left: 2px; font-size: 10px; color: #73787D; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th .cell.order-ui:hover:after { display: inline; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl th .cell.order-ui.ascending:after { content: "▲"; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell { padding: 5px 7px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box input, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box + .chk-box, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box + .rdo-box, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box + .chk-box, .maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl td .cell .form-select { padding: 2px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-tbl tr:first-child th { border-bottom: 1px solid #c5c5c5; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-locked, .maidSch-contents .cont-roomInv .grid-container .scr-wrap { position: relative; float: left; }
+
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap { width: -webkit-calc(100% - 245px); width: -moz-calc(100% - 245px); width: calc(100% - 245px); box-sizing: border-box; border-left: 1px solid #c5c5c5; overflow-x: hidden; }
+
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-scrollable-x { position: relative; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area { position: relative; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-locked { width: 245px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-locked .grid-tbl .rowgroup > tr th { border-bottom: 1px solid #c5c5c5; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-locked .grid-tbl .rowgroup > tr th.locked { height: 66px; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-head { width: 100%; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-head .grid-scrollable { background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-head .grid-tbl { width: -webkit-calc(100% - 17px); width: -moz-calc(100% - 17px); width: calc(100% - 17px); }
+
+.maidSch-contents .cont-roomInv .grid-container .grid-area.grid-contents { overflow-y: scroll; height: 613px; }
+
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sat { color: #2979FF; }
+
+.maidSch-contents .cont-roomInv .grid-container .scr-wrap .grid-tbl th.sun { color: #F50057; }
