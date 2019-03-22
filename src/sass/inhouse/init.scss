@@ -330,7 +330,7 @@
     .cont-roomStatus {
 		/* 객실관리 - 룸현황 */
 		.room-area {
-			margin-top: 5px;
+			margin-top: 10px;
 			padding-top: 0px;
 			padding-bottom: 0px;
 			width: 100%;
@@ -338,20 +338,21 @@
 			.list-room {
 				font-family: $font-nnSquareR;
 				.item-room {
+					@include bx;
 					margin: 0px 10px 10px 0px;
+					padding: 0 5px 3px;
 					border: 2px solid #d5d5d5;
-					border-radius: 2px;
+					border-radius: 5px;
 					background: #fff;
-					width: 126px;
+					width: 130px;
 					float: left;
-					min-height: 126px;
 					font-size: 13px;
 					font-weight: bold;
 					letter-spacing: -1px;
-					box-shadow: 3px 3px 3px rgba(0,0,0, 0.25);
+					// min-height: 126px;
+					// box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
 					> div {
 						@include bx;
-						padding: 0 3px;
 						&:first-child, &.guestName {
 							border: 0 !important;
 						}
@@ -359,7 +360,6 @@
 					.roomNo {
 						line-height: 26px;
 						font-weight: 800;
-						padding: 0 5px;
 						text-align: center;
 						font-size: 14px;
 						.num {
