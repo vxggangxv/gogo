@@ -1,0 +1,231 @@
+@@include('../include/_head.html', {
+	"page": "fnb"
+})
+
+<body class="page-fnb">
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents inv-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "목록"
+		})
+
+		<div class="cf cont-container-f">
+            <div class="cont-area area-1">
+                <div class="cont-property">
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <table class="grid-tbl tbl-property">
+                                <colgroup>
+                                    <col style="width:100px">
+                                    <col style="width:130px">
+                                    <col style="width:100px">
+                                    <col style="width:*">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><div class="cell">업장</div></th>
+                                        <td>
+                                            <div class="cell">
+												<select name="" id="" class="form-select gray">
+													<option value="">전체보기</option>
+													<option value="">컨퍼런스1-대연회장</option>
+													<option value="">컨퍼런스2-대연회장</option>
+													<option value="">2층-레스토랑</option>
+												</select>
+                                            </div>
+                                        </td>
+										<th><div class="cell">메뉴명</div></th>
+										<td>
+											<div class="cell">
+												<input type="text" class="form-input name">
+												<button type="button" class="btn-brown">SEARCH</button>
+												<button type="button" class="btn-brown">EXCEL</button>
+											</div>
+										</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- //.cont-property -->
+
+                <div class="cont-list">
+					<div class="grid-wrap scr-wrap">
+						<div class="grid-scrollable-x">
+							<div class="grid-area grid-head">
+								<div class="grid-scrollable">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width:40px">
+											<col style="width:200px">
+											<col style="width:100px">
+											<col style="width:100px">
+											<col style="width:80px">
+											<col style="width:250px">
+											<col style="width:*">
+										</colgroup>
+										<thead class="rowgroup">
+											<tr>
+												<th><div class="cell">번호</div></th>
+												<th><div class="cell">메뉴명</div></th>
+												<th><div class="cell">메뉴코드</div></th>
+												<th><div class="cell">업장</div></th>
+												<th><div class="cell">재고</div></th>
+												<th><div class="cell">비고</div></th>
+												<th><div class="cell"></div></th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+							</div>
+							<div class="grid-area grid-contents">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:40px">
+										<col style="width:200px">
+										<col style="width:100px">
+										<col style="width:100px">
+										<col style="width:80px">
+										<col style="width:250px">
+										<col style="width:*">
+									</colgroup>
+									<tbody class="rowgroup">
+										<tr>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!-- //.grid-wrap -->
+					<div class="cf grid-bottom">
+						<a href="#" class="prev st">&lt;&lt;</a>
+						<a href="#" class="prev">&lt;</a>
+						<span class="num">0</span>
+						<a href="#" class="next">&gt;</a>
+	  					<a href="#" class="next st">&gt;&gt;</a>
+						<span class="count"><span class="co">0</span> Count</span>
+					</div>
+					<!-- //.grid-bottom-->
+					<div class="row-btn">
+						<button type="button" class="btn-green">품목설정</button>
+						<button type="button" class="btn-green">당일입고</button>
+					</div>
+					<!-- /.row-btn -->
+				</div>
+				<!-- //.cont-list -->
+            </div>
+            <div class="cont-area area-2">
+                <h3>상세정보</h3>
+				<div class="cont-list">
+					<div class="grid-wrap scr-wrap">
+						<div class="grid-scrollable-x">
+							<div class="grid-area grid-head">
+								<div class="grid-scrollable">
+									<table class="grid-tbl">
+										<colgroup>
+											<col style="width:40px">
+											<col style="width:100px">
+											<col style="width:200px">
+											<col style="width:80px">
+											<col style="width:80px">
+											<col style="width:80px">
+											<col style="width:80px">
+											<col style="width:80px">
+											<col style="width:120px">
+											<col style="width:300px">
+											<col style="width:*">
+										</colgroup>
+										<thead class="rowgroup">
+											<tr>
+												<th><div class="cell">번호</div></th>
+												<th><div class="cell">날짜</div></th>
+												<th><div class="cell">메뉴명</div></th>
+												<th><div class="cell">전일재고</div></th>
+												<th><div class="cell">입고</div></th>
+												<th><div class="cell">출고</div></th>
+												<th><div class="cell">파손</div></th>
+												<th><div class="cell">현재고</div></th>
+												<th><div class="cell">확인자</div></th>
+												<th><div class="cell">비고</div></th>
+												<th><div class="cell"></div></th>
+											</tr>
+										</thead>
+									</table>
+								</div>
+							</div>
+							<div class="grid-area grid-contents">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:40px">
+										<col style="width:100px">
+										<col style="width:200px">
+										<col style="width:80px">
+										<col style="width:80px">
+										<col style="width:80px">
+										<col style="width:80px">
+										<col style="width:80px">
+										<col style="width:120px">
+										<col style="width:300px">
+										<col style="width:*">
+									</colgroup>
+									<tbody class="rowgroup">
+										<tr>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+											<td><div class="cell"></div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+	                <!-- /.grid-wrap -->
+					<div class="cf grid-bottom">
+						<a href="#" class="prev st">&lt;&lt;</a>
+						<a href="#" class="prev">&lt;</a>
+						<span class="num">0</span>
+						<a href="#" class="next">&gt;</a>
+						<a href="#" class="next st">&gt;&gt;</a>
+						<span class="count"><span class="co">0</span> Count</span>
+					</div>
+					<!-- //.grid-bottom-->
+				</div>
+				<!-- /.cont-list -->
+				<div class="row-btn">
+					<button type="button" class="btn-red">재고조정</button>
+					<button type="button" class="btn-brown">EXCEL</button>
+				</div>
+				<!-- /.row-btn -->
+            </div>
+
+		</div>
+	</div>
+	<!--//.contents-->
+
+</div>
+</body>
+</html>

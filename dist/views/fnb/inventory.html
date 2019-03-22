@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/include/winpop.css">
     <link rel="stylesheet" href="../../public/css/include/pop.css">
-    <link rel="stylesheet" href="../../public/css/inhouse/init.css">
+    <link rel="stylesheet" href="../../public/css/fnb/init.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -56,7 +56,7 @@
 
     <!--개별 Js-->
     <script src="../../public/js/common.js"></script>
-    <script src="../../public/js/inhouse/init.js"></script>
+    <script src="../../public/js/fnb/init.js"></script>
 
     <!--[if lt IE 9]>
 		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -64,7 +64,7 @@
 
 </head>
 
-<body class="page-inhouse">
+<body class="page-fnb">
 
     <div class="wrapper">
         <header class="header">
@@ -440,210 +440,306 @@
 
 
 
-        <div class="cf contents arvList-contents">
+        <div class="cf contents inv-contents">
+
             <div class="cf row-h2">
-                <h2 class="page-title">도착 목록</h2>
+                <h2 class="page-title">목록</h2>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
             </div>
+
             <div class="cf cont-container-f">
-                <div class="cont-property">
-                    <div class="grid-wrap">
-                        <div class="grid-contents">
-                            <table class="grid-tbl tbl-property">
-                                <colgroup>
-                                    <col style="width: 120px">
-                                        <col style="width: 180px">
-                                            <col style="width: *">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <div class="cell">도착 날짜</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <span class="cal-box">
-
-												<input type="text" class="appe-reset inp-cal date-ui" value="2019-03-20">
-
-												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="cell">
-                                                <span class="pull-right">
-
-												<button type="button" class="btn-brown">SEARCH</button>
-
-												<button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
-                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-pdf"></span>PDF</button>
-                                                </span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="cont-list">
-                    <div class="grid-wrap scr-wrap">
-                        <div class="grid-scrollable-x">
-                            <div class="grid-area grid-head">
-                                <div class="grid-scrollable">
-                                    <table class="grid-tbl">
-                                        <colgroup>
-                                            <col style="width:70px">
-                                                <col style="width:185px">
-                                                    <col style="width:115px">
-                                                        <col style="width:95px">
-                                                            <col style="width:95px">
-                                                                <col style="width:50px">
-                                                                    <col style="width:60px">
-                                                                        <col style="width:60px">
-                                                                            <col style="width:155px">
-                                                                                <col style="width:80px">
-                                                                                    <col style="width:125px">
-                                                                                        <col style="width:105px">
-                                                                                            <col style="width:105px">
-                                                                                                <col style="width:105px">
-                                                                                                    <col style="width:*">
-                                        </colgroup>
-                                        <thead class="rowgroup">
-                                            <tr>
-                                                <th>
-                                                    <div class="cell">객실#</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">이름</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">ACCT #</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">도착 날짜</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">출발 날짜</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">Nts</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">Ad/Ch</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">GRP/FIT</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">계정</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">R-Type</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">패키지</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">국가</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">R.Rate</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">T.Rate</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">RMK</div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="grid-area grid-contents">
-                                <table class="grid-tbl">
+                <div class="cont-area area-1">
+                    <div class="cont-property">
+                        <div class="grid-wrap">
+                            <div class="grid-contents">
+                                <table class="grid-tbl tbl-property">
                                     <colgroup>
-                                        <col style="width:70px">
-                                            <col style="width:185px">
-                                                <col style="width:115px">
-                                                    <col style="width:95px">
-                                                        <col style="width:95px">
-                                                            <col style="width:50px">
-                                                                <col style="width:60px">
-                                                                    <col style="width:60px">
-                                                                        <col style="width:155px">
-                                                                            <col style="width:80px">
-                                                                                <col style="width:125px">
-                                                                                    <col style="width:105px">
-                                                                                        <col style="width:105px">
-                                                                                            <col style="width:105px">
-                                                                                                <col style="width:*">
+                                        <col style="width:100px">
+                                            <col style="width:130px">
+                                                <col style="width:100px">
+                                                    <col style="width:*">
                                     </colgroup>
-                                    <tbody class="rowgroup">
+                                    <tbody>
                                         <tr>
+                                            <th>
+                                                <div class="cell">업장</div>
+                                            </th>
                                             <td>
-                                                <div class="cell"></div>
+                                                <div class="cell">
+                                                    <select name="" id="" class="form-select gray">
+                                                        <option value="">전체보기</option>
+                                                        <option value="">컨퍼런스1-대연회장</option>
+                                                        <option value="">컨퍼런스2-대연회장</option>
+                                                        <option value="">2층-레스토랑</option>
+                                                    </select>
+                                                </div>
                                             </td>
+                                            <th>
+                                                <div class="cell">메뉴명</div>
+                                            </th>
                                             <td>
-                                                <div class="cell">손정일</div>
+                                                <div class="cell">
+                                                    <input type="text" class="form-input name">
+                                                    <button type="button" class="btn-brown">SEARCH</button>
+                                                    <button type="button" class="btn-brown">EXCEL</button>
+                                                </div>
                                             </td>
-                                            <td>
-                                                <div class="cell">G1902020044</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2019-03-20</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2019-03-21</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">1</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2 / 0</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">F.I.T</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">고코투어(가자닷컴)</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">DSB</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td class="ta-right">
-                                                <div class="cell">30,000</div>
-                                                </t>
-                                                <td class="ta-right">
-                                                    <div class="cell">30,000</div>
-                                                </td>
-                                                <td class="ta-left">
-                                                    <div class="cell">대외후불 고코투어 디럭스슈퍼더블 30000 박재훈</div>
-                                                </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <!-- //.grid-wrap -->
+                    <!-- //.cont-property -->
+
+                    <div class="cont-list">
+                        <div class="grid-wrap scr-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width:40px">
+                                                    <col style="width:200px">
+                                                        <col style="width:100px">
+                                                            <col style="width:100px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:250px">
+                                                                        <col style="width:*">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">번호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">메뉴명</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">메뉴코드</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">업장</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">재고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">비고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell"></div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:40px">
+                                                <col style="width:200px">
+                                                    <col style="width:100px">
+                                                        <col style="width:100px">
+                                                            <col style="width:80px">
+                                                                <col style="width:250px">
+                                                                    <col style="width:*">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- //.grid-wrap -->
+                        <div class="cf grid-bottom">
+                            <a href="#" class="prev st">&lt;&lt;</a>
+                            <a href="#" class="prev">&lt;</a>
+                            <span class="num">0</span>
+                            <a href="#" class="next">&gt;</a>
+                            <a href="#" class="next st">&gt;&gt;</a>
+                            <span class="count"><span class="co">0</span> Count</span>
+                        </div>
+                        <!-- //.grid-bottom-->
+                        <div class="row-btn">
+                            <button type="button" class="btn-green">품목설정</button>
+                            <button type="button" class="btn-green">당일입고</button>
+                        </div>
+                        <!-- /.row-btn -->
+                    </div>
+                    <!-- //.cont-list -->
                 </div>
-                <!-- //.cont-list -->
+                <div class="cont-area area-2">
+                    <h3>상세정보</h3>
+                    <div class="cont-list">
+                        <div class="grid-wrap scr-wrap">
+                            <div class="grid-scrollable-x">
+                                <div class="grid-area grid-head">
+                                    <div class="grid-scrollable">
+                                        <table class="grid-tbl">
+                                            <colgroup>
+                                                <col style="width:40px">
+                                                    <col style="width:100px">
+                                                        <col style="width:200px">
+                                                            <col style="width:80px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:80px">
+                                                                        <col style="width:80px">
+                                                                            <col style="width:80px">
+                                                                                <col style="width:120px">
+                                                                                    <col style="width:300px">
+                                                                                        <col style="width:*">
+                                            </colgroup>
+                                            <thead class="rowgroup">
+                                                <tr>
+                                                    <th>
+                                                        <div class="cell">번호</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">날짜</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">메뉴명</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">전일재고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">입고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">출고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">파손</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">현재고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">확인자</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell">비고</div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="cell"></div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="grid-area grid-contents">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:40px">
+                                                <col style="width:100px">
+                                                    <col style="width:200px">
+                                                        <col style="width:80px">
+                                                            <col style="width:80px">
+                                                                <col style="width:80px">
+                                                                    <col style="width:80px">
+                                                                        <col style="width:80px">
+                                                                            <col style="width:120px">
+                                                                                <col style="width:300px">
+                                                                                    <col style="width:*">
+                                        </colgroup>
+                                        <tbody class="rowgroup">
+                                            <tr>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                                <td>
+                                                    <div class="cell"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /.grid-wrap -->
+                        <div class="cf grid-bottom">
+                            <a href="#" class="prev st">&lt;&lt;</a>
+                            <a href="#" class="prev">&lt;</a>
+                            <span class="num">0</span>
+                            <a href="#" class="next">&gt;</a>
+                            <a href="#" class="next st">&gt;&gt;</a>
+                            <span class="count"><span class="co">0</span> Count</span>
+                        </div>
+                        <!-- //.grid-bottom-->
+                    </div>
+                    <!-- /.cont-list -->
+                    <div class="row-btn">
+                        <button type="button" class="btn-red">재고조정</button>
+                        <button type="button" class="btn-brown">EXCEL</button>
+                    </div>
+                    <!-- /.row-btn -->
+                </div>
+
             </div>
         </div>
-        <!-- //.contents -->
-
+        <!--//.contents-->
 
     </div>
 </body>

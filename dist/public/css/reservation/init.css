@@ -250,8 +250,6 @@
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .contents.resFit-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area { position: relative; }
@@ -326,13 +324,11 @@
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl th .cell.order-ui.ascending:after { content: "▲"; }
 
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td { border-left: 1px solid #c0b5a6; }
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td { border-left: 1px dashed #c0b5a6; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box input, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -340,7 +336,7 @@
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area { position: relative; width: 580px; }
 
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-head .grid-scrollable { width: 580px; background: #E7E4E2; border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-head .grid-scrollable { width: 580px; border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-head .grid-tbl { width: calc(580px - 17px); }
 
@@ -348,9 +344,11 @@
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; background: #f4f1ee; }
 
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) th, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) td { background: #fff; }
 
-.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #f7f7f7; }
+
+.contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
 .contents.resFit-contents .split-2 .cont-guestinfo .grid-container .flt-box .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
@@ -459,8 +457,6 @@
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box input, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .contents.resFit-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -697,8 +693,6 @@
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .contents.rsvGroup-contents .split-1 .cont-message .item-list .grid-container .grid-wrap.scr-wrap .grid-area { position: relative; }
@@ -777,8 +771,6 @@
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td .cell .chk-box + .chk-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td .cell .chk-box + .rdo-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td .cell .rdo-box + .chk-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td .cell .form-select { padding: 2px; }
-
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-area { position: relative; }
@@ -814,8 +806,6 @@
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-1 .grid-tbl td:first-child .cell { line-height: 1; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-top: 10px; margin-bottom: -1px; }
-
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar .btn-gray, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar .btn-green, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar .btn-red, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-toolbar .btn-gray { color: #000; }
 
@@ -860,8 +850,6 @@
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .chk-box input, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .chk-box + .chk-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .chk-box + .rdo-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .rdo-box + .chk-box, .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-tbl td .cell .form-select { padding: 2px; }
 
 .contents.rsvGroup-contents .split-2 .cont-rsvList .grid-wrap.scr-wrap.grid-wrap-2 .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -948,8 +936,6 @@
 
 .contents.roomInv-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .contents.roomInv-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .contents.roomInv-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .contents.roomInv-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.roomInv-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .contents.roomInv-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
 
 .contents.roomInv-contents .cont-property .tbl-property td .cell .rdo-box label { margin-right: 5px; }
@@ -985,8 +971,6 @@
 .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box input, .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box + .chk-box, .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .chk-box + .rdo-box, .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box + .chk-box, .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl td .cell .form-select { padding: 2px; }
 
 .contents.roomInv-contents .cont-roomInv .grid-container .grid-tbl tr:first-child th { border-bottom: 1px solid #c5c5c5; }
 
@@ -1075,8 +1059,6 @@
 
 .contents.assign-contents .cont-property .grid-tbl td .cell .chk-box + .chk-box, .contents.assign-contents .cont-property .grid-tbl td .cell .chk-box + .rdo-box, .contents.assign-contents .cont-property .grid-tbl td .cell .rdo-box + .chk-box, .contents.assign-contents .cont-property .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.assign-contents .cont-property .grid-tbl td .cell .form-select { padding: 2px; }
-
 .contents.assign-contents .cont-property .grid-tbl td { border-left-style: solid; }
 
 .contents.assign-contents .cont-property .tbl-rmType-1 { margin-bottom: -1px; }
@@ -1141,8 +1123,6 @@
 
 .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td .cell .chk-box + .chk-box, .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td .cell .chk-box + .rdo-box, .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td .cell .rdo-box + .chk-box, .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td .cell .form-select { padding: 2px; }
-
 .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list th, .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list td { background: #fff; height: auto; }
 
 .contents.assign-contents .cont-rmList .grid-wrap.list-wrap .tbl-list th { text-align: center; border-left-style: solid; }
@@ -1187,8 +1167,6 @@
 .rmBlock-contents .cont-property .tbl-property td .cell .chk-box input, .rmBlock-contents .cont-property .tbl-property td .cell .rdo-box input { margin-right: 3px; }
 
 .rmBlock-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .rmBlock-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .rmBlock-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .rmBlock-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.rmBlock-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
 
 .rmBlock-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
 
@@ -1239,8 +1217,6 @@
 .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.rmBlock-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .rmBlock-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -1313,8 +1289,6 @@
 
 .rsvList-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .rsvList-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .rsvList-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .rsvList-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rsvList-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .rsvList-contents .cont-property .tbl-property td .cell .form-input.account { width: 40%; }
 
 .rsvList-contents .cont-property .tbl-property td .cell .form-input.package { width: 70%; }
@@ -1378,8 +1352,6 @@
 .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.rsvList-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .rsvList-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -1478,8 +1450,6 @@
 
 .rateSch-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .rateSch-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .rateSch-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .rateSch-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rateSch-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .rateSch-contents .cont-property .tbl-property th:first-child { border-left: 0; }
 
 .rateSch-contents .cont-property .tbl-property td .cell .form-select.market-1 { width: 280px; }
@@ -1534,19 +1504,17 @@
 
 .rateSch-contents .cont-list .grid-wrap .grid-tbl th .cell.order-ui.ascending:after { content: "▲"; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-tbl td { border-left: 1px solid #c0b5a6; }
+.rateSch-contents .cont-list .grid-wrap .grid-tbl td { border-left: 1px dashed #c0b5a6; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .rateSch-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-area { position: relative; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-area.grid-head .grid-scrollable { background: #E7E4E2; border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
+.rateSch-contents .cont-list .grid-wrap .grid-area.grid-head .grid-scrollable { border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-area.grid-head .grid-tbl { width: -webkit-calc(100% - 17px); width: -moz-calc(100% - 17px); width: calc(100% - 17px); }
 
@@ -1554,9 +1522,11 @@
 
 .rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; background: #f4f1ee; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
+.rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) th, .rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) td { background: #fff; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #f7f7f7; }
+
+.rateSch-contents .cont-list .grid-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
@@ -1576,7 +1546,7 @@
 
 .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr th .cell.read, .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr td .cell.read { cursor: pointer; }
 
-.rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr th .cell .form-input, .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr td .cell .form-input { position: relative; width: 100%; height: 23px; padding: 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; }
+.rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr th .cell .form-input, .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr td .cell .form-input { position: relative; width: 100%; height: 23px; padding: 1px 2px 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; }
 
 .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr th .cell .form-input[disabled], .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr th .cell .form-input[readonly], .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr td .cell .form-input[disabled], .rateSch-contents .cont-list .grid-wrap .grid-tbl .rowgroup tr td .cell .form-input[readonly] { background: #f9f8f8; color: #676767; }
 
@@ -1673,8 +1643,6 @@
 
 .account-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .account-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .account-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .account-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.account-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .account-contents .cont-property .tbl-property th:first-child { border-left: 0; }
 
 .account-contents .cont-property .tbl-property td .cell .form-input.search { width: 190px; }
@@ -1736,8 +1704,6 @@
 .account-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .account-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .account-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .account-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .account-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .account-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.account-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .account-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -1857,8 +1823,6 @@
 
 .account-contents .cont-addInfo .item-list .info-container .tbl-info td .cell .chk-box + .chk-box, .account-contents .cont-addInfo .item-list .info-container .tbl-info td .cell .chk-box + .rdo-box, .account-contents .cont-addInfo .item-list .info-container .tbl-info td .cell .rdo-box + .chk-box, .account-contents .cont-addInfo .item-list .info-container .tbl-info td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.account-contents .cont-addInfo .item-list .info-container .tbl-info td .cell .form-select { padding: 2px; }
-
 .account-contents .cont-addInfo .item-list .info-container .tbl-info th:first-child { border-left: 0; }
 
 .account-contents .cont-addInfo .item-list .info-container .tbl-info td { background: #fff; }
@@ -1949,8 +1913,6 @@
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .account-contents .cont-addInfo .item-list .grid-container .grid-wrap.scr-wrap .grid-area { position: relative; }
@@ -2030,8 +1992,6 @@
 
 .maList-contents .item-list .item-container .cont-property .tbl-property td .cell .chk-box + .chk-box, .maList-contents .item-list .item-container .cont-property .tbl-property td .cell .chk-box + .rdo-box, .maList-contents .item-list .item-container .cont-property .tbl-property td .cell .rdo-box + .chk-box, .maList-contents .item-list .item-container .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.maList-contents .item-list .item-container .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .maList-contents .item-list .item-container .cont-property .tbl-property th:first-child { border-left: 0; }
 
 .maList-contents .item-list .item-container .cont-property .tbl-property td .cell .form-input { width: 190px; }
@@ -2089,8 +2049,6 @@
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.maList-contents .item-list .item-container .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .maList-contents .item-list .item-container .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 

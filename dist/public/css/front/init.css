@@ -36,8 +36,6 @@
 
 .chkIn-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .chkIn-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .chkIn-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .chkIn-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.chkIn-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .chkIn-contents .cont-property .tbl-property td .cell .form-input.w-1 { width: 135px; }
 
 .chkIn-contents .cont-property .tbl-property td .cell .form-input.account { width: 40%; }
@@ -105,8 +103,6 @@
 .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.chkIn-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .chkIn-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -207,8 +203,6 @@
 
 .inHouse-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .inHouse-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .inHouse-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .inHouse-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.inHouse-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .inHouse-contents .cont-property .tbl-property td .cell .form-input.account { width: 40%; }
 
 .inHouse-contents .cont-property .tbl-property td .cell .form-input.package { width: 70%; }
@@ -272,8 +266,6 @@
 .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.inHouse-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .inHouse-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -378,8 +370,6 @@
 
 .dep-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .dep-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .dep-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .dep-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.dep-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .dep-contents .cont-property .tbl-property td .cell .form-input.w-1 { width: 135px; }
 
 .dep-contents .cont-property .tbl-property td .cell .form-input.account { width: 40%; }
@@ -447,8 +437,6 @@
 .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .dep-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.dep-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .dep-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -549,8 +537,6 @@
 
 .rmStay-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .rmStay-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .rmStay-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .rmStay-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rmStay-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .rmStay-contents .cont-property .tbl-property td .cell .form-input.account { width: 40%; }
 
 .rmStay-contents .cont-property .tbl-property td .cell .form-input.package { width: 70%; }
@@ -614,8 +600,6 @@
 .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.rmStay-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .rmStay-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: scroll; }
 
@@ -858,7 +842,7 @@
 
 .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .chk-box + .chk-box, .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .chk-box + .rdo-box, .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .rdo-box + .chk-box, .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select { position: relative; width: 100%; height: 25px; padding: 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; padding: 2px; }
+.rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select { position: relative; width: 100%; height: 25px; padding: 1px 2px 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; padding: 2px; }
 
 .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select[disabled], .rmStatus-contents .cont-roomStatus .classify-area .cont-side.right .roominfo-area fieldset .cont-box .cont-tab .tbl-type.info-tbl .form-select[readonly] { background: #f9f8f8; color: #676767; }
 
@@ -1089,8 +1073,6 @@
 
 .rmStaList-contents .cont-list .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-top: 10px; margin-bottom: -1px; }
 
-.rmStaList-contents .cont-list .grid-toolbar .btn-gray, .rmStaList-contents .cont-list .grid-toolbar .btn-green, .rmStaList-contents .cont-list .grid-toolbar .btn-red, .rmStaList-contents .cont-list .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
-
 .rmStaList-contents .cont-list .grid-toolbar .btn-gray { color: #000; }
 
 .rmStaList-contents .cont-list .grid-wrap { width: 100%; border: 1px solid #c5c5c5; overflow: hidden; box-sizing: border-box; border-radius: 4px; }
@@ -1132,8 +1114,6 @@
 .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.rmStaList-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .rmStaList-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -1206,8 +1186,6 @@
 
 .lgBook-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .lgBook-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .lgBook-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .lgBook-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.lgBook-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .lgBook-contents .cont-property .tbl-property td .cell .w-1 { width: 100px; }
 
 .lgBook-contents .cont-property .tbl-property td .cell .form-input.search { width: 150px; }
@@ -1217,8 +1195,6 @@
 .lgBook-contents .cont-list { margin-top: 10px; }
 
 .lgBook-contents .cont-list .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-top: 10px; margin-bottom: -1px; }
-
-.lgBook-contents .cont-list .grid-toolbar .btn-gray, .lgBook-contents .cont-list .grid-toolbar .btn-green, .lgBook-contents .cont-list .grid-toolbar .btn-red, .lgBook-contents .cont-list .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
 
 .lgBook-contents .cont-list .grid-toolbar .btn-gray { color: #000; }
 
@@ -1261,8 +1237,6 @@
 .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.lgBook-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .lgBook-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -1353,8 +1327,6 @@
 
 .complain-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .complain-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .complain-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .complain-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.complain-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .complain-contents .cont-property .tbl-property td .cell .w-1 { width: 120px; }
 
 .complain-contents .cont-property .tbl-property td .cell .form-input.search { width: 150px; }
@@ -1364,8 +1336,6 @@
 .complain-contents .cont-list { margin-top: 10px; }
 
 .complain-contents .cont-list .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-top: 10px; margin-bottom: -1px; }
-
-.complain-contents .cont-list .grid-toolbar .btn-gray, .complain-contents .cont-list .grid-toolbar .btn-green, .complain-contents .cont-list .grid-toolbar .btn-red, .complain-contents .cont-list .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
 
 .complain-contents .cont-list .grid-toolbar .btn-gray { color: #000; }
 
@@ -1408,8 +1378,6 @@
 .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .complain-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.complain-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .complain-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -1500,8 +1468,6 @@
 
 .gstProfile-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .gstProfile-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .gstProfile-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .gstProfile-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.gstProfile-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .gstProfile-contents .cont-property .tbl-property td .cell .cal-box, .gstProfile-contents .cont-property .tbl-property td .cell .w-1 { width: 150px; }
 
 .gstProfile-contents .cont-property .tbl-property td .cell .w-2 { width: 120px; }
@@ -1509,8 +1475,6 @@
 .gstProfile-contents .cont-list { margin-top: 10px; }
 
 .gstProfile-contents .cont-list .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-top: 10px; margin-bottom: -1px; }
-
-.gstProfile-contents .cont-list .grid-toolbar .btn-gray, .gstProfile-contents .cont-list .grid-toolbar .btn-green, .gstProfile-contents .cont-list .grid-toolbar .btn-red, .gstProfile-contents .cont-list .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
 
 .gstProfile-contents .cont-list .grid-toolbar .btn-gray { color: #000; }
 
@@ -1553,8 +1517,6 @@
 .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.gstProfile-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .gstProfile-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -1660,7 +1622,7 @@
 
 .gstProfile-contents .row-cont .cont-info .grid-tbl td .cell .w-2 { width: 105px; }
 
-.gstProfile-contents .row-cont .cont-info .grid-tbl td .cell .texta-etc { position: relative; height: 25px; padding: 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; padding: 4px; width: 100%; height: 50px; resize: none; }
+.gstProfile-contents .row-cont .cont-info .grid-tbl td .cell .texta-etc { position: relative; height: 25px; padding: 1px 2px 2px; font-size: 12px; margin: 0 auto; box-sizing: border-box; display: inline-block; vertical-align: middle; border: 1px solid #b6b6b6; background: #fff; box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1); border-radius: 4px; line-height: 1.6; padding: 4px; width: 100%; height: 50px; resize: none; }
 
 .gstProfile-contents .row-cont .cont-info .grid-tbl td .cell .texta-etc[disabled], .gstProfile-contents .row-cont .cont-info .grid-tbl td .cell .texta-etc[readonly] { background: #f9f8f8; color: #676767; }
 
@@ -1700,19 +1662,17 @@
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl th .cell.order-ui.ascending:after { content: "▲"; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td { border-left: 1px solid #c0b5a6; }
+.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td { border-left: 1px dashed #c0b5a6; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box input, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .chk-box, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .chk-box + .rdo-box, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .chk-box, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area { position: relative; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-head .grid-scrollable { background: #E7E4E2; border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
+.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-head .grid-scrollable { border-bottom: 1px solid #c0b5a6; background: url(../../img/gridheadBg.png) repeat-x; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-head .grid-tbl { width: -webkit-calc(100% - 17px); width: -moz-calc(100% - 17px); width: calc(100% - 17px); }
 
@@ -1720,9 +1680,11 @@
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents { overflow-y: scroll; height: 100px; background: #fff; background: #f4f1ee; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
+.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) th, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n-1) td { background: #fff; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #fbfbfb; }
+.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) th, .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:nth-child(2n) td { background: #f7f7f7; }
+
+.gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-contents .grid-tbl tr:hover td { background: #dad3d0; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-wrap.scr-wrap .grid-area.grid-total .grid-tbl { border-top: 1px solid #c5c5c5; border-right: 0; }
 
@@ -1736,7 +1698,7 @@
 
 .gstProfile-contents .row-cont .cont-hist .grid-bottom { background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; padding: 5px; border: 1px solid #c0b5a6; border-top: 0; }
 
-.gstProfile-contents .row-cont .cont-hist .grid-bottom .count { position: relative; float: right; font-size: 12px; color: #666; font-weight: 700; padding-right: 12px; }
+.gstProfile-contents .row-cont .cont-hist .grid-bottom .count { position: relative; float: right; font-size: 14px; color: #666; font-weight: 700; padding-right: 12px; }
 
 .gstProfile-contents .row-cont .cont-hist .grid-bottom .count .co { color: #ed550b; }
 
@@ -1783,8 +1745,6 @@
 .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .chk-box input, .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .gstProfile-contents .row-cont .cont-rmStay .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 

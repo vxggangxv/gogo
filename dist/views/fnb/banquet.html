@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/include/winpop.css">
     <link rel="stylesheet" href="../../public/css/include/pop.css">
-    <link rel="stylesheet" href="../../public/css/front/init.css">
+    <link rel="stylesheet" href="../../public/css/fnb/init.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -56,7 +56,7 @@
 
     <!--개별 Js-->
     <script src="../../public/js/common.js"></script>
-    <script src="../../public/js/front/init.js"></script>
+    <script src="../../public/js/fnb/init.js"></script>
 
     <!--[if lt IE 9]>
 		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -66,7 +66,7 @@
 
 <!-- 페이지 전용 -->
 
-<body class="page-front">
+<body class="page-fnb">
 
     <!-- 패키지 팝업-->
     <div class="pop-container pkg-container">
@@ -2951,10 +2951,10 @@
 
 
 
-        <div class="cf contents dep-contents">
+        <div class="cf contents bq-contents">
 
             <div class="cf row-h2">
-                <h2 class="page-title">출발</h2>
+                <h2 class="page-title">연회</h2>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
                 <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
@@ -2967,81 +2967,19 @@
                         <div class="grid-contents">
                             <table class="grid-tbl tbl-property">
                                 <colgroup>
-                                    <col width="7%">
-                                        <col width="9%">
-                                            <col width="6%">
-                                                <col width="11%">
-                                                    <col width="6%">
-                                                        <col width="9%">
-                                                            <col width="6%">
-                                                                <col width="16%">
-                                                                    <col width="5%">
-                                                                        <col width="12%">
-                                                                            <col width="5%">
-                                                                                <col>
+                                    <col style="width:90px">
+                                        <col style="width:250px">
+                                            <col style="width:100px">
+                                                <col style="width:200px">
+                                                    <col style="width:90px">
+                                                        <col style="width:220px">
+                                                            <col style="width:100px">
+                                                                <col style="width:*">
                                 </colgroup>
                                 <tbody>
                                     <tr>
                                         <th>
-                                            <div class="cell">다중 검색</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input">
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">VIP</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <select name="" id="" class="form-select gray">
-                                                    <option value=""></option>
-                                                    <option value="">fresh</option>
-                                                    <option value="">Bronze</option>
-                                                    <option value="">Silver</option>
-                                                    <option value="">Gold</option>
-                                                    <option value="">Sapphire</option>
-                                                    <option value="">Diamond</option>
-                                                    <option value="">VIP</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">국적</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input">
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">그룹 이름</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input">
-                                            </div>
-                                        </td>
-                                        <td colspan="2">
-                                            <div class="cell">
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">All</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">FIT</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">Group</label></span>
-                                            </div>
-                                        </td>
-                                        <td colspan="2">
-                                            <div class="cell">
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">All</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">Comp</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">House Use</label></span>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <th>
-                                            <div class="cell">도착 날짜</div>
+                                            <div class="cell">예약 날짜</div>
                                         </th>
                                         <td>
                                             <div class="cell">
@@ -3051,90 +2989,90 @@
 
 												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
                                                 </span>
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">특별 요구 사항</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input w-1" readonly>
-                                                <button type="button" class="btn-green">SET</button>
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">판매자</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input">
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">계정</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <input type="text" class="form-input account">
-                                                <select name="" id="" class="form-select account">
-                                                    <option value=""></option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td colspan="2">
-                                            <div class="cell">
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">non  C/In</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">C/In</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">Cancel</label></span>
-                                                <span class="rdo-box"><label><input type="radio" name="rdo-1">All</label></span>
-                                            </div>
-                                        </td>
-                                        <th>
-                                            <div class="cell">옵션</div>
-                                        </th>
-                                        <td>
-                                            <div class="cell">
-                                                <span class="chk-box">
+                                                <span class="mg-">~</span>
+                                                <span class="cal-box">
 
-												<label><input type="checkbox">예금</label>
+												<input type="text" class="appe-reset inp-cal date-ui">
 
-											</span>
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">예약 번호</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">이름</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1">
+                                            </div>
+                                        </td>
+                                        <th>
+                                            <div class="cell">이벤트 이름</div>
+                                        </th>
+                                        <td>
+                                            <div class="cell">
+                                                <input type="text" class="form-input w-1">
                                             </div>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <th>
-                                            <div class="cell">객실#</div>
+                                            <div class="cell">이벤트 날짜</div>
                                         </th>
                                         <td>
                                             <div class="cell">
-                                                <input type="text" class="form-input">
+                                                <span class="cal-box">
+
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
+                                                <span class="mg-">~</span>
+                                                <span class="cal-box">
+
+												<input type="text" class="appe-reset inp-cal date-ui">
+
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+                                                </span>
                                             </div>
                                         </td>
                                         <th>
-                                            <div class="cell">패키지</div>
+                                            <div class="cell">업장</div>
                                         </th>
                                         <td>
                                             <div class="cell">
-                                                <input type="text" class="form-input w-1" readonly>
-                                                <button type="button" class="btn-green">SET</button>
+                                                <select name="" id="" class="form-select w-1">
+                                                    <option value=""></option>
+                                                    <option value="">컨퍼런스1-대연회장</option>
+                                                    <option value="">컨퍼런스2-대연회장</option>
+                                                    <option value="">2층-레스토랑</option>
+                                                </select>
                                             </div>
                                         </td>
                                         <th>
-                                            <div class="cell">객실 유형</div>
+                                            <div class="cell">상태</div>
                                         </th>
-                                        <td>
+                                        <td colspan="3">
                                             <div class="cell">
-                                                <input type="text" class="form-input">
-                                            </div>
-                                        </td>
-                                        <td colspan="6" class="ta-right">
-                                            <div class="cell">
-                                                <button type="button" class="btn-brown">SEARCH</button>
-                                                <button type="button" class="btn-brown">CLEAR</button>
-                                                <button type="button" class="btn-green">Req.Card</button>
-                                                <button type="button" class="btn-gray btn-i"><span class="icon ic-excel"></span>Excel</button>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">REGISTRATION</label></span>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">PENDING</label></span>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">CANCEL</label></span>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">NO SHOW</label></span>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">WAIT</label></span>
+                                                <span class="rdo-box"><label><input type="checkbox" name="">CONFIRM</label></span>
+                                                <div class="pull-right">
+                                                    <button type="button" class="btn-brown">SEARCH</button>
+                                                    <button type="button" class="btn-brown">CLEAR</button>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -3146,126 +3084,110 @@
                 <!-- //.cont-property -->
 
                 <div class="cont-list">
+                    <div class="grid-toolbar">
+                        <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+                    </div>
+                    <!-- /.grid-toolbar -->
                     <div class="grid-wrap scr-wrap">
                         <div class="grid-scrollable-x">
                             <div class="grid-area grid-head">
                                 <div class="grid-scrollable">
                                     <table class="grid-tbl">
                                         <colgroup>
-                                            <col style="width:125px">
-                                                <col style="width:40px">
-                                                    <col style="width:60px">
-                                                        <col style="width:140px">
-                                                            <col style="width:100px">
-                                                                <col style="width:70px">
-                                                                    <col style="width:60px">
+                                            <col style="width:30px">
+                                                <col style="width:105px">
+                                                    <col style="width:100px">
+                                                        <col style="width:90px">
+                                                            <col style="width:150px">
+                                                                <col style="width:220px">
+                                                                    <col style="width:120px">
                                                                         <col style="width:90px">
-                                                                            <col style="width:40px">
-                                                                                <col style="width:90px">
-                                                                                    <col style="width:40px">
-                                                                                        <col style="width:45px">
-                                                                                            <col style="width:60px">
-                                                                                                <col style="width:90px">
-                                                                                                    <col style="width:90px">
-                                                                                                        <col style="width:150px">
-                                                                                                            <col style="width:80px">
-                                                                                                                <col style="width:800px">
-                                                                                                                    <col style="width:90px">
-                                                                                                                        <col style="width:110px">
-                                                                                                                            <col style="width:150px">
-                                                                                                                                <col style="width:120px">
-                                                                                                                                    <col style="width:120px">
-                                                                                                                                        <col style="width:120px">
-                                                                                                                                            <col style="width:200px">
-                                                                                                                                                <col style="width:90px">
-                                                                                                                                                    <col style="width:160px">
-                                                                                                                                                        <col style="width:*">
+                                                                            <col style="width:90px">
+                                                                                <col style="width:150px">
+                                                                                    <col style="width:60px">
+                                                                                        <col style="width:60px">
+                                                                                            <col style="width:100px">
+                                                                                                <col style="width:60px">
+                                                                                                    <col style="width:300px">
+                                                                                                        <col style="width:120px">
+                                                                                                            <col style="width:120px">
+                                                                                                                <col style="width:120px">
+                                                                                                                    <col style="width:120px">
+                                                                                                                        <col style="width:140px">
+                                                                                                                            <col style="width:90px">
+                                                                                                                                <col style="width:140px">
+                                                                                                                                    <col style="width:*">
                                         </colgroup>
                                         <thead class="rowgroup">
                                             <tr>
                                                 <th>
-                                                    <div class="cell">Action</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">VIP</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">객실#</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">이름</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">Chk.Num</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">객실 유형</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">GRP / FIT</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">도착 날짜</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">Nts</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">출발 날짜</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">어른</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">아이</div>
+                                                    <div class="cell"></div>
                                                 </th>
                                                 <th>
                                                     <div class="cell">상태</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">Balance</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">양</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">계정</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">CO.Time</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">서비스 / 메시지</div>
-                                                </th>
-                                                <th>
-                                                    <div class="cell">ADR</div>
-                                                </th>
-                                                <th>
                                                     <div class="cell">예약 번호</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">그룹명</div>
+                                                    <div class="cell">예약 날짜</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">Nation</div>
+                                                    <div class="cell">업장</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">그룹 번호</div>
+                                                    <div class="cell">이벤트</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">Chk.Num</div>
+                                                    <div class="cell">게스트</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">이벤트 날짜</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">이벤트 날짜2</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">보증</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">메뉴</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Expect</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">예금</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">방법</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">메시지</div>
                                                 </th>
                                                 <th>
                                                     <div class="cell">연락처</div>
                                                 </th>
                                                 <th>
+                                                    <div class="cell">이메일</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">Mate</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">추천</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">생성날짜</div>
+                                                </th>
+                                                <th>
                                                     <div class="cell">생성자</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">생성일자</div>
+                                                    <div class="cell">확인날짜</div>
                                                 </th>
                                                 <th>
-                                                    <div class="cell">판매자</div>
+                                                    <div class="cell">확인자</div>
                                                 </th>
                                             </tr>
                                         </thead>
@@ -3275,96 +3197,72 @@
                             <div class="grid-area grid-contents">
                                 <table class="grid-tbl">
                                     <colgroup>
-                                        <col style="width:125px">
-                                            <col style="width:40px">
-                                                <col style="width:60px">
-                                                    <col style="width:140px">
-                                                        <col style="width:100px">
-                                                            <col style="width:70px">
-                                                                <col style="width:60px">
+                                        <col style="width:30px">
+                                            <col style="width:105px">
+                                                <col style="width:100px">
+                                                    <col style="width:90px">
+                                                        <col style="width:150px">
+                                                            <col style="width:220px">
+                                                                <col style="width:120px">
                                                                     <col style="width:90px">
-                                                                        <col style="width:40px">
-                                                                            <col style="width:90px">
-                                                                                <col style="width:40px">
-                                                                                    <col style="width:45px">
-                                                                                        <col style="width:60px">
-                                                                                            <col style="width:90px">
-                                                                                                <col style="width:90px">
-                                                                                                    <col style="width:150px">
-                                                                                                        <col style="width:80px">
-                                                                                                            <col style="width:800px">
-                                                                                                                <col style="width:90px">
-                                                                                                                    <col style="width:110px">
-                                                                                                                        <col style="width:150px">
-                                                                                                                            <col style="width:120px">
-                                                                                                                                <col style="width:120px">
-                                                                                                                                    <col style="width:120px">
-                                                                                                                                        <col style="width:200px">
-                                                                                                                                            <col style="width:90px">
-                                                                                                                                                <col style="width:160px">
-                                                                                                                                                    <col style="width:*">
+                                                                        <col style="width:90px">
+                                                                            <col style="width:150px">
+                                                                                <col style="width:60px">
+                                                                                    <col style="width:60px">
+                                                                                        <col style="width:100px">
+                                                                                            <col style="width:60px">
+                                                                                                <col style="width:300px">
+                                                                                                    <col style="width:120px">
+                                                                                                        <col style="width:120px">
+                                                                                                            <col style="width:120px">
+                                                                                                                <col style="width:120px">
+                                                                                                                    <col style="width:140px">
+                                                                                                                        <col style="width:90px">
+                                                                                                                            <col style="width:140px">
+                                                                                                                                <col style="width:*">
                                     </colgroup>
                                     <tbody class="rowgroup">
                                         <tr>
                                             <td>
                                                 <div class="cell">
-                                                    <button type="button" class="btn-green action">CI</button>
-                                                    <button type="button" class="btn-green action">RV</button>
+                                                    <input type="checkbox">
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="cell"></div>
+                                                <div class="cell">REGISTRATION</div>
                                             </td>
                                             <td>
-                                                <div class="cell">0620</div>
+                                                <div class="cell">KSG170607</div>
                                             </td>
                                             <td>
-                                                <div class="cell">강상민(대실)</div>
+                                                <div class="cell">2017-06-07</div>
                                             </td>
                                             <td>
-                                                <div class="cell">KSG1903068230</div>
+                                                <div class="cell">컨퍼런스2-대연회장</div>
                                             </td>
                                             <td>
-                                                <div class="cell">DSB</div>
+                                                <div class="cell">평택시 기업간담회</div>
                                             </td>
                                             <td>
-                                                <div class="cell">F.I.T</div>
+                                                <div class="cell">경기도 외국인 투자간담회</div>
                                             </td>
                                             <td>
-                                                <div class="cell">2019-03-13</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">0</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2019-03-13</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">0</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">C/IN</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">0</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">30,000</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">고코투어(가자닷컴)</div>
+                                                <div class="cell">2017-06-15</div>
                                             </td>
                                             <td>
                                                 <div class="cell"></div>
                                             </td>
                                             <td>
-                                                <div class="cell">대외후불 고코투어 DTW 44 925bs 콘도 턴어웨이건입니다 총2객실입니다</div>
+                                                <div class="cell">30</div>
                                             </td>
                                             <td>
-                                                <div class="cell">30,000</div>
+                                                <div class="cell">컨퍼런스2-대연회장</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">35</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">550,000</div>
                                             </td>
                                             <td>
                                                 <div class="cell"></div>
@@ -3373,66 +3271,10 @@
                                                 <div class="cell"></div>
                                             </td>
                                             <td>
-                                                <div class="cell"></div>
+                                                <div class="cell">031-259-6521</div>
                                             </td>
                                             <td>
-                                                <div class="cell">KSG1903068230</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">KSG1903068230</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">김민경</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell">2019-03-06 17:56:48</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="grid-area grid-total">
-                                <table class="grid-tbl">
-                                    <colgroup>
-                                        <col style="width:125px">
-                                            <col style="width:40px">
-                                                <col style="width:60px">
-                                                    <col style="width:140px">
-                                                        <col style="width:100px">
-                                                            <col style="width:70px">
-                                                                <col style="width:60px">
-                                                                    <col style="width:90px">
-                                                                        <col style="width:40px">
-                                                                            <col style="width:90px">
-                                                                                <col style="width:40px">
-                                                                                    <col style="width:45px">
-                                                                                        <col style="width:60px">
-                                                                                            <col style="width:90px">
-                                                                                                <col style="width:90px">
-                                                                                                    <col style="width:150px">
-                                                                                                        <col style="width:80px">
-                                                                                                            <col style="width:800px">
-                                                                                                                <col style="width:90px">
-                                                                                                                    <col style="width:110px">
-                                                                                                                        <col style="width:150px">
-                                                                                                                            <col style="width:120px">
-                                                                                                                                <col style="width:120px">
-                                                                                                                                    <col style="width:120px">
-                                                                                                                                        <col style="width:200px">
-                                                                                                                                            <col style="width:90px">
-                                                                                                                                                <col style="width:160px">
-                                                                                                                                                    <col style="width:*">
-                                    </colgroup>
-                                    <tbody class="rowgroup">
-                                        <tr>
-                                            <td>
-                                                <div class="cell"></div>
+                                                <div class="cell">nal@gafic.or.kr</div>
                                             </td>
                                             <td>
                                                 <div class="cell"></div>
@@ -3441,79 +3283,16 @@
                                                 <div class="cell"></div>
                                             </td>
                                             <td>
-                                                <div class="cell"></div>
+                                                <div class="cell">2017-06-07</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">김치원</div>
                                             </td>
                                             <td>
                                                 <div class="cell"></div>
                                             </td>
                                             <td>
                                                 <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td class="co-blue fw-b">
-                                                <div class="cell">19</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td class="co-blue fw-b">
-                                                <div class="cell">38</div>
-                                            </td>
-                                            <td class="co-red fw-b">
-                                                <div class="cell">0</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td class="co-red fw-b">
-                                                <div class="cell">982,671</div>
-                                            </td>
-                                            <td class="co-blue fw-b">
-                                                <div class="cell">982,671</div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td>
-                                                <div class="cell"></div>
-                                            </td>
-                                            <td class="last">
-                                                <div class="cell inBl"></div><span class="square"></span>
                                             </td>
                                         </tr>
                                     </tbody>

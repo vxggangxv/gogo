@@ -1,0 +1,446 @@
+@charset "utf-8";
+
+@import "../parts/variables";
+@import "../parts/mixins";
+
+/* 업장 */
+.outlet-contents {
+	.cont-area {
+		margin-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+	}
+    .cont-property {
+        .tbl-property {
+            @include tbl-style-1;
+            td {
+                .cell {
+                    .form-select { }
+                    .rdo-box {
+                        @include va;
+                        padding: 0 3px;
+                        label {
+                            margin-right: 0px;
+                        }
+                        &.n {
+                            margin-right: 15px;
+                        }
+                    }
+                    button {
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+    .cont-area.area-1 {
+        margin-top: 0;
+        .cont-list {
+            margin-top: 10px;
+            .grid-wrap {
+                @include grid-scr-brown(null, 100%, 0);
+                .grid-area.grid-head {
+                    th {
+                        &.bor {
+                            border-bottom: 1px solid $bor-gray-table;
+                        }
+                    }
+                }
+                .grid-area.grid-contents {
+                    background: #fff;
+                    height: 350px;
+                    .grid-tbl {
+                        td {
+                            text-align: center;
+                        }
+                    }
+                }
+                .grid-area.grid-total {
+                    .grid-tbl {
+                        th, td { }
+                        td { }
+                    }
+                }
+            }
+            .grid-bottom {
+                @include grid-bottom-page;
+                border-radius: 0;
+            }
+        }
+    }
+	.cont-area.area-2 {
+        h3 {
+            margin-top: 10px;
+            padding: 15px 0 0px;
+            border-top: 1px dashed #c5c5c5;
+        }
+		.grid-wrap {
+			.grid-tbl {
+                @include tbl-base;
+                td {
+                    .cell {
+                        .form-input, .form-select {
+                            &.w-1 {
+                                width: 150px;
+                            }
+                        }
+                        .form-input {
+                            &.w-2 {
+                                width: 50px;
+                            }
+                        }
+                        .texta-etc {
+                            @include texta-base(100%, 55px);
+                        }
+                    }
+                }
+			}
+		}
+	}
+	.row-btn {
+		margin-top: 10px;
+		button {
+			@include btn-pd-lr(20px, 20px, 0);
+		}
+	}
+}
+
+/* 메뉴 */
+.menu-contents {
+	.cont-area {
+		margin-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+	}
+    .cont-property {
+        .tbl-property {
+            @include tbl-style-1;
+            td {
+                .cell {
+                    .form-select {
+                        &.outlet {
+                            width: auto;
+                            margin-right: 15px;
+                        }
+                    }
+                    button {
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
+    .cont-area.area-1 {
+        margin-top: 0;
+        .cont-list {
+            margin-top: 10px;
+            .grid-wrap {
+                @include grid-scr-brown(null, 100%, 0);
+                .grid-area.grid-head {
+                    th { }
+                }
+                .grid-area.grid-contents {
+                    background: #fff;
+                    height: 350px;
+                    .grid-tbl {
+                        td {
+                            text-align: center;
+                        }
+                        tr.depth-2 {
+                            td:first-child {
+                                padding-left: 35px;
+                            }
+                        }
+                    }
+                }
+                .grid-area.grid-total {
+                    .grid-tbl {
+                        th, td { }
+                        td { }
+                    }
+                }
+            }
+            .grid-bottom {
+                @include grid-bottom-page;
+                border-radius: 0;
+            }
+        }
+    }
+	.cont-area.area-2 {
+        h3 {
+            margin-top: 10px;
+            padding: 15px 0 0px;
+            border-top: 1px dashed #c5c5c5;
+        }
+		.grid-wrap {
+			.grid-tbl {
+                @include tbl-base;
+                td {
+                    .cell {
+                        .form-input, .form-select {
+                            &.w-1 {
+                                width: 150px;
+                            }
+                        }
+                        .form-input {
+                            &.w-2 {
+                                width: 50px;
+                            }
+                            &.w-3 {
+                                width: 320px;
+                            }
+                        }
+                        .texta-etc {
+                            @include texta-base(100%, 35px);
+                        }
+                    }
+                }
+			}
+		}
+	}
+	.row-btn {
+		margin-top: 10px;
+		button {
+			@include btn-pd-lr(20px, 20px, 0);
+		}
+    }
+}
+
+/* 목록 */
+.inv-contents {
+	.cont-area {
+		margin-top: 10px;
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+        }
+	}
+    .cont-area.area-1 {
+        margin-top: 0;
+        .cont-property {
+            .tbl-property {
+                @include tbl-style-1;
+                td {
+                    .cell {
+                        .form-input {
+                            &.name {
+                                width: 125px;
+                                margin-right: 15px;
+                            }
+                        }
+                        button {
+                            letter-spacing: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .cont-list {
+            margin-top: 10px;
+            .grid-wrap {
+                @include grid-scr-brown(null, 100%, 0);
+                .grid-area.grid-head {
+                    th { }
+                }
+                .grid-area.grid-contents {
+                    background: #fff;
+                    height: 250px;
+                    .grid-tbl {
+                        td {
+                            text-align: center;
+                        }
+                        tr.depth-2 {
+                            td:first-child {
+                                padding-left: 35px;
+                            }
+                        }
+                    }
+                }
+                .grid-area.grid-total {
+                    .grid-tbl {
+                        th, td { }
+                        td { }
+                    }
+                }
+            }
+            .grid-bottom {
+                @include grid-bottom-page;
+                border-radius: 0;
+            }
+        }
+    }
+	.cont-area.area-2 {
+        h3 {
+            margin-top: 10px;
+            padding: 15px 0 0px;
+            border-top: 1px dashed #c5c5c5;
+        }
+        .cont-list {
+            margin-top: 10px;
+            .grid-wrap {
+                @include grid-scr-brown(null, 100%, 0);
+                .grid-area.grid-head {
+                    th { }
+                }
+                .grid-area.grid-contents {
+                    background: #fff;
+                    height: 250px;
+                    .grid-tbl {
+                        td {
+                            text-align: center;
+                        }
+                        tr.depth-2 {
+                            td:first-child {
+                                padding-left: 35px;
+                            }
+                        }
+                    }
+                }
+                .grid-area.grid-total {
+                    .grid-tbl {
+                        th, td { }
+                        td { }
+                    }
+                }
+            }
+            .grid-bottom {
+                @include grid-bottom-page;
+                border-radius: 0;
+            }
+        }
+	}
+	.row-btn {
+		margin-top: 10px;
+		button {
+			@include btn-pd-lr(20px, 20px, 0);
+		}
+    }
+}
+
+/* 연회 */
+.bq-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+            border-right: 1px solid $bdg-tblBase;
+            width: 100%;
+			td {
+				.cell {
+					.w-1 {
+						width: 150px;
+					}
+					.form-select {
+						&.property {
+							width: 145px;
+						}
+					}
+					.cal-box {
+						width: 100px;
+					}
+					button {
+						letter-spacing: 0;
+						&.search {
+							margin-left: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+        .grid-toolbar {
+            @include grid-toolbar;
+        }
+		.grid-wrap {
+			@include grid-scr-x(2800px, 100%, 0);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 650px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					th, td { }
+					td { }
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell { }
+				}
+			}
+		}
+		.grid-bottom {
+			@include grid-bottom-page;
+		}
+	}
+}
+
+/* 아침 식사 */
+.bf-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+            border-right: 1px solid $bdg-tblBase;
+            width: 100%;
+			td {
+				.cell {
+					.w-1 {
+						width: 130px;
+					}
+					.form-select {
+						&.property {
+							width: 145px;
+						}
+					}
+					.cal-box {
+						width: 100px;
+					}
+					button {
+						letter-spacing: 0;
+						&.search {
+							margin-left: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+        .grid-toolbar {
+            @include grid-toolbar;
+        }
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px 4px 0 0);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 650px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					th, td { }
+					td { }
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell { }
+				}
+			}
+		}
+		.grid-bottom {
+			@include grid-bottom-page;
+		}
+	}
+}

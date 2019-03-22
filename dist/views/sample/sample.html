@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="../../public/css/common.css">
     <link rel="stylesheet" href="../../public/css/include/winpop.css">
     <link rel="stylesheet" href="../../public/css/include/pop.css">
-    <link rel="stylesheet" href="../../public/css/reserve/init.css">
+    <link rel="stylesheet" href="../../public/css/name/init.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
@@ -56,7 +56,7 @@
 
     <!--개별 Js-->
     <script src="../../public/js/common.js"></script>
-    <script src="../../public/js/reserve/init.js"></script>
+    <script src="../../public/js/name/init.js"></script>
 
     <!--[if lt IE 9]>
 		<script type="text/javascript" src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -64,7 +64,7 @@
 
 </head>
 
-<body class="page-reserve">
+<body class="page-name">
 
     <div class="wrapper">
         <header class="header">
@@ -182,17 +182,17 @@
                         <li>
                             <a href="" class="ic-fnb">음식료품</a>
                             <ul class="dep-2">
-                                <li><a href="">업장</a>
+                                <li><a href="../fnb/outlet.html">업장</a>
                                 </li>
-                                <li><a href="">메뉴</a>
+                                <li><a href="../fnb/menu.html">메뉴</a>
                                 </li>
-                                <li><a href="">목록</a>
+                                <li><a href="../fnb/inventory.html">목록</a>
                                 </li>
-                                <li><a href="">연회 목록</a>
+                                <li><a href="../fnb/banquet.html">연회 목록</a>
                                 </li>
-                                <li><a href="">아침식사</a>
+                                <li><a href="../fnb/breakfast.html">아침식사</a>
                                 </li>
-                                <li><a href="">연회 일정</a>
+                                <li><a href="../fnb/banquetCal.html">연회 일정</a>
                                 </li>
                             </ul>
                         </li>
@@ -440,15 +440,21 @@
 
 
 
-        <div class="cf contents">
-            <h2 class="page-title">페이지 타이틀</h2>
-            <section class="cont-name">
+        <div class="cf contents name-contents">
 
-            </section>
-            <!--//.cont-name-->
+            <div class="cf row-h2">
+                <h2 class="page-title">C/L 계산원</h2>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_roomInventory.html', 'winpop', 'width=1800, height=900')">ROOM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_itemInventory.html', 'winpop', 'width=1800, height=900')">ITEM</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_houseStatus.html', 'winpop', 'width=1000, height=800')">HOUSE</button>
+                <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
+            </div>
+
+            <div class="cf cont-container-f">
+
+            </div>
         </div>
         <!--//.contents-->
-
 
     </div>
 </body>

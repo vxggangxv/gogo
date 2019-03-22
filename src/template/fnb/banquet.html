@@ -1,0 +1,262 @@
+@@include('../include/_head.html', {
+	"page": "fnb"
+})
+
+<!-- 페이지 전용 -->
+
+<body class="page-fnb">
+
+@@include('../include/pop/pop_rsv.html')
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents bq-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "연회"
+		})
+
+		<div class="cf cont-container-f">
+			<div class="cont-property">
+				<div class="grid-wrap">
+					<div class="grid-contents">
+						<table class="grid-tbl tbl-property">
+							<colgroup>
+								<col style="width:90px">
+                                <col style="width:250px">
+								<col style="width:100px">
+                                <col style="width:200px">
+								<col style="width:90px">
+								<col style="width:220px">
+								<col style="width:100px">
+								<col style="width:*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><div class="cell">예약 날짜</div></th>
+									<td>
+                                        <div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<span class="mg-">~</span>
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+										</div>
+									</td>
+									<th><div class="cell">예약 번호</div></th>
+									<td>
+										<div class="cell">
+											<input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">이름</div></th>
+									<td>
+										<div class="cell">
+                                            <input type="text" class="form-input w-1">
+										</div>
+									</td>
+									<th><div class="cell">이벤트 이름</div></th>
+									<td>
+										<div class="cell">
+                                            <input type="text" class="form-input w-1">
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<th><div class="cell">이벤트 날짜</div></th>
+									<td>
+                                        <div class="cell">
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+											<span class="mg-">~</span>
+											<span class="cal-box">
+												<input type="text" class="appe-reset inp-cal date-ui">
+												<span class="i-cal"><img src="../../public/img/icon/cal.png" alt="달력"></span>
+											</span>
+										</div>
+									</td>
+									<th><div class="cell">업장</div></th>
+									<td>
+										<div class="cell">
+											<select name="" id="" class="form-select w-1">
+                                                <option value=""></option>
+                                                <option value="">컨퍼런스1-대연회장</option>
+                                                <option value="">컨퍼런스2-대연회장</option>
+                                                <option value="">2층-레스토랑</option>
+                                            </select>
+										</div>
+									</td>
+									<th><div class="cell">상태</div></th>
+									<td colspan="3">
+										<div class="cell">
+											<span class="rdo-box"><label><input type="checkbox" name="">REGISTRATION</label></span>
+											<span class="rdo-box"><label><input type="checkbox" name="">PENDING</label></span>
+											<span class="rdo-box"><label><input type="checkbox" name="">CANCEL</label></span>
+											<span class="rdo-box"><label><input type="checkbox" name="">NO SHOW</label></span>
+											<span class="rdo-box"><label><input type="checkbox" name="">WAIT</label></span>
+											<span class="rdo-box"><label><input type="checkbox" name="">CONFIRM</label></span>
+											<div class="pull-right">
+												<button type="button" class="btn-brown">SEARCH</button>
+												<button type="button" class="btn-brown">CLEAR</button>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- //.cont-property -->
+
+			<div class="cont-list">
+                <div class="grid-toolbar">
+                    <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+                </div>
+                <!-- /.grid-toolbar -->
+				<div class="grid-wrap scr-wrap">
+					<div class="grid-scrollable-x">
+						<div class="grid-area grid-head">
+							<div class="grid-scrollable">
+								<table class="grid-tbl">
+									<colgroup>
+										<col style="width:30px">
+										<col style="width:105px">
+										<col style="width:100px">
+										<col style="width:90px">
+										<col style="width:150px">
+										<col style="width:220px">
+										<col style="width:120px">
+										<col style="width:90px">
+										<col style="width:90px">
+										<col style="width:150px">
+										<col style="width:60px">
+										<col style="width:60px">
+										<col style="width:100px">
+										<col style="width:60px">
+										<col style="width:300px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:120px">
+										<col style="width:140px">
+										<col style="width:90px">
+										<col style="width:140px">
+										<col style="width:*">
+									</colgroup>
+									<thead class="rowgroup">
+										<tr>
+											<th><div class="cell"></div></th>
+											<th><div class="cell">상태</div></th>
+											<th><div class="cell">예약 번호</div></th>
+											<th><div class="cell">예약 날짜</div></th>
+											<th><div class="cell">업장</div></th>
+											<th><div class="cell">이벤트</div></th>
+											<th><div class="cell">게스트</div></th>
+											<th><div class="cell">이벤트 날짜</div></th>
+											<th><div class="cell">이벤트 날짜2</div></th>
+											<th><div class="cell">보증</div></th>
+											<th><div class="cell">메뉴</div></th>
+											<th><div class="cell">Expect</div></th>
+											<th><div class="cell">예금</div></th>
+											<th><div class="cell">방법</div></th>
+											<th><div class="cell">메시지</div></th>
+											<th><div class="cell">연락처</div></th>
+											<th><div class="cell">이메일</div></th>
+											<th><div class="cell">Mate</div></th>
+											<th><div class="cell">추천</div></th>
+											<th><div class="cell">생성날짜</div></th>
+											<th><div class="cell">생성자</div></th>
+											<th><div class="cell">확인날짜</div></th>
+											<th><div class="cell">확인자</div></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+						<div class="grid-area grid-contents">
+							<table class="grid-tbl">
+                                <colgroup>
+                                    <col style="width:30px">
+                                    <col style="width:105px">
+                                    <col style="width:100px">
+                                    <col style="width:90px">
+                                    <col style="width:150px">
+                                    <col style="width:220px">
+                                    <col style="width:120px">
+                                    <col style="width:90px">
+                                    <col style="width:90px">
+                                    <col style="width:150px">
+                                    <col style="width:60px">
+                                    <col style="width:60px">
+                                    <col style="width:100px">
+                                    <col style="width:60px">
+                                    <col style="width:300px">
+                                    <col style="width:120px">
+                                    <col style="width:120px">
+                                    <col style="width:120px">
+                                    <col style="width:120px">
+                                    <col style="width:140px">
+                                    <col style="width:90px">
+                                    <col style="width:140px">
+                                    <col style="width:*">
+                                </colgroup>
+								<tbody class="rowgroup">
+									<tr>
+										<td><div class="cell"><input type="checkbox"></div></td>
+										<td><div class="cell">REGISTRATION</div></td>
+										<td><div class="cell">KSG170607</div></td>
+										<td><div class="cell">2017-06-07</div></td>
+										<td><div class="cell">컨퍼런스2-대연회장</div></td>
+										<td><div class="cell">평택시 기업간담회</div></td>
+										<td><div class="cell">경기도 외국인 투자간담회</div></td>
+										<td><div class="cell">2017-06-15</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">30</div></td>
+										<td><div class="cell">컨퍼런스2-대연회장</div></td>
+										<td><div class="cell">35</div></td>
+										<td><div class="cell">550,000</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">031-259-6521</div></td>
+										<td><div class="cell">nal@gafic.or.kr</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell">2017-06-07</div></td>
+										<td><div class="cell">김치원</div></td>
+										<td><div class="cell"></div></td>
+										<td><div class="cell"></div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //.grid-wrap -->
+				<div class="cf grid-bottom">
+					<a href="#" class="prev st">&lt;&lt;</a>
+					<a href="#" class="prev">&lt;</a>
+					<span class="num">0</span>
+					<a href="#" class="next">&gt;</a>
+  					<a href="#" class="next st">&gt;&gt;</a>
+					<span class="count">1 - 100 of 158 items</span>
+				</div>
+				<!-- //.grid-bottom-->
+			</div>
+			<!-- //.cont-list -->
+		</div>
+	</div>
+	<!-- //.contents -->
+
+</div>
+
+</body>
+</html>

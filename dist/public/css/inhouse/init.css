@@ -34,8 +34,6 @@
 
 .maidSch-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .maidSch-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .maidSch-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .maidSch-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.maidSch-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .maidSch-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
 
 .maidSch-contents .cont-property .tbl-property td .cell .rdo-box label { margin-right: 5px; }
@@ -71,8 +69,6 @@
 .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .chk-box input, .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .chk-box + .chk-box, .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .chk-box + .rdo-box, .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .rdo-box + .chk-box, .maidSch-contents .cont-list .grid-container .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.maidSch-contents .cont-list .grid-container .grid-tbl td .cell .form-select { padding: 2px; }
 
 .maidSch-contents .cont-list .grid-container .grid-tbl tr:first-child th { border-bottom: 1px solid #c5c5c5; }
 
@@ -149,8 +145,6 @@
 
 .rmClean-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .rmClean-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .rmClean-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .rmClean-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.rmClean-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .rmClean-contents .cont-property .tbl-property td .cell .form-select.floor { width: 80px; }
 
 .rmClean-contents .cont-property .tbl-property td .cell .cal-box { width: 130px; }
@@ -200,8 +194,6 @@
 
 .arvList-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .arvList-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .arvList-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .arvList-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.arvList-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .arvList-contents .cont-property .tbl-property td .cell .form-select.floor { width: 80px; }
 
 .arvList-contents .cont-property .tbl-property td .cell .cal-box { width: 130px; }
@@ -247,8 +239,6 @@
 .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.arvList-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .arvList-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -339,8 +329,6 @@
 
 .lf-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .lf-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .lf-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .lf-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.lf-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .lf-contents .cont-property .tbl-property td .cell .form-select.req { width: 120px; }
 
 .lf-contents .cont-property .tbl-property td .cell .form-select.status { width: 100px; }
@@ -389,8 +377,6 @@
 
 .lf-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .lf-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .lf-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .lf-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.lf-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
-
 .lf-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
 .lf-contents .cont-list .grid-wrap .grid-area { position: relative; }
@@ -424,8 +410,6 @@
 .lf-contents .cont-list .grid-wrap .grid-tbl td .cell button.action { padding-left: 15px; padding-right: 15px; letter-spacing: 0; }
 
 .lf-contents .cont-list .grid-toolbar { position: relative; box-sizing: border-box; background: #E7E4E2; border-bottom: 1px solid #c5c5c5; background-image: none, -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0))); background-image: none, -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-image: none, linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0) 100%); background-position: 50% 50%; background-color: #eae8e8; width: 100%; border: 1px solid #c5c5c5; border-top-left-radius: 4px; border-top-right-radius: 4px; padding: 4px; margin-bottom: -1px; }
-
-.lf-contents .cont-list .grid-toolbar .btn-gray, .lf-contents .cont-list .grid-toolbar .btn-green, .lf-contents .cont-list .grid-toolbar .btn-red, .lf-contents .cont-list .grid-toolbar .btn-blue { padding: 12px, 3px 8px 2px; }
 
 .lf-contents .cont-list .grid-toolbar .btn-gray { color: #000; }
 
@@ -488,8 +472,6 @@
 
 .exb-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .exb-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .exb-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .exb-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.exb-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
-
 .exb-contents .cont-property .tbl-property td .cell .form-select.req { width: 120px; }
 
 .exb-contents .cont-property .tbl-property td .cell .form-select.status { width: 100px; }
@@ -537,8 +519,6 @@
 .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box input, .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box input { margin-right: 3px; }
 
 .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .chk-box, .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .chk-box + .rdo-box, .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .chk-box, .exb-contents .cont-list .grid-wrap .grid-tbl td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.exb-contents .cont-list .grid-wrap .grid-tbl td .cell .form-select { padding: 2px; }
 
 .exb-contents .cont-list .grid-wrap .grid-scrollable-x { position: relative; overflow-x: hidden; }
 
@@ -606,8 +586,6 @@
 .maidAss-contents .cont-property .tbl-property td .cell .chk-box input, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box input { margin-right: 3px; }
 
 .maidAss-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .maidAss-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .maidAss-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
-
-.maidAss-contents .cont-property .tbl-property td .cell .form-select { padding: 2px; }
 
 .maidAss-contents .cont-property .tbl-property td .cell .rdo-box { padding: 0 8px; }
 

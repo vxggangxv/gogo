@@ -221,59 +221,7 @@
 						}
 					}
 					.grid-bottom {
-						@include gray-gradient;
-						@include bdr-r(0, 0, 4px, 4px);
-						padding: 5px;
-						border: 1px solid $bor-gray-table;
-						border-top: 0;
-						> * {
-							@include va;
-							@include bx;
-						}
-						.prev, .next {
-							@include ft(12px, #918884, 700);
-							@include sizes(26px);
-							text-align: center;
-							border-radius: 50%;
-							line-height: 24px;
-							background-color: #fff;
-							border: 1px solid #d2d2d2;
-							&.st {
-								letter-spacing: -3px;
-							}
-						}
-						.prev {
-							text-indent: -3px;
-							&.st {
-								text-indent: -5px;
-							}
-						}
-						.num {
-							@include ft(12px, #313131);
-							@include size(50px, 26px);
-							line-height: 26px;
-							border-radius: 15px;
-							padding-left: 5px;
-							border: 1px solid #d2d2d2;
-							/*color: #fff;
-							background-color: #f35800;
-							border-color: #f85a00;*/
-						}
-						.next {
-							text-indent: 3px;
-							&.st {
-								text-indent: 0px;
-							}
-						}
-						.count {
-							@include float(right);
-							@include ft(12px, #313131);
-							padding-right: 12px;
-							top: 3px;
-							.co {
-								color: $fg-orange-1;
-							}
-						}
+						@include grid-bottom-page;
 					}
 				}
 			}
@@ -996,59 +944,7 @@
 						}
 					}
 					.grid-bottom {
-						@include gray-gradient;
-						@include bdr-r(0, 0, 4px, 4px);
-						padding: 5px;
-						border: 1px solid $bor-gray-table;
-						border-top: 0;
-						> * {
-							@include va;
-							@include bx;
-						}
-						.prev, .next {
-							@include ft(12px, #918884, 700);
-							@include sizes(26px);
-							text-align: center;
-							border-radius: 50%;
-							line-height: 24px;
-							background-color: #fff;
-							border: 1px solid #d2d2d2;
-							&.st {
-								letter-spacing: -3px;
-							}
-						}
-						.prev {
-							text-indent: -3px;
-							&.st {
-								text-indent: -5px;
-							}
-						}
-						.num {
-							@include ft(12px, #313131);
-							@include size(50px, 26px);
-							line-height: 26px;
-							border-radius: 15px;
-							padding-left: 5px;
-							border: 1px solid #d2d2d2;
-							/*color: #fff;
-							background-color: #f35800;
-							border-color: #f85a00;*/
-						}
-						.next {
-							text-indent: 3px;
-							&.st {
-								text-indent: 0px;
-							}
-						}
-						.count {
-							@include float(right);
-							@include ft(12px, #313131);
-							padding-right: 12px;
-							top: 3px;
-							.co {
-								color: $fg-orange-1;
-							}
-						}
+						@include grid-bottom-page;
 					}
 				}
 			}
