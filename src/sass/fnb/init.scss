@@ -436,3 +436,54 @@
 		}
 	}
 }
+
+/* 연회 일정 */
+.bqCal-contents {
+	.cont-property {
+		.tbl-property {
+			@include tbl-style-1;
+            border-right: 1px solid $bdg-tblBase;
+            width: 100%;
+			td {
+				.cell {
+					.cal-box {
+						width: 135px;
+					}
+					button {
+						letter-spacing: 0;
+						&.search {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cont-list {
+		margin-top: 10px;
+        .grid-toolbar {
+            @include grid-toolbar;
+        }
+		.grid-wrap {
+			@include grid-scr-x(null, 100%, 4px 4px 0 0);
+			.grid-area.grid-contents {
+				background: #fff;
+				height: 650px;
+			}
+			.grid-area.grid-total {
+				.grid-tbl {
+					th, td { }
+					td { }
+				}
+			}
+			.grid-tbl {
+				th, td {
+					.cell { }
+				}
+			}
+		}
+		.grid-bottom {
+			@include grid-bottom-page;
+		}
+	}
+}

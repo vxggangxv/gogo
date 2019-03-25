@@ -1,0 +1,45 @@
+@@include('../include/_head.html', {
+	"page": "fnb"
+})
+
+<!-- 페이지 전용 -->
+
+<body class="page-fnb">
+
+<!-- @@include('../include/pop/pop_rsv.html') -->
+
+<div class="wrapper">
+	@@include('../include/_header.html')
+
+	<div class="cf contents bqCal-contents">
+
+		@@include('../include/_row_h2.html', {
+			"page-title": "연회 일정"
+		})
+
+		<div class="cf cont-container-f">
+			<div class="cont-list">
+                <div class="grid-toolbar">
+                    <button type="button" class="btn-gray today">Today</button>
+                    <button type="button" class="btn-gray prev"><span>◀</span></button>
+                    <button type="button" class="btn-gray next"><span>▶</span></button>
+                    <span class="icon ic-cal"></span>
+                    <span class="date">March, 2019</span>
+                    <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+
+                    <span class="pull-right">
+                        <button type="button" class="btn-gray m">Month</button>
+                        <button type="button" class="btn-gray d">Day</button>
+                    </span>
+                </div>
+                <!-- /.grid-toolbar -->
+			</div>
+			<!-- //.cont-list -->
+		</div>
+	</div>
+	<!-- //.contents -->
+
+</div>
+
+</body>
+</html>
