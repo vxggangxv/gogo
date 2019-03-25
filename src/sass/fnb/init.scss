@@ -395,21 +395,13 @@
             width: 100%;
 			td {
 				.cell {
-					.w-1 {
-						width: 130px;
-					}
-					.form-select {
-						&.property {
-							width: 145px;
-						}
-					}
 					.cal-box {
-						width: 100px;
+						width: 135px;
 					}
 					button {
 						letter-spacing: 0;
 						&.search {
-							margin-left: 50px;
+							margin-left: 10px;
 						}
 					}
 				}

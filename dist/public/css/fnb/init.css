@@ -806,15 +806,11 @@
 
 .bf-contents .cont-property .tbl-property td .cell .chk-box + .chk-box, .bf-contents .cont-property .tbl-property td .cell .chk-box + .rdo-box, .bf-contents .cont-property .tbl-property td .cell .rdo-box + .chk-box, .bf-contents .cont-property .tbl-property td .cell .rdo-box + .rdo-box { margin-left: 5px; }
 
-.bf-contents .cont-property .tbl-property td .cell .w-1 { width: 130px; }
-
-.bf-contents .cont-property .tbl-property td .cell .form-select.property { width: 145px; }
-
-.bf-contents .cont-property .tbl-property td .cell .cal-box { width: 100px; }
+.bf-contents .cont-property .tbl-property td .cell .cal-box { width: 135px; }
 
 .bf-contents .cont-property .tbl-property td .cell button { letter-spacing: 0; }
 
-.bf-contents .cont-property .tbl-property td .cell button.search { margin-left: 50px; }
+.bf-contents .cont-property .tbl-property td .cell button.search { margin-left: 10px; }
 
 .bf-contents .cont-list { margin-top: 10px; }
 
