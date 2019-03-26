@@ -439,51 +439,120 @@
 
 /* 연회 일정 */
 .bqCal-contents {
-	.cont-property {
-		.tbl-property {
-			@include tbl-style-1;
-            border-right: 1px solid $bdg-tblBase;
-            width: 100%;
-			td {
-				.cell {
-					.cal-box {
-						width: 135px;
-					}
-					button {
-						letter-spacing: 0;
-						&.search {
-							margin-left: 10px;
-						}
-					}
+	.grid-toolbar {
+		@include grid-toolbar;
+		border-radius: 0;
+		font-size: 0;
+		padding: 6px;
+		* {
+			font-size: 12px;
+			vertical-align: middle;
+			letter-spacing: 0;
+		}
+		button {
+			&.today, &.m {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			&.prev, &.next {
+				span {
+					font-size: 11px;
+				}
+			}
+			&.prev {
+				border-radius: 0;
+				border-left: 0;
+				border-right: 0;
+			}
+			&.next, &.d {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+		.date {
+			margin: 0 12px;
+			img.cal {
+				@include position(relative, -2px);
+				margin-right: 2px;
+			}
+		}
+		.cal-tab {
+			font-size: 0;
+			button {
+				&.m {
+					border-right: 0;
+				}
+				&.d {
+					border-left: 0;
+				}
+				&.on {
+					color: #fff;
+					background: $fg-orange-1;
+					border-color: #dd4c06;
 				}
 			}
 		}
 	}
-	.cont-list {
-		margin-top: 10px;
-        .grid-toolbar {
-            @include grid-toolbar;
-        }
-		.grid-wrap {
-			@include grid-scr-x(null, 100%, 4px 4px 0 0);
-			.grid-area.grid-contents {
-				background: #fff;
-				height: 650px;
-			}
-			.grid-area.grid-total {
-				.grid-tbl {
-					th, td { }
-					td { }
-				}
-			}
-			.grid-tbl {
+	.cont-area {
+		.cont-month {
+			.month-tbl {
+				position: relative;
+				width: 100%;
+				table-layout: fixed;
+				border-collapse: collapse;
 				th, td {
-					.cell { }
+					font-size: 12px;
+					border: 1px solid $bor-gray-table;
+					.cell {
+						position: relative;
+						height: 100%;
+					}
+				}
+				th {
+					font-weight: 700;
+					text-align: center;
+					height: 26px;
+					letter-spacing: 0;
+				}
+				td {
+					height: 100px;
+					.cell {
+						padding: 5px;
+						.row {
+							margin-top: 2px;
+							&:first-child {
+								margin-top: 0;
+							}
+						}
+						.row-1 {
+							text-align: right;
+						}
+						.row-item {
+							background: #FF9D67;
+							padding: 0 3px;
+							border-radius: 4px;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+					}
+				}
+				td.out {
+					.cell {
+						.row-1 {
+							color: #c3c3c3;
+						}
+					}
+				}
+				td.today {
+					.cell {
+						background: #f8f8f8;
+					}
 				}
 			}
 		}
-		.grid-bottom {
-			@include grid-bottom-page;
+		.cont-day {
+
 		}
 	}
 }

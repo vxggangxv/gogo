@@ -168,6 +168,9 @@ $sidebar-wd: 96px;
         background-position: -32px -64px;
         top: -1px;
     }
+    &.ic-clock {
+        background-position: -48px -192px;
+    }
 	& + * {
 		vertical-align: middle;
 	}

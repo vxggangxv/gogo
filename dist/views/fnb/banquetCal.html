@@ -452,29 +452,416 @@
                 <button class="btn-default" onclick="window.open('../winpop/winpop_trace.html', 'winpop', 'width=1800, height=900')">TRACE</button>
             </div>
 
+            <script>
+                $(function() {
+                				$(".cal-tab").on("click", function() {
+                
+                				});
+                			});
+            </script>
             <div class="cf cont-container-f">
-                <div class="cont-list">
-                    <div class="grid-toolbar">
-                        <button type="button" class="btn-gray today">Today</button>
-                        <button type="button" class="btn-gray prev"><span>◀</span>
-                        </button>
-                        <button type="button" class="btn-gray next"><span>▶</span>
-                        </button>
-                        <span class="icon ic-cal"></span>
-                        <span class="date">March, 2019</span>
-                        <button type="button" class="btn-gray"><span class="icon ic-excel"></span> Export to Excel</button>
+                <div class="grid-toolbar">
+                    <button type="button" class="btn-gray today">Today</button>
+                    <button type="button" class="btn-gray prev"><span>◀</span>
+                    </button>
+                    <button type="button" class="btn-gray next"><span>▶</span>
+                    </button>
+                    <span class="date"><img class="cal" src="../../public/img/icon/cal.png" alt="달력"> March, 2019</span>
+                    <button type="button" class="btn-gray"><span class="icon ic-pdf"></span> Export to PDF</button>
 
-                        <span class="pull-right">
+                    <span class="pull-right cal-tab">
 
-                        <button type="button" class="btn-gray m">Month</button>
+					<button type="button" class="btn-gray m on">Month</button>
 
-                        <button type="button" class="btn-gray d">Day</button>
+					<button type="button" class="btn-gray d">Day</button>
 
-                    </span>
-                    </div>
-                    <!-- /.grid-toolbar -->
+				</span>
                 </div>
-                <!-- //.cont-list -->
+                <!-- /.grid-toolbar -->
+                <div class="cont-area">
+                    <div class="cont-month">
+                        <table class="month-tbl">
+                            <colgroup>
+                                <col style="width:14.28%;">
+                                    <col style="width:14.28%;">
+                                        <col style="width:14.28%;">
+                                            <col style="width:14.28%;">
+                                                <col style="width:14.28%;">
+                                                    <col style="width:14.28%;">
+                                                        <col style="width:14.28%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Sunday</th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednseday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                    <th>Saturday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 그 달에 벗어난 날 : out 클래스 추가, 당일 : today  -->
+                                <tr>
+                                    <td class="out">
+                                        <div class="cell">
+                                            <p class="row row-1">24</p>
+                                        </div>
+                                    </td>
+                                    <td class="out">
+                                        <div class="cell">
+                                            <p class="row row-1">25</p>
+                                        </div>
+                                    </td>
+                                    <td class="out">
+                                        <div class="cell">
+                                            <p class="row row-1">26</p>
+                                        </div>
+                                    </td>
+                                    <td class="out">
+                                        <div class="cell">
+                                            <p class="row row-1">27</p>
+                                        </div>
+                                    </td>
+                                    <td class="out">
+                                        <div class="cell">
+                                            <p class="row row-1">28</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">01</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">02</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">03</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">04</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">05</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">06</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">07</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">08</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">09</p>
+                                            <p class="row row-item">12:00 AM ~ 12:00 AM 내쇼날모터스</p>
+                                            <p class="row row-item">12:00 AM ~ 12:00 AM 내쇼날모터스</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">05</p>
+                                        </div>
+                                    </td>
+                                    <td class="today">
+                                        <div class="cell">
+                                            <p class="row row-1">06</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">07</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">08</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">09</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">10</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cell">
+                                            <p class="row row-1">11</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //.cont-month -->
+                    <div class="cont-day">
+                        <ul class="day-top">
+                            <li>
+                                <dl>
+                                    <dt></dt>
+                                    <dd>Tue 3/26</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>all day</dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="day-body-scroller">
+                            <ul class="day-body">
+                                <li>
+                                    <dl>
+                                        <dt>12:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>1:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>3:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>4:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>5:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>6:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>7:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>8:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>9:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>10:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>11:00 AM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>12:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>1:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>2:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>3:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>4:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>5:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>6:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>7:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>8:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>9:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>10:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>11:00 PM</dt>
+                                        <dd>
+                                            <div class="row-1"></div>
+                                            <div class="row-2"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-toolbar">
+                            <button type="button"><span class="icon ic-clock"></span> Show business hours</button>
+                        </div>
+                    </div>
+                    <!-- /.cont-day -->
+                </div>
+
             </div>
         </div>
         <!-- //.contents -->
